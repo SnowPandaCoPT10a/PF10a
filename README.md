@@ -1,2 +1,5 @@
-# PF10a
-Facu Gomezaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# PF10a SNOWPANDACO
+Integrantes:
+FacundoEFrias
+Magaerv
+FacuGomez2022
