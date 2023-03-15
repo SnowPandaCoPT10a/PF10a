@@ -1,128 +1,170 @@
 [
-    {        "pantsID": "1",        "name": "ClassicCo",        "sizes": [            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"        ],
-        "img": "SET_IMG_HERE",
-        "material": "denim",
-        "description": "Pantalón ClassicCo Informal de Denim",
-        "activity": "casual",
-        "category":"pants"
-    },
-    {
-        "pantsID": "2",
-        "name": "AthleticCo",
-        "sizes": [
-            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "description": "Pantalón AthleticCo Deportivo de Poliéster",
-        "activity": "sports"
-    },
-    {
-        "pantsID": "3",
-        "name": "SlimCo",
-        "sizes": [
-            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Pantalón SlimCo Ajustado de Algodón",
-        "activity": "dressy"
-    },
-    {
-        "pantsID": "4",
-        "name": "CargoCo",
-        "sizes": [
-            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"
-        ],
-        "img": "89.jpg",
-        "material": "cotton",
-        "description": "Pantalón CargoCo Resistente de Algodón",
-        "activity": "outdoor"
-    },
-    {
-        "pantsID": "5",
-        "name": "RuggedCo",
-        "sizes": [
-            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "canvas",
-        "description": "Pantalón RuggedCo Duradero de Lona",
-        "activity": "work"
-    },
-    {
-        "pantsID": "6",
-        "name": "TechCo",
-        "sizes": [
-            "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "description": "Pantalón TechCo con Tecnología de Secado Rápido",
-        "activity": "hiking"
-    },
-    {
-        "pantsID": "7",
-        "name": "RelaxedCo",
-        "sizes": [{
-            "size": 30,
-            "stock": 10
-        },{
-            "size": 32,
-            "stock": 10
-        },
-        {
-            "size": 34,
-            "stock": 10
-        },
-        {
-            "size": 36,
-            "stock": 10
-        },
-        {
-            "size": 38,
-            "stock": 10
-        },
-        {
-            "size": 32,
-            "stock": 10
-        },
-        {
-            "size": 32,
-            "stock": 10
-        },
-        {
-            "size": 32,
-            "stock": 10
-        },
-        {
-            "size": 32,
-            "stock": 10
-        },
-        {
-            "size": 32,
-            "stock": 10
-        },
-
-        {
-            "size": 32,
-            "stock": 10
-        }
-        ],
-        "img": "8.jpg",
-        "material": "cotton",
-        "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
-        "activity": "leisure"
-    }
-  ]
-
-
-
-
-
-
-
-
-
-
-  
+  {
+    "pantsID": "1",
+    "name": "ClassicCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "denim",
+    "description": "Pantalón ClassicCo Informal de Denim",
+    "activity": "casual",
+    "price": 599.99
+  },
+  {
+    "pantsID": "2",
+    "name": "AthleticCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "description": "Pantalón AthleticCo Deportivo de Poliéster",
+    "activity": "sports",
+    "price": 799.99
+  },
+  {
+    "pantsID": "3",
+    "name": "SlimCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Pantalón SlimCo Ajustado de Algodón",
+    "activity": "dressy",
+    "price": 899.99
+  },
+  {
+    "pantsID": "4",
+    "name": "CargoCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "89.jpg",
+    "material": "cotton",
+    "description": "Pantalón CargoCo Resistente de Algodón",
+    "activity": "outdoor",
+    "price": 599.99
+  },
+  {
+    "pantsID": "5",
+    "name": "RuggedCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "canvas",
+    "description": "Pantalón RuggedCo Duradero de Lona",
+    "activity": "work",
+    "price": 499.99
+  },
+  {
+    "pantsID": "6",
+    "name": "TechCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "description": "Pantalón TechCo con Tecnología de Secado Rápido",
+    "activity": "hiking",
+    "price": 699.99
+  },
+  {
+    "pantsID": "7",
+    "name": "RelaxedCo",
+    "sizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
+    "activity": "leisure",
+    "price": 399.99
+  }
+]

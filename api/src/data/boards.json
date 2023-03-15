@@ -1,120 +1,112 @@
 [
-    {
-        "nombre": "Tabla de snowboard Burton Custom",
-        "marca": "Burton",
-        "modelo": "Custom",
-        "precio": 499.99,
-        "descripcion": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
-        "imagen": "https://ejemplo.com/imagen1.jpg",
-        "categorias": [
-            "all-mountain"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Nitro Team",
-        "marca": "Nitro",
-        "modelo": "Team",
-        "precio": 599.99,
-        "descripcion": "Una tabla de freestyle con gran respuesta y estabilidad.",
-        "imagen": "https://ejemplo.com/imagen2.jpg",
-        "categorias": [
-            "freestyle"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard K2 Raygun",
-        "marca": "K2",
-        "modelo": "Raygun",
-        "precio": 399.99,
-        "descripcion": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
-        "imagen": "https://ejemplo.com/imagen3.jpg",
-        "categorias": [
-            "principiantes"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Rossignol One",
-        "marca": "Rossignol",
-        "modelo": "One",
-        "precio": 549.99,
-        "descripcion": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
-        "imagen": "https://ejemplo.com/imagen4.jpg",
-        "categorias": [
-            "all-mountain"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Lib Tech TRS",
-        "marca": "Lib Tech",
-        "modelo": "TRS",
-        "precio": 579.99,
-        "descripcion": "Una tabla de freestyle y all-mountain para riders experimentados.",
-        "imagen": "https://ejemplo.com/imagen5.jpg",
-        "categorias": [
-            "freestyle",
-            "all-mountain"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Arbor Element",
-        "marca": "Arbor",
-        "modelo": "Element",
-        "precio": 499.99,
-        "descripcion": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
-        "imagen": "https://ejemplo.com/imagen6.jpg",
-        "categorias": [
-            "all-mountain",
-            "sostenible"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Capita Defenders of Awesome",
-        "marca": "Capita",
-        "modelo": "Defenders of Awesome",
-        "precio": 549.99,
-        "descripcion": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
-        "imagen": "https://ejemplo.com/imagen7.jpg",
-        "categorias": [
-            "freestyle"
-        ]
-    },
-    {
-        "nombre": "Tabla de snowboard Gnu Riders Choice",
-        "marca": "Gnu",
-        "modelo": "Riders Choice",
-        "precio": 569.99,
-        "descripcion": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
-        "imagen": "https://ejemplo.com/imagen8.jpg",
-        "categorias": [
-            "freestyle",
-            "all-mountain",
-            "ecológico"
-        ]
-    },
-    [
-        {
-            "nombre": "Tabla de snowboard Jones Explorer",
-            "marca": "Jones",
-            "modelo": "Explorer",
-            "precio": 599.99,
-            "descripcion": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
-            "imagen": "https://ejemplo.com/imagen9.jpg",
-            "categorias": [
-                "all-mountain",
-                "resistente"
-            ]
-        },
-        {
-            "nombre": "Tabla de snowboard Rome Artifact Rocker",
-            "marca": "Rome",
-            "modelo": "Artifact Rocker",
-            "precio": 449.99,
-            "descripcion": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
-            "imagen": "https://ejemplo.com/imagen10.jpg",
-            "categorias": [
-                "freestyle",
-                "duradera"
-            ]
-        }
-    ]
+  {
+    "boardID": "1",
+    "name": "Tabla de snowboard Burton Custom",
+    "brand": "Burton",
+    "model": "Custom",
+    "price": 499.99,
+    "description": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
+    "img": "SET_IMG_HERE",
+    "activity": ["all-mountain"],
+    "stock": 10
+  },
+  {
+    "boardID": "2",
+    "name": "Tabla de snowboard Nitro Team",
+    "brand": "Nitro",
+    "model": "Team",
+    "price": 599.99,
+    "description": "Una tabla de freestyle con gran respuesta y estabilidad.",
+    "img": "SET_IMG_HERE",
+    "activity": ["freestyle"],
+    "stock": 10
+  },
+  {
+    "boardID": "3",
+    "name": "Tabla de snowboard K2 Raygun",
+    "brand": "K2",
+    "model": "Raygun",
+    "price": 399.99,
+    "description": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
+    "img": "SET_IMG_HERE",
+    "activity": ["principiantes"],
+    "stock": 10
+  },
+  {
+    "boardID": "4",
+    "name": "Tabla de snowboard Rossignol One",
+    "brand": "Rossignol",
+    "model": "One",
+    "price": 549.99,
+    "description": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
+    "img": "SET_IMG_HERE",
+    "activity": ["all-mountain"],
+    "stock": 10
+  },
+  {
+    "boardID": "5",
+    "name": "Tabla de snowboard Lib Tech TRS",
+    "brand": "Lib Tech",
+    "model": "TRS",
+    "price": 579.99,
+    "description": "Una tabla de freestyle y all-mountain para riders experimentados.",
+    "img": "SET_IMG_HERE",
+    "activity": ["freestyle", "all-mountain"],
+    "stock": 10
+  },
+  {
+    "boardID": "6",
+    "name": "Tabla de snowboard Arbor Element",
+    "brand": "Arbor",
+    "model": "Element",
+    "price": 499.99,
+    "description": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
+    "img": "SET_IMG_HERE",
+    "activity": ["all-mountain", "sostenible"],
+    "stock": 10
+  },
+  {
+    "boardID": "7",
+    "name": "Tabla de snowboard Capita Defenders of Awesome",
+    "brand": "Capita",
+    "model": "Defenders of Awesome",
+    "price": 549.99,
+    "description": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
+    "img": "SET_IMG_HERE",
+    "activity": ["freestyle"],
+    "stock": 10
+  },
+  {
+    "boardID": "8",
+    "name": "Tabla de snowboard Gnu Riders Choice",
+    "brand": "Gnu",
+    "model": "Riders Choice",
+    "price": 569.99,
+    "description": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
+    "img": "SET_IMG_HERE",
+    "activity": ["freestyle", "all-mountain", "ecológico"],
+    "stock": 10
+  },
+  {
+    "boardID": "9",
+    "name": "Tabla de snowboard Jones Explorer",
+    "brand": "Jones",
+    "model": "Explorer",
+    "price": 599.99,
+    "description": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
+    "img": "SET_IMG_HERE",
+    "activity": ["all-mountain", "resistente"],
+    "stock": 10
+  },
+  {
+    "boardID": "10",
+    "name": "Tabla de snowboard Rome Artifact Rocker",
+    "brand": "Rome",
+    "model": "Artifact Rocker",
+    "price": 449.99,
+    "description": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
+    "img": "SET_IMG_HERE",
+    "activity": ["freestyle", "duradera"],
+    "stock": 10
+  }
 ]

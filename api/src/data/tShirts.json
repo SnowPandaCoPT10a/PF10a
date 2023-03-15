@@ -1,92 +1,152 @@
 [
   {
-    "t-shirtsID": "1",
+    "tshirtsID": "1",
     "name": "PandaCo",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Remera PandaCo Urbana 100% Algodón",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 250
   },
   {
-    "t-shirtsID": "2",
+    "tshirtsID": "2",
     "name": "Vivify",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Vivify urban t-shirt 100% cotton",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 200
   },
   {
-    "t-shirtsID": "3",
+    "tshirtsID": "3",
     "name": "Grit",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Grit urban t-shirt 100% cotton",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 200
   },
   {
-    "t-shirtsID": "4",
+    "tshirtsID": "4",
     "name": "Zephyr",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Zephyr urban t-shirt 100% cotton",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 100
   },
   {
-    "t-shirtsID": "5",
+    "tshirtsID": "5",
     "name": "Nexus",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Nexus urban t-shirt 100% cotton",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 380
   },
   {
-    "t-shirtsID": "6",
+    "tshirtsID": "6",
     "name": "Flame",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Flame urban t-shirt 100% cotton",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 250
   },
   {
-    "t-shirtsID": "7",
+    "tshirtsID": "7",
     "name": "PolarCo",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "polyester",
     "description": "Remera PolarCo Deportiva 100% Poliéster",
-    "activity": "sports"
+    "activity": "sports",
+    "price": 150
   },
   {
-    "t-shirtsID": "8",
+    "tshirtsID": "8",
     "name": "TigerCo",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Remera TigerCo Estampada 100% Algodón",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 200
   },
   {
-    "t-shirtsID": "9",
+    "tshirtsID": "9",
     "name": "Sample",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Remera Sample Estampada 100% Algodón",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 243
   },
   {
-    "t-shirtsID": "10",
+    "tshirtsID": "10",
     "name": "StudioR",
-    "sizes": ["small", "medium", "large", "extraLarge"],
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
     "img": "SET_IMG_HERE",
     "material": "cotton",
     "description": "Remera StudioR Estampada 100% Algodón",
-    "activity": "urban"
+    "activity": "urban",
+    "price": 123
   }
 ]
