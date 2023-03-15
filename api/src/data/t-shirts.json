@@ -1,0 +1,92 @@
+[
+  {
+    "t-shirtsID": "1",
+    "name": "PandaCo",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Remera PandaCo Urbana 100% Algodón",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "2",
+    "name": "Vivify",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Vivify urban t-shirt 100% cotton",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "3",
+    "name": "Grit",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Grit urban t-shirt 100% cotton",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "4",
+    "name": "Zephyr",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Zephyr urban t-shirt 100% cotton",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "5",
+    "name": "Nexus",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Nexus urban t-shirt 100% cotton",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "6",
+    "name": "Flame",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Flame urban t-shirt 100% cotton",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "7",
+    "name": "PolarCo",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "description": "Remera PolarCo Deportiva 100% Poliéster",
+    "activity": "sports"
+  },
+  {
+    "t-shirtsID": "8",
+    "name": "TigerCo",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Remera TigerCo Estampada 100% Algodón",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "9",
+    "name": "Sample",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Remera Sample Estampada 100% Algodón",
+    "activity": "urban"
+  },
+  {
+    "t-shirtsID": "10",
+    "name": "StudioR",
+    "sizes": ["small", "medium", "large", "extraLarge"],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "description": "Remera StudioR Estampada 100% Algodón",
+    "activity": "urban"
+  }
+]
