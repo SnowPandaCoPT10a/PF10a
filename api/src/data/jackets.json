@@ -1,0 +1,152 @@
+[
+  {
+    "jacketsID": "1",
+    "name": "FourSeasons",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "activity": "urban",
+    "description": "Campera FourSeasons Urbana 100% Algodón",
+    "price": 499
+  },
+  {
+    "jacketsID": "2",
+    "name": "MountainX",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "nylon",
+    "activity": "outdoor",
+    "description": "Campera MountainX Outdoor Impermeable",
+    "price": 699
+  },
+  {
+    "jacketsID": "3",
+    "name": "UrbanLife",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "activity": "urban",
+    "description": "Campera UrbanLife de Cuero",
+    "price": 899
+  },
+  {
+    "jacketsID": "4",
+    "name": "ArticExplorer",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "Campera ArticExplorer para Expediciones",
+    "price": 1199
+  },
+  {
+    "jacketsID": "5",
+    "name": "ClassicBomber",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "activity": "urban",
+    "description": "Campera ClassicBomber de Cuero",
+    "price": 699
+  },
+  {
+    "jacketsID": "6",
+    "name": "TrekLite",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "Campera TrekLite Ligera y Transpirable",
+    "price": 599
+  },
+  {
+    "jacketsID": "7",
+    "name": "Ranger",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "Campera Ranger Outdoor de Poliéster",
+    "price": 799
+  },
+  {
+    "jacketsID": "8",
+    "name": "Urbana 2.0",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "cotton",
+    "activity": "urban",
+    "description": "Campera Urbana 2.0 de Algodón",
+    "price": 649
+  },
+  {
+    "jacketsID": "9",
+    "name": "Skyline",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "nylon",
+    "activity": "outdoor",
+    "description": "Campera Skyline Outdoor de Nylon",
+    "price": 899
+  },
+  {
+    "jacketsID": "10",
+    "name": "Vintage",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "activity": "urban",
+    "description": "Campera Vintage Urbana de Cuero",
+    "price": 1499
+  }
+]

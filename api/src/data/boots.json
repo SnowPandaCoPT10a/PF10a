@@ -1,0 +1,191 @@
+[
+  {
+    "bootsID": "1",
+    "name": "ExtremePro",
+    "sizes": [
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 47, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "description": "Botas ExtremePro para Ski",
+    "price": 799.99
+  },
+  {
+    "bootsID": "2",
+    "name": "GlacierFlex",
+    "sizes": [
+      { "size": 39, "stock": 8 },
+      { "size": 40, "stock": 8 },
+      { "size": 41, "stock": 8 },
+      { "size": 42, "stock": 8 },
+      { "size": 43, "stock": 8 },
+      { "size": 44, "stock": 8 },
+      { "size": 45, "stock": 8 },
+      { "size": 46, "stock": 8 },
+      { "size": 47, "stock": 8 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "rubber",
+    "description": "Botas de esquí GlacierFlex de goma",
+    "price": 549.99
+  },
+  {
+    "bootsID": "3",
+    "name": "MountaineerX",
+    "sizes": [
+      { "size": 39, "stock": 12 },
+      { "size": 40, "stock": 12 },
+      { "size": 41, "stock": 12 },
+      { "size": 42, "stock": 12 },
+      { "size": 43, "stock": 12 },
+      { "size": 44, "stock": 12 },
+      { "size": 45, "stock": 12 },
+      { "size": 46, "stock": 12 },
+      { "size": 47, "stock": 12 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "description": "Botas de esquí MountaineerX de cuero",
+    "price": 899.99
+  },
+  {
+    "bootsID": "4",
+    "name": "SpeedAir",
+    "sizes": [
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "nylon",
+    "description": "Botas SpeedAir para Ski",
+    "price": 649.99
+  },
+  {
+    "bootsID": "5",
+    "name": "MountainMaster",
+    "sizes": [
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "leather",
+    "description": "Botas MountainMaster para Ski",
+    "price": 899.99
+  },
+  {
+    "bootsID": "6",
+    "name": "Freestyle",
+    "sizes": [
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 47, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "neoprene",
+    "description": "Botas Freestyle para Ski",
+    "price": 749.99
+  },
+  {
+    "bootsID": "7",
+    "name": "CrossCountry",
+    "sizes": [
+      { "size": 35, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyester",
+    "description": "Botas CrossCountry para Ski",
+    "price": 599.99
+  },
+  {
+    "bootsID": "8",
+    "name": "All-Mountain",
+    "sizes": [
+      { "size": 35, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "nylon",
+    "description": "Botas All-Mountain para Ski",
+    "price": 699.99
+  },
+  {
+    "bootsID": "9",
+    "name": "PowderPro",
+    "sizes": [
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "polyurethane",
+    "description": "Botas PowderPro para Ski",
+    "price": 899.99
+  },
+  {
+    "bootsID": "10",
+    "name": "Freestyle",
+    "sizes": [
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 }
+    ],
+    "img": "SET_IMG_HERE",
+    "material": "synthetic",
+    "description": "Botas Freestyle para Ski",
+    "price": 749.99
+  }
+]
