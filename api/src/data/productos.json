@@ -1,0 +1,120 @@
+[
+    {
+        "nombre": "Tabla de snowboard Burton Custom",
+        "marca": "Burton",
+        "modelo": "Custom",
+        "precio": 499.99,
+        "descripcion": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
+        "imagen": "https://ejemplo.com/imagen1.jpg",
+        "categorias": [
+            "all-mountain"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Nitro Team",
+        "marca": "Nitro",
+        "modelo": "Team",
+        "precio": 599.99,
+        "descripcion": "Una tabla de freestyle con gran respuesta y estabilidad.",
+        "imagen": "https://ejemplo.com/imagen2.jpg",
+        "categorias": [
+            "freestyle"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard K2 Raygun",
+        "marca": "K2",
+        "modelo": "Raygun",
+        "precio": 399.99,
+        "descripcion": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
+        "imagen": "https://ejemplo.com/imagen3.jpg",
+        "categorias": [
+            "principiantes"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Rossignol One",
+        "marca": "Rossignol",
+        "modelo": "One",
+        "precio": 549.99,
+        "descripcion": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
+        "imagen": "https://ejemplo.com/imagen4.jpg",
+        "categorias": [
+            "all-mountain"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Lib Tech TRS",
+        "marca": "Lib Tech",
+        "modelo": "TRS",
+        "precio": 579.99,
+        "descripcion": "Una tabla de freestyle y all-mountain para riders experimentados.",
+        "imagen": "https://ejemplo.com/imagen5.jpg",
+        "categorias": [
+            "freestyle",
+            "all-mountain"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Arbor Element",
+        "marca": "Arbor",
+        "modelo": "Element",
+        "precio": 499.99,
+        "descripcion": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
+        "imagen": "https://ejemplo.com/imagen6.jpg",
+        "categorias": [
+            "all-mountain",
+            "sostenible"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Capita Defenders of Awesome",
+        "marca": "Capita",
+        "modelo": "Defenders of Awesome",
+        "precio": 549.99,
+        "descripcion": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
+        "imagen": "https://ejemplo.com/imagen7.jpg",
+        "categorias": [
+            "freestyle"
+        ]
+    },
+    {
+        "nombre": "Tabla de snowboard Gnu Riders Choice",
+        "marca": "Gnu",
+        "modelo": "Riders Choice",
+        "precio": 569.99,
+        "descripcion": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
+        "imagen": "https://ejemplo.com/imagen8.jpg",
+        "categorias": [
+            "freestyle",
+            "all-mountain",
+            "ecológico"
+        ]
+    },
+    [
+        {
+            "nombre": "Tabla de snowboard Jones Explorer",
+            "marca": "Jones",
+            "modelo": "Explorer",
+            "precio": 599.99,
+            "descripcion": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
+            "imagen": "https://ejemplo.com/imagen9.jpg",
+            "categorias": [
+                "all-mountain",
+                "resistente"
+            ]
+        },
+        {
+            "nombre": "Tabla de snowboard Rome Artifact Rocker",
+            "marca": "Rome",
+            "modelo": "Artifact Rocker",
+            "precio": 449.99,
+            "descripcion": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
+            "imagen": "https://ejemplo.com/imagen10.jpg",
+            "categorias": [
+                "freestyle",
+                "duradera"
+            ]
+        }
+    ]
+]
