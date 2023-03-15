@@ -4,10 +4,14 @@ module.exports = (sequelize) => {
   sequelize.define(
     "reviews",
     {
-      id: {
+      idReviews: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
+      },
+      firstName:{
+        type: DataTypes.STRING,
+        allowNull:false
       },
       comment: {
         type: DataTypes.TEXT,
@@ -20,6 +24,8 @@ module.exports = (sequelize) => {
     },
     {
       timestamps: true,
+      createdAt: "fecha",
+      updatedAt: false,
     }
   );
 };

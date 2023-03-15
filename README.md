@@ -3,6 +3,3 @@ Integrantes:
 FacundoEFrias
 Magaerv
 FacuGomez2022
-FacuLopez
-LuchoRodriguez
-Agus

@@ -16,24 +16,9 @@ module.exports = (sequelize) => {
       last_name : {
           type: DataTypes.STRING,
       },
-      nationality:{
-          type: DataTypes.STRING,
-      },
-      type_doc: {
-          type: DataTypes.STRING,
-      },
-      identification_doc:{
-          type: DataTypes.STRING,
-      },
       email : {
           type: DataTypes.STRING,
           allowNull: false
-      },
-      genre: {
-          type: DataTypes.STRING,
-      },
-      date_birth : {
-          type: DataTypes.DATEONLY,
       },
       mobile : {
           type: DataTypes.STRING,
