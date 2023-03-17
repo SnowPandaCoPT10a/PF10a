@@ -35,5 +35,9 @@ module.exports = (sequelize) => {
     stock: {
       type: DataTypes.INTEGER,
     },
+    featuredProduct: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   });
 };

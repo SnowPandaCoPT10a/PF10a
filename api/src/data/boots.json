@@ -16,7 +16,8 @@
     "img": "SET_IMG_HERE",
     "material": "leather",
     "description": "Botas ExtremePro para Ski",
-    "price": 799.99
+    "price": 799.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "2",
@@ -35,7 +36,8 @@
     "img": "SET_IMG_HERE",
     "material": "rubber",
     "description": "Botas de esquí GlacierFlex de goma",
-    "price": 549.99
+    "price": 549.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "3",
@@ -54,7 +56,8 @@
     "img": "SET_IMG_HERE",
     "material": "leather",
     "description": "Botas de esquí MountaineerX de cuero",
-    "price": 899.99
+    "price": 899.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "4",
@@ -72,7 +75,8 @@
     "img": "SET_IMG_HERE",
     "material": "nylon",
     "description": "Botas SpeedAir para Ski",
-    "price": 649.99
+    "price": 649.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "5",
@@ -89,7 +93,8 @@
     "img": "SET_IMG_HERE",
     "material": "leather",
     "description": "Botas MountainMaster para Ski",
-    "price": 899.99
+    "price": 899.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "6",
@@ -110,7 +115,8 @@
     "img": "SET_IMG_HERE",
     "material": "neoprene",
     "description": "Botas Freestyle para Ski",
-    "price": 749.99
+    "price": 749.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "7",
@@ -129,7 +135,8 @@
     "img": "SET_IMG_HERE",
     "material": "polyester",
     "description": "Botas CrossCountry para Ski",
-    "price": 599.99
+    "price": 599.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "8",
@@ -148,7 +155,8 @@
     "img": "SET_IMG_HERE",
     "material": "nylon",
     "description": "Botas All-Mountain para Ski",
-    "price": 699.99
+    "price": 699.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "9",
@@ -167,7 +175,8 @@
     "img": "SET_IMG_HERE",
     "material": "polyurethane",
     "description": "Botas PowderPro para Ski",
-    "price": 899.99
+    "price": 899.99,
+    "featuredProduct": false
   },
   {
     "bootsID": "10",
@@ -186,6 +195,7 @@
     "img": "SET_IMG_HERE",
     "material": "synthetic",
     "description": "Botas Freestyle para Ski",
-    "price": 749.99
+    "price": 749.99,
+    "featuredProduct": false
   }
 ]

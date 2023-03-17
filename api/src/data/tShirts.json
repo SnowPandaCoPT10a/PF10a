@@ -12,7 +12,8 @@
     "material": "cotton",
     "description": "Remera PandaCo Urbana 100% Algodón",
     "activity": "urban",
-    "price": 250
+    "price": 250,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "2",
@@ -27,7 +28,8 @@
     "material": "cotton",
     "description": "Vivify urban t-shirt 100% cotton",
     "activity": "urban",
-    "price": 200
+    "price": 200,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "3",
@@ -42,7 +44,8 @@
     "material": "cotton",
     "description": "Grit urban t-shirt 100% cotton",
     "activity": "urban",
-    "price": 200
+    "price": 200,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "4",
@@ -57,7 +60,8 @@
     "material": "cotton",
     "description": "Zephyr urban t-shirt 100% cotton",
     "activity": "urban",
-    "price": 100
+    "price": 100,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "5",
@@ -72,7 +76,8 @@
     "material": "cotton",
     "description": "Nexus urban t-shirt 100% cotton",
     "activity": "urban",
-    "price": 380
+    "price": 380,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "6",
@@ -87,7 +92,8 @@
     "material": "cotton",
     "description": "Flame urban t-shirt 100% cotton",
     "activity": "urban",
-    "price": 250
+    "price": 250,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "7",
@@ -102,7 +108,8 @@
     "material": "polyester",
     "description": "Remera PolarCo Deportiva 100% Poliéster",
     "activity": "sports",
-    "price": 150
+    "price": 150,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "8",
@@ -117,7 +124,8 @@
     "material": "cotton",
     "description": "Remera TigerCo Estampada 100% Algodón",
     "activity": "urban",
-    "price": 200
+    "price": 200,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "9",
@@ -132,7 +140,8 @@
     "material": "cotton",
     "description": "Remera Sample Estampada 100% Algodón",
     "activity": "urban",
-    "price": 243
+    "price": 243,
+    "featuredProduct": false
   },
   {
     "tshirtsID": "10",
@@ -147,6 +156,7 @@
     "material": "cotton",
     "description": "Remera StudioR Estampada 100% Algodón",
     "activity": "urban",
-    "price": 123
+    "price": 123,
+    "featuredProduct": true
   }
 ]

@@ -21,7 +21,8 @@
     "material": "denim",
     "description": "Pantalón ClassicCo Informal de Denim",
     "activity": "casual",
-    "price": 599.99
+    "price": 599.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "2",
@@ -45,7 +46,8 @@
     "material": "polyester",
     "description": "Pantalón AthleticCo Deportivo de Poliéster",
     "activity": "sports",
-    "price": 799.99
+    "price": 799.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "3",
@@ -69,7 +71,8 @@
     "material": "cotton",
     "description": "Pantalón SlimCo Ajustado de Algodón",
     "activity": "dressy",
-    "price": 899.99
+    "price": 899.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "4",
@@ -93,7 +96,8 @@
     "material": "cotton",
     "description": "Pantalón CargoCo Resistente de Algodón",
     "activity": "outdoor",
-    "price": 599.99
+    "price": 599.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "5",
@@ -117,7 +121,8 @@
     "material": "canvas",
     "description": "Pantalón RuggedCo Duradero de Lona",
     "activity": "work",
-    "price": 499.99
+    "price": 499.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "6",
@@ -141,7 +146,8 @@
     "material": "polyester",
     "description": "Pantalón TechCo con Tecnología de Secado Rápido",
     "activity": "hiking",
-    "price": 699.99
+    "price": 699.99,
+    "featuredProduct": false
   },
   {
     "pantsID": "7",
@@ -165,6 +171,7 @@
     "material": "cotton",
     "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
     "activity": "leisure",
-    "price": 399.99
+    "price": 399.99,
+    "featuredProduct": true
   }
 ]
