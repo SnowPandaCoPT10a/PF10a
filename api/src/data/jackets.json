@@ -12,7 +12,8 @@
     "material": "cotton",
     "activity": "urban",
     "description": "Campera FourSeasons Urbana 100% Algodón",
-    "price": 499
+    "price": 499,
+    "featuredProduct": false
   },
   {
     "jacketsID": "2",
@@ -27,7 +28,8 @@
     "material": "nylon",
     "activity": "outdoor",
     "description": "Campera MountainX Outdoor Impermeable",
-    "price": 699
+    "price": 699,
+    "featuredProduct": false
   },
   {
     "jacketsID": "3",
@@ -42,7 +44,8 @@
     "material": "leather",
     "activity": "urban",
     "description": "Campera UrbanLife de Cuero",
-    "price": 899
+    "price": 899,
+    "featuredProduct": false
   },
   {
     "jacketsID": "4",
@@ -57,7 +60,8 @@
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera ArticExplorer para Expediciones",
-    "price": 1199
+    "price": 1199,
+    "featuredProduct": false
   },
   {
     "jacketsID": "5",
@@ -72,7 +76,8 @@
     "material": "leather",
     "activity": "urban",
     "description": "Campera ClassicBomber de Cuero",
-    "price": 699
+    "price": 699,
+    "featuredProduct": false
   },
   {
     "jacketsID": "6",
@@ -87,7 +92,8 @@
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera TrekLite Ligera y Transpirable",
-    "price": 599
+    "price": 599,
+    "featuredProduct": false
   },
   {
     "jacketsID": "7",
@@ -102,7 +108,8 @@
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera Ranger Outdoor de Poliéster",
-    "price": 799
+    "price": 799,
+    "featuredProduct": false
   },
   {
     "jacketsID": "8",
@@ -117,7 +124,8 @@
     "material": "cotton",
     "activity": "urban",
     "description": "Campera Urbana 2.0 de Algodón",
-    "price": 649
+    "price": 649,
+    "featuredProduct": false
   },
   {
     "jacketsID": "9",
@@ -132,7 +140,8 @@
     "material": "nylon",
     "activity": "outdoor",
     "description": "Campera Skyline Outdoor de Nylon",
-    "price": 899
+    "price": 899,
+    "featuredProduct": false
   },
   {
     "jacketsID": "10",
@@ -147,6 +156,7 @@
     "material": "leather",
     "activity": "urban",
     "description": "Campera Vintage Urbana de Cuero",
-    "price": 1499
+    "price": 1499,
+    "featuredProduct": true
   }
 ]

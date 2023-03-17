@@ -29,5 +29,9 @@ module.exports = (sequelize) => {
     sizes: {
       type: DataTypes.JSON,
     },
+    featuredProduct: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   });
 };

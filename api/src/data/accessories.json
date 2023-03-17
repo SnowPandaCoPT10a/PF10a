@@ -11,7 +11,8 @@
       { "size": "extraLarge", "stock": 10 }
     ],
     "description": "Pandew helmet",
-    "price": 80
+    "price": 80,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "2",
@@ -25,7 +26,8 @@
       { "size": "extraLarge", "stock": 10 }
     ],
     "description": "MaxProtect helmet",
-    "price": 120
+    "price": 120,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "3",
@@ -39,7 +41,8 @@
       { "size": "extraLarge", "stock": 10 }
     ],
     "description": "Speedy helmet",
-    "price": 99
+    "price": 99,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "4",
@@ -53,7 +56,8 @@
       { "size": "extraLarge", "stock": 10 }
     ],
     "description": "LightPro helmet",
-    "price": 149
+    "price": 149,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "5",
@@ -67,7 +71,8 @@
       { "size": "extraLarge", "stock": 10 }
     ],
     "description": "Freestyle helmet",
-    "price": 89
+    "price": 89,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "6",
@@ -75,7 +80,8 @@
     "type": "glasses",
     "img": "SET_IMG_HERE",
     "description": "GoodLok glasses",
-    "price": 10
+    "price": 10,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "7",
@@ -83,7 +89,8 @@
     "type": "glasses",
     "img": "SET_IMG_HERE",
     "description": "SportyLok glasses",
-    "price": 25
+    "price": 25,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "8",
@@ -91,7 +98,8 @@
     "type": "glasses",
     "img": "SET_IMG_HERE",
     "description": "RetroLok glasses",
-    "price": 20
+    "price": 20,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "9",
@@ -99,7 +107,8 @@
     "type": "glasses",
     "img": "SET_IMG_HERE",
     "description": "SunLok glasses",
-    "price": 15
+    "price": 15,
+    "featuredProduct": false
   },
   {
     "accessoriesID": "10",
@@ -107,6 +116,7 @@
     "type": "glasses",
     "img": "SET_IMG_HERE",
     "description": "FashionLok glasses",
-    "price": 30
+    "price": 30,
+    "featuredProduct": true
   }
 ]

@@ -8,7 +8,8 @@
     "description": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
     "img": "SET_IMG_HERE",
     "activity": ["all-mountain"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "2",
@@ -19,7 +20,8 @@
     "description": "Una tabla de freestyle con gran respuesta y estabilidad.",
     "img": "SET_IMG_HERE",
     "activity": ["freestyle"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "3",
@@ -30,7 +32,8 @@
     "description": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
     "img": "SET_IMG_HERE",
     "activity": ["principiantes"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "4",
@@ -41,7 +44,8 @@
     "description": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
     "img": "SET_IMG_HERE",
     "activity": ["all-mountain"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "5",
@@ -52,7 +56,8 @@
     "description": "Una tabla de freestyle y all-mountain para riders experimentados.",
     "img": "SET_IMG_HERE",
     "activity": ["freestyle", "all-mountain"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "6",
@@ -63,7 +68,8 @@
     "description": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
     "img": "SET_IMG_HERE",
     "activity": ["all-mountain", "sostenible"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "7",
@@ -74,7 +80,8 @@
     "description": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
     "img": "SET_IMG_HERE",
     "activity": ["freestyle"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "8",
@@ -85,7 +92,8 @@
     "description": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
     "img": "SET_IMG_HERE",
     "activity": ["freestyle", "all-mountain", "ecológico"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "9",
@@ -96,7 +104,8 @@
     "description": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
     "img": "SET_IMG_HERE",
     "activity": ["all-mountain", "resistente"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": false
   },
   {
     "boardID": "10",
@@ -107,6 +116,7 @@
     "description": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
     "img": "SET_IMG_HERE",
     "activity": ["freestyle", "duradera"],
-    "stock": 10
+    "stock": 10,
+    "featuredProduct": true
   }
 ]
