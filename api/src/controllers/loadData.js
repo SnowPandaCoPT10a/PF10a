@@ -6,7 +6,7 @@ const {
     Jackets,
     Pants,
     Reviews,
-    TShirts,
+    Tshirts,
     Users,
    } = require('../db')
 
@@ -15,7 +15,7 @@ const {
   
    const loadBoards = require('../data/boards.json');
    const loadBoots = require('../data/boots.json');
-   const loadFavorites = require('../data/favorites.json');
+   //const loadFavorites = require('../data/favorites.json');
    const loadJackets = require('../data/jackets.json');
    const loadPants = require('../data/pants.json');
    const loadReviews = require('../data/reviews.json');
@@ -32,8 +32,8 @@ const {
       }
       await Accessories.bulkCreate(loadAccessories);
       console.log('Accessories loaded ok to DB')
-      await Favorites.bulkCreate(loadFavorites);
-      console.log('Favorites loaded ok to DB')
+      // await Favorites.bulkCreate(loadFavorites);
+      // console.log('Favorites loaded ok to DB')
       await Users.bulkCreate(loadUsers);
       console.log('Users loaded ok to DB')
       await Jackets.bulkCreate(loadJackets);
@@ -41,11 +41,11 @@ const {
       await Pants.bulkCreate(loadPants);
       console.log('Pants loaded ok to DB');
       await Boots.bulkCreate(loadBoots);
-      console.log('Pants loaded ok to DB');
+      console.log('Boots loaded ok to DB');
       await Reviews.bulkCreate(loadReviews);
-      console.log('Pants loaded ok to DB');
-      await TShirts.bulkCreate(loadTShirts);
-      console.log('Pants loaded ok to DB');
+      console.log('Reviews loaded ok to DB');
+      await Tshirts.bulkCreate(loadTShirts);
+      console.log('Tshirts loaded ok to DB');
   
     } catch(error){
       console.log(error);
