@@ -3,12 +3,24 @@
     "accessoriesID": "1",
     "name": "Pandew",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "description": "Pandew helmet",
     "price": 80,
@@ -18,12 +30,24 @@
     "accessoriesID": "2",
     "name": "MaxProtect",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "description": "MaxProtect helmet",
     "price": 120,
@@ -33,12 +57,24 @@
     "accessoriesID": "3",
     "name": "Speedy",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219904/SnowPandaCO/Accessories/Speedy%20helmet.png",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "description": "Speedy helmet",
     "price": 99,
@@ -48,12 +84,24 @@
     "accessoriesID": "4",
     "name": "LightPro",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219578/SnowPandaCO/Accessories/LightPro%20helmet.png",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "description": "LightPro helmet",
     "price": 149,
@@ -63,12 +111,24 @@
     "accessoriesID": "5",
     "name": "Freestyle",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219213/SnowPandaCO/Accessories/Freestyle%20helmet.png",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "description": "Freestyle helmet",
     "price": 89,
@@ -78,7 +138,7 @@
     "accessoriesID": "6",
     "name": "GoodLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218820/SnowPandaCO/Accessories/GoodLok%20glasses.png",
     "description": "GoodLok glasses",
     "price": 10,
     "featuredProduct": false
@@ -87,7 +147,7 @@
     "accessoriesID": "7",
     "name": "SportyLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218593/SnowPandaCO/Accessories/SportyLok%20glasses.png",
     "description": "SportyLok glasses",
     "price": 25,
     "featuredProduct": false
@@ -96,7 +156,7 @@
     "accessoriesID": "8",
     "name": "RetroLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130886/SnowPandaCO/Accessories/RetroLok%20glasses.png",
     "description": "RetroLok glasses",
     "price": 20,
     "featuredProduct": false
@@ -105,7 +165,7 @@
     "accessoriesID": "9",
     "name": "SunLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130545/SnowPandaCO/Accessories/SunLok%20glasses.png",
     "description": "SunLok glasses",
     "price": 15,
     "featuredProduct": false
@@ -115,7 +175,7 @@
     "name": "FashionLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
-    "description": "FashionLok glasses",
+    "description": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130097/SnowPandaCO/Accessories/FashionLok%20glasses.png",
     "price": 30,
     "featuredProduct": true
   }
