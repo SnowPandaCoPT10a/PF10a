@@ -29,5 +29,9 @@ module.exports = (sequelize) => {
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    featuredProduct: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   });
 };
