@@ -1,6 +1,6 @@
 [
   {
-    "boardID": "1",
+    
     "name": "Tabla de snowboard Burton Custom",
     "brand": "Burton",
     "model": "Custom",
@@ -12,7 +12,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "2",
+    
     "name": "Tabla de snowboard Nitro Team",
     "brand": "Nitro",
     "model": "Team",
@@ -24,7 +24,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "3",
+    
     "name": "Tabla de snowboard K2 Raygun",
     "brand": "K2",
     "model": "Raygun",
@@ -36,7 +36,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "4",
+    
     "name": "Tabla de snowboard Rossignol One",
     "brand": "Rossignol",
     "model": "One",
@@ -48,7 +48,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "5",
+    
     "name": "Tabla de snowboard Lib Tech TRS",
     "brand": "Lib Tech",
     "model": "TRS",
@@ -60,7 +60,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "6",
+    
     "name": "Tabla de snowboard Arbor Element",
     "brand": "Arbor",
     "model": "Element",
@@ -72,7 +72,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "7",
+    
     "name": "Tabla de snowboard Capita Defenders of Awesome",
     "brand": "Capita",
     "model": "Defenders of Awesome",
@@ -84,7 +84,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "8",
+    
     "name": "Tabla de snowboard Gnu Riders Choice",
     "brand": "Gnu",
     "model": "Riders Choice",
@@ -96,7 +96,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "9",
+    
     "name": "Tabla de snowboard Jones Explorer",
     "brand": "Jones",
     "model": "Explorer",
@@ -108,7 +108,7 @@
     "featuredProduct": false
   },
   {
-    "boardID": "10",
+    
     "name": "Tabla de snowboard Rome Artifact Rocker",
     "brand": "Rome",
     "model": "Artifact Rocker",
