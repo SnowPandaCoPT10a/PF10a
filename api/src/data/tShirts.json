@@ -1,6 +1,6 @@
 [
   {
-    "tshirtsID": "1",
+    
     "name": "PandaCo",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -16,7 +16,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "2",
+    
     "name": "Vivify",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -32,7 +32,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "3",
+    
     "name": "Grit",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -48,7 +48,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "4",
+    
     "name": "Zephyr",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -64,7 +64,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "5",
+    
     "name": "Nexus",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -80,7 +80,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "6",
+    
     "name": "Flame",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -96,7 +96,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "7",
+    
     "name": "PolarCo",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -112,7 +112,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "8",
+    
     "name": "TigerCo",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -128,7 +128,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "9",
+    
     "name": "Sample",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -144,7 +144,7 @@
     "featuredProduct": false
   },
   {
-    "tshirtsID": "10",
+    
     "name": "StudioR",
     "sizes": [
       { "size": "small", "stock": 10 },

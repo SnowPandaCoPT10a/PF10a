@@ -1,6 +1,6 @@
 [
   {
-    "accessoriesID": "1",
+    
     "name": "Pandew",
     "type": "helmet",
     "img": "SET_IMG_HERE",
@@ -15,7 +15,7 @@
     "featuredProduct": false
   },
   {
-    "accessoriesID": "2",
+    
     "name": "MaxProtect",
     "type": "helmet",
     "img": "SET_IMG_HERE",
@@ -30,7 +30,7 @@
     "featuredProduct": false
   },
   {
-    "accessoriesID": "3",
+    
     "name": "Speedy",
     "type": "helmet",
     "img": "SET_IMG_HERE",
@@ -45,7 +45,7 @@
     "featuredProduct": false
   },
   {
-    "accessoriesID": "4",
+    
     "name": "LightPro",
     "type": "helmet",
     "img": "SET_IMG_HERE",
@@ -60,7 +60,7 @@
     "featuredProduct": false
   },
   {
-    "accessoriesID": "5",
+    
     "name": "Freestyle",
     "type": "helmet",
     "img": "SET_IMG_HERE",
@@ -75,46 +75,61 @@
     "featuredProduct": false
   },
   {
-    "accessoriesID": "6",
+    
     "name": "GoodLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
+    "sizes": [
+      { "size": "one size", "stock": 10 }
+    ],
     "description": "GoodLok glasses",
     "price": 10,
     "featuredProduct": false
   },
   {
-    "accessoriesID": "7",
+    
     "name": "SportyLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
+    "sizes": [
+      { "size": "one size", "stock": 10 }
+    ],
     "description": "SportyLok glasses",
     "price": 25,
     "featuredProduct": false
   },
   {
-    "accessoriesID": "8",
+    
     "name": "RetroLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
+    "sizes": [
+      { "size": "one size", "stock": 10 }
+    ],
     "description": "RetroLok glasses",
     "price": 20,
     "featuredProduct": false
   },
   {
-    "accessoriesID": "9",
+
     "name": "SunLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
+    "sizes": [
+      { "size": "one size", "stock": 10 }
+    ],
     "description": "SunLok glasses",
     "price": 15,
     "featuredProduct": false
   },
   {
-    "accessoriesID": "10",
+    
     "name": "FashionLok",
     "type": "glasses",
     "img": "SET_IMG_HERE",
+    "sizes": [
+      { "size": "one size", "stock": 10 }
+    ],
     "description": "FashionLok glasses",
     "price": 30,
     "featuredProduct": true

@@ -1,6 +1,6 @@
 [
   {
-    "bootsID": "1",
+   
     "name": "ExtremePro",
     "sizes": [
       { "size": 39, "stock": 10 },
@@ -20,7 +20,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "2",
+    
     "name": "GlacierFlex",
     "sizes": [
       { "size": 39, "stock": 8 },
@@ -40,7 +40,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "3",
+    
     "name": "MountaineerX",
     "sizes": [
       { "size": 39, "stock": 12 },
@@ -60,7 +60,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "4",
+    
     "name": "SpeedAir",
     "sizes": [
       { "size": 37, "stock": 10 },
@@ -79,7 +79,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "5",
+    
     "name": "MountainMaster",
     "sizes": [
       { "size": 36, "stock": 10 },
@@ -97,7 +97,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "6",
+    
     "name": "Freestyle",
     "sizes": [
       { "size": 37, "stock": 10 },
@@ -119,7 +119,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "7",
+    
     "name": "CrossCountry",
     "sizes": [
       { "size": 35, "stock": 10 },
@@ -139,7 +139,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "8",
+    
     "name": "All-Mountain",
     "sizes": [
       { "size": 35, "stock": 10 },
@@ -159,7 +159,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "9",
+    
     "name": "PowderPro",
     "sizes": [
       { "size": 38, "stock": 10 },
@@ -179,7 +179,7 @@
     "featuredProduct": false
   },
   {
-    "bootsID": "10",
+    
     "name": "Freestyle",
     "sizes": [
       { "size": 38, "stock": 10 },
