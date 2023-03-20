@@ -1,6 +1,6 @@
 [
   {
-    "jacketsID": "1",
+    
     "name": "FourSeasons",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -16,7 +16,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "2",
+    
     "name": "MountainX",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -32,7 +32,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "3",
+    
     "name": "UrbanLife",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -48,7 +48,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "4",
+    
     "name": "ArticExplorer",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -64,7 +64,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "5",
+    
     "name": "ClassicBomber",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -80,7 +80,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "6",
+    
     "name": "TrekLite",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -96,7 +96,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "7",
+    
     "name": "Ranger",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -112,7 +112,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "8",
+    
     "name": "Urbana 2.0",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -128,7 +128,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "9",
+    
     "name": "Skyline",
     "sizes": [
       { "size": "small", "stock": 10 },
@@ -144,7 +144,7 @@
     "featuredProduct": false
   },
   {
-    "jacketsID": "10",
+    
     "name": "Vintage",
     "sizes": [
       { "size": "small", "stock": 10 },
