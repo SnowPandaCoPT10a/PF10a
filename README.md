@@ -5,6 +5,6 @@ Integrantes:
 @FacuGomez2022
 @sil-pauli
 @Agustinn-1002
-@cuevasgaston
+cuevasgaston
 # FRAMEWORKS CSS ->
 Bootstrap
