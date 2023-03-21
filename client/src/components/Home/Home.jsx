@@ -6,6 +6,6 @@ const Home = () => {
   )
 }
 
-//ok
+//ok hola
 
 export default Home
