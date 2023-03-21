@@ -2,7 +2,7 @@
   {
     "name": "Pandew",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319280/SnowPandaCO/Accessories/Pandew%20helmet.png",
     "sizes": [
       {
         "size": "small",
@@ -28,7 +28,7 @@
   {
     "name": "MaxProtect",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png",
     "sizes": [
       {
         "size": "small",
@@ -54,7 +54,7 @@
   {
     "name": "Speedy",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219904/SnowPandaCO/Accessories/Speedy%20helmet.png",
     "sizes": [
       {
         "size": "small",
@@ -80,7 +80,7 @@
   {
     "name": "LightPro",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219578/SnowPandaCO/Accessories/LightPro%20helmet.png",
     "sizes": [
       {
         "size": "small",
@@ -106,7 +106,7 @@
   {
     "name": "Freestyle",
     "type": "helmet",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219213/SnowPandaCO/Accessories/Freestyle%20helmet.png",
     "sizes": [
       {
         "size": "small",
@@ -132,7 +132,7 @@
   {
     "name": "GoodLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218820/SnowPandaCO/Accessories/GoodLok%20glasses.png",
     "sizes": [
       {
         "size": "one size",
@@ -146,7 +146,7 @@
   {
     "name": "SportyLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218593/SnowPandaCO/Accessories/SportyLok%20glasses.png",
     "sizes": [
       {
         "size": "one size",
@@ -160,7 +160,7 @@
   {
     "name": "RetroLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130886/SnowPandaCO/Accessories/RetroLok%20glasses.png",
     "sizes": [
       {
         "size": "one size",
@@ -174,7 +174,7 @@
   {
     "name": "SunLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130545/SnowPandaCO/Accessories/SunLok%20glasses.png",
     "sizes": [
       {
         "size": "one size",
@@ -188,7 +188,7 @@
   {
     "name": "FashionLok",
     "type": "glasses",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130097/SnowPandaCO/Accessories/FashionLok%20glasses.png",
     "sizes": [
       {
         "size": "one size",
