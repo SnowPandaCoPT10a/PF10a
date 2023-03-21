@@ -50,6 +50,50 @@ const {
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
 
+//La tabla "Accessories" podría estar relacionada con la tabla "Users" 
+//mediante una relación de muchos a muchos, donde los usuarios pueden 
+//tener muchos accesorios y cada accesorio puede ser utilizado por muchos usuarios. 
+
+// Relación de muchos a muchos entre Users y Accessories
+Users.belongsToMany(Accessories,{through: "UserAccesory"})
+Accessories.belongsToMany(Users, {through: "UserAccesory"})
+
+// Relación de muchos a muchos entre Users y Boards
+Users.belongsToMany(Boards,{through: "UserBoard"})
+Boards.belongsToMany(Users, {through: "UserBoard"})
+
+// Relación de muchos a muchos entre Users y Boots
+Users.belongsToMany(Boots,{through: "UserBoot"})
+Boots.belongsToMany(Users, {through: "UserBoot"})
+
+// Relación de muchos a muchos entre Users y Jackets
+Users.belongsToMany(Jackets,{through: "UserJacket"})
+Jackets.belongsToMany(Users, {through: "UserJacket"})
+
+
+// Relación de muchos a muchos entre Users y Pants
+Users.belongsToMany(Pants,{through: "UserPant"})
+Pants.belongsToMany(Users, {through: "UserPant"})
+
+// Relación de muchos a muchos entre Users y Tshirts
+Users.belongsToMany(Tshirts,{through: "UserTshirt"})
+Tshirts.belongsToMany(Users, {through: "UserTshirt"})
+
+// Relación de uno a muchos entre Users y Bills
+Users.hasMany(Bills)
+Bills.belongsTo(Users)
+
+// Relación de uno a muchos entre Users y Reviews
+Users.hasMany(Reviews)
+Reviews.belongsTo(Users)
+
+// Relación de muchos a muchos entre Users y Favorites
+Users.belongsToMany(Favorites, { through: 'UserFavorite' });
+Favorites.belongsToMany(Users, { through: 'UserFavorite' });
+
+
+
+
 
 
 module.exports = {

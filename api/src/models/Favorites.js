@@ -4,7 +4,7 @@ const Users = require("./Users");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "favoritos",
+    "favorites",
     {
         userId: {
             type: DataTypes.INTEGER,
