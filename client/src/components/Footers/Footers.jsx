@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footers.css'
+import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
 
 const Footers = () => {
 	return (
@@ -34,3 +35,15 @@ const Footers = () => {
 
 
 export default Footers
+
+// iconos sociales- icono de henry- sobre nosotros*
+
+// contactos- preguntas frecuentes/servicios al cliente
+
+// politicas de privacidad
+
+// terminos y condiciones
+
+// como comprar/ preguntas frecuentes
+
+// (let's GO sacar info de aca)

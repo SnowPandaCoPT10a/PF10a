@@ -1,0 +1,18 @@
+.header-icons {
+    display: flex;
+    position: relative;
+
+    font-size: 40px;
+    color: rgb(14, 1, 1);
+
+}
+
+.linksH {
+    color: rgb(12, 0, 0);
+    transition: 1s;
+}
+
+.linksH:hover {
+    color: #BF0426;
+    transition: 1s;
+}
