@@ -1,11 +1,13 @@
 import React from 'react'
 import './Header.css'
 import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import SearchBar from '../SearchBar/SearchBar'
 
 const Header = () => {
 	return (
 		<div>
 		<h1>Header</h1>
+		<SearchBar/>
 			<div className="header-icons">
 
 				<a className='linksH' ><FaFacebook aria-hidden="true" /></a>
