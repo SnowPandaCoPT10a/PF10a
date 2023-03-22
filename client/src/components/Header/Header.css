@@ -1,3 +1,10 @@
+.header {
+display: flex;
+justify-content: space-around;
+align-content: center;
+margin: 20px;
+}
+
 .header-icons {
     display: flex;
     position: relative;
@@ -7,12 +14,18 @@
 
 }
 
+.carrito{
+    margin: 15px;
+}
+
 .linksH {
     color: rgb(12, 0, 0);
     transition: 1s;
+    margin: 5px;
 }
 
 .linksH:hover {
     color: #BF0426;
     transition: 1s;
 }
+
