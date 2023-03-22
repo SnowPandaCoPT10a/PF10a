@@ -9,7 +9,7 @@ const getAllBoots = require("./bootsRouter");
 const getAllJackets = require("./jacketsRouter");
 const getAllPants = require("./pantsRouter");
 const getAllReviews = require("./reviewsRouter");
-const getAlltShirts = require("./tShirtsRouter");
+const getAllTshirts = require("./tShirtsRouter");
 const getAllUsers = require("./usersRouter");
 
 const router = Router();
@@ -23,7 +23,7 @@ router.use('/accessories', getAllAccessories);
 // router.use('/jackets', getAllJackets);
 // router.use('/pants', getAllPants);
 // router.use('/reviews', getAllReviews);
-// router.use('/tShirts', getAlltShirts);
+router.use('/tshirts', getAllTshirts);
 // router.use('/users', getAllUsers);
 
 router.get("/", (req, res, next) => {
