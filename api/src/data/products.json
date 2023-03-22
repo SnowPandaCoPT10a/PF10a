@@ -1,0 +1,932 @@
+[
+    
+    {
+        "name": "Pandew",
+        "category": "helmet",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319280/SnowPandaCO/Accessories/Pandew%20helmet.png",
+        "sizes": [
+          {
+            "size": "small",
+            "stock": 10
+          },
+          {
+            "size": "medium",
+            "stock": 10
+          },
+          {
+            "size": "large",
+            "stock": 10
+          },
+          {
+            "size": "extraLarge",
+            "stock": 10
+          }
+        ],
+        "description": "Pandew helmet",
+        "price": 80,
+        "featuredProduct": false
+      },
+      {
+        "name": "MaxProtect",
+        "category": "helmet",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png",
+        "sizes": [
+          {
+            "size": "small",
+            "stock": 10
+          },
+          {
+            "size": "medium",
+            "stock": 10
+          },
+          {
+            "size": "large",
+            "stock": 10
+          },
+          {
+            "size": "extraLarge",
+            "stock": 10
+          }
+        ],
+        "description": "MaxProtect helmet",
+        "price": 120,
+        "featuredProduct": false
+      },
+      {
+        "name": "Speedy",
+        "category": "helmet",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219904/SnowPandaCO/Accessories/Speedy%20helmet.png",
+        "sizes": [
+          {
+            "size": "small",
+            "stock": 10
+          },
+          {
+            "size": "medium",
+            "stock": 10
+          },
+          {
+            "size": "large",
+            "stock": 10
+          },
+          {
+            "size": "extraLarge",
+            "stock": 10
+          }
+        ],
+        "description": "Speedy helmet",
+        "price": 99,
+        "featuredProduct": false
+      },
+      {
+        "name": "LightPro",
+        "category": "helmet",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219578/SnowPandaCO/Accessories/LightPro%20helmet.png",
+        "sizes": [
+          {
+            "size": "small",
+            "stock": 10
+          },
+          {
+            "size": "medium",
+            "stock": 10
+          },
+          {
+            "size": "large",
+            "stock": 10
+          },
+          {
+            "size": "extraLarge",
+            "stock": 10
+          }
+        ],
+        "description": "LightPro helmet",
+        "price": 149,
+        "featuredProduct": false
+      },
+      {
+        "name": "Freestyle",
+        "category": "helmet",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219213/SnowPandaCO/Accessories/Freestyle%20helmet.png",
+        "sizes": [
+          {
+            "size": "small",
+            "stock": 10
+          },
+          {
+            "size": "medium",
+            "stock": 10
+          },
+          {
+            "size": "large",
+            "stock": 10
+          },
+          {
+            "size": "extraLarge",
+            "stock": 10
+          }
+        ],
+        "description": "Freestyle helmet",
+        "price": 89,
+        "featuredProduct": false
+      },
+      {
+        "name": "GoodLok",
+        "category": "glasses",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218820/SnowPandaCO/Accessories/GoodLok%20glasses.png",
+        "sizes": [
+          {
+            "size": "one size",
+            "stock": 10
+          }
+        ],
+        "description": "GoodLok glasses",
+        "price": 10,
+        "featuredProduct": false
+      },
+      {
+        "name": "SportyLok",
+        "category": "glasses",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218593/SnowPandaCO/Accessories/SportyLok%20glasses.png",
+        "sizes": [
+          {
+            "size": "one size",
+            "stock": 10
+          }
+        ],
+        "description": "SportyLok glasses",
+        "price": 25,
+        "featuredProduct": false
+      },
+      {
+        "name": "RetroLok",
+        "category": "glasses",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130886/SnowPandaCO/Accessories/RetroLok%20glasses.png",
+        "sizes": [
+          {
+            "size": "one size",
+            "stock": 10
+          }
+        ],
+        "description": "RetroLok glasses",
+        "price": 20,
+        "featuredProduct": false
+      },
+      {
+        "name": "SunLok",
+        "category": "glasses",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130545/SnowPandaCO/Accessories/SunLok%20glasses.png",
+        "sizes": [
+          {
+            "size": "one size",
+            "stock": 10
+          }
+        ],
+        "description": "SunLok glasses",
+        "price": 15,
+        "featuredProduct": false
+      },
+      {
+        "name": "FashionLok",
+        "category": "glasses",
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130097/SnowPandaCO/Accessories/FashionLok%20glasses.png",
+        "sizes": [
+          {
+            "size": "one size",
+            "stock": 10
+          }
+        ],
+        "description": "FashionLok glasses",
+        "price": 30,
+        "featuredProduct": true
+      },
+      {
+    
+        "name": "Tabla de snowboard Burton Custom",
+        "category": "board",
+        "brand": "Burton",
+        "model": "Custom",
+        "price": 499.99,
+        "description": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
+        "img": "SET_IMG_HERE",
+        "activity": ["all-mountain"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Nitro Team",
+        "category": "board",
+        "brand": "Nitro",
+        "model": "Team",
+        "price": 599.99,
+        "description": "Una tabla de freestyle con gran respuesta y estabilidad.",
+        "img": "SET_IMG_HERE",
+        "activity": ["freestyle"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard K2 Raygun",
+        "category": "board",
+        "brand": "K2",
+        "model": "Raygun",
+        "price": 399.99,
+        "description": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
+        "img": "SET_IMG_HERE",
+        "activity": ["principiantes"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Rossignol One",
+        "category": "board",
+        "brand": "Rossignol",
+        "model": "One",
+        "price": 549.99,
+        "description": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
+        "img": "SET_IMG_HERE",
+        "activity": ["all-mountain"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Lib Tech TRS",
+        "category": "board",
+        "brand": "Lib Tech",
+        "model": "TRS",
+        "price": 579.99,
+        "description": "Una tabla de freestyle y all-mountain para riders experimentados.",
+        "img": "SET_IMG_HERE",
+        "activity": ["freestyle", "all-mountain"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Arbor Element",
+        "category": "board",
+        "brand": "Arbor",
+        "model": "Element",
+        "price": 499.99,
+        "description": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
+        "img": "SET_IMG_HERE",
+        "activity": ["all-mountain", "sostenible"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Capita Defenders of Awesome",
+        "category": "board",
+        "brand": "Capita",
+        "model": "Defenders of Awesome",
+        "price": 549.99,
+        "description": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
+        "img": "SET_IMG_HERE",
+        "activity": ["freestyle"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Gnu Riders Choice",
+        "category": "board",
+        "brand": "Gnu",
+        "model": "Riders Choice",
+        "price": 569.99,
+        "description": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
+        "img": "SET_IMG_HERE",
+        "activity": ["freestyle", "all-mountain", "ecológico"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Jones Explorer",
+        "category": "board",
+        "brand": "Jones",
+        "model": "Explorer",
+        "price": 599.99,
+        "description": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
+        "img": "SET_IMG_HERE",
+        "activity": ["all-mountain", "resistente"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Tabla de snowboard Rome Artifact Rocker",
+        "category": "board",
+        "brand": "Rome",
+        "model": "Artifact Rocker",
+        "price": 449.99,
+        "description": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
+        "img": "SET_IMG_HERE",
+        "activity": ["freestyle", "duradera"],
+         "sizes": [
+              {
+                "size": "one size",
+                "stock": 10
+              }
+            ],
+        "featuredProduct": true
+      },
+      {
+   
+        "name": "ExtremePro",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 45, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 47, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "description": "Botas ExtremePro para Ski",
+        "price": 799.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "GlacierFlex",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 39, "stock": 8 },
+          { "size": 40, "stock": 8 },
+          { "size": 41, "stock": 8 },
+          { "size": 42, "stock": 8 },
+          { "size": 43, "stock": 8 },
+          { "size": 44, "stock": 8 },
+          { "size": 45, "stock": 8 },
+          { "size": 46, "stock": 8 },
+          { "size": 47, "stock": 8 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "rubber",
+        "description": "Botas de esquí GlacierFlex de goma",
+        "price": 549.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "MountaineerX",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 39, "stock": 12 },
+          { "size": 40, "stock": 12 },
+          { "size": 41, "stock": 12 },
+          { "size": 42, "stock": 12 },
+          { "size": 43, "stock": 12 },
+          { "size": 44, "stock": 12 },
+          { "size": 45, "stock": 12 },
+          { "size": 46, "stock": 12 },
+          { "size": 47, "stock": 12 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "description": "Botas de esquí MountaineerX de cuero",
+        "price": 899.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "SpeedAir",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 37, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 },
+          { "size": 44, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "nylon",
+        "description": "Botas SpeedAir para Ski",
+        "price": 649.99,
+        "featuredProduct": false
+      },
+      {
+
+        "name": "MountainMaster",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "description": "Botas MountainMaster para Ski",
+        "price": 899.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Freestyle",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 37, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 45, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 47, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "neoprene",
+        "description": "Botas Freestyle para Ski",
+        "price": 749.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "CrossCountry",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 35, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 37, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyester",
+        "description": "Botas CrossCountry para Ski",
+        "price": 599.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "All-Mountain",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 35, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 37, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "nylon",
+        "description": "Botas All-Mountain para Ski",
+        "price": 699.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "PowderPro",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 45, "stock": 10 },
+          { "size": 46, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyurethane",
+        "description": "Botas PowderPro para Ski",
+        "price": 899.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Freestyle",
+        "category": "boots",
+        " numbersizes": [
+          { "size": 38, "stock": 10 },
+          { "size": 39, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 41, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 43, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 45, "stock": 10 },
+          { "size": 46, "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "synthetic",
+        "description": "Botas Freestyle para Ski",
+        "price": 749.99,
+        "featuredProduct": false
+      },
+      {
+    
+        "name": "FourSeasons",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "activity": "urban",
+        "description": "Campera FourSeasons Urbana 100% Algodón",
+        "price": 499,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "MountainX",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "nylon",
+        "activity": "outdoor",
+        "description": "Campera MountainX Outdoor Impermeable",
+        "price": 699,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "UrbanLife",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "activity": "urban",
+        "description": "Campera UrbanLife de Cuero",
+        "price": 899,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "ArticExplorer",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyester",
+        "activity": "outdoor",
+        "description": "Campera ArticExplorer para Expediciones",
+        "price": 1199,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "ClassicBomber",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "activity": "urban",
+        "description": "Campera ClassicBomber de Cuero",
+        "price": 699,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "TrekLite",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyester",
+        "activity": "outdoor",
+        "description": "Campera TrekLite Ligera y Transpirable",
+        "price": 599,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Ranger",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyester",
+        "activity": "outdoor",
+        "description": "Campera Ranger Outdoor de Poliéster",
+        "price": 799,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Urbana 2.0",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "activity": "urban",
+        "description": "Campera Urbana 2.0 de Algodón",
+        "price": 649,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Skyline",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "nylon",
+        "activity": "outdoor",
+        "description": "Campera Skyline Outdoor de Nylon",
+        "price": 899,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Vintage",
+        "category": "jackets",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "leather",
+        "activity": "urban",
+        "description": "Campera Vintage Urbana de Cuero",
+        "price": 1499,
+        "featuredProduct": true
+      },
+      {
+    
+        "name": "PandaCo",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Remera PandaCo Urbana 100% Algodón",
+        "activity": "urban",
+        "price": 250,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Vivify",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Vivify urban t-shirt 100% cotton",
+        "activity": "urban",
+        "price": 200,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Grit",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Grit urban t-shirt 100% cotton",
+        "activity": "urban",
+        "price": 200,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Zephyr",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Zephyr urban t-shirt 100% cotton",
+        "activity": "urban",
+        "price": 100,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Nexus",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Nexus urban t-shirt 100% cotton",
+        "activity": "urban",
+        "price": 380,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Flame",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Flame urban t-shirt 100% cotton",
+        "activity": "urban",
+        "price": 250,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "PolarCo",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "polyester",
+        "description": "Remera PolarCo Deportiva 100% Poliéster",
+        "activity": "sports",
+        "price": 150,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "TigerCo",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Remera TigerCo Estampada 100% Algodón",
+        "activity": "urban",
+        "price": 200,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "Sample",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Remera Sample Estampada 100% Algodón",
+        "activity": "urban",
+        "price": 243,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "StudioR",
+        "category": "t-shirts",
+        "sizes": [
+          { "size": "small", "stock": 10 },
+          { "size": "medium", "stock": 10 },
+          { "size": "large", "stock": 10 },
+          { "size": "extraLarge", "stock": 10 }
+        ],
+        "img": "SET_IMG_HERE",
+        "material": "cotton",
+        "description": "Remera StudioR Estampada 100% Algodón",
+        "activity": "urban",
+        "price": 123,
+        "featuredProduct": true
+      }
+]
