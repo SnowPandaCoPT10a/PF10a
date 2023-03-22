@@ -7,10 +7,23 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='component mt-5'>hola mundo con devAgus</div>
+    <div className='component mt-5'><h1>SnowPandaCo</h1></div>
   )
 }
 
 
 
 export default Home
+
+
+// video, ( snowboard.mp4) con frase motivacional, bien manija,
+
+// boton a tienda
+
+// (en cascada)
+
+// info sobre la empresa snow panda
+// destacados
+// apartado de actividades
+// contacto ( formulario de contacto)
+// footers
