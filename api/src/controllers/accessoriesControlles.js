@@ -5,17 +5,7 @@ const { Op } = require("sequelize");
 
 const getAllAccessories = async (req,res) => {
     try {
-        const allAccessories = await Accessories.findAll({
-            // attributes: [
-            //     "accessoriesID",
-            //     "name",
-            //     "type",
-            //     "img",
-            //     "sizes",
-            //     "description",
-            //     "price",
-            // ]
-        })
+        const allAccessories = await Accessories.findAll({})
         res.status(200).json(allAccessories)
     } catch (err) {
         res.status(404).json(err.message)
@@ -24,7 +14,7 @@ const getAllAccessories = async (req,res) => {
 
 
 //!! GET : ID
-
+//esto es para cambiarle el status de 
 const getAccessoriesById = async (req,res) => {
     const {id} = req.params;
     
@@ -33,12 +23,11 @@ const getAccessoriesById = async (req,res) => {
             where: {accessoriesID:id,
             },
         })
-        (accessories === null)?res.status(404).json("Accessories not found"):res.status(200).json(accessories)
-        
+        res.status(200).json(accessories)      
     }catch(err){
-        res.status(404).json("Accessories not found")
+        res.status(404).json("Accessories not found", err)
 }
-}
+} 
 
 //!! POST 
 
@@ -73,22 +62,100 @@ const postNewAccessories = async (req,res) => {
     }
 }
 
-//!! DELETE
+
+
+//!! MODIFY STATUS 
+async function disableAccessorie(req, res) {
+    try {
+      let { accessoriesID } = req.params;
+  
+      const accessories = await Accessories.findOne({
+        where: {
+            accessoriesID: accessoriesID
+        }
+      });
+  
+      if (accessories.status === true) {
+        accessories.update({ status: false });
+      } else if (accessories.status === false) {
+        accessories.update({ status: true });
+      }
+      res.status(201).json(accessories);
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
+  };
+
 
 //!! PUT
+async function modifyAccessories(req, res) {
+    try {
+      let { accessoriesID } = req.params;
+      let{ 
+        name,
+        type,
+        img,
+        sizes,
+        description,
+        price,
+
+    }= req.body;
+      const Access = await Accessories.findOne({
+        where: {
+            accessoriesID: accessoriesID
+        }
+      });
+  
+      if (Access) {
+        Access.update({
+        name,
+        type,
+        img,
+        sizes,
+        description,
+        price,
+        });
+  
+        res.status(201).json(Access);
+        
+      } else {
+        res.status(404).json({ msg: "Accessorie not found" });
+        
+      }
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
+  
+  };
+
+
+//!! DELETE
+
+const deleteAccessories = async (req, res) => {
+    try {
+      let { accessoriesID } = req.params;
+      Accessories.destroy({
+        where: {
+            accessoriesID: accessoriesID
+        }
+      })
+  
+      res.status(201).json({ message: "Accessorie delete" });
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
+  };
 
 
 
-
-
-
-
-
-
+  
 //! ..................
 module.exports = {
     getAllAccessories,
     getAccessoriesById,
-    postNewAccessories
+    postNewAccessories,
+    disableAccessorie,
+    modifyAccessories,
+    deleteAccessories,
   };
   
