@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footers.css'
 import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footers = () => {
 	return (
@@ -26,12 +27,26 @@ const Footers = () => {
       <div className="footer-right">
       </div>
       <div className='ctnResv'>
-    <p >© ALL RIGHTS RESERVED SNOW PANDA COMPANY © 2023 | SNOWPANDA.COM </p>
-    </div>
-    </footer>
+    <p >© ALL RIGHTS RESERVED SNOW PANDA COMPANY © 2023 | SNOWPANDA.COM </p>       
+    <Link to='/Members'>Members</Link>
+    
+    </div>    
+    </footer>  
 		</div>
 	)
 }
 
 
 export default Footers
+
+// iconos sociales- icono de henry- sobre nosotros*
+
+// contactos- preguntas frecuentes/servicios al cliente
+
+// politicas de privacidad
+
+// terminos y condiciones
+
+// como comprar/ preguntas frecuentes
+
+// (let's GO sacar info de aca)

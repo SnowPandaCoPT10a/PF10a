@@ -13,138 +13,142 @@ const getAllTshirts = async (req,res) => {
 }
 
 
-// //!! GET : ID
-// //esto es para cambiarle el status de 
-// const getAccessoriesById = async (req,res) => {
-//     const {id} = req.params;
+//!! GET : ID
+//esto es para cambiarle el status de 
+const getTshirtsById = async (req,res) => {
+    const {id} = req.params;
     
-//     try{
-//         const accessories = await Accessories.findOne({
-//             where: {accessoriesID:id,
-//             },
-//         })
-//         res.status(200).json(accessories)      
-//     }catch(err){
-//         res.status(404).json("Accessories not found", err)
-// }
-// } 
+    try{
+        const tshirts = await Tshirts.findOne({
+            where: {tshirtsID:id,
+            },
+        })
+        res.status(200).json(tshirts)      
+    }catch(err){
+        res.status(404).json("Accessories not found", err)
+}
+} 
 
-// //!! POST 
+//!! POST 
 
-// const postNewAccessories = async (req,res) => {
-//     let{
+const postNewTshirts = async (req,res) => {
+    let{
         
-//         name,
-//         type,
-//         img,
-//         sizes,
-//         description,
-//         price,
+        name,
+        sizes,
+        img,
+        description,
+        price,
+        activity,
+        material,
         
-//     }= req.body;
+    }= req.body;
 
-//     try {
-//         await Accessories.findOrCreate({ 
-//             where: { name },
-//             defaults: {
-//             type,
-//             img,
-//             sizes,
-//             description,
-//             price,
-//             },
+    try {
+        await Tshirts.findOrCreate({ 
+            where: { name },
+            defaults: {
+            img,
+            sizes,
+            description,
+            price,
+            activity,
+            material,
+            },
 
-//         }) 
-//         res.status(200).json("Accessories created")
+        }) 
+        res.status(200).json("Tshirts created")
         
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
 
-// //!! MODIFY STATUS 
-// async function disableAccessorie(req, res) {
-//     try {
-//       let { accessoriesID } = req.params;
+//!! MODIFY STATUS 
+async function disableTshirts(req, res) {
+    try {
+      let { tshirtsID } = req.params;
   
-//       const accessories = await Accessories.findOne({
-//         where: {
-//             accessoriesID: accessoriesID
-//         }
-//       });
+      const tshirts = await Tshirts.findOne({
+        where: {
+            tshirtsID: tshirtsID
+        }
+      });
   
-//       if (accessories.status === true) {
-//         accessories.update({ status: false });
-//       } else if (accessories.status === false) {
-//         accessories.update({ status: true });
-//       }
-//       res.status(201).json(accessories);
-//     } catch (err) {
-//       res.status(401).json({ error: err });
-//     };
-//   };
+      if (tshirts.status === true) {
+        tshirts.update({ status: false });
+      } else if (tshirts.status === false) {
+        tshirts.update({ status: true });
+      }
+      res.status(201).json(tshirts);
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
+  };
 
 
-// //!! PUT
-// async function modifyAccessories(req, res) {
-//     try {
-//       let { accessoriesID } = req.params;
-//       let{ 
-//         name,
-//         type,
-//         img,
-//         sizes,
-//         description,
-//         price,
+//!! PUT
+async function modifyTshirts(req, res) {
+    try {
+      let { tshirtsID } = req.params;
+      let{ 
+        name,
+        sizes,
+        img,
+        description,
+        price,
+        activity,
+        material,
 
-//     }= req.body;
-//       const Access = await Accessories.findOne({
-//         where: {
-//             accessoriesID: accessoriesID
-//         }
-//       });
+    }= req.body;
+      const Tshirt = await Tshirts.findOne({
+        where: {
+            tshirtsID: tshirtsID
+        }
+      });
   
-//       if (Access) {
-//         Access.update({
-//         name,
-//         type,
-//         img,
-//         sizes,
-//         description,
-//         price,
-//         });
+      if (Tshirt) {
+        Tshirt.update({
+        name,
+        img,
+        sizes,
+        description,
+        price,
+        activity,
+        material,
+        });
   
-//         res.status(201).json(Access);
+        res.status(201).json(Tshirt);
         
-//       } else {
-//         res.status(404).json({ msg: "Accessorie not found" });
+      } else {
+        res.status(404).json({ msg: "Tshirts not found" });
         
-//       }
-//     } catch (err) {
-//       res.status(401).json({ error: err });
-//     };
+      }
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
   
-//   };
+  };
 
 
-// //!! DELETE
+//!! DELETE
 
-// const deleteAccessories = async (req, res) => {
-//     try {
-//       let { accessoriesID } = req.params;
-//       Accessories.destroy({
-//         where: {
-//             accessoriesID: accessoriesID
-//         }
-//       })
+const deleteTshirts = async (req, res) => {
+    try {
+      let { tshirtsID } = req.params;
+      Tshirts.destroy({
+        where: {
+            tshirtsID: tshirtsID
+        }
+      })
   
-//       res.status(201).json({ message: "Accessorie delete" });
-//     } catch (err) {
-//       res.status(401).json({ error: err });
-//     };
-//   };
+      res.status(201).json({ message: "Tshirts delete" });
+    } catch (err) {
+      res.status(401).json({ error: err });
+    };
+  };
 
 
 
@@ -152,6 +156,10 @@ const getAllTshirts = async (req,res) => {
 //! ..................
 module.exports = {
     getAllTshirts,
-   
+    getTshirtsById,
+    postNewTshirts,
+    disableTshirts,
+    modifyTshirts,
+    deleteTshirts,
   };
   

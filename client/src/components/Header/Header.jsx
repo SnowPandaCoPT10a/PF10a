@@ -1,11 +1,11 @@
 import React from 'react'
 import './Header.css'
-import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart} from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
 
 const Header = () => {
 	return (
-		<div>
+		<div className='header'>
 		<h1>Header</h1>
 		<SearchBar/>
 			<div className="header-icons">
@@ -15,6 +15,10 @@ const Header = () => {
 				<a className='linksH' ><FaLinkedin aria-hidden="true" /></a>
 				<a className='linksH' ><FaGithubSquare aria-hidden="true" /></a>
 
+			</div>
+			<div className='carrito'>
+			<a className='linksH' ><FaUserAlt aria-hidden="true" /></a>			
+			<a className='linksH' ><FaShoppingCart aria-hidden="true" /></a>
 			</div>
 		</div>
 	)
