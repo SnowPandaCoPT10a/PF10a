@@ -1,15 +1,14 @@
 const {Router} = require('express');
-const {getAllTshirts} = require('../controllers/tShirtsControllers');
+const {getAllTshirts,getTshirtsById,postNewTshirts,disableTshirts,deleteTshirts,modifyTshirts,} = require('../controllers/tShirtsControllers');
 
 const router = Router();
 
 router.get('/', getAllTshirts);
-// router.get('/:id', getAccessoriesById);
+router.get('/:id', getTshirtsById);
 
-// router.post('/create', postNewAccessories);
-// router.put('/disable/:accessoriesID',disableAccessorie)
-// router.put('/modify/:accessoriesID',modifyAccessories)
-
-// router.delete('/delete/:accessoriesID', deleteAccessories)
+router.post('/create', postNewTshirts);
+router.put('/disable/:tshirtsID',disableTshirts)
+router.put('/modify/:tshirtsID',modifyTshirts)
+router.delete('/delete/:tshirtsID', deleteTshirts)
 
 module.exports = router;
