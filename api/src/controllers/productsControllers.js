@@ -42,7 +42,7 @@ const getProductsById = async (req,res) => {
         if(IDproducts === null){res.status(404).json({msn:"Product not found"})}
         res.status(200).json(IDproducts)      
     }catch(err){
-        res.status(404).json("Product not found", err)
+      res.status(404).json("Product not found", err)
 }
 } 
 //!! POST 
@@ -203,6 +203,7 @@ const deleteProducts = async (req, res) => {
       res.status(401).json({ error: err });
     };
   };
+
 
 
 module.exports = {
