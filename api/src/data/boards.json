@@ -6,7 +6,7 @@
     "model": "Custom",
     "price": 499.99,
     "description": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319772/SnowPandaCO/Boards/Burton%20Custom.png",
     "activity": ["all-mountain"],
     "stock": 10,
     "featuredProduct": false
@@ -18,7 +18,7 @@
     "model": "Team",
     "price": 599.99,
     "description": "Una tabla de freestyle con gran respuesta y estabilidad.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679320081/SnowPandaCO/Boards/Nitro%20Team.png",
     "activity": ["freestyle"],
     "stock": 10,
     "featuredProduct": false
@@ -30,7 +30,7 @@
     "model": "Raygun",
     "price": 399.99,
     "description": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679321446/SnowPandaCO/Boards/K2%20Raygun.png",
     "activity": ["principiantes"],
     "stock": 10,
     "featuredProduct": false
@@ -42,7 +42,7 @@
     "model": "One",
     "price": 549.99,
     "description": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679322017/SnowPandaCO/Boards/Rossignol%20One.png",
     "activity": ["all-mountain"],
     "stock": 10,
     "featuredProduct": false
@@ -54,7 +54,7 @@
     "model": "TRS",
     "price": 579.99,
     "description": "Una tabla de freestyle y all-mountain para riders experimentados.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679322574/SnowPandaCO/Boards/Lib%20Tech%20TRS.png",
     "activity": ["freestyle", "all-mountain"],
     "stock": 10,
     "featuredProduct": false
@@ -66,7 +66,7 @@
     "model": "Element",
     "price": 499.99,
     "description": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324038/SnowPandaCO/Boards/Arbor%20Element.jpg",
     "activity": ["all-mountain", "sostenible"],
     "stock": 10,
     "featuredProduct": false
@@ -78,7 +78,7 @@
     "model": "Defenders of Awesome",
     "price": 549.99,
     "description": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324353/SnowPandaCO/Boards/Capita%20Defenders%20of%20Awesome.png",
     "activity": ["freestyle"],
     "stock": 10,
     "featuredProduct": false
@@ -90,7 +90,7 @@
     "model": "Riders Choice",
     "price": 569.99,
     "description": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324765/SnowPandaCO/Boards/Gnu%20Riders%20Choice.png",
     "activity": ["freestyle", "all-mountain", "ecológico"],
     "stock": 10,
     "featuredProduct": false
@@ -102,7 +102,7 @@
     "model": "Explorer",
     "price": 599.99,
     "description": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679325027/SnowPandaCO/Boards/Jones%20Explorer.png",
     "activity": ["all-mountain", "resistente"],
     "stock": 10,
     "featuredProduct": false
@@ -114,7 +114,7 @@
     "model": "Artifact Rocker",
     "price": 449.99,
     "description": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679327173/SnowPandaCO/Boards/Rome%20Artifact%20Rocker.png",
     "activity": ["freestyle", "duradera"],
     "stock": 10,
     "featuredProduct": true

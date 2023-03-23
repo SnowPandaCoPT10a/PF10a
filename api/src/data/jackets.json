@@ -8,7 +8,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/FourSeasons.png",
     "material": "cotton",
     "activity": "urban",
     "description": "Campera FourSeasons Urbana 100% Algodón",
@@ -24,7 +24,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/MountainX.png",
     "material": "nylon",
     "activity": "outdoor",
     "description": "Campera MountainX Outdoor Impermeable",
@@ -40,7 +40,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/UrbanLife.png",
     "material": "leather",
     "activity": "urban",
     "description": "Campera UrbanLife de Cuero",
@@ -56,7 +56,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ArticExplorer.png",
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera ArticExplorer para Expediciones",
@@ -72,7 +72,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ClassicBomber.png",
     "material": "leather",
     "activity": "urban",
     "description": "Campera ClassicBomber de Cuero",
@@ -88,7 +88,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/TrekLite.png",
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera TrekLite Ligera y Transpirable",
@@ -104,7 +104,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Ranger.png",
     "material": "polyester",
     "activity": "outdoor",
     "description": "Campera Ranger Outdoor de Poliéster",
@@ -120,7 +120,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Urbana%202.0.png",
     "material": "cotton",
     "activity": "urban",
     "description": "Campera Urbana 2.0 de Algodón",
@@ -136,7 +136,7 @@
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Skyline.png",
     "material": "nylon",
     "activity": "outdoor",
     "description": "Campera Skyline Outdoor de Nylon",
@@ -145,17 +145,17 @@
   },
   {
     
-    "name": "Vintage",
+    "name": "Vintago",
     "sizes": [
       { "size": "small", "stock": 10 },
       { "size": "medium", "stock": 10 },
       { "size": "large", "stock": 10 },
       { "size": "extraLarge", "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Vintago.png",
     "material": "leather",
     "activity": "urban",
-    "description": "Campera Vintage Urbana de Cuero",
+    "description": "Campera Vintago Urbana",
     "price": 1499,
     "featuredProduct": true
   }

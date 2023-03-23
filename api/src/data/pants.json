@@ -17,7 +17,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
     "material": "denim",
     "description": "Pantalón ClassicCo Informal de Denim",
     "activity": "casual",
@@ -42,7 +42,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
     "material": "polyester",
     "description": "Pantalón AthleticCo Deportivo de Poliéster",
     "activity": "sports",
@@ -67,7 +67,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
     "material": "cotton",
     "description": "Pantalón SlimCo Ajustado de Algodón",
     "activity": "dressy",
@@ -92,7 +92,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "89.jpg",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
     "material": "cotton",
     "description": "Pantalón CargoCo Resistente de Algodón",
     "activity": "outdoor",
@@ -117,7 +117,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
     "material": "canvas",
     "description": "Pantalón RuggedCo Duradero de Lona",
     "activity": "work",
@@ -142,7 +142,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
     "material": "polyester",
     "description": "Pantalón TechCo con Tecnología de Secado Rápido",
     "activity": "hiking",
@@ -167,7 +167,7 @@
       { "size": 52, "stock": 10 },
       { "size": 54, "stock": 10 }
     ],
-    "img": "SET_IMG_HERE",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
     "material": "cotton",
     "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
     "activity": "leisure",
