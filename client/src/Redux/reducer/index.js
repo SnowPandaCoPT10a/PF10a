@@ -1,4 +1,4 @@
-import {GET_ALL_ACCESSORIES, GET_ALL_TSHIRTS} from "../actions-types/index";
+import { GET_ALL_PRODUCTS } from "../actions-types/index";
 
 
 
@@ -6,26 +6,20 @@ import {GET_ALL_ACCESSORIES, GET_ALL_TSHIRTS} from "../actions-types/index";
 
 
 const initialState = {
-	accessories: [],
-	allAccessories:[],
-	tshirts: [],
-	allTshirts: [],
+	products: [],
+	allProducts: [],
 };
 
 
 function rootReducer(state= initialState, action) {
-	switch(action.payload){
-	case GET_ALL_ACCESSORIES:
+	switch(action.type){
+	case GET_ALL_PRODUCTS:
+		const hola = state.products
+		console.log(hola, 'dame la info')
 		return{
 			...state,
-			accessories: action.payload,
-			allAccessories: action.payload
-		}
-	case GET_ALL_TSHIRTS:
-		return{
-			...state,
-			tshirts: action.payload,
-			allTshirts: action.payload
+			products: action.payload,
+			allProducts: action.payload
 		}
 	default:
 		return state;
