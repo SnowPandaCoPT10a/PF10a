@@ -23,6 +23,7 @@ const getAccessoriesById = async (req,res) => {
             where: {accessoriesID:id,
             },
         })
+        if(!accessories.length){res.status(404).json({msn:"Aguss"})}
         res.status(200).json(accessories)      
     }catch(err){
         res.status(404).json("Accessories not found", err)
