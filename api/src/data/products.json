@@ -1,1113 +1,1200 @@
 [
-    
-    {
-        "name": "Pandew",
-        "category": "helmet",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319280/SnowPandaCO/Accessories/Pandew%20helmet.png",
-        "sizes": [
-          {
-            "size": "small",
-            "stock": 10
-          },
-          {
-            "size": "medium",
-            "stock": 10
-          },
-          {
-            "size": "large",
-            "stock": 10
-          },
-          {
-            "size": "extraLarge",
-            "stock": 10
-          }
-        ],
-        "description": "Pandew helmet",
-        "price": 80,
-        "featuredProduct": false
+  {
+    "name": "Pandew",
+    "category": "accessories",
+    "price": 80,
+    "description": "Pandew helmet",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319280/SnowPandaCO/Accessories/Pandew%20helmet.png",
+    "featuredProduct": false,
+    "material": "KPA",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "Pandew",
+    "sizes": [
+      {
+        "size": "small",
+        "stock": 10
       },
       {
-        "name": "MaxProtect",
-        "category": "helmet",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png",
-        "sizes": [
-          {
-            "size": "small",
-            "stock": 10
-          },
-          {
-            "size": "medium",
-            "stock": 10
-          },
-          {
-            "size": "large",
-            "stock": 10
-          },
-          {
-            "size": "extraLarge",
-            "stock": 10
-          }
-        ],
-        "description": "MaxProtect helmet",
-        "price": 120,
-        "featuredProduct": false
+        "size": "medium",
+        "stock": 10
       },
       {
-        "name": "Speedy",
-        "category": "helmet",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219904/SnowPandaCO/Accessories/Speedy%20helmet.png",
-        "sizes": [
-          {
-            "size": "small",
-            "stock": 10
-          },
-          {
-            "size": "medium",
-            "stock": 10
-          },
-          {
-            "size": "large",
-            "stock": 10
-          },
-          {
-            "size": "extraLarge",
-            "stock": 10
-          }
-        ],
-        "description": "Speedy helmet",
-        "price": 99,
-        "featuredProduct": false
+        "size": "large",
+        "stock": 10
       },
       {
-        "name": "LightPro",
-        "category": "helmet",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219578/SnowPandaCO/Accessories/LightPro%20helmet.png",
-        "sizes": [
-          {
-            "size": "small",
-            "stock": 10
-          },
-          {
-            "size": "medium",
-            "stock": 10
-          },
-          {
-            "size": "large",
-            "stock": 10
-          },
-          {
-            "size": "extraLarge",
-            "stock": 10
-          }
-        ],
-        "description": "LightPro helmet",
-        "price": 149,
-        "featuredProduct": false
-      },
-      {
-        "name": "Freestyle",
-        "category": "helmet",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219213/SnowPandaCO/Accessories/Freestyle%20helmet.png",
-        "sizes": [
-          {
-            "size": "small",
-            "stock": 10
-          },
-          {
-            "size": "medium",
-            "stock": 10
-          },
-          {
-            "size": "large",
-            "stock": 10
-          },
-          {
-            "size": "extraLarge",
-            "stock": 10
-          }
-        ],
-        "description": "Freestyle helmet",
-        "price": 89,
-        "featuredProduct": false
-      },
-      {
-        "name": "GoodLok",
-        "category": "glasses",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218820/SnowPandaCO/Accessories/GoodLok%20glasses.png",
-        "sizes": [
-          {
-            "size": "one size",
-            "stock": 10
-          }
-        ],
-        "description": "GoodLok glasses",
-        "price": 10,
-        "featuredProduct": false
-      },
-      {
-        "name": "SportyLok",
-        "category": "glasses",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218593/SnowPandaCO/Accessories/SportyLok%20glasses.png",
-        "sizes": [
-          {
-            "size": "one size",
-            "stock": 10
-          }
-        ],
-        "description": "SportyLok glasses",
-        "price": 25,
-        "featuredProduct": false
-      },
-      {
-        "name": "RetroLok",
-        "category": "glasses",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130886/SnowPandaCO/Accessories/RetroLok%20glasses.png",
-        "sizes": [
-          {
-            "size": "one size",
-            "stock": 10
-          }
-        ],
-        "description": "RetroLok glasses",
-        "price": 20,
-        "featuredProduct": false
-      },
-      {
-        "name": "SunLok",
-        "category": "glasses",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130545/SnowPandaCO/Accessories/SunLok%20glasses.png",
-        "sizes": [
-          {
-            "size": "one size",
-            "stock": 10
-          }
-        ],
-        "description": "SunLok glasses",
-        "price": 15,
-        "featuredProduct": false
-      },
-      {
-        "name": "FashionLok",
-        "category": "glasses",
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130097/SnowPandaCO/Accessories/FashionLok%20glasses.png",
-        "sizes": [
-          {
-            "size": "one size",
-            "stock": 10
-          }
-        ],
-        "description": "FashionLok glasses",
-        "price": 30,
-        "featuredProduct": true
-      },
-      {
-    
-        "name": "Tabla de snowboard Burton Custom",
-        "category": "board",
-        "brand": "Burton",
-        "model": "Custom",
-        "price": 499.99,
-        "description": "Una tabla all-mountain para riders de nivel intermedio a avanzado.",
-        "img": "SET_IMG_HERE",
-        "activity": ["all-mountain"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Nitro Team",
-        "category": "board",
-        "brand": "Nitro",
-        "model": "Team",
-        "price": 599.99,
-        "description": "Una tabla de freestyle con gran respuesta y estabilidad.",
-        "img": "SET_IMG_HERE",
-        "activity": ["freestyle"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard K2 Raygun",
-        "category": "board",
-        "brand": "K2",
-        "model": "Raygun",
-        "price": 399.99,
-        "description": "Una tabla para riders principiantes que quieren mejorar sus habilidades.",
-        "img": "SET_IMG_HERE",
-        "activity": ["principiantes"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Rossignol One",
-        "category": "board",
-        "brand": "Rossignol",
-        "model": "One",
-        "price": 549.99,
-        "description": "Una tabla de all-mountain con gran versatilidad y capacidad de respuesta.",
-        "img": "SET_IMG_HERE",
-        "activity": ["all-mountain"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Lib Tech TRS",
-        "category": "board",
-        "brand": "Lib Tech",
-        "model": "TRS",
-        "price": 579.99,
-        "description": "Una tabla de freestyle y all-mountain para riders experimentados.",
-        "img": "SET_IMG_HERE",
-        "activity": ["freestyle", "all-mountain"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Arbor Element",
-        "category": "board",
-        "brand": "Arbor",
-        "model": "Element",
-        "price": 499.99,
-        "description": "Una tabla all-mountain con una construcción sostenible y gran durabilidad.",
-        "img": "SET_IMG_HERE",
-        "activity": ["all-mountain", "sostenible"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Capita Defenders of Awesome",
-        "category": "board",
-        "brand": "Capita",
-        "model": "Defenders of Awesome",
-        "price": 549.99,
-        "description": "Una tabla de freestyle con gran pop y capacidad de respuesta.",
-        "img": "SET_IMG_HERE",
-        "activity": ["freestyle"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Gnu Riders Choice",
-        "category": "board",
-        "brand": "Gnu",
-        "model": "Riders Choice",
-        "price": 569.99,
-        "description": "Una tabla de freestyle y all-mountain con una construcción ecológica y gran rendimiento.",
-        "img": "SET_IMG_HERE",
-        "activity": ["freestyle", "all-mountain", "ecológico"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Jones Explorer",
-        "category": "board",
-        "brand": "Jones",
-        "model": "Explorer",
-        "price": 599.99,
-        "description": "Una tabla de all-mountain para riders que buscan versatilidad y rendimiento en cualquier terreno. Cuenta con tecnología de perfil híbrido y una construcción resistente.",
-        "img": "SET_IMG_HERE",
-        "activity": ["all-mountain", "resistente"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Tabla de snowboard Rome Artifact Rocker",
-        "category": "board",
-        "brand": "Rome",
-        "model": "Artifact Rocker",
-        "price": 449.99,
-        "description": "Una tabla de freestyle para riders que quieren un gran pop y maniobrabilidad en el park. Cuenta con un perfil de rocker y una construcción duradera.",
-        "img": "SET_IMG_HERE",
-        "activity": ["freestyle", "duradera"],
-         "sizes": [
-              {
-                "size": "one size",
-                "stock": 10
-              }
-            ],
-        "featuredProduct": true
-      },
-      {
-   
-        "name": "ExtremePro",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 45, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 47, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "description": "Botas ExtremePro para Ski",
-        "price": 799.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "GlacierFlex",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 39, "stock": 8 },
-          { "size": 40, "stock": 8 },
-          { "size": 41, "stock": 8 },
-          { "size": 42, "stock": 8 },
-          { "size": 43, "stock": 8 },
-          { "size": 44, "stock": 8 },
-          { "size": 45, "stock": 8 },
-          { "size": 46, "stock": 8 },
-          { "size": 47, "stock": 8 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "rubber",
-        "description": "Botas de esquí GlacierFlex de goma",
-        "price": 549.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "MountaineerX",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 39, "stock": 12 },
-          { "size": 40, "stock": 12 },
-          { "size": 41, "stock": 12 },
-          { "size": 42, "stock": 12 },
-          { "size": 43, "stock": 12 },
-          { "size": 44, "stock": 12 },
-          { "size": 45, "stock": 12 },
-          { "size": 46, "stock": 12 },
-          { "size": 47, "stock": 12 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "description": "Botas de esquí MountaineerX de cuero",
-        "price": 899.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "SpeedAir",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 37, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 },
-          { "size": 44, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "nylon",
-        "description": "Botas SpeedAir para Ski",
-        "price": 649.99,
-        "featuredProduct": false
-      },
-      {
-
-        "name": "MountainMaster",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "description": "Botas MountainMaster para Ski",
-        "price": 899.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Freestyle",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 37, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 45, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 47, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "neoprene",
-        "description": "Botas Freestyle para Ski",
-        "price": 749.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "CrossCountry",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 35, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 37, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "description": "Botas CrossCountry para Ski",
-        "price": 599.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "All-Mountain",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 35, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 37, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "nylon",
-        "description": "Botas All-Mountain para Ski",
-        "price": 699.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "PowderPro",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 45, "stock": 10 },
-          { "size": 46, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyurethane",
-        "description": "Botas PowderPro para Ski",
-        "price": 899.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Freestyle",
-        "category": "boots",
-        "numbersizes": [
-          { "size": 38, "stock": 10 },
-          { "size": 39, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 41, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 43, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 45, "stock": 10 },
-          { "size": 46, "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "synthetic",
-        "description": "Botas Freestyle para Ski",
-        "price": 749.99,
-        "featuredProduct": false
-      },
-      {
-    
-        "name": "FourSeasons",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "activity": "urban",
-        "description": "Campera FourSeasons Urbana 100% Algodón",
-        "price": 499,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "MountainX",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "nylon",
-        "activity": "outdoor",
-        "description": "Campera MountainX Outdoor Impermeable",
-        "price": 699,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "UrbanLife",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "activity": "urban",
-        "description": "Campera UrbanLife de Cuero",
-        "price": 899,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "ArticExplorer",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "activity": "outdoor",
-        "description": "Campera ArticExplorer para Expediciones",
-        "price": 1199,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "ClassicBomber",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "activity": "urban",
-        "description": "Campera ClassicBomber de Cuero",
-        "price": 699,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "TrekLite",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "activity": "outdoor",
-        "description": "Campera TrekLite Ligera y Transpirable",
-        "price": 599,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Ranger",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "activity": "outdoor",
-        "description": "Campera Ranger Outdoor de Poliéster",
-        "price": 799,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Urbana 2.0",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "activity": "urban",
-        "description": "Campera Urbana 2.0 de Algodón",
-        "price": 649,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Skyline",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "nylon",
-        "activity": "outdoor",
-        "description": "Campera Skyline Outdoor de Nylon",
-        "price": 899,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Vintage",
-        "category": "jackets",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "leather",
-        "activity": "urban",
-        "description": "Campera Vintage Urbana de Cuero",
-        "price": 1499,
-        "featuredProduct": true
-      },
-      {
-    
-        "name": "PandaCo",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Remera PandaCo Urbana 100% Algodón",
-        "activity": "urban",
-        "price": 250,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Vivify",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Vivify urban t-shirt 100% cotton",
-        "activity": "urban",
-        "price": 200,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Grit",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Grit urban t-shirt 100% cotton",
-        "activity": "urban",
-        "price": 200,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Zephyr",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Zephyr urban t-shirt 100% cotton",
-        "activity": "urban",
-        "price": 100,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Nexus",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Nexus urban t-shirt 100% cotton",
-        "activity": "urban",
-        "price": 380,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Flame",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Flame urban t-shirt 100% cotton",
-        "activity": "urban",
-        "price": 250,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "PolarCo",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "polyester",
-        "description": "Remera PolarCo Deportiva 100% Poliéster",
-        "activity": "sports",
-        "price": 150,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "TigerCo",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Remera TigerCo Estampada 100% Algodón",
-        "activity": "urban",
-        "price": 200,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "Sample",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Remera Sample Estampada 100% Algodón",
-        "activity": "urban",
-        "price": 243,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "StudioR",
-        "category": "t-shirts",
-        "sizes": [
-          { "size": "small", "stock": 10 },
-          { "size": "medium", "stock": 10 },
-          { "size": "large", "stock": 10 },
-          { "size": "extraLarge", "stock": 10 }
-        ],
-        "img": "SET_IMG_HERE",
-        "material": "cotton",
-        "description": "Remera StudioR Estampada 100% Algodón",
-        "activity": "urban",
-        "price": 123,
-        "featuredProduct": true
-      },{
-    
-        "name": "ClassicCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
-        "material": "denim",
-        "description": "Pantalón ClassicCo Informal de Denim",
-        "activity": "casual",
-        "price": 599.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "AthleticCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
-        "material": "polyester",
-        "description": "Pantalón AthleticCo Deportivo de Poliéster",
-        "activity": "sports",
-        "price": 799.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "SlimCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
-        "material": "cotton",
-        "description": "Pantalón SlimCo Ajustado de Algodón",
-        "activity": "dressy",
-        "price": 899.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "CargoCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
-        "material": "cotton",
-        "description": "Pantalón CargoCo Resistente de Algodón",
-        "activity": "outdoor",
-        "price": 599.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "RuggedCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
-        "material": "canvas",
-        "description": "Pantalón RuggedCo Duradero de Lona",
-        "activity": "work",
-        "price": 499.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "TechCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
-        "material": "polyester",
-        "description": "Pantalón TechCo con Tecnología de Secado Rápido",
-        "activity": "hiking",
-        "price": 699.99,
-        "featuredProduct": false
-      },
-      {
-        
-        "name": "RelaxedCo",
-        "category": "pants",
-        "numbersizes": [
-          { "size": 30, "stock": 10 },
-          { "size": 32, "stock": 10 },
-          { "size": 34, "stock": 10 },
-          { "size": 36, "stock": 10 },
-          { "size": 38, "stock": 10 },
-          { "size": 40, "stock": 10 },
-          { "size": 42, "stock": 10 },
-          { "size": 44, "stock": 10 },
-          { "size": 46, "stock": 10 },
-          { "size": 48, "stock": 10 },
-          { "size": 50, "stock": 10 },
-          { "size": 52, "stock": 10 },
-          { "size": 54, "stock": 10 }
-        ],
-        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
-        "material": "cotton",
-        "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
-        "activity": "leisure",
-        "price": 399.99,
-        "featuredProduct": true
+        "size": "extraLarge",
+        "stock": 10
       }
+    ]
+  },
+  {
+    "name": "MaxProtect",
+    "category": "accessories",
+    "price": 120,
+    "description": "MaxProtect helmet",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png",
+    "featuredProduct": false,
+    "material": "KPA",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "MaxProtect",
+    "sizes": [
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "Speedy",
+    "category": "accessories",
+    "price": 99,
+    "description": "Speedy helmet",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219904/SnowPandaCO/Accessories/Speedy%20helmet.png",
+    "featuredProduct": false,
+    "material": "KPA",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "Speedy",
+    "sizes": [
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "LightPro",
+    "category": "accessories",
+    "price": 149,
+    "description": "LightPro helmet",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219578/SnowPandaCO/Accessories/LightPro%20helmet.png",
+    "featuredProduct": false,
+    "material": "KPA",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "LightPro",
+    "sizes": [
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "Freestyle",
+    "category": "accessories",
+    "price": 89,
+    "description": "Freestyle helmet",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679219213/SnowPandaCO/Accessories/Freestyle%20helmet.png",
+    "featuredProduct": false,
+    "material": "KPA",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "Freestyle",
+    "sizes": [
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "GoodLok",
+    "category": "accessories",
+    "price": 10,
+    "description": "GoodLok glasses",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218820/SnowPandaCO/Accessories/GoodLok%20glasses.png",
+    "featuredProduct": false,
+    "material": "Grilamid tr 901 Lx",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "GoodLok",
+    "sizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "SportyLok",
+    "category": "accessories",
+    "price": 25,
+    "description": "SportyLok glasses",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679218593/SnowPandaCO/Accessories/SportyLok%20glasses.png",
+    "featuredProduct": false,
+    "material": "Grilamid tr 901 Lx",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "SportyLok",
+    "sizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "RetroLok",
+    "category": "accessories",
+    "price": 20,
+    "description": "RetroLok glasses",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130886/SnowPandaCO/Accessories/RetroLok%20glasses.png",
+    "featuredProduct": false,
+    "material": "Grilamid tr 901 Lx",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "RetroLok",
+    "sizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "SunLok",
+    "category": "accessories",
+    "price": 15,
+    "description": "SunLok glasses",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130545/SnowPandaCO/Accessories/SunLok%20glasses.png",
+    "featuredProduct": false,
+    "material": "Grilamid tr 901 Lx",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "SunLok",
+    "sizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "FashionLok",
+    "category": "accessories",
+    "price": 30,
+    "description": "FashionLok glasses",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679130097/SnowPandaCO/Accessories/FashionLok%20glasses.png",
+    "featuredProduct": true,
+    "material": "Grilamid tr 901 Lx",
+    "activity": "sports",
+    "brand": "SnowPandaCo",
+    "model": "FashionLok",
+    "sizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "name": "Burton Custom Snowboard",
+    "category": "board",
+    "brand": "Burton",
+    "model": "Custom",
+    "price": 499.99,
+    "description": "An all-mountain board for intermediate to advanced riders.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319772/SnowPandaCO/Boards/Burton%20Custom.png",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Nitro Team Snowboard",
+    "category": "board",
+    "brand": "Nitro",
+    "model": "Team",
+    "price": 599.99,
+    "description": "A freestyle board with great response and stability.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679320081/SnowPandaCO/Boards/Nitro%20Team.png",
+    "activity": "freestyle",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "K2 Raygun Snowboard",
+    "category": "board",
+    "brand": "K2",
+    "model": "Raygun",
+    "price": 399.99,
+    "description": "A board for beginning riders who want to improve their skills.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679321446/SnowPandaCO/Boards/K2%20Raygun.png",
+    "activity": "trainee",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Rossignol One Snowboard",
+    "category": "board",
+    "brand": "Rossignol",
+    "model": "One",
+    "price": 549.99,
+    "description": "An all-mountain board with great versatility and responsiveness.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679322017/SnowPandaCO/Boards/Rossignol%20One.png",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Lib Tech TRS Snowboard",
+    "category": "board",
+    "brand": "Lib Tech",
+    "model": "TRS",
+    "price": 579.99,
+    "description": "A freestyle and all-mountain board for experienced riders.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679322574/SnowPandaCO/Boards/Lib%20Tech%20TRS.png",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Arbor Element Snowboard",
+    "category": "board",
+    "brand": "Arbor",
+    "model": "Element",
+    "price": 499.99,
+    "description": "An all-mountain board with a sustainable construction and great durability.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324038/SnowPandaCO/Boards/Arbor%20Element.jpg",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Capita Defenders of Awesome Snowboard",
+    "category": "board",
+    "brand": "Capita",
+    "model": "Defenders of Awesome",
+    "price": 549.99,
+    "description": "A freestyle board with great pop and responsiveness.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324353/SnowPandaCO/Boards/Capita%20Defenders%20of%20Awesome.png",
+    "activity": "freestyle",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Gnu Riders Choice Snowboard",
+    "category": "board",
+    "brand": "Gnu",
+    "model": "Riders Choice",
+    "price": 569.99,
+    "description": "A freestyle and all-mountain board with an ecological construction and great performance.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679324765/SnowPandaCO/Boards/Gnu%20Riders%20Choice.png",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Jones Explorer Snowboard",
+    "category": "board",
+    "brand": "Jones",
+    "model": "Explorer",
+    "price": 599.99,
+    "description": "An all-mountain board for riders looking for versatility and performance on any terrain. It features hybrid profile technology and a heavy-duty construction.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679325027/SnowPandaCO/Boards/Jones%20Explorer.png",
+    "activity": "all-mountain",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": false,
+    "material": "wood"
+  },
+  {
+    "name": "Rome Artifact Rocker Snowboard",
+    "category": "board",
+    "brand": "Rome",
+    "model": "Artifact Rocker",
+    "price": 449.99,
+    "description": "A freestyle board for riders who want great pop and maneuverability in the park. It features a rocker profile and durable construction.",
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679327173/SnowPandaCO/Boards/Rome%20Artifact%20Rocker.png",
+    "activity": "freestyle",
+    "boardsizes": [
+      {
+        "size": "one size",
+        "stock": 10
+      }
+    ],
+    "featuredProduct": true,
+    "material": "wood"
+  },
+  {
+    "name": "ExtremePro",
+    "model": "ExtremePro",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 47, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679329812/SnowPandaCO/Boots/ExtremePro.png",
+    "material": "leather",
+    "description": "ExtremePro Ski Boots",
+    "price": 799.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "GlacierFlex",
+    "model": "GlacierFlex",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 39, "stock": 8 },
+      { "size": 40, "stock": 8 },
+      { "size": 41, "stock": 8 },
+      { "size": 42, "stock": 8 },
+      { "size": 43, "stock": 8 },
+      { "size": 44, "stock": 8 },
+      { "size": 45, "stock": 8 },
+      { "size": 46, "stock": 8 },
+      { "size": 47, "stock": 8 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330108/SnowPandaCO/Boots/GlacierFlex.png",
+    "material": "rubber",
+    "description": "GlacierFlex Rubber Ski Boots",
+    "price": 549.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "MountaineerX",
+    "model": "MountaineerX",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 39, "stock": 12 },
+      { "size": 40, "stock": 12 },
+      { "size": 41, "stock": 12 },
+      { "size": 42, "stock": 12 },
+      { "size": 43, "stock": 12 },
+      { "size": 44, "stock": 12 },
+      { "size": 45, "stock": 12 },
+      { "size": 46, "stock": 12 },
+      { "size": 47, "stock": 12 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330777/SnowPandaCO/Boots/MountaineerX.png",
+    "material": "leather",
+    "description": "MountaineerX Leather Ski Boots",
+    "price": 899.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "SpeedAir",
+    "model": "SpeedAir",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331086/SnowPandaCO/Boots/SpeedAir.png",
+    "material": "nylon",
+    "description": "SpeedAir Ski Boots",
+    "price": 649.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "MountainMaster",
+    "model": "MountainMaster",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331454/SnowPandaCO/Boots/MountainMaster.png",
+    "material": "leather",
+    "description": "MountainMaster Ski Boots",
+    "price": 899.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "Freestyle",
+    "model": "Freestyle",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 47, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331688/SnowPandaCO/Boots/Freestyle.png",
+    "material": "neoprene",
+    "description": "Freestyle ski boots",
+    "price": 749.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "CrossCountry",
+    "model": "CrossCountry",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 35, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331948/SnowPandaCO/Boots/CrossCountry.png",
+    "material": "polyester",
+    "description": "Cross Country Ski Boots",
+    "price": 599.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "All-Mountain",
+    "model": "All-Mountain",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 35, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 37, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332598/SnowPandaCO/Boots/AllMountain.png",
+    "material": "nylon",
+    "description": "All-Mountain Ski Boots",
+    "price": 699.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "PowderPro",
+    "model": "PowderPro",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332991/SnowPandaCO/Boots/PowderPro.png",
+    "material": "polyurethane",
+    "description": "PowderPro Ski Boots",
+    "price": 899.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "Freestyle 2",
+    "model": "Freestyle 2",
+    "brand": "SnowPandaCo",
+    "activity": "ski",
+    "category": "boots",
+    "numbersizes": [
+      { "size": 38, "stock": 10 },
+      { "size": 39, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 41, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 43, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 45, "stock": 10 },
+      { "size": 46, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679333380/SnowPandaCO/Boots/Freestyle%202.png",
+    "material": "synthetic",
+    "description": "Freestyle ski boots",
+    "price": 749.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "FourSeasons",
+    "model": "FourSeasons",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/FourSeasons.png",
+    "material": "cotton",
+    "activity": "urban",
+    "description": "FourSeasons Urban Jacket 100% Cotton",
+    "price": 499,
+    "featuredProduct": false
+  },
+  {
+    "name": "MountainX",
+    "model": "MountainX",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/MountainX.png",
+    "material": "nylon",
+    "activity": "outdoor",
+    "description": "MountainX Outdoor Waterproof Jacket",
+    "price": 699,
+    "featuredProduct": false
+  },
+  {
+    "name": "UrbanLife",
+    "model": "UrbanLife",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/UrbanLife.png",
+    "material": "leather",
+    "activity": "urban",
+    "description": "UrbanLife leather jacket",
+    "price": 899,
+    "featuredProduct": false
+  },
+  {
+    "name": "ArticExplorer",
+    "model": "ArticExplorer",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ArticExplorer.png",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "Arctic Explorer Expedition Jacket",
+    "price": 1199,
+    "featuredProduct": false
+  },
+  {
+    "name": "ClassicBomber",
+    "model": "ClassicBomber",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ClassicBomber.png",
+    "material": "leather",
+    "activity": "urban",
+    "description": "Classic Bomber leather jacket",
+    "price": 699,
+    "featuredProduct": false
+  },
+  {
+    "name": "TrekLite",
+    "model": "TrekLite",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/TrekLite.png",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "TrekLite Lightweight and Breathable jacket",
+    "price": 599,
+    "featuredProduct": false
+  },
+  {
+    "name": "Ranger",
+    "model": "Ranger",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Ranger.png",
+    "material": "polyester",
+    "activity": "outdoor",
+    "description": "Ranger Outdoor Polyester Jacket",
+    "price": 799,
+    "featuredProduct": false
+  },
+  {
+    "name": "Urbana 2.0",
+    "model": "Urbana 2.0",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Urbana%202.0.png",
+    "material": "cotton",
+    "activity": "urban",
+    "description": "Urban 2.0 Cotton Jacket",
+    "price": 649,
+    "featuredProduct": false
+  },
+  {
+    "name": "Skyline",
+    "model": "Skyline",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Skyline.png",
+    "material": "nylon",
+    "activity": "outdoor",
+    "description": "Skyline Outdoor Nylon Jacket",
+    "price": 899,
+    "featuredProduct": false
+  },
+  {
+    "name": "Vintago",
+    "model": "Vintago",
+    "brand": "SnowPandaCo",
+    "category": "jackets",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Vintago.png",
+    "material": "leather",
+    "activity": "urban",
+    "description": "Vintago Urban Jacket",
+    "price": 1499,
+    "featuredProduct": true
+  },
+  {
+    "name": "PandaCo",
+    "brand": "SnowPandaCo",
+    "model": "PandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421811/SnowPandaCO/TShirts/PandaCo.png",
+    "material": "cotton",
+    "description": "PandaCo Urban T-shirt 100% Cotton",
+    "activity": "urban",
+    "price": 250,
+    "featuredProduct": false
+  },
+  {
+    "name": "Vivify",
+    "brand": "SnowPandaCo",
+    "model": "Vivify",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421810/SnowPandaCO/TShirts/Vivify.png",
+    "material": "cotton",
+    "description": "Vivify urban t-shirt 100% cotton",
+    "activity": "urban",
+    "price": 200,
+    "featuredProduct": false
+  },
+  {
+    "name": "Grit",
+    "model": "Grit",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421809/SnowPandaCO/TShirts/Grit.png",
+    "material": "cotton",
+    "description": "Grit urban t-shirt 100% cotton",
+    "activity": "urban",
+    "price": 200,
+    "featuredProduct": false
+  },
+  {
+    "name": "Zephyr",
+    "model": "Zephyr",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421806/SnowPandaCO/TShirts/Zephyr.png",
+    "material": "cotton",
+    "description": "Zephyr urban t-shirt 100% cotton",
+    "activity": "urban",
+    "price": 100,
+    "featuredProduct": false
+  },
+  {
+    "name": "Nexus",
+    "model": "Nexus",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421805/SnowPandaCO/TShirts/Nexus.png",
+    "material": "cotton",
+    "description": "Nexus urban t-shirt 100% cotton",
+    "activity": "urban",
+    "price": 380,
+    "featuredProduct": false
+  },
+  {
+    "name": "Flame",
+    "model": "Flame",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421804/SnowPandaCO/TShirts/Flame.png",
+    "material": "cotton",
+    "description": "Flame urban t-shirt 100% cotton",
+    "activity": "urban",
+    "price": 250,
+    "featuredProduct": false
+  },
+  {
+    "name": "PolarCo",
+    "model": "PolarCo",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421803/SnowPandaCO/TShirts/PolarCo.png",
+    "material": "polyester",
+    "description": "PolarCo Sports T-shirt 100% Polyester",
+    "activity": "sports",
+    "price": 150,
+    "featuredProduct": false
+  },
+  {
+    "name": "TigerCo",
+    "model": "TigerCo",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421802/SnowPandaCO/TShirts/TigerCo.png",
+    "material": "cotton",
+    "description": "TigerCo Printed T-shirt 100% Cotton",
+    "activity": "urban",
+    "price": 200,
+    "featuredProduct": false
+  },
+  {
+    "name": "Sample",
+    "model": "Sample",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421799/SnowPandaCO/TShirts/Sample.png",
+    "material": "cotton",
+    "description": "Sample Printed T-shirt 100% Cotton",
+    "activity": "urban",
+    "price": 243,
+    "featuredProduct": false
+  },
+  {
+    "name": "StudioR",
+    "model": "StudioR",
+    "brand": "SnowPandaCo",
+    "category": "t-shirts",
+    "sizes": [
+      { "size": "small", "stock": 10 },
+      { "size": "medium", "stock": 10 },
+      { "size": "large", "stock": 10 },
+      { "size": "extraLarge", "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421798/SnowPandaCO/TShirts/StudioR.png",
+    "material": "cotton",
+    "description": "StudioR Printed T-shirt 100% Cotton",
+    "activity": "urban",
+    "price": 123,
+    "featuredProduct": true
+  },
+  {
+    "name": "ClassicCo",
+    "model": "ClassicCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
+    "material": "denim",
+    "description": "ClassicCo Casual Denim Pant",
+    "activity": "casual",
+    "price": 599.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "AthleticCo",
+    "model": "AthleticCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
+    "material": "polyester",
+    "description": "AthleticCo Sports Polyester Pants",
+    "activity": "sports",
+    "price": 799.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "SlimCo",
+    "model": "SlimCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
+    "material": "cotton",
+    "description": "SlimCo Cotton Fitted Trousers",
+    "activity": "casual",
+    "price": 899.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "CargoCo",
+    "model": "CargoCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
+    "material": "cotton",
+    "description": "CargoCo Resistant Cotton Trousers",
+    "activity": "outdoor",
+    "price": 599.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "RuggedCo",
+    "model": "RuggedCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
+    "material": "canvas",
+    "description": "RuggedCo Durable Canvas Pant",
+    "activity": "work",
+    "price": 499.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "TechCo",
+    "model": "TechCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
+    "material": "polyester",
+    "description": "TechCo Pant with Quick Dry Technology",
+    "activity": "hiking",
+    "price": 699.99,
+    "featuredProduct": false
+  },
+  {
+    "name": "RelaxedCo",
+    "model": "RelaxedCo",
+    "brand": "SnowPandaCo",
+    "category": "pants",
+    "numbersizes": [
+      { "size": 30, "stock": 10 },
+      { "size": 32, "stock": 10 },
+      { "size": 34, "stock": 10 },
+      { "size": 36, "stock": 10 },
+      { "size": 38, "stock": 10 },
+      { "size": 40, "stock": 10 },
+      { "size": 42, "stock": 10 },
+      { "size": 44, "stock": 10 },
+      { "size": 46, "stock": 10 },
+      { "size": 48, "stock": 10 },
+      { "size": 50, "stock": 10 },
+      { "size": 52, "stock": 10 },
+      { "size": 54, "stock": 10 }
+    ],
+    "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
+    "material": "cotton",
+    "description": "RelaxedCo Comfortable and Relaxed Cotton Pants",
+    "activity": "urban",
+    "price": 399.99,
+    "featuredProduct": true
+  }
 ]

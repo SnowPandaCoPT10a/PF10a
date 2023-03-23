@@ -18,14 +18,14 @@
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
-const { conn, Boards } = require('./src/db.js');
+const { conn, Products } = require('./src/db.js');
 const { loadAllModelsInDB } = require('./src/controllers/loadData.js');
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
    server.listen(3001,async () => {
      console.log('%s listening at 3001'); // eslint-disable-line no-console
-     const boards = await Boards.findAll()
-    boards.length ? null : loadAllModelsInDB();
+     const products = await Products.findAll()
+     products.length ? null : loadAllModelsInDB();
   });
  });
 //!----
