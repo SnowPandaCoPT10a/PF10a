@@ -6,7 +6,7 @@ const SearchBar = props => {
 	return (
 		<div id='search'>
 			<label>Search</label>
-			<input typre='text' name='search' onChange={''} />
+			<input typre='text' name='search' />
 		</div>
 	)
 }
