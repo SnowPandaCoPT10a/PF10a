@@ -11,10 +11,10 @@ const tienda = () => {
   return (
     <div>
        {cat.map(e=>
-        <>
+        <div key={e.name}>
             <h2 onClick={()=> category(e.name)}>{e.name}</h2>
             <br />
-        </>
+        </div>
         )}
     </div>
   )
