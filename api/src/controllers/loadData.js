@@ -8,6 +8,7 @@ const {
     Reviews,
     Tshirts,
     Users,
+    Products,
    } = require('../db')
 
 
@@ -21,6 +22,7 @@ const {
    const loadReviews = require('../data/reviews.json');
    const loadTShirts = require('../data/tShirts.json');
    const loadUsers = require('../data/users.json');
+   const loadProducts = require('../data/products.json')
    
    
    async function loadAllModelsInDB(){
@@ -46,6 +48,8 @@ const {
       console.log('Reviews loaded ok to DB');
       await Tshirts.bulkCreate(loadTShirts);
       console.log('Tshirts loaded ok to DB');
+      await Products.bulkCreate(loadProducts);
+      console.log('Products loaded ok to DB');
   
     } catch(error){
       console.log(error);

@@ -384,7 +384,7 @@
    
         "name": "ExtremePro",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 39, "stock": 10 },
           { "size": 40, "stock": 10 },
           { "size": 41, "stock": 10 },
@@ -405,7 +405,7 @@
         
         "name": "GlacierFlex",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 39, "stock": 8 },
           { "size": 40, "stock": 8 },
           { "size": 41, "stock": 8 },
@@ -426,7 +426,7 @@
         
         "name": "MountaineerX",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 39, "stock": 12 },
           { "size": 40, "stock": 12 },
           { "size": 41, "stock": 12 },
@@ -447,7 +447,7 @@
         
         "name": "SpeedAir",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 37, "stock": 10 },
           { "size": 38, "stock": 10 },
           { "size": 39, "stock": 10 },
@@ -467,7 +467,7 @@
 
         "name": "MountainMaster",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 36, "stock": 10 },
           { "size": 38, "stock": 10 },
           { "size": 40, "stock": 10 },
@@ -486,7 +486,7 @@
         
         "name": "Freestyle",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 37, "stock": 10 },
           { "size": 38, "stock": 10 },
           { "size": 39, "stock": 10 },
@@ -509,7 +509,7 @@
         
         "name": "CrossCountry",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 35, "stock": 10 },
           { "size": 36, "stock": 10 },
           { "size": 37, "stock": 10 },
@@ -530,7 +530,7 @@
         
         "name": "All-Mountain",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 35, "stock": 10 },
           { "size": 36, "stock": 10 },
           { "size": 37, "stock": 10 },
@@ -551,7 +551,7 @@
         
         "name": "PowderPro",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 38, "stock": 10 },
           { "size": 39, "stock": 10 },
           { "size": 40, "stock": 10 },
@@ -572,7 +572,7 @@
         
         "name": "Freestyle",
         "category": "boots",
-        " numbersizes": [
+        "numbersizes": [
           { "size": 38, "stock": 10 },
           { "size": 39, "stock": 10 },
           { "size": 40, "stock": 10 },
@@ -927,6 +927,187 @@
         "description": "Remera StudioR Estampada 100% Algodón",
         "activity": "urban",
         "price": 123,
+        "featuredProduct": true
+      },{
+    
+        "name": "ClassicCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
+        "material": "denim",
+        "description": "Pantalón ClassicCo Informal de Denim",
+        "activity": "casual",
+        "price": 599.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "AthleticCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
+        "material": "polyester",
+        "description": "Pantalón AthleticCo Deportivo de Poliéster",
+        "activity": "sports",
+        "price": 799.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "SlimCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
+        "material": "cotton",
+        "description": "Pantalón SlimCo Ajustado de Algodón",
+        "activity": "dressy",
+        "price": 899.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "CargoCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
+        "material": "cotton",
+        "description": "Pantalón CargoCo Resistente de Algodón",
+        "activity": "outdoor",
+        "price": 599.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "RuggedCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
+        "material": "canvas",
+        "description": "Pantalón RuggedCo Duradero de Lona",
+        "activity": "work",
+        "price": 499.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "TechCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
+        "material": "polyester",
+        "description": "Pantalón TechCo con Tecnología de Secado Rápido",
+        "activity": "hiking",
+        "price": 699.99,
+        "featuredProduct": false
+      },
+      {
+        
+        "name": "RelaxedCo",
+        "category": "pants",
+        "numbersizes": [
+          { "size": 30, "stock": 10 },
+          { "size": 32, "stock": 10 },
+          { "size": 34, "stock": 10 },
+          { "size": 36, "stock": 10 },
+          { "size": 38, "stock": 10 },
+          { "size": 40, "stock": 10 },
+          { "size": 42, "stock": 10 },
+          { "size": 44, "stock": 10 },
+          { "size": 46, "stock": 10 },
+          { "size": 48, "stock": 10 },
+          { "size": 50, "stock": 10 },
+          { "size": 52, "stock": 10 },
+          { "size": 54, "stock": 10 }
+        ],
+        "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
+        "material": "cotton",
+        "description": "Pantalón RelaxedCo Cómodo y Relajado de Algodón",
+        "activity": "leisure",
+        "price": 399.99,
         "featuredProduct": true
       }
 ]
