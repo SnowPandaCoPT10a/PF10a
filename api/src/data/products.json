@@ -426,15 +426,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 45, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 47, "stock": 10 }
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 45,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 47,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679329812/SnowPandaCO/Boots/ExtremePro.png",
     "material": "leather",
@@ -449,15 +476,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 39, "stock": 8 },
-      { "size": 40, "stock": 8 },
-      { "size": 41, "stock": 8 },
-      { "size": 42, "stock": 8 },
-      { "size": 43, "stock": 8 },
-      { "size": 44, "stock": 8 },
-      { "size": 45, "stock": 8 },
-      { "size": 46, "stock": 8 },
-      { "size": 47, "stock": 8 }
+      {
+        "size": 39,
+        "stock": 8
+      },
+      {
+        "size": 40,
+        "stock": 8
+      },
+      {
+        "size": 41,
+        "stock": 8
+      },
+      {
+        "size": 42,
+        "stock": 8
+      },
+      {
+        "size": 43,
+        "stock": 8
+      },
+      {
+        "size": 44,
+        "stock": 8
+      },
+      {
+        "size": 45,
+        "stock": 8
+      },
+      {
+        "size": 46,
+        "stock": 8
+      },
+      {
+        "size": 47,
+        "stock": 8
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330108/SnowPandaCO/Boots/GlacierFlex.png",
     "material": "rubber",
@@ -472,15 +526,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 39, "stock": 12 },
-      { "size": 40, "stock": 12 },
-      { "size": 41, "stock": 12 },
-      { "size": 42, "stock": 12 },
-      { "size": 43, "stock": 12 },
-      { "size": 44, "stock": 12 },
-      { "size": 45, "stock": 12 },
-      { "size": 46, "stock": 12 },
-      { "size": 47, "stock": 12 }
+      {
+        "size": 39,
+        "stock": 12
+      },
+      {
+        "size": 40,
+        "stock": 12
+      },
+      {
+        "size": 41,
+        "stock": 12
+      },
+      {
+        "size": 42,
+        "stock": 12
+      },
+      {
+        "size": 43,
+        "stock": 12
+      },
+      {
+        "size": 44,
+        "stock": 12
+      },
+      {
+        "size": 45,
+        "stock": 12
+      },
+      {
+        "size": 46,
+        "stock": 12
+      },
+      {
+        "size": 47,
+        "stock": 12
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330777/SnowPandaCO/Boots/MountaineerX.png",
     "material": "leather",
@@ -495,14 +576,38 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 37, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 },
-      { "size": 44, "stock": 10 }
+      {
+        "size": 37,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331086/SnowPandaCO/Boots/SpeedAir.png",
     "material": "nylon",
@@ -517,13 +622,34 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 }
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331454/SnowPandaCO/Boots/MountainMaster.png",
     "material": "leather",
@@ -538,17 +664,50 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 37, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 45, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 47, "stock": 10 }
+      {
+        "size": 37,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 45,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 47,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331688/SnowPandaCO/Boots/Freestyle.png",
     "material": "neoprene",
@@ -563,15 +722,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 35, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 37, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 }
+      {
+        "size": 35,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 37,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331948/SnowPandaCO/Boots/CrossCountry.png",
     "material": "polyester",
@@ -586,15 +772,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 35, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 37, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 }
+      {
+        "size": 35,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 37,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332598/SnowPandaCO/Boots/AllMountain.png",
     "material": "nylon",
@@ -609,15 +822,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 45, "stock": 10 },
-      { "size": 46, "stock": 10 }
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 45,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332991/SnowPandaCO/Boots/PowderPro.png",
     "material": "polyurethane",
@@ -632,15 +872,42 @@
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
-      { "size": 38, "stock": 10 },
-      { "size": 39, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 41, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 43, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 45, "stock": 10 },
-      { "size": 46, "stock": 10 }
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 39,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 41,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 43,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 45,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679333380/SnowPandaCO/Boots/Freestyle%202.png",
     "material": "synthetic",
@@ -654,10 +921,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/FourSeasons.png",
     "material": "cotton",
@@ -672,10 +951,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/MountainX.png",
     "material": "nylon",
@@ -690,10 +981,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/UrbanLife.png",
     "material": "leather",
@@ -708,10 +1011,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ArticExplorer.png",
     "material": "polyester",
@@ -726,10 +1041,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ClassicBomber.png",
     "material": "leather",
@@ -744,10 +1071,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/TrekLite.png",
     "material": "polyester",
@@ -762,10 +1101,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Ranger.png",
     "material": "polyester",
@@ -780,10 +1131,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Urbana%202.0.png",
     "material": "cotton",
@@ -798,10 +1161,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Skyline.png",
     "material": "nylon",
@@ -816,10 +1191,22 @@
     "brand": "SnowPandaCo",
     "category": "jackets",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Vintago.png",
     "material": "leather",
@@ -834,10 +1221,22 @@
     "model": "PandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421811/SnowPandaCO/TShirts/PandaCo.png",
     "material": "cotton",
@@ -852,10 +1251,22 @@
     "model": "Vivify",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421810/SnowPandaCO/TShirts/Vivify.png",
     "material": "cotton",
@@ -870,10 +1281,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421809/SnowPandaCO/TShirts/Grit.png",
     "material": "cotton",
@@ -888,10 +1311,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421806/SnowPandaCO/TShirts/Zephyr.png",
     "material": "cotton",
@@ -906,10 +1341,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421805/SnowPandaCO/TShirts/Nexus.png",
     "material": "cotton",
@@ -924,10 +1371,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421804/SnowPandaCO/TShirts/Flame.png",
     "material": "cotton",
@@ -942,10 +1401,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421803/SnowPandaCO/TShirts/PolarCo.png",
     "material": "polyester",
@@ -960,10 +1431,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421802/SnowPandaCO/TShirts/TigerCo.png",
     "material": "cotton",
@@ -978,10 +1461,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421799/SnowPandaCO/TShirts/Sample.png",
     "material": "cotton",
@@ -996,10 +1491,22 @@
     "brand": "SnowPandaCo",
     "category": "t-shirts",
     "sizes": [
-      { "size": "small", "stock": 10 },
-      { "size": "medium", "stock": 10 },
-      { "size": "large", "stock": 10 },
-      { "size": "extraLarge", "stock": 10 }
+      {
+        "size": "small",
+        "stock": 10
+      },
+      {
+        "size": "medium",
+        "stock": 10
+      },
+      {
+        "size": "large",
+        "stock": 10
+      },
+      {
+        "size": "extraLarge",
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421798/SnowPandaCO/TShirts/StudioR.png",
     "material": "cotton",
@@ -1014,19 +1521,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
     "material": "denim",
@@ -1041,19 +1587,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
     "material": "polyester",
@@ -1068,19 +1653,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
     "material": "cotton",
@@ -1095,19 +1719,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
     "material": "cotton",
@@ -1122,19 +1785,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
     "material": "canvas",
@@ -1149,19 +1851,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
     "material": "polyester",
@@ -1176,19 +1917,58 @@
     "brand": "SnowPandaCo",
     "category": "pants",
     "numbersizes": [
-      { "size": 30, "stock": 10 },
-      { "size": 32, "stock": 10 },
-      { "size": 34, "stock": 10 },
-      { "size": 36, "stock": 10 },
-      { "size": 38, "stock": 10 },
-      { "size": 40, "stock": 10 },
-      { "size": 42, "stock": 10 },
-      { "size": 44, "stock": 10 },
-      { "size": 46, "stock": 10 },
-      { "size": 48, "stock": 10 },
-      { "size": 50, "stock": 10 },
-      { "size": 52, "stock": 10 },
-      { "size": 54, "stock": 10 }
+      {
+        "size": 30,
+        "stock": 10
+      },
+      {
+        "size": 32,
+        "stock": 10
+      },
+      {
+        "size": 34,
+        "stock": 10
+      },
+      {
+        "size": 36,
+        "stock": 10
+      },
+      {
+        "size": 38,
+        "stock": 10
+      },
+      {
+        "size": 40,
+        "stock": 10
+      },
+      {
+        "size": 42,
+        "stock": 10
+      },
+      {
+        "size": 44,
+        "stock": 10
+      },
+      {
+        "size": 46,
+        "stock": 10
+      },
+      {
+        "size": 48,
+        "stock": 10
+      },
+      {
+        "size": 50,
+        "stock": 10
+      },
+      {
+        "size": 52,
+        "stock": 10
+      },
+      {
+        "size": 54,
+        "stock": 10
+      }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
     "material": "cotton",

@@ -6,7 +6,7 @@ const { Op } = require("sequelize");
   
     try {
       const { name } = req.query;
-    console.log(name)
+   
   
       const products = await Products.findAll({
         where: {
