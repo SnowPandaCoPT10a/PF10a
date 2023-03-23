@@ -36,49 +36,22 @@ sequelize.models = Object.fromEntries(capsEntries);
 // Para relacionarlos hacemos un destructuring
 const { 
   Products,
-  Accessories,
   Bills,
-  Boards,
-  Boots,
   Favorites,
-  Jackets,
-  Pants,
   Reviews,
-  Tshirts,
   Users,
  } = sequelize.models;
 
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
 
-//La tabla "Accessories" podría estar relacionada con la tabla "Users" 
+//La tabla "Products" podría estar relacionada con la tabla "Users" 
 //mediante una relación de muchos a muchos, donde los usuarios pueden 
-//tener muchos accesorios y cada accesorio puede ser utilizado por muchos usuarios. 
+//tener muchos productos y cada producto puede ser utilizado por muchos usuarios. 
 
-// Relación de muchos a muchos entre Users y Accessories
-Users.belongsToMany(Accessories,{through: "UserAccesory"})
-Accessories.belongsToMany(Users, {through: "UserAccesory"})
-
-// Relación de muchos a muchos entre Users y Boards
-Users.belongsToMany(Boards,{through: "UserBoard"})
-Boards.belongsToMany(Users, {through: "UserBoard"})
-
-// Relación de muchos a muchos entre Users y Boots
-Users.belongsToMany(Boots,{through: "UserBoot"})
-Boots.belongsToMany(Users, {through: "UserBoot"})
-
-// Relación de muchos a muchos entre Users y Jackets
-Users.belongsToMany(Jackets,{through: "UserJacket"})
-Jackets.belongsToMany(Users, {through: "UserJacket"})
-
-
-// Relación de muchos a muchos entre Users y Pants
-Users.belongsToMany(Pants,{through: "UserPant"})
-Pants.belongsToMany(Users, {through: "UserPant"})
-
-// Relación de muchos a muchos entre Users y Tshirts
-Users.belongsToMany(Tshirts,{through: "UserTshirt"})
-Tshirts.belongsToMany(Users, {through: "UserTshirt"})
+// Relación de muchos a muchos entre Users y Products
+Users.belongsToMany(Products,{through: "UserProducts"})
+Products.belongsToMany(Users, {through: "UserProducts"})
 
 // Relación de uno a muchos entre Users y Bills
 Users.hasMany(Bills)
