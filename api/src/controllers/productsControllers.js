@@ -5,13 +5,26 @@ const { Op } = require("sequelize");
 
 const getProductsByCategory = async (req,res) => {
   const {access} = req.params;
-  console.log(access, "Accessories");
+  const newAccess = access.slice(1)
     try {
         const allData = await Products.findAll({
         })
-        const accessories = allData.filter(elem => elem.category === access);
-        console.log(accessories, "ACE VAMOS")
-        res.status(200).json(accessories)
+        const productsCategory = allData.filter(e => e.category === newAccess);
+        res.status(200).json(productsCategory)
+    } catch (err) {
+        res.status(404).json(err.message)
+    }
+}
+//!! GET de por marca
+
+const getProductsByBrand = async (req,res) => {
+  const {access} = req.params;
+  const newAccess = access.slice(1)
+    try {
+        const allData = await Products.findAll({
+        })
+        const productsBrand = allData.filter(e => e.brand === newAccess);
+        res.status(200).json(productsBrand)
     } catch (err) {
         res.status(404).json(err.message)
     }
@@ -205,10 +218,12 @@ const deleteProducts = async (req, res) => {
   };
 
 
+
 module.exports = {
     getProductsByCategory,
     getAllProducts,
     getProductsById,
+    getProductsByBrand,
     postNewProducts,
     disableProducts,
     featuredProducts,
