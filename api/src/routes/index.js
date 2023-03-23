@@ -13,6 +13,8 @@ const getAllTshirts = require("./tShirtsRouter");
 const getAllUsers = require("./usersRouter");
 
 const getAllProducts = require("./productsRouter");
+const getAllPaginado = require("./paginadoRouter")
+const getSearchProduct = require ("./searchRouter")
 
 const router = Router();
 // Configurar los routers
@@ -28,6 +30,8 @@ router.use('/accessories', getAllAccessories);
 router.use('/tshirts', getAllTshirts);
 // router.use('/users', getAllUsers);
 router.use('/products', getAllProducts);
+router.use('/paginado', getAllPaginado)
+router.use('/search',getSearchProduct)
 
 router.get("/", (req, res, next) => {
     return res.status(200).json(getAllBoards);
