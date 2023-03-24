@@ -8,7 +8,7 @@ const CardBoard = () => {
 
 	 const dispatch = useDispatch()
 	const productsBoard = useSelector((state) => state.products);
-	console.log(productsBoard, 'hssahsh')
+	// console.log(productsBoard, 'hssahsh')
 
   useEffect(() =>{
     dispatch(getAllProducts())
@@ -30,7 +30,6 @@ const CardBoard = () => {
               <span class="p-name">{el.name}</span>
               <span class="p-company">{el.brand}</span>
             </div>
-            <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
           </div>
         </div>
 
