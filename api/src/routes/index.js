@@ -15,6 +15,7 @@ const getAllUsers = require("./usersRouter");
 const getAllProducts = require("./productsRouter");
 const getAllPaginado = require("./paginadoRouter")
 const getSearchProduct = require ("./searchRouter")
+const getFiltradoProduct = require("./filtradoRouter")
 
 const router = Router();
 // Configurar los routers
@@ -32,6 +33,7 @@ router.use('/tshirts', getAllTshirts);
 router.use('/products', getAllProducts);
 router.use('/paginado', getAllPaginado)
 router.use('/search',getSearchProduct)
+router.use('/filtrado',getFiltradoProduct)
 
 router.get("/", (req, res, next) => {
     return res.status(200).json(getAllBoards);
