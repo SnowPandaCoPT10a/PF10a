@@ -5,12 +5,9 @@ import Header from './components/Header/Header';
 import Footers from './components/Footers/Footers';
 import Members from "./components/Members/Members";
 import Tienda from './components/tiendaCategorias/Tienda'
-import CardBoard from './components/CardBoard/CardBoard.jsx'
-import CardBoots from './components/CardBoots/CardBoots.jsx'
-import CardJackets from './components/CardJackets/CardJackets.jsx'
-import CardPants from './components/CardPants/CardPants.jsx'
-import CardTshirts from './components/CardTshirts/CardTshirts.jsx'
 import Chatbot from './components/Chatbot/Chatbot.jsx'
+import Cards from "./components/Cards/Cards";
+
 
 
 function App() {
@@ -23,11 +20,12 @@ function App() {
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           <Route exact path='/Shop' element={<Tienda />} />
-          <Route exact path='/Board' element={<CardBoard />} />
-          <Route exact path='/Boots' element={<CardBoots />} />
-          <Route exact path='/Jackets' element={<CardJackets />} />
-          <Route exact path='/Pants' element={<CardPants />} />
-          <Route exact path='/Tshirts' element={<CardTshirts />} />
+          <Route exact path='/Board' element={<Cards categoria='board'/>} />
+          <Route exact path='/Boots' element={<Cards categoria='boots'/>} />
+          <Route exact path='/Jackets' element={<Cards categoria='jackets'/>} />
+          <Route exact path='/Pants' element={<Cards categoria='pants'/>} />
+          <Route exact path='/Tshirts' element={<Cards categoria='t-shirts'/>} />
+          <Route exact path='/Accesories' element={<Cards categoria='accessories'/>} />
         </Routes>
         <Chatbot />
       </div>
