@@ -1,7 +1,5 @@
 import React from 'react'
-import imageOne from '../../../images/1.png'
-import imageTwo from '../../../images/2.png'
-import imageThree from '../../../images/3.png'
+
 import './style.css'
 
 const Banner = () => {
