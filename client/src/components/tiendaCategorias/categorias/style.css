@@ -1,8 +1,7 @@
-.marketing .col-lg-4 {
+.col-2{
+    margin: 0 5rem;
     text-align: center;
 }
-
-.images{}
 
 .fw-normal{
     text-transform: uppercase;

@@ -8,7 +8,7 @@ import './style.css'
 const tienda = () => {
 
   return (
-    <div className='tiendaCont p-0 m-0'>
+    <div className='tiendaCont p-0 m-0 text-center'>
        <Banner/>
        <Categorias/>
        <Destacados/>
