@@ -1,21 +1,16 @@
-import React from 'react'
-import {cat} from '../../data/categorias.js'
-
+import React from 'react';
+import Banner from './banner/Banner';
+import Categorias from './categorias/Categorias';
+import Destacados from './destacados/Destacados';
+import Marcas from './marcas/Marcas';
 const tienda = () => {
-
-
-    const category = (data) => {
-        console.log(data)
-    }
 
   return (
     <div>
-       {cat.map(e=>
-        <div key={e.name}>
-            <h2 onClick={()=> category(e.name)}>{e.name}</h2>
-            <br />
-        </div>
-        )}
+       <Banner/>
+       <Categorias/>
+       <Destacados/>
+       <Marcas/>
     </div>
   )
 }
