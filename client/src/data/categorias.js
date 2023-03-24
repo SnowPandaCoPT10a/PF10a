@@ -5,7 +5,7 @@ export const data = [
     // },
     {
         name: 'Board',
-        img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679322574/SnowPandaCO/Boards/Lib%20Tech%20TRS.png'
+        img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679322574/SnowPandaCO/Boards/Lib%20Tech%20TRS.png '
     },
     {
         name: 'Pants',
