@@ -6,22 +6,14 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
 	return (
-		<div className='header'>
-			<Link to={'/'}><h1>Header</h1></Link>
-			<SearchBar />
-			<Link to={'/Shop'}>Tienda</Link>
-			<div className="header-icons">
-
-				<a className='linksH' ><FaFacebook aria-hidden="true" /></a>
-				<a className='linksH' ><FaInstagram aria-hidden="true" /></a>
-				<a className='linksH' ><FaLinkedin aria-hidden="true" /></a>
-				<a className='linksH' ><FaGithubSquare aria-hidden="true" /></a>
-
-			</div>
-			<div className='carrito'>
-				<a className='linksH' ><FaUserAlt aria-hidden="true" /></a>
-				<a className='linksH' ><FaShoppingCart aria-hidden="true" /></a>
-			</div>
+		<div className="cntHeader">
+			<Link to={'/'}><button className="btnHome">Home</button></Link>
+			
+			<Link to={'/Shop'}> <button className="btnHome">Shop</button></Link>
+				<SearchBar />
+				<button className='btnUser'><FaUserAlt/></button>
+				<button className='btnCarrt'><FaShoppingCart  /></button>
+		
 
 		</div>
 	)

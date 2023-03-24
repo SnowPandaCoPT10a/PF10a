@@ -6,6 +6,11 @@ import Footers from './components/Footers/Footers';
 import Members from "./components/Members/Members";
 import Tienda from './components/tiendaCategorias/Tienda'
 import CardBoard from './components/CardBoard/CardBoard.jsx'
+import CardBoots from './components/CardBoots/CardBoots.jsx'
+import CardJackets from './components/CardJackets/CardJackets.jsx'
+import CardPants from './components/CardPants/CardPants.jsx'
+import CardTshirts from './components/CardTshirts/CardTshirts.jsx'
+import Chatbot from './components/Chatbot/Chatbot.jsx'
 
 
 function App() {
@@ -19,7 +24,12 @@ function App() {
         <Route exact path="/Members" element={<Members/>} />
         <Route exact path='/Shop' element={<Tienda/>} />
         <Route exact path='/Board' element={<CardBoard/>} />
-      </Routes>  
+        <Route exact path='/Boots' element={<CardBoots/>} />
+        <Route exact path='/Jackets' element={<CardJackets/>} />
+        <Route exact path='/Pants' element={<CardPants/>} />
+        <Route exact path='/Tshirts' element={<CardTshirts/>} />
+      </Routes> 
+      <Chatbot /> 
       <Footers/>
     </div>
      </BrowserRouter>

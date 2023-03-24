@@ -1,12 +1,14 @@
 import React from 'react'
 import './SearchBar.css'
+import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = props => {
+const SearchBar = () => {
 
 	return (
-		<div id='search'>
-			<label>Search</label>
-			<input typre='text' name='search' />
+		<div id='search' className="search-box">
+			
+			<input typre='text' name='search' className="input-search" placeholder="Search Products" />
+			<button className="btn-search" ><FaSearch  className="fas fa-search"/></button>
 		</div>
 	)
 }

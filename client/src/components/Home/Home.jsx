@@ -1,7 +1,7 @@
 import React from 'react'
 import  './Home.css';
 import Form from '../Form/Form';
-import Chatbot from '../Chatbot/Chatbot.jsx'
+
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
     <div></div>
     <div></div>
     <Form/>
-    <Chatbot />
+ 
     </div>
     
   )
