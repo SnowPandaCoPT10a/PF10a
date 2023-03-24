@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import Footers from './components/Footers/Footers';
 import Members from "./components/Members/Members";
 import Tienda from './components/tiendaCategorias/Tienda'
+import CardBoard from './components/CardBoard/CardBoard.jsx'
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/Home' element={<Home/>} />
         <Route exact path="/Members" element={<Members/>} />
         <Route exact path='/Shop' element={<Tienda/>} />
+        <Route exact path='/Board' element={<CardBoard/>} />
       </Routes>  
       <Footers/>
     </div>
