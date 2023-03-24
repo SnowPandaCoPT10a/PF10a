@@ -1,11 +1,11 @@
 export const cat = [
     {
         name: 'accessories',
-        img: 'set image'
+        img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png'
     },
     {
         name: 'boards',
-        img: 'set image'
+        img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679320081/SnowPandaCO/Boards/Nitro%20Team.png'
     },
     {
         name: 'pants',
