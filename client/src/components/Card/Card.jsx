@@ -33,7 +33,7 @@ export default function Card() {
                 <p className='pIds'>
                    {productInfoId.description}
                 </p>
-                <h4  className="imgBx2" data-brand={productInfoId.model}></h4>
+                {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
                 <p className='pIds'>
                  { productInfoId.numbersizes?.map(el => el.size + '-')   ||  productInfoId.sizes?.map(el => el.size + '-' )  }
                 </p>
