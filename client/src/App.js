@@ -8,13 +8,31 @@ import Tienda from './components/tiendaCategorias/Tienda'
 import Chatbot from './components/Chatbot/Chatbot.jsx'
 import Cards from "./components/Cards/Cards";
 import Card from "./components/Card/Card";
+import { useNavigate } from 'react-router-dom';
 
 
 
 function App() {
+
+  const navigateToCategory = (category) => {
+  navigate(`/${category}`);
+};
+
+
+    const categories = [
+    { name: 'Board', path: '/Board' },
+    { name: 'Boots', path: '/Boots' },
+    { name: 'Jackets', path: '/Jackets' },
+    { name: 'Pants', path: '/Pants' },
+    { name: 'Tshirts', path: '/Tshirts' },
+    { name: 'Accessories', path: '/Accessories' },
+  ];
+
+  
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header categories={categories} navigateToCategory={navigateToCategory} />
       <div className='App container'>
         <Routes>
           <Route exact path='/' element={<Home />} />
