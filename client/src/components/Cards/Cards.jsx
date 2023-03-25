@@ -3,8 +3,10 @@ import './style.css'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from '../../Redux/actions/index.js'
+import {Link} from 'react-router-dom';
 
-const Cards = ({ categoria }) => {
+
+const Cards = ({ categoria, path }) => {
 
     const dispatch = useDispatch()
     const productsBoard = useSelector((state) => state.products);
@@ -15,10 +17,12 @@ const Cards = ({ categoria }) => {
 
     }, [dispatch])
 
+     // <Link to={'/shoes/' + el.id +'/buyNow'}
+
     return (
         <div>
             {productsBoard?.map((el) => el.category === categoria ?
-
+             <Link  key={el.productsID}  to={`${path}/${el.productsID}/Detail`}>
                 <div key={el.name} className="container page-wrapper">
                     <div className="page-inner">
                         <div className="row">
@@ -40,7 +44,7 @@ const Cards = ({ categoria }) => {
                         </div>
                     </div>
                 </div>
-
+                </Link>
                 : null)}
         </div>
 
