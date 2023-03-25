@@ -1,4 +1,4 @@
-import {GET_ALL_PRODUCTS} from '../actions-types/index.js'
+import {GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_ID} from '../actions-types/index.js'
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
@@ -46,9 +46,24 @@ export function getAllProducts() {
   return async function (dispatch) {
     try {
       const response = await axios.get('http://localhost:3001/products');
-      console.log(response.data , 'chau')
+    
         return dispatch({
           type: GET_ALL_PRODUCTS,
+          payload: response.data
+        });
+         } catch(error) {
+      console.log(error);
+    }
+  }
+}
+
+
+export function getAllProductsId(id) {
+  return async function (dispatch) {
+    try {
+      const response = await axios.get(`http://localhost:3001/products/${id}`);
+        return dispatch({
+          type: GET_ALL_PRODUCTS_ID,
           payload: response.data
         });
          } catch(error) {
