@@ -62,7 +62,7 @@ const getProductsById = async (req,res) => {
 
 const postNewProducts = async (req,res) => {
     let{
-        
+      
         name,
         category,
         img,
