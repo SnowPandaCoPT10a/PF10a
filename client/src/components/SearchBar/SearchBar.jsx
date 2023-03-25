@@ -1,17 +1,40 @@
 import React from 'react'
 import './SearchBar.css'
 import { FaSearch } from 'react-icons/fa';
+import { useState } from 'react'
+import { useDispatch, useSelector } from "react-redux";
+import { getAllProductsName } from '../../Redux/actions/index.js'
+import { useLocation } from 'react-router-dom'
 
-const SearchBar = () => {
+const SearchBar = ({categories}) => {
+  const [name, setName] = useState('');
+  const dispatch = useDispatch();
+  const productNames = useSelector((state) => state.products);
+  console.log(productNames, 'jolslsl')
+  const location = useLocation();
 
-	return (
-		<div id='search' className="search-box">
-			
-			<input typre='text' name='search' className="input-search" placeholder="Search Products" />
-			<button className="btn-search" ><FaSearch  className="fas fa-search"/></button>
-		</div>
-	)
-}
+  function handleInputChange(e){
+    setName(e.target.value);
+  }
 
+  function handleSubmit (e){
+    e.preventDefault();
+    dispatch(getAllProductsName(name));
+    setName('');
+  }
+
+  return (
+    
+    <div id='search' className="search-box">
+      <input list='productNames' type='text' name='search' className="input-search" placeholder="Search Products" onChange={handleInputChange} />
+      <datalist id='productNames'>
+        {productNames.map(el => (
+          <option key={el.productsID} value={el.name } />
+        ))}
+      </datalist>
+      <button className="btn-search" onClick={handleSubmit}><FaSearch className="fas fa-search"/></button>
+    </div>
+  );
+};
 
 export default SearchBar

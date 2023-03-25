@@ -2,23 +2,36 @@ import React from 'react'
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
-import { Link } from 'react-router-dom'
+import { Link , useLocation } from 'react-router-dom'
 
-const Header = () => {
-	return (
-		<div className="cntHeader">
-			<Link to={'/'}><button className="btnHome">Home</button></Link>
-			
-			<Link to={'/Shop'}> <button className="btnHome">Shop</button></Link>
-				<SearchBar />
-				<button className='btnUser'><FaUserAlt/></button>
-				<button className='btnCarrt'><FaShoppingCart  /></button>
-		
+const Header = ({navigateToCategory, categories}) => {
+	const location = useLocation();
 
-		</div>
-	)
+ const isProductCategoryPage = categories.some(
+    (category) => location.pathname === category.path
+  );
+
+  return (
+    <div className='cntHeader'>
+      <Link to={'/'}>
+        <button className='btnHome'>Home</button>
+      </Link>
+
+      <Link to={'/Shop'}>
+        <button className='btnHome'>Shop</button>
+      </Link>
+
+      {isProductCategoryPage && <SearchBar categories={categories} />}
+
+      <button className='btnUser'>
+        <FaUserAlt />
+      </button>
+      <button className='btnCarrt'>
+        <FaShoppingCart />
+      </button>
+    </div>
+  );
 }
-
 
 
 export default Header
