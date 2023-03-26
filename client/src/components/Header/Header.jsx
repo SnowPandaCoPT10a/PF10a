@@ -21,6 +21,10 @@ const Header = ({navigateToCategory, categories}) => {
         <button className='btnHome'>Shop</button>
       </Link>
 
+      <Link to={'/Create'}>
+        <button className='btnHome'>Create</button>
+      </Link>
+
       {isProductCategoryPage && <SearchBar categories={categories} />}
 
       <button className='btnUser'>

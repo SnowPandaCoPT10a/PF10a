@@ -8,6 +8,7 @@ import Tienda from './components/tiendaCategorias/Tienda'
 import Chatbot from './components/Chatbot/Chatbot.jsx'
 import Cards from "./components/Cards/Cards";
 import Card from "./components/Card/Card";
+import Create from "./components/Create/Create";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -46,6 +47,8 @@ function App() {
           <Route exact path='/Tshirts' element={<Cards categoria='t-shirts' path='/Tshirts' />} />
           <Route exact path='/Accesories' element={<Cards categoria='accessories' path='/Accesories' />} />
          <Route path='/:categoria/:id/Detail' element={<Card />} />
+         <Route exact path='/Create' element={<Create />} />
+         
         </Routes>
         <Chatbot />
       </div>
