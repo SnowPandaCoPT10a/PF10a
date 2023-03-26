@@ -1,4 +1,4 @@
-import { GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_ID, GET_ALL_PRODUCTS_NAME } from "../actions-types/index";
+import { GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_ID, GET_ALL_PRODUCTS_NAME, POST_NEW_PRODUCTS } from "../actions-types/index";
 
 
 
@@ -26,10 +26,18 @@ function rootReducer(state= initialState, action) {
 			productsID: action.payload,
 		}
 	case GET_ALL_PRODUCTS_NAME:
+	
 		return{
 			...state,
 			products: action.payload,
 		}
+	case POST_NEW_PRODUCTS:
+			return {
+			  ...state,
+			  products: [...state.products, action.payload],
+			  allProducts: [...state.allProducts, action.payload]
+			};
+
 	default:
 		return state;
 	}

@@ -5,11 +5,11 @@ const { Op } = require("sequelize");
 
 const getProductsByCategory = async (req,res) => {
   const {access} = req.params;
-  const newAccess = access.slice(1)
+  
     try {
         const allData = await Products.findAll({
         })
-        const productsCategory = allData.filter(e => e.category === newAccess);
+        const productsCategory = allData.filter(e => e.category === access);
         res.status(200).json(productsCategory)
     } catch (err) {
         res.status(404).json(err.message)
@@ -62,7 +62,7 @@ const getProductsById = async (req,res) => {
 
 const postNewProducts = async (req,res) => {
     let{
-        
+      
         name,
         category,
         img,

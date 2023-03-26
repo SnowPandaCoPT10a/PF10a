@@ -5,14 +5,20 @@ const { Op } = require("sequelize");
     
 try {
   let {name}  = req.query;
+  
   const productsName = await Products.findAll({});
 
-  if (name){       
-    let products = await productsName.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
+  // productsCategory = productsName.filter(product => product.category === categoria)
+  // console.log(productsCategory.length, "PIKACHU");
 
-    products.length ? 
-    res.status(200).json(products) :
-    res.status(404).json("The product does not exist");
+  if (name){
+    console.log(name, "KAKAROTO")
+    let products = await productsName.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
+console.log(products, "CACA VAV")
+    // products.length ? 
+    res.status(200).json(products) 
+    // :
+    // res.status(404).json("The product does not exist");
   
 }}
 
