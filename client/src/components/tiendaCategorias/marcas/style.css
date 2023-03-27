@@ -1,0 +1,10 @@
+.items{
+    cursor: pointer;
+    transition:all 0.2s ease-in-out;
+    display: block;
+    }
+
+.items:hover{
+    background-color: #3f3f3f;
+    color: #fff !important;
+}

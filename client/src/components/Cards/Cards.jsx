@@ -19,7 +19,7 @@ const Cards = ({ categoria, path }) => {
     }, [dispatch])
 
      // <Link to={'/shoes/' + el.id +'/buyNow'}
-     const filteredProducts = productsBoard.filter(el => el.category === categoria)
+     const filteredProducts = productsBoard.filter(el => el.category === categoria || el.brand === categoria)
      console.log("TU VIEJA", filteredProducts)
     return (
         <div>
