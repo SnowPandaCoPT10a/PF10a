@@ -2,10 +2,15 @@ import React from 'react'
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
-import { Link , useLocation } from 'react-router-dom'
+import { Link , useLocation, useNavigate } from 'react-router-dom'
+
 
 const Header = ({navigateToCategory, categories}) => {
 	const location = useLocation();
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate(-1)
+  }
 
  const isProductCategoryPage = categories.some(
     (category) => location.pathname === category.path
@@ -33,6 +38,7 @@ const Header = ({navigateToCategory, categories}) => {
       <button className='btnCarrt'>
         <FaShoppingCart />
       </button>
+      <button className= 'btnHome' onClick={handleClick}>Back</button>
     </div>
   );
 }
