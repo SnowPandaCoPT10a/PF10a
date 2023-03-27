@@ -1,8 +1,8 @@
 export const data = [
-    // {
-    //     name: 'accessories',
-    //     img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png'
-    // },
+    {
+         name: 'Accesories',
+         img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679220197/SnowPandaCO/Accessories/MaxProtect%20helmet.png'
+    },
     {
         name: 'Board',
         img: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1679322574/SnowPandaCO/Boards/Lib%20Tech%20TRS.png '
