@@ -19,7 +19,6 @@ const getProductsByCategory = async (req,res) => {
 
 const getProductsByBrand = async (req,res) => {
   const {access} = req.params;
-  
     try {
         const allData = await Products.findAll({
         })
