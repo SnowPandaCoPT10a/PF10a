@@ -1,17 +1,23 @@
-.container1{
-    background-color: white;
+/* .container{
+    background-color: white !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     
-}
+} */
 .video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
    /* height: 100vh; */
 }
 .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width:150px;
     margin-left: 20px;
     margin-top: 35px;
