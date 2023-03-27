@@ -4,7 +4,7 @@ import './Form.css'
 function Form() {
   return (
     <div className="background">
-      <div className="container">
+      <div className="formcont">
         <div className="screen">
           <div className="screen-header">
             <div className="screen-header-left">
