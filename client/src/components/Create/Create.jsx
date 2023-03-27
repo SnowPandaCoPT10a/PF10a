@@ -5,14 +5,41 @@ import {postProducts,getAllProducts} from "../../Redux/actions/index"
 
 
 
-//!!!!!!!!!!!!
+//!!
 function Create() {
     const dispatch = useDispatch();
+
     const numberSizes = useSelector((state) => state.allProducts)
-    const sizesNumbers = numberSizes.filter(e=>e.numbersizes)
-    const facu = sizesNumbers.map(e=>e.numbersizes.size)
+    const sizeNumber = numberSizes.filter(size => size.numbersizes)
+    const sizeLeter = numberSizes.filter(size => size.sizes)
+
+//! aca traigo los numeros de los talles
+    const sizes = sizeNumber.reduce((acc, curr) => {
+      curr.numbersizes.forEach((item) => {
+        if (!acc.includes(item.size)) {
+          acc.push(item.size);
+        }
+      });
+      return acc.sort();
+    }, []);
+
+
+    //! aca traigo las palabras de los talles(s,l, x , xl)
+    const sizesLeter = sizeLeter.reduce((acc, curr) => {
+      curr.sizes.forEach((item) => {
+        if (!acc.includes(item.size)) {
+          acc.push(item.size);
+        }
+      });
+      return acc;
+    }, []);
+
+
+    useEffect(() => {
+      dispatch(getAllProducts())
+  }, [dispatch])
     
-    console.log(facu, "AC444444444444")
+  
 
     const [input, setInput] = useState({
         name: "",
@@ -57,6 +84,25 @@ function Create() {
         })
       }
 
+//!checkbox
+      function handleSelect(e){
+      if (e.target.checked) {
+        setInput({
+          ...input,
+          status: e.target.value,
+          genres: [...input.genres, e.target.value],
+        });
+        console.log(input); //!!!!!!!!!!!
+      }
+      const targetValueGenre = e.target.value;
+      if (e.target.checked === false) {
+        var borrarGenre = input.genres.filter((e) => e !== targetValueGenre);
+        setInput({
+          ...input,
+          genres: borrarGenre,
+        });
+      }}
+//!checkbox
       function handleChange(e) {
         setInput({
           ...input,
@@ -138,13 +184,38 @@ function Create() {
         </div>
         {/* //!!!!!!! */}
         <hr/>
-        <div >
-          <label>Sizes </label>
-          {<div >
-          <label htmlFor="pet-spayed">38 </label>
-          <input  placeholder="Description" name ="description" value={input.description} type="checkbox"></input>
+
+        //! talles de numeros
+        <label>Sizes </label>
+        <hr />
+       { sizes.map( num =>(
+       <div className="fato">
+          {<div className="sizes">
+          <label className="sizes"htmlFor="pet-spayed">{num} </label>
+          <input className="sizes" placeholder="size" name ={num} value={num} type="checkbox"  onChange={(e) => handleSelect(e)}></input>
+            
+              <label htmlFor="">Stock</label>
+              <input type="text" />
+            <hr />
           </div>}
-        </div>
+        </div>))}
+//! talles de letras
+
+        { sizesLeter.map( leter =>(
+       <div className="fato">
+          {<div className="sizes">
+          <label className="sizes"htmlFor="pet-spayed">{leter} </label>
+          <input className="sizes" placeholder="size" name ={leter} value={leter} type="checkbox"  onChange={(e) => handleSelect(e)}></input>
+            
+              <label htmlFor="">Stock</label>
+              <input type="text" />
+            <hr />
+          </div>}
+        </div>))}
+
+
+
+
         {/* //!!!!!!! */}
         <hr/>
               <label htmlFor="pets-upload">Upload a photo</label>
