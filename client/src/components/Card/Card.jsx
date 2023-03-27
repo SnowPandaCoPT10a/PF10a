@@ -17,6 +17,7 @@ export default function Card() {
   },[id ,dispatch])
 
 
+
 // console.log(productInfoId, 'ididid')
 // console.log(productInfoId.sizes?.map(el => el.size));
     return ( 
