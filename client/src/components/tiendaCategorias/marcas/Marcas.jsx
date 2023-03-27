@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import './style.css'
 
-const Marcas = () => {
-  const datos = useSelector(e=>e.allProducts)
+const Marcas = ({datos}) => {
+  
   let dataBrand = datos.map(e=>e.brand)
   let marcas = [... new Set(dataBrand)]
 

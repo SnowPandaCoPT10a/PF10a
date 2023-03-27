@@ -2,7 +2,9 @@ import React from 'react'
 
 const Destacados = () => {
   return (
-    <div>Destacados</div>
+    <div>
+      
+    </div>
   )
 }
 
