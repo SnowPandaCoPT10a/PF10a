@@ -26,7 +26,10 @@ const filtradoProducts = async (req,res)=>{
 
         }
         if(size){
-            product = product.filter(products => products.sizes.find(s=> s.size === size ))
+            product = product.filter(products => {
+                const sizes = products.sizes;
+                return sizes && sizes.find(s => s.size === size);
+              });
         }
         if (numberSize) {
             product = product.filter(products => {
