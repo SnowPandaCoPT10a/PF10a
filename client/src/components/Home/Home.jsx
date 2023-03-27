@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import Form from '../Form/Form';
 import {getAllProducts} from '../../Redux/actions/index'
 import Destacados from '../tiendaCategorias/destacados/Destacados';
-
-
+import Logo from '../../img/sin-fondo-2085x1251px.png';
 
 
 const Home = () => {
@@ -19,13 +18,13 @@ const Home = () => {
 
 
   return (
-    <div className='container1 '>
+    <div className='container' >
       <section className='inicio'>
         <div className='video-container'>
           <video src='https://res.cloudinary.com/dberwyxyq/video/upload/v1679686306/SnowPandaCO/FrontEnd/Copia-de-snowboard_zyoy3c.mp4' alt='video' autoPlay muted loop></video>
         </div>
         <div className='conteiner-text'>
-          <img className='logo' src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686191/SnowPandaCO/FrontEnd/con_fondo_2085_x_1251_px_avxqio.jpg' alt='logo SnowPanda' />
+          <img className='logo' src={Logo} />
           <h2>Encuentra el equilibrio, mantén la velocidad, disfruta del viaje.</h2>
           <Link to='/shop'>
             <button className='button1'>Tienda</button>
