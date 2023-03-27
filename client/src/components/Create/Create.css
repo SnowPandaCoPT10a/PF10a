@@ -5,10 +5,10 @@
   padding: 0;
 }
 
-body {
+/* body {
   width: 100vw;
   height: 100vw;
-}
+} */
 
 .signup-container {
   display: grid;

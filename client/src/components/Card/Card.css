@@ -5,20 +5,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 78vw;
-    height: 600px;
+    height: 100vh;
     background: #fff;
     margin: 20px;
      box-shadow: 10px 10px 1rem #0004;
 }
 
 .imgId{
-  width: 40vw;
+  width: 30vw;
+  object-fit: contain;
+
 }
 
  .imgBx {
     display: flex;
     width: 50%;
-
+    
 }
 
 .containerId .imgBx:before {
