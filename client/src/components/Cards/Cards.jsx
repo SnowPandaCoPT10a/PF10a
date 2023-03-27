@@ -72,7 +72,7 @@ const Cards = ({ categoria, path }) => {
                             <div className="h-bg">
                                 <div className="h-bg-inner" />
                             </div>
-                            
+
                             <button className="price">volver</button>
                         </div>
                     </div>

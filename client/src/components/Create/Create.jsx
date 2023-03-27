@@ -8,8 +8,11 @@ import {postProducts,getAllProducts} from "../../Redux/actions/index"
 //!!!!!!!!!!!!
 function Create() {
     const dispatch = useDispatch();
-
+    const numberSizes = useSelector((state) => state.allProducts)
+    const sizesNumbers = numberSizes.filter(e=>e.numbersizes)
+    const facu = sizesNumbers.map(e=>e.numbersizes.size)
     
+    console.log(facu, "AC444444444444")
 
     const [input, setInput] = useState({
         name: "",
@@ -127,19 +130,29 @@ function Create() {
           </div>
         </div>
       </div>
-      {<div className="pets-spayed-neutered">
+      <div className="pets-spayed-neutered">
           <label htmlFor="pet-spayed">Description </label>
           <div className="radio-container">
           <input id="pets-birthday" placeholder="Description" name ="description" value={input.description} type="text" onChange={(e) => handleChange(e)}></input>
           </div>
-        </div>}
+        </div>
+        {/* //!!!!!!! */}
+        <hr/>
+        <div >
+          <label>Sizes </label>
+          {<div >
+          <label htmlFor="pet-spayed">38 </label>
+          <input  placeholder="Description" name ="description" value={input.description} type="checkbox"></input>
+          </div>}
+        </div>
+        {/* //!!!!!!! */}
         <hr/>
               <label htmlFor="pets-upload">Upload a photo</label>
         <div className="pets-photo">
           <button id="pets-upload">
             <i className="fas fa-camera-retro"></i>
           </button>
-          <div>
+        <div>
               <input
                 className="input"
                 type="text"
@@ -148,7 +161,7 @@ function Create() {
                 name="img"
                 onChange={(e) => handleChange(e)}
               />
-            </div>
+        </div>
         </div>
     </header>
     <footer>
