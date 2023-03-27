@@ -40,12 +40,26 @@ function App() {
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           <Route exact path='/Shop' element={<Tienda />} />
+
           <Route exact path='/Board' element={<Cards categoria='board' path='/Board' />} />
           <Route exact path='/Boots' element={<Cards categoria='boots' path='/Boots' />} />
           <Route exact path='/Jackets' element={<Cards categoria='jackets' path='/Jackets' />} />
           <Route exact path='/Pants' element={<Cards categoria='pants' path='/Pants' />} />
           <Route exact path='/Tshirts' element={<Cards categoria='t-shirts' path='/Tshirts' />} />
           <Route exact path='/Accesories' element={<Cards categoria='accessories' path='/Accesories' />} />
+
+          <Route exact path='/SnowPandaCo' element={<Cards categoria='SnowPandaCo' path='/SnowPandaCo' />} />
+          <Route exact path='/Burton' element={<Cards categoria='Burton' path='/Burton' />} />
+          <Route exact path='/Nitro' element={<Cards categoria='Nitro' path='/Nitro' />} />
+          <Route exact path='/K2' element={<Cards categoria='K2' path='/K2' />} />
+          <Route exact path='/Rossignol' element={<Cards categoria='Rossignol' path='/Rossignol' />} />
+          <Route exact path='/Lib Tech' element={<Cards categoria='Lib Tech' path='/Lib Tech' />} />
+          <Route exact path='/Arbor' element={<Cards categoria='Arbor' path='/Arbor' />} />
+          <Route exact path='/Capita' element={<Cards categoria='Capita' path='/Capita' />} />
+          <Route exact path='/Gnu' element={<Cards categoria='Gnu' path='/Gnu' />} />
+          <Route exact path='/Jones' element={<Cards categoria='Jones' path='/Jones' />} />
+          <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} />
+
          <Route path='/:categoria/:id/Detail' element={<Card />} />
          <Route exact path='/Create' element={<Create />} />
          

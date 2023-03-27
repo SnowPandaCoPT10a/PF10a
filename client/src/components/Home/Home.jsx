@@ -1,8 +1,9 @@
-import React from 'react'
-import  './Home.css';
+import React, { useEffect } from 'react'
+import {useDispatch} from 'react-redux'
+import './Home.css';
 import { Link } from 'react-router-dom';
 import Form from '../Form/Form';
-
+import {getAllProducts} from '../../Redux/actions/index'
 import Destacados from '../tiendaCategorias/destacados/Destacados';
 
 
@@ -10,7 +11,11 @@ import Destacados from '../tiendaCategorias/destacados/Destacados';
 
 const Home = () => {
 
- 
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAllProducts())
+  }, [dispatch])
 
 
   return (
@@ -19,8 +24,8 @@ const Home = () => {
         <div className='video-container'>
           <video src='https://res.cloudinary.com/dberwyxyq/video/upload/v1679686306/SnowPandaCO/FrontEnd/Copia-de-snowboard_zyoy3c.mp4' alt='video' autoPlay muted loop></video>
         </div>
-        <div className='conteiner-text'> 
-          <img className='logo'src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686191/SnowPandaCO/FrontEnd/con_fondo_2085_x_1251_px_avxqio.jpg' alt='logo SnowPanda'/>
+        <div className='conteiner-text'>
+          <img className='logo' src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686191/SnowPandaCO/FrontEnd/con_fondo_2085_x_1251_px_avxqio.jpg' alt='logo SnowPanda' />
           <h2>Encuentra el equilibrio, mantén la velocidad, disfruta del viaje.</h2>
           <Link to='/shop'>
             <button className='button1'>Tienda</button>
@@ -32,15 +37,15 @@ const Home = () => {
           <h2 className='titulo'>About Us</h2>
           <p className='about-us'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien felis, dapibus ac velit ultricies, cursus volutpat tortor. Phasellus et turpis consequat neque posuere finibus vitae vitae quam. Morbi accumsan aliquet efficitur. Morbi at posuere lacus, non tristique felis. In commodo mattis ligula eget auctor. Quisque vulputate magna eu turpis accumsan semper. Etiam quis elementum erat, pharetra malesuada nisi. Praesent accumsan venenatis leo. Sed cursus viverra mi in facilisis.
 
-          Maecenas suscipit enim sem, quis molestie ligula scelerisque vitae. Ut interdum sit amet dolor non rhoncus. In sed ultricies odio, et semper dui. Nulla facilisi. Etiam sed mauris ut ante volutpat placerat vel quis ex. Mauris in cursus felis. Proin eu sodales mauris. Cras sagittis nisi odio, nec molestie ipsum ullamcorper sit amet. Sed elementum augue nec ex imperdiet, vulputate fermentum magna imperdiet.
+            Maecenas suscipit enim sem, quis molestie ligula scelerisque vitae. Ut interdum sit amet dolor non rhoncus. In sed ultricies odio, et semper dui. Nulla facilisi. Etiam sed mauris ut ante volutpat placerat vel quis ex. Mauris in cursus felis. Proin eu sodales mauris. Cras sagittis nisi odio, nec molestie ipsum ullamcorper sit amet. Sed elementum augue nec ex imperdiet, vulputate fermentum magna imperdiet.
 
-          Nullam enim felis, faucibus eu felis vitae, bibendum sodales metus. Fusce accumsan risus nec nisi ultricies hendrerit. Suspendisse tellus mauris, interdum quis eleifend nec, varius at dolor. Nunc bibendum consectetur eros, cursus varius turpis gravida at.</p>
+            Nullam enim felis, faucibus eu felis vitae, bibendum sodales metus. Fusce accumsan risus nec nisi ultricies hendrerit. Suspendisse tellus mauris, interdum quis eleifend nec, varius at dolor. Nunc bibendum consectetur eros, cursus varius turpis gravida at.</p>
           <Link to='/Members'>
             <button className='button1'>Proyecto</button>
           </Link>
         </div>
       </section>
-      <Destacados/>
+      <Destacados />
       <section className='activities'>
         <h3 className='titulo'>Activities</h3>
         <div className='fila'>
@@ -70,7 +75,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Form/> 
+      <Form />
     </div>
   )
 }
