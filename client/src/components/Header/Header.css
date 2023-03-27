@@ -73,8 +73,6 @@
   transition-property: color;
 }
 
-
-
 .btnHome:focus,
 .btnHome:hover {
   color: white;
