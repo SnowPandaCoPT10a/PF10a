@@ -10,7 +10,7 @@ const Marcas = ({datos,scroll}) => {
 
   return (
     <div className='container'>
-      <h1 className='text-secondary text-center my-5'>NUESTRAS MARCAS</h1>
+      <h2 className='text-secondary text-center my-5'>NUESTRAS MARCAS</h2>
       <div className='d-block row row-cols-4 d-flex justify-content-center lign-items-center'>
         {marcas.map(e=>
           <Link onClick={()=>scroll()} to={`/${e}`} key={`/${e}`} className='py-4 text-secondary text-decoration-none'>
