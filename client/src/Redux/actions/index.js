@@ -101,11 +101,13 @@ export function postProducts(payload){
 
 export function FilteredProducts(query){
   return async function (dispatch){
-    const response = await axios(`http://localhost:3001/filtrado?${query}`)   
-    return dispatch({
+    const response = await axios.get('http://localhost:3001/filtrado', {
+      params: query,
+    });
+    dispatch({
       type: SET_FILTERED_PRODUCTS,
-        payload: response.data
-    })
+      payload: response.data,
+    });
 }
 }
 
