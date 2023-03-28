@@ -1,7 +1,7 @@
 .cardComponent {
     height: 100vh;
     padding: 0;
-    margin: 0;
+    margin: 5% 0;
     display: flex;
     align-items: center;
 }
@@ -20,6 +20,7 @@
 
 .imgId {
     max-width: 100%;
+    object-fit: contain;
 }
 
 .imgBx {
@@ -139,6 +140,14 @@
 
 /* responsive */
 @media (max-width: 1080px) {
+    .cardComponent {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+    }
     .containerId {
         height: auto;
     }
