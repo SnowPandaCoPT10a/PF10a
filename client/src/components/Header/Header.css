@@ -73,12 +73,14 @@
   transition-property: color;
 }
 
-.btnHome:focus,
+.active{
+  color: #9AB257;
+}
+
 .btnHome:hover {
   color: #9AB257;
 }
 
-.btnHome:focus:after,
 .btnHome:hover:after {
   width: 100%;
   left: 0%;

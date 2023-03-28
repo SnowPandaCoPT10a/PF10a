@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
@@ -16,18 +16,24 @@ const Header = ({navigateToCategory, categories}) => {
     (category) => location.pathname === category.path
   );
 
+  const [active, setActive] = useState('Home')
+
+  const headerActive = (value) => {
+    setActive(value)
+  }
+
   return (
     <div className='cntHeader'>
       <Link to={'/'}>
-        <button className='btnHome'>Home</button>
+        <button className={active==='Home'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Home')}>Home</button>
       </Link>
 
       <Link to={'/Shop'}>
-        <button className='btnHome'>Shop</button>
+        <button className={active==='Shop'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Shop')}>Shop</button>
       </Link>
 
       <Link to={'/Create'}>
-        <button className='btnHome'>Create</button>
+        <button className={active==='Create'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Create')}>Create</button>
       </Link>
 
       {isProductCategoryPage && <SearchBar categories={categories} />}
