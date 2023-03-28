@@ -4,11 +4,27 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShopp
 import SearchBar from '../SearchBar/SearchBar'
 import { Link , useLocation, useNavigate } from 'react-router-dom'
 import Logo from '../../img/logoPanda.png';
-
+import Login from '../Login/Login.jsx'
+import Logout from '../Logout/Logout.jsx'
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = ({navigateToCategory, categories}) => {
 	const location = useLocation();
   let navigate = useNavigate();
+
+
+  const { isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return(
+      <div >
+   <div></div>
+   </div>
+      );
+  }
+
+
+
 
   function handleClick() {
     navigate(-1)
@@ -40,10 +56,11 @@ const Header = ({navigateToCategory, categories}) => {
       </Link>
 
       {isProductCategoryPage && <SearchBar categories={categories} />}
-
-      <button className='btnUser'>
+      {isAuthenticated ?  <Logout />  : <Login />}
+    <Link to='/User'>  <button className='btnUser'>
         <FaUserAlt />
       </button>
+      </Link>
       <Link to={'/ShoppingCart'}>
       <button className='btnCarrt'>
         <FaShoppingCart />
