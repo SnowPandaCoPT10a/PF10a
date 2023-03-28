@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 
 const responsive = {
   superLargeDesktop: {
@@ -24,20 +25,32 @@ const responsive = {
 const Destacados = ({ datos }) => {
 
   let newData = datos && datos.filter(e => e.featuredProduct === true)
-
+  
+  //Cambia la primera letra en Mayuscula
+  newData.map(e => {   
+    e.category = e.category[0].toUpperCase() + e.category.substring(1)
+  })
+  const scroll = () => {
+    window.scroll({
+      top: 0,
+      left: 0
+    })
+  }
   return (
     <div className='bg-secondary px-5 py-4 rounded my-4'>
       <h2 className='text-white text-center'>PRODUCTOS DESTACADOS</h2>
       <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} className='mt-5'>
         {newData ? newData.map(e =>
-          <div className="card mx-3">
+        <Link key={e.productsID} to={`/${e.category}/${e.productsID}/Detail`} className='text-decoration-none' onClick={()=>scroll()}>
+          <div className="card mx-3 text-center text-black">
             <img src={e.img} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{e.name}</h5>
-              <p className="card-text">{e.category}</p>
-              <p className="">{e.brand}</p>
+              <p className="text-secondary card-text">{e.category}</p>
+              <p className="text-secondary">{e.brand}</p>
             </div>
           </div>
+        </Link>
 
         )
       :
