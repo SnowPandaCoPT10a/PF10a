@@ -26,7 +26,6 @@ const ShoppingCart = props => {
 }
 
 
-
 export default ShoppingCart
 
 const BasketContainer = styled.div`
