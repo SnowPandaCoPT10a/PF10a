@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import './Create.css'
 import { useDispatch, useSelector } from "react-redux";
 import {postProducts,getAllProducts} from "../../Redux/actions/index"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 
   const validate = (input) => {
@@ -38,7 +39,7 @@ import { Link } from "react-router-dom";
 //!!
 function Create() {
     const dispatch = useDispatch();
-
+    let navigate = useNavigate();
     const numberSizes = useSelector((state) => state.allProducts)
     const sizeNumber = numberSizes.filter(size => size.numbersizes)
     const sizeLeter = numberSizes.filter(size => size.sizes)
@@ -84,9 +85,9 @@ function Create() {
       });
 
       function handleSubmit(e) {
-        console.log("llegue aca");
         e.preventDefault();
         dispatch(postProducts(input));
+        alert("Producto creado correctamente");
         setInput({
             name: "",
             img: "",
@@ -102,7 +103,7 @@ function Create() {
             boardsizes: [],
         });
         dispatch(getAllProducts());
-       
+        navigate('/home')
       }
       function handleClickCategory(e) {
         setInput({
@@ -241,7 +242,7 @@ function handleChange(e) {
   </div>
   <div className="right-container">
     <header>
-      <h1>Aca va la frase titular </h1>
+      <h1>Create Product Form </h1>
       <div className="pets-weight">
         <label htmlFor="pet-weight-0-25">Category</label>
         <div className="radio-container">
@@ -338,7 +339,7 @@ function handleChange(e) {
     <div className="fato">
       <div className="sizes">
         <label htmlFor="">Insert size {num} stock</label>
-        <input type="number" placeholder="stock" name={num} value={input.stock} onBlur={(e) => handleNumberStock(e)}/>
+        <input type="number" min={0} placeholder="stock" name={num} value={input.stock} onBlur={(e) => handleNumberStock(e)}/>
         <hr />
       </div>
     </div>
@@ -349,7 +350,7 @@ function handleChange(e) {
       <div className="fato">
         <div className="sizes">
           <label htmlFor="">Insert size {leter} stock</label>
-          <input type="number" placeholder="..." name={leter} value={input.stock} onBlur={(e) => handleStock(e)}/>
+          <input type="number" min={0} placeholder="..." name={leter} value={input.stock} onBlur={(e) => handleStock(e)}/>
           <hr />
         </div>
       </div>
@@ -359,7 +360,7 @@ function handleChange(e) {
       <div className="fato">
         <div className="sizes">
           <label htmlFor="">Insert stock for Boards</label>
-          <input type="number" placeholder="..." name={leter} value={input.stock} onBlur={(e) => handleBoardStock(e)}/>
+          <input type="number" min={0} placeholder="..." name={leter} value={input.stock} onBlur={(e) => handleBoardStock(e)}/>
           <hr />
         </div>
       </div>
