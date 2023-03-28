@@ -15,7 +15,7 @@ const Pagination = ({productPerPage, filteredProducts, pagination, currentPage})
               return <li className='number' key={number}>
               <button 
                 key={i} 
-                className={ number === currentPage ? 'active button' : 'button'} 
+                className={ number === currentPage ? 'active button3' : 'button3'} 
                 onClick={() =>{{
                     window.scroll({
                         top: 0,

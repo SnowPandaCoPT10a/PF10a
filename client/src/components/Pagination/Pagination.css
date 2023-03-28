@@ -13,7 +13,7 @@
     display: inline;
     padding: 8px;
     }
-    .button {
+    .button3 {
       background-color:transparent;
       text-decoration: none;
       margin: 10px;
@@ -28,16 +28,16 @@
       transition: .5s;
     }
     
-    .button:focus
+    .button3:focus
     {outline:none }
     
-    .button:hover {
+    .button3:hover {
       cursor:pointer;
       background-color: #5875eb ;
       /* color: rgb(221, 4, 221)*/
     } 
     
-    .active {
+    .button3.active {
       background-color: #5875eb;
      
     }
