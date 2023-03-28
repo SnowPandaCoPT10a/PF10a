@@ -1,4 +1,4 @@
-import {GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_ID, GET_ALL_PRODUCTS_NAME, POST_NEW_PRODUCTS} from '../actions-types/index.js'
+import {GET_ALL_PRODUCTS, GET_ALL_PRODUCTS_ID, GET_ALL_PRODUCTS_NAME, POST_NEW_PRODUCTS, SET_FILTERED_PRODUCTS} from '../actions-types/index.js'
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
@@ -97,5 +97,15 @@ export function postProducts(payload){
           payload: response.data
       })
   }
+}
+
+export function FilteredProducts(query){
+  return async function (dispatch){
+    const response = await axios(`http://localhost:3001/filtrado?${query}`)   
+    return dispatch({
+      type: SET_FILTERED_PRODUCTS,
+        payload: response.data
+    })
+}
 }
 
