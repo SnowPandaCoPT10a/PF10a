@@ -9,6 +9,7 @@ import Chatbot from './components/Chatbot/Chatbot.jsx'
 import Cards from "./components/Cards/Cards";
 import Card from "./components/Card/Card";
 import Create from "./components/Create/Create";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           <Route exact path='/Shop' element={<Tienda />} />
+          <Route exact path='/ShoppingCart' element={<ShoppingCart />} />
 
           <Route exact path='/Board' element={<Cards categoria='board' path='/Board' />} />
           <Route exact path='/Boots' element={<Cards categoria='boots' path='/Boots' />} />
