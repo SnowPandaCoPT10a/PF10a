@@ -11,6 +11,7 @@ import Card from "./components/Card/Card";
 import Create from "./components/Create/Create";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import { useNavigate } from 'react-router-dom';
+import Profile from './components/Profile/Profile.jsx';
 
 
 
@@ -27,7 +28,7 @@ function App() {
     { name: 'Jackets', path: '/Jackets' },
     { name: 'Pants', path: '/Pants' },
     { name: 'Tshirts', path: '/Tshirts' },
-    { name: 'Accessories', path: '/Accessories' },
+    { name: 'Accesories', path: '/Accesories' },
   ];
 
   
@@ -61,7 +62,7 @@ function App() {
           <Route exact path='/Gnu' element={<Cards categoria='Gnu' path='/Gnu' />} />
           <Route exact path='/Jones' element={<Cards categoria='Jones' path='/Jones' />} />
           <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} />
-
+          <Route path= '/User' element={<Profile />} />
          <Route path='/:categoria/:id/Detail' element={<Card />} />
          <Route exact path='/Create' element={<Create />} />
          
