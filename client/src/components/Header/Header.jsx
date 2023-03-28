@@ -3,37 +3,36 @@ import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
 import { Link , useLocation, useNavigate } from 'react-router-dom'
+import Logo from '../../img/logoPanda.png';
 
 
 const Header = ({navigateToCategory, categories}) => {
 	const location = useLocation();
   let navigate = useNavigate();
+
   function handleClick() {
     navigate(-1)
   }
+
+  const rutaUrl = window.location.href
+  console.log(rutaUrl.includes('Shop'));
 
  const isProductCategoryPage = categories.some(
     (category) => location.pathname === category.path
   );
 
-  const [active, setActive] = useState('Home')
-
-  const headerActive = (value) => {
-    setActive(value)
-  }
-
   return (
     <div className='cntHeader'>
       <Link to={'/'}>
-        <button className={active==='Home'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Home')}>Home</button>
+        <img src={Logo} alt="" className='imgLogo'/>
       </Link>
 
       <Link to={'/Shop'}>
-        <button className={active==='Shop'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Shop')}>Shop</button>
+        <button className={(rutaUrl.includes('Shop'))?'btnHome active': 'btnHome'}>Shop</button>
       </Link>
 
       <Link to={'/Create'}>
-        <button className={active==='Create'?'btnHome active': 'btnHome'} onClick={()=>headerActive('Create')}>Create</button>
+        <button className={(rutaUrl.includes('Create'))?'btnHome active': 'btnHome'}>Create</button>
       </Link>
 
       {isProductCategoryPage && <SearchBar categories={categories} />}
