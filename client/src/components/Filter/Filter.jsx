@@ -34,8 +34,8 @@ function FilterForm({ pagination }) {
     return (
         <form onSubmit={handleSubmit}>
 
-            <label htmlFor="brand">Brand:</label>
-            <select id="brand" value={brand} onChange={(e) => setBrand(e.target.value)}>
+            {/*<label htmlFor="brand">Brand:</label>
+             <select id="brand" value={brand} onChange={(e) => setBrand(e.target.value)}>
                 <option value="">All</option>
                 <option value="SnowPandaCo">SnowPandaCo</option>
                 <option value="Burton">Burton</option>
@@ -47,7 +47,7 @@ function FilterForm({ pagination }) {
                 <option value="Capita">Capita</option>
                 <option value="Gnu">Gnu</option>
                 <option value="Jones">Jones</option>
-            </select>
+            </select> */}
 
             <label htmlFor="minPrice">Precio mínimo:</label>
             <input type="number" id="minPrice" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} />
