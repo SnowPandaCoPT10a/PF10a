@@ -15,6 +15,9 @@
 
 }
 
+.imgLogo{
+  width: 5rem;
+}
 
 .btnUser {
   cursor: pointer;
