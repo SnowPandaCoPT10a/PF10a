@@ -8,12 +8,17 @@ import './style.css'
 
 const tienda = () => {
   const datos = useSelector(e=>e.allProducts)
+  const scroll = () => {
+    window.scroll({
+      top: 0
+    })
+  }
   return (
     <div className='tiendaCont p-0 m-0 text-center'>
        <Banner/>
-       <Categorias/>
+       <Categorias scroll={scroll}/>
        <Destacados datos={datos}/>
-       <Marcas datos={datos}/>
+       <Marcas scroll={scroll} datos={datos}/>
     </div>
   )
 }
