@@ -29,11 +29,11 @@ const SearchBar = ({categories}) => {
     
     <div id='search' className="search-box">
       <input list='productNames' type='text' value ={name} name='search' className="input-search" placeholder="Search Products" onChange={(e)=>handleInputChange(e)} />
-      <datalist id='productNames'>
+      {/* <datalist id='productNames'>
         {productNames.map(el => (
           <option key={el.productsID} value={el.name } />
         ))}
-      </datalist>
+      </datalist> */}
       <button className="btn-search" onClick={(e)=>handleSubmit(e)}><FaSearch className="fas fa-search"/></button>
     </div>
   );
