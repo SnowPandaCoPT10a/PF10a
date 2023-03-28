@@ -26,21 +26,24 @@ const Destacados = ({ datos }) => {
   let newData = datos && datos.filter(e => e.featuredProduct === true)
 
   return (
-    <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1000}>
-      {newData ? newData.map(e =>
-        <div className="card">
-          <img src={e.img} className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">{e.name}</h5>
-            <p className="card-text">{e.category}</p>
-            <a className="btn btn-primary">{e.brand}</a>
+    <div className='bg-secondary px-5 py-4 rounded my-4'>
+      <h2 className='text-white text-center'>PRODUCTOS DESTACADOS</h2>
+      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} className='mt-5'>
+        {newData ? newData.map(e =>
+          <div className="card mx-3">
+            <img src={e.img} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">{e.name}</h5>
+              <p className="card-text">{e.category}</p>
+              <p className="">{e.brand}</p>
+            </div>
           </div>
-        </div>
 
-      )
-    :
-    <div></div>}
-    </Carousel>
+        )
+      :
+      <div></div>}
+      </Carousel>
+    </div>
   )
 }
 

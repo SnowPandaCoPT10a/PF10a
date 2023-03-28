@@ -344,7 +344,7 @@
         "stock": 10
       }
     ],
-    "featuredProduct": false,
+    "featuredProduct": true,
     "material": "wood"
   },
   {
@@ -416,7 +416,7 @@
         "stock": 10
       }
     ],
-    "featuredProduct": true,
+    "featuredProduct": false,
     "material": "wood"
   },
   {
