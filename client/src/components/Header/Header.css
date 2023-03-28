@@ -75,7 +75,7 @@
 
 .btnHome:focus,
 .btnHome:hover {
-  color: white;
+  color: #9AB257;
 }
 
 .btnHome:focus:after,
