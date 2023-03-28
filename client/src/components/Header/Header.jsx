@@ -41,9 +41,11 @@ const Header = ({navigateToCategory, categories}) => {
       <button className='btnUser'>
         <FaUserAlt />
       </button>
+      <Link to={'/ShoppingCart'}>
       <button className='btnCarrt'>
         <FaShoppingCart />
       </button>
+      </Link>
       <button className= 'btnHome' onClick={handleClick}>Back</button>
     </div>
   );

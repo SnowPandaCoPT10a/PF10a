@@ -36,6 +36,10 @@
 
 }
 
+.btnUser:hover{
+  color: #9AB257;
+}
+
 .btnCarrt {
   cursor: pointer;
   display: flex;
@@ -56,6 +60,9 @@
 
 }
 
+.btnCarrt:hover {
+  color: #9AB257;
+}
 
 .btnHome {
 
