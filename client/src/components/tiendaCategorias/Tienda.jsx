@@ -1,5 +1,6 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {getAllProducts} from '../../Redux/actions/index'
 import Banner from './banner/Banner';
 import Categorias from './categorias/Categorias';
 import Destacados from './destacados/Destacados';
@@ -8,9 +9,16 @@ import './style.css'
 
 const tienda = () => {
   const datos = useSelector(e=>e.allProducts)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAllProducts())
+  }, [])
+
   const scroll = () => {
     window.scroll({
-      top: 0
+      top: 0,
+      left: 0
     })
   }
   return (
