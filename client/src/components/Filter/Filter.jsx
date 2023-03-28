@@ -1,76 +1,77 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { FilteredProducts } from '../../Redux/actions';
+import { useDispatch } from 'react-redux';
+import { FilteredProducts } from '../../Redux/actions/index';
 
-const FilteredProducts = () => {
-    const [filters, setFilters] = useState({
-        category: '',
-        brand: '',
-        minPrice: '',
-        maxPrice: '',
-        orderPrice: '',
-        size: '',
-        numberSize: '',
-    });
+function FilterForm({ pagination }) {
+    const [category, setCategory] = useState('');
+    const [brand, setBrand] = useState('');
+    const [minPrice, setMinPrice] = useState('');
+    const [maxPrice, setMaxPrice] = useState('');
+    const [orderPrice, setOrderPrice] = useState('');
+    const [size, setSize] = useState('');
+    const [numberSize, setNumberSize] = useState('');
+
     const dispatch = useDispatch();
-    const products = useSelector(state => state.products);
 
-    const handleFilterChange = event => {
-        setFilters({
-            ...filters,
-            [event.target.name]: event.target.value,
-        });
-    };
-
-    const handleFilterSubmit = event => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const query = Object.entries(filters)
-            .filter(([key, value]) => value !== '')
-            .map(([key, value]) => `${key}=${value}`)
-            .join('&');
+
+        // Crea un objeto con los valores seleccionados para cada filtro
+        const query = {
+            category,
+            brand,
+            minPrice,
+            maxPrice,
+            orderPrice,
+            size,
+            numberSize,
+        };
+
+        // Envía la acción de Redux para actualizar la lista de productos filtrados
         dispatch(FilteredProducts(query));
     };
 
     return (
-        <div>
-            <form onSubmit={handleFilterSubmit}>
-                <div>
-                    <label htmlFor="category">Category:</label>
-                    <input type="text" name="category" value={filters.category} onChange={handleFilterChange} />
-                </div>
-                <div>
-                    <label htmlFor="brand">Brand:</label>
-                    <input type="text" name="brand" value={filters.brand} onChange={handleFilterChange} />
-                </div>
-                <div>
-                    <label htmlFor="minPrice">Min price:</label>
-                    <input type="number" name="minPrice" value={filters.minPrice} onChange={handleFilterChange} />
-                </div>
-                <div>
-                    <label htmlFor="maxPrice">Max price:</label>
-                    <input type="number" name="maxPrice" value={filters.maxPrice} onChange={handleFilterChange} />
-                </div>
-                <div>
-                    <label htmlFor="orderPrice">Order by price:</label>
-                    <select name="orderPrice" value={filters.orderPrice} onChange={handleFilterChange}>
-                        <option value="">Select an option</option>
-                        <option value="asc">Ascending</option>
-                        <option value="desc">Descending</option>
-                    </select>
-                </div>
-                <div>
-                    <label htmlFor="size">Size:</label>
-                    <input type="text" name="size" value={filters.size} onChange={handleFilterChange} />
-                </div>
-                <div>
-                    <label htmlFor="numberSize">Number size:</label>
-                    <input type="number" name="numberSize" value={filters.numberSize} onChange={handleFilterChange} />
-                </div>
-                <button type="submit">Filter</button>
-            </form>
+        <form onSubmit={handleSubmit}>
 
-        </div>
-    );
-};
+            <label htmlFor="brand">Brand:</label>
+            <select id="brand" value={brand} onChange={(e) => setBrand(e.target.value)}>
+                <option value="">All</option>
+                <option value="SnowPandaCo">SnowPandaCo</option>
+                <option value="Burton">Burton</option>
+                <option value="Rome">Rome</option>
+                <option value="Nitro">Nitro</option>
+                <option value="k2">K2</option>
+                <option value="Rossignol">Rossignol</option>
+                <option value="Arbor">Arbor</option>
+                <option value="Capita">Capita</option>
+                <option value="Gnu">Gnu</option>
+                <option value="Jones">Jones</option>
+            </select>
 
-export default FilteredProducts;
+            <label htmlFor="minPrice">Precio mínimo:</label>
+            <input type="number" id="minPrice" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} />
+
+            <label htmlFor="maxPrice">Precio máximo:</label>
+            <input type="number" id="maxPrice" value={maxPrice} onChange={(e) => setMaxPrice(e.target.value)} />
+
+            <label htmlFor="orderPrice">Ordenar por precio:</label>
+            <select id="orderPrice" value={orderPrice} onChange={(e) => setOrderPrice(e.target.value)}>
+                <option value="">Ninguno</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+
+            <label htmlFor="size">Size</label>
+            <select id="size" value={size} onChange={(e) => setSize(e.target.value)}>
+                <option value="">Todos</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <button className='buton1' onClick={() => pagination(1)}>Filtrar</button>
+        </form>)
+}
+
+export default FilterForm

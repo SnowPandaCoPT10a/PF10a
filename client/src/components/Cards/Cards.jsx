@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from '../../Redux/actions/index.js'
 import { Link } from 'react-router-dom';
-import Pagination from '../Pagination/Pagination'
+import Pagination from '../Pagination/Pagination';
+import Filter from '../Filter/Filter';
 
 const Cards = ({ categoria, path }) => {
 
@@ -41,7 +42,7 @@ const Cards = ({ categoria, path }) => {
                 pagination={pagination}
                 currentPage={currentPage}
             />
-
+            <Filter pagination={pagination} />
             {filteredProducts.length > 0 ?
                 currentProduct.map((el) =>
 
