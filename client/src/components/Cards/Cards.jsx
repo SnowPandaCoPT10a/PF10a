@@ -1,16 +1,29 @@
 import React from 'react'
 import './style.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from '../../Redux/actions/index.js'
 import {Link} from 'react-router-dom';
-
+import Pagination from '../Pagination/Pagination'
 
 const Cards = ({ categoria, path }) => {
-
-    const dispatch = useDispatch()
+    
     const productsBoard = useSelector((state) => state.products);
+    const filteredProducts = productsBoard.filter(el => el.category === categoria || el.brand === categoria)
+    const dispatch = useDispatch()
     console.log(productsBoard, 'hssahsh')
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productPerPage ] = useState(4);
+ 
+
+    const indexOfLastProduct = currentPage * productPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+    const currentProduct = filteredProducts.slice(indexOfFirstProduct,indexOfLastProduct);
+
+    const pagination = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    };
 
     useEffect(() => {
         dispatch(getAllProducts())
@@ -19,13 +32,18 @@ const Cards = ({ categoria, path }) => {
     }, [dispatch])
 
      // <Link to={'/shoes/' + el.id +'/buyNow'}
-     const filteredProducts = productsBoard.filter(el => el.category === categoria || el.brand === categoria)
      console.log("TU VIEJA", filteredProducts)
     return (
         <div>
-            
+            <Pagination
+            productPerPage={productPerPage}
+            filteredProducts={filteredProducts.length}
+            pagination={pagination}
+            currentPage={currentPage}
+          />
+         
             {filteredProducts.length > 0 ?
-            filteredProducts.map((el) => 
+            currentProduct.map((el) => 
              
                  
                 <div key={el.name} className="container page-wrapper">
@@ -78,6 +96,13 @@ const Cards = ({ categoria, path }) => {
                     </div>
                 </div>
             </div>}
+            <Pagination 
+            productPerPage={productPerPage}
+            filteredProducts={filteredProducts.length}
+            pagination={pagination}
+            currentPage={currentPage}
+        
+          />
         </div>
 
     )
