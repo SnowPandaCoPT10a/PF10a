@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
-import {useDispatch} from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Form from '../Form/Form';
-import {getAllProducts} from '../../Redux/actions/index'
+import { getAllProducts } from '../../Redux/actions/index'
 import Destacados from '../tiendaCategorias/destacados/Destacados';
 import Logo from '../../img/sin-fondo-2085x1251px.png';
 
 
 const Home = () => {
 
+  const datos = useSelector(e=>e.allProducts)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -22,13 +23,13 @@ const Home = () => {
       <section className='inicio'>
         <div className='video-container'>
           <video src='https://res.cloudinary.com/dberwyxyq/video/upload/v1679686306/SnowPandaCO/FrontEnd/Copia-de-snowboard_zyoy3c.mp4' alt='video' autoPlay muted loop></video>
-        </div>
-        <div className='conteiner-text'>
-          <img className='logo' src={Logo} />
-          <h2>Encuentra el equilibrio, mantén la velocidad, disfruta del viaje.</h2>
-          <Link to='/shop'>
-            <button className='button1'>Tienda</button>
-          </Link>
+          <div className='conteiner-text'>
+            <img className='logo' src={Logo} />
+            <h2>Encuentra el equilibrio, mantén la velocidad, disfruta del viaje.</h2>
+            <Link to='/shop'>
+              <button className='button1'>Tienda</button>
+            </Link>
+          </div>
         </div>
       </section>
       <section >
@@ -44,7 +45,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <Destacados />
+      <Destacados datos={datos}/>
       <section className='activities'>
         <h3 className='titulo'>Activities</h3>
         <div className='fila'>
