@@ -21,17 +21,21 @@ const Header = ({navigateToCategory, categories}) => {
     (category) => location.pathname === category.path
   );
 
+  const scrollTop = () => {
+    window.scroll(0,0)
+  }
+
   return (
     <div className='cntHeader'>
-      <Link to={'/'}>
+      <Link to={'/'} onClick={()=>scrollTop()}>
         <img src={Logo} alt="" className='imgLogo'/>
       </Link>
 
-      <Link to={'/Shop'}>
+      <Link to={'/Shop'} onClick={()=>scrollTop()}>
         <button className={(rutaUrl.includes('Shop'))?'btnHome active': 'btnHome'}>Shop</button>
       </Link>
 
-      <Link to={'/Create'}>
+      <Link to={'/Create'} onClick={()=>scrollTop()}>
         <button className={(rutaUrl.includes('Create'))?'btnHome active': 'btnHome'}>Create</button>
       </Link>
 
