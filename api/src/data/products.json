@@ -13,19 +13,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -43,19 +47,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -73,19 +81,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -103,19 +115,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -133,19 +149,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -163,7 +183,8 @@
     "sizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -181,7 +202,8 @@
     "sizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -199,7 +221,8 @@
     "sizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -217,7 +240,8 @@
     "sizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -235,7 +259,8 @@
     "sizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ]
   },
@@ -251,7 +276,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -269,7 +295,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -287,7 +314,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -305,7 +333,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -323,7 +352,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -341,7 +371,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": true,
@@ -359,7 +390,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -377,7 +409,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -395,7 +428,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -413,7 +447,8 @@
     "boardsizes": [
       {
         "size": "one size",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "featuredProduct": false,
@@ -428,39 +463,48 @@
     "numbersizes": [
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 47,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679329812/SnowPandaCO/Boots/ExtremePro.png",
@@ -478,39 +522,48 @@
     "numbersizes": [
       {
         "size": 39,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       },
       {
         "size": 47,
-        "stock": 8
+        "stock": 8,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330108/SnowPandaCO/Boots/GlacierFlex.png",
@@ -528,39 +581,48 @@
     "numbersizes": [
       {
         "size": 39,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       },
       {
         "size": 47,
-        "stock": 12
+        "stock": 12,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330777/SnowPandaCO/Boots/MountaineerX.png",
@@ -578,35 +640,43 @@
     "numbersizes": [
       {
         "size": 37,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331086/SnowPandaCO/Boots/SpeedAir.png",
@@ -624,31 +694,38 @@
     "numbersizes": [
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331454/SnowPandaCO/Boots/MountainMaster.png",
@@ -666,47 +743,58 @@
     "numbersizes": [
       {
         "size": 37,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 47,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331688/SnowPandaCO/Boots/Freestyle.png",
@@ -724,39 +812,48 @@
     "numbersizes": [
       {
         "size": 35,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 37,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331948/SnowPandaCO/Boots/CrossCountry.png",
@@ -774,39 +871,48 @@
     "numbersizes": [
       {
         "size": 35,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 37,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332598/SnowPandaCO/Boots/AllMountain.png",
@@ -824,39 +930,48 @@
     "numbersizes": [
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332991/SnowPandaCO/Boots/PowderPro.png",
@@ -874,39 +989,48 @@
     "numbersizes": [
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 39,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 41,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 43,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 45,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679333380/SnowPandaCO/Boots/Freestyle%202.png",
@@ -923,19 +1047,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/FourSeasons.png",
@@ -953,19 +1081,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/MountainX.png",
@@ -983,19 +1115,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/UrbanLife.png",
@@ -1013,19 +1149,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ArticExplorer.png",
@@ -1043,19 +1183,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ClassicBomber.png",
@@ -1073,19 +1217,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/TrekLite.png",
@@ -1103,19 +1251,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Ranger.png",
@@ -1133,19 +1285,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Urbana%202.0.png",
@@ -1163,19 +1319,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Skyline.png",
@@ -1193,19 +1353,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Vintago.png",
@@ -1223,19 +1387,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421811/SnowPandaCO/TShirts/PandaCo.png",
@@ -1253,19 +1421,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421810/SnowPandaCO/TShirts/Vivify.png",
@@ -1283,19 +1455,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421809/SnowPandaCO/TShirts/Grit.png",
@@ -1313,19 +1489,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421806/SnowPandaCO/TShirts/Zephyr.png",
@@ -1343,19 +1523,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421805/SnowPandaCO/TShirts/Nexus.png",
@@ -1373,19 +1557,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421804/SnowPandaCO/TShirts/Flame.png",
@@ -1403,19 +1591,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421803/SnowPandaCO/TShirts/PolarCo.png",
@@ -1433,19 +1625,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421802/SnowPandaCO/TShirts/TigerCo.png",
@@ -1463,19 +1659,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421799/SnowPandaCO/TShirts/Sample.png",
@@ -1493,19 +1693,23 @@
     "sizes": [
       {
         "size": "small",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "medium",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "large",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": "extraLarge",
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421798/SnowPandaCO/TShirts/StudioR.png",
@@ -1523,55 +1727,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
@@ -1589,55 +1806,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
@@ -1655,55 +1885,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
@@ -1721,55 +1964,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
@@ -1787,55 +2043,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
@@ -1853,55 +2122,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
@@ -1919,55 +2201,68 @@
     "numbersizes": [
       {
         "size": 30,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 32,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 34,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 36,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 38,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 40,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 42,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 44,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 46,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 48,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 50,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 52,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       },
       {
         "size": 54,
-        "stock": 10
+        "stock": 10,
+        "quantity":1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
