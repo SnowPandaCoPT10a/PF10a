@@ -11,7 +11,7 @@ console.log(user)
  if (isAuthenticated){
 		return (
 
-		<div>
+		<div className='profilecont'>
 		<img className='imgProfile' src={user.picture.length === 0 || `${Logo}` } alt='no hay imagen' />
 	
 			<h1>{user.name}</h1>

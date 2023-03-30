@@ -12,7 +12,7 @@ import Create from "./components/Create/Create";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import { useNavigate } from 'react-router-dom';
 import Profile from './components/Profile/Profile.jsx';
-
+import './App.css'
 
 
 function App() {
@@ -44,11 +44,13 @@ function App() {
           <Route exact path='/Shop' element={<Tienda />} />
           <Route exact path='/ShoppingCart' element={<ShoppingCart />} />
 
-          <Route exact path='/Board' element={<Cards categoria='board' path='/Board' />} />
+          <Route exact path='/Products/:article' element={<Cards/>}/>
+
+          {/* <Route exact path='/Board' element={<Cards categoria='board' path='/Board' />} />
           <Route exact path='/Boots' element={<Cards categoria='boots' path='/Boots' />} />
           <Route exact path='/Jackets' element={<Cards categoria='jackets' path='/Jackets' />} />
           <Route exact path='/Pants' element={<Cards categoria='pants' path='/Pants' />} />
-          <Route exact path='/Tshirts' element={<Cards categoria='t-shirts' path='/Tshirts' />} />
+          <Route exact path='/t-shirts' element={<Cards categoria='t-shirts' path='/t-shirts' />} />
           <Route exact path='/Accesories' element={<Cards categoria='accessories' path='/Accesories' />} />
 
           <Route exact path='/SnowPandaCo' element={<Cards categoria='SnowPandaCo' path='/SnowPandaCo' />} />
@@ -61,9 +63,10 @@ function App() {
           <Route exact path='/Capita' element={<Cards categoria='Capita' path='/Capita' />} />
           <Route exact path='/Gnu' element={<Cards categoria='Gnu' path='/Gnu' />} />
           <Route exact path='/Jones' element={<Cards categoria='Jones' path='/Jones' />} />
-          <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} />
+          <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} /> */}
+
           <Route path= '/User' element={<Profile />} />
-         <Route path='/:categoria/:id/Detail' element={<Card />} />
+         <Route path='/Products/:categoria/:id/Detail' element={<Card />} />
          <Route exact path='/Create' element={<Create />} />
          
         </Routes>

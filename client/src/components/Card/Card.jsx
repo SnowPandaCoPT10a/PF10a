@@ -11,6 +11,7 @@ export default function Card() {
     const { id } = useParams();
     const dispatch = useDispatch()
     const productInfoId = useSelector((state) => state.productsID);
+    console.log(productInfoId);
 
     useEffect(() => {
         dispatch(getAllProductsId(id))
@@ -42,9 +43,12 @@ export default function Card() {
                         </p>
 
                         <h3 className='h3Name'>${productInfoId.price}</h3>
-                        <button>Buy Now</button>
+                        <button>Buy Now</button>                       
                     </div>
                 </div>
+                <Link to='/Shop'>
+                <button className="buttonback">Back to shop</button>
+                </Link>
             </div>
         </div>
 

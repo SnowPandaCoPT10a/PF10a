@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
+import './Destacados.css'
 
 const responsive = {
   superLargeDesktop: {
@@ -37,11 +38,11 @@ const Destacados = ({ datos }) => {
     })
   }
   return (
-    <div className='bg-secondary px-5 py-4 rounded my-4'>
-      <h2 className='text-white text-center'>PRODUCTOS DESTACADOS</h2>
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} className='mt-5'>
+    <div className='bg-secondary px-5 py-4 rounded my-4 destacado'>
+      <h2 className='text-center destacados'>PRODUCTOS DESTACADOS</h2>
+      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} showDots={true} className='mt-5 pb-5'>
         {newData ? newData.map(e =>
-        <Link key={e.productsID} to={`/${e.category}/${e.productsID}/Detail`} className='text-decoration-none' onClick={()=>scroll()}>
+        <Link key={e.productsID} to={`/Products/${e.category}/${e.productsID}/Detail`} className='text-decoration-none' onClick={()=>scroll()}>
           <div className="card mx-3 text-center text-black">
             <img src={e.img} className="card-img-top" alt="..." />
             <div className="card-body">
