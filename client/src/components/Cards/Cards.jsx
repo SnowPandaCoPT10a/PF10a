@@ -1,16 +1,17 @@
 import React from 'react'
 import './style.css'
 import { useEffect, useState } from 'react'
+import {useParams} from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from '../../Redux/actions/index.js'
 import { Link } from 'react-router-dom';
 import Pagination from '../Pagination/Pagination';
 import Filter from '../Filter/Filter';
 
-const Cards = ({ categoria, path }) => {
-
+const Cards = () => {
+    const {article} = useParams()
     const productsBoard = useSelector((state) => state.products);
-    const filteredProducts = productsBoard.filter(el => el.category === categoria || el.brand === categoria)
+    const filteredProducts = productsBoard.filter(el => el.category === article || el.brand === article)
     const dispatch = useDispatch()
     console.log(productsBoard, 'hssahsh')
 
@@ -28,7 +29,7 @@ const Cards = ({ categoria, path }) => {
 
     useEffect(() => {
         dispatch(getAllProducts())
-        dispatch(getAllProducts(categoria))
+        dispatch(getAllProducts(article))
 
     }, [dispatch])
 
@@ -51,7 +52,7 @@ const Cards = ({ categoria, path }) => {
                         <div className="page-inner">
                             <div className="row">
                                 <div className="el-wrapper">
-                                    <Link key={el.productsID} to={`${path}/${el.productsID}/Detail`}>
+                                    <Link key={el.productsID} to={`/Products/${article}/${el.productsID}/Detail`}>
                                         <div className="box-up">
 
                                             <img className="img" src={el.img} alt="" />

@@ -14,7 +14,7 @@ const Marcas = ({ datos, scroll }) => {
       <h2 className='text-secondary text-center my-5'>NUESTRAS MARCAS</h2>
       <div className='d-block row row-cols-4 d-flex justify-content-center lign-items-center'>
         {marcas.map(e =>
-          <Link onClick={() => scroll()} to={`/${e}`} key={`/${e}`} className='py-4 text-secondary text-decoration-none rounded'>
+          <Link onClick={() => scroll()} to={`/Products/${e}`} key={`/${e}`} className='py-4 text-secondary text-decoration-none rounded'>
             <b className='fluor fluor1 items'>{e}</b>
           </Link>
         )}
