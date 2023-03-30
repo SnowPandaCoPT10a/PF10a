@@ -1,7 +1,14 @@
+require("dotenv").config();
 const { Products} = require("../db");
 const { Op } = require("sequelize");
+const cloudinary = require('cloudinary').v2;
 
 //!! GET de por categorias
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
 
 const getProductsByCategory = async (req,res) => {
   const {access} = req.params;
@@ -59,6 +66,7 @@ const getProductsById = async (req,res) => {
 } 
 //!! POST 
 
+
 const postNewProducts = async (req,res) => {
     let{
       
@@ -76,7 +84,20 @@ const postNewProducts = async (req,res) => {
         model,
         
     }= req.body;
-
+    let imageUrl
+    if (img) {
+      try {
+        // Si se proporcionó una URL de imagen, subirla a Cloudinary y obtener la URL de la imagen
+        const result = await cloudinary.uploader.upload(img,{
+          public_id: name,
+          folder:`SnowPandaCO/${category}`
+        });
+        imageUrl = result.secure_url;
+      } catch (error) {
+        console.log(error);
+        return res.status(500).send("Error uploading image to Cloudinary");
+      }
+    }
     try {
         await Products.findOrCreate({ 
             where: { name },
