@@ -1,0 +1,16 @@
+.destacado{
+    overflow-x: hidden;
+}
+
+.destacados{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #191310;
+    text-decoration: underline;
+    text-decoration-color: #029696;
+    text-decoration-thickness: 5px;  
+  
+}
+
