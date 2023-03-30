@@ -12,7 +12,7 @@ import Create from "./components/Create/Create";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import { useNavigate } from 'react-router-dom';
 import Profile from './components/Profile/Profile.jsx';
-
+import './App.css'
 
 
 function App() {

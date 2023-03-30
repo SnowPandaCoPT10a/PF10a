@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const ShoppingCart = props => {
 	return (
 		<div>
+        <All>
 			<BasketContainer>
             <BasketTitle>Shopping Basket</BasketTitle>
             <BasketButton>Checkout</BasketButton>
@@ -21,12 +22,19 @@ const ShoppingCart = props => {
             <BasketButton>Clear</BasketButton>
             <BasketTotal>Total: $0</BasketTotal>
         </BasketContainer>
+        </All>
 		</div>
 	)
 }
 
 
 export default ShoppingCart
+
+const All = styled.div`
+height: 74vh;
+margin: 0;
+padding: 0;
+`
 
 const BasketContainer = styled.div`
 display: grid;

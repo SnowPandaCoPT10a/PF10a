@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Footers = () => {
 	return (
-			<div>
+			<div className='footercont'>
 		<footer className="footer-distributed">
 
       <div className="footer-right">
