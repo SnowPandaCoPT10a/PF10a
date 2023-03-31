@@ -4,6 +4,7 @@ import {
   GET_ALL_PRODUCTS_NAME,
   POST_NEW_PRODUCTS,
   SET_FILTERED_PRODUCTS,
+  CREATE_NEW_USER
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -76,5 +77,18 @@ export function FilteredProducts(query) {
       type: SET_FILTERED_PRODUCTS,
       payload: response.data,
     });
+  };
+}
+export function createNewUser(email) {
+  return async function(dispatch) {
+    try {
+      const response = await axios.post("http://localhost:3001/users/create/", { email });
+      dispatch({
+        type: CREATE_NEW_USER,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 }

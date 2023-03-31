@@ -9,18 +9,19 @@ const getAllProducts = require("./productsRouter");
 const getAllPaginado = require("./paginadoRouter");
 const getSearchProduct = require("./searchRouter");
 const getFiltradoProduct = require("./filtradoRouter");
-
+const getBills = require("./billsRouter")
 const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
 // router.use('/bills', getAllBills);
 // router.use('/reviews', getAllReviews);
-// router.use('/users', getAllUsers);
+router.use('/users', getAllUsers);
 router.use("/products", getAllProducts);
 router.use("/paginado", getAllPaginado);
 router.use("/search", getSearchProduct);
 router.use("/filtrado", getFiltradoProduct);
+router.use('/bills',getBills)
 
 router.get("/", (req, res, next) => {
   return res.status(200).json(getAllProducts);
