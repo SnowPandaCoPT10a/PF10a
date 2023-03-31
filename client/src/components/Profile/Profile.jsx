@@ -5,26 +5,27 @@ import './Profile.css'
 
 
 const Profile = () => {
-	 const { user,  isAuthenticated } = useAuth0();
+	const { user, isAuthenticated } = useAuth0();
 
-console.log(user)
- if (isAuthenticated){
+	console.log(user)
+	if (isAuthenticated) {
 		return (
 
-		<div className='profilecont'>
-		<img className='imgProfile' src={user.picture.length === 0 || `${Logo}` } alt='no hay imagen' />
-	
-			<h1>{user.name}</h1>
+			<div className='profilecont'>
+				<img className='imgProfile' src={user.picture.length === 0 || `${Logo}`} alt='no hay imagen' />
 
-			<h1>{user.email}</h1>
+				<h1>{user.name}</h1>
+
+				<h1>{user.email}</h1>
 			</div>
-		)}
+		)
+	}
 
 	return (
 		<div>
 		</div>
-		
-		
+
+
 	)
 }
 
