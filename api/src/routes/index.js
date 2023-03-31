@@ -16,7 +16,7 @@ const router = Router();
 
 // router.use('/bills', getAllBills);
 // router.use('/reviews', getAllReviews);
-// router.use('/users', getAllUsers);
+router.use('/users', getAllUsers);
 router.use("/products", getAllProducts);
 router.use("/paginado", getAllPaginado);
 router.use("/search", getSearchProduct);

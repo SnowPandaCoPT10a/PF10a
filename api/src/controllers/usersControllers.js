@@ -1,4 +1,4 @@
-const { User } = require('../db');
+const { Users } = require('../db');
 const { Op } = require("sequelize");
 
 
@@ -10,7 +10,7 @@ const cloudinary = require('cloudinary').v2;
 // terminar de arreglar linea 15 next(err);
 async function getAllUsers(req, res, next) {
     try {
-        const allUser = await User.findAll({});
+        const allUser = await Users.findAll({});
         return res.status(200).send(allUser)
     } catch (err) {
         next(err);
@@ -20,10 +20,10 @@ async function getAllUsers(req, res, next) {
 
 async function postNewUser(req, res) {
     try {
-
         let { email } = req.body;
-        let ceateUser = await User.findOrCreate( {where: {
-            email: email
+       let newUsuario = email
+        let ceateUser = await Users.findOrCreate( {where: {
+            email: newUsuario
         }});
         return res.status(201).send({ message: "User was created" });
     } catch (err) {
@@ -37,7 +37,7 @@ async function postNewUser(req, res) {
 async function DisableUser(req, res) {
     try {
         let { email } = req.body;
-        const user = await User.findOne({
+        const user = await Users.findOne({
             where: {
                 email: email
             }
@@ -65,7 +65,7 @@ cloudinary.config({
        let { email } = req.params;
        let { first_name, last_name, nationality, date_birth, mobile } = req.body;
  
-       const user = await User.findOne({
+       const user = await Users.findOne({
           where: {
              email: email
           }
@@ -86,7 +86,8 @@ cloudinary.config({
        } else if (req.body.image) {
           // Si se proporcionó una URL de imagen, subirla a Cloudinary y obtener la URL de la imagen
           const result = await cloudinary.uploader.upload(req.body.image,{
-            public_id: user.email
+            public_id: user.email,
+            folder: "SnowPandaCO/usuarios"
           });
           imageUrl = result.secure_url;
        }
