@@ -8,7 +8,7 @@ import Login from '../Login/Login.jsx'
 import Logout from '../Logout/Logout.jsx'
 import { useAuth0 } from "@auth0/auth0-react";
 
-const Header = ({ navigateToCategory, categories }) => {
+const Header = ({ navigateToCategory, categories, countProducts }) => {
   const location = useLocation();
   let navigate = useNavigate();
 
@@ -64,7 +64,7 @@ const Header = ({ navigateToCategory, categories }) => {
       </Link>
       <Link to={'/ShoppingCart'}>
         <button className='btnCarrt'>
-          <FaShoppingCart />
+          <FaShoppingCart />{countProducts}
         </button>
       </Link>
       

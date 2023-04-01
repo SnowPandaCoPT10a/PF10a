@@ -13,6 +13,7 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import { useNavigate } from 'react-router-dom';
 import Profile from './components/Profile/Profile.jsx';
 import './App.css'
+import { useState } from 'react';
 
 
 function App() {
@@ -31,18 +32,21 @@ function App() {
     { name: 'Accesories', path: '/Accesories' },
   ];
 
+const [allProducts, setAllProducts] = useState([]);
+  const [priceTotal, setPriceTotal] = useState(0)
+  const [countProducts, setCountProducts] = useState(0)
   
 
   return (
     <BrowserRouter>
-      <Header categories={categories} navigateToCategory={navigateToCategory} />
+      <Header categories={categories} navigateToCategory={navigateToCategory} countProducts={countProducts} />
       <div className='App container'>
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           <Route exact path='/Shop' element={<Tienda />} />
-          <Route exact path='/ShoppingCart' element={<ShoppingCart />} />
+          <Route exact path='/ShoppingCart' element={<ShoppingCart allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
 
           <Route exact path='/Products/:article' element={<Cards/>}/>
 
@@ -66,7 +70,7 @@ function App() {
           <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} /> */}
 
           <Route path= '/User' element={<Profile />} />
-         <Route path='/Products/:categoria/:id/Detail' element={<Card />} />
+         <Route path='/Products/:categoria/:id/Detail' element={<Card allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
          <Route exact path='/Create' element={<Create />} />
          
         </Routes>

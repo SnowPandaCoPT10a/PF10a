@@ -1,10 +1,23 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
+import { useDispatch } from 'react-redux'
+import { createNewUser } from '../../Redux/actions/index.js'
 import './Login.css'
 
 const Login = () => {
 
-	const { loginWithRedirect } = useAuth0();
+	const { loginWithRedirect, isAuthenticated, user } = useAuth0();
+	const [loggedIn, setLoggedIn] = useState(false);
+	const dispatch = useDispatch();
+
+
+
+	useEffect(() => {
+		if (isAuthenticated && user && !loggedIn) {
+			dispatch(createNewUser(user.email));
+			setLoggedIn(true);
+		}
+	}, [isAuthenticated, user, loggedIn, dispatch]);
 
 	return (
 		<div>

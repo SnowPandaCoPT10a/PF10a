@@ -1,115 +1,118 @@
-import React from 'react'
-import './style.css'
-import { useEffect, useState } from 'react'
-import {useParams} from 'react-router-dom'
+import React from "react";
+import "./style.css";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from '../../Redux/actions/index.js'
-import { Link } from 'react-router-dom';
-import Pagination from '../Pagination/Pagination';
-import Filter from '../Filter/Filter';
+import { getAllProducts } from "../../Redux/actions/index.js";
+import { Link } from "react-router-dom";
+import Pagination from "../Pagination/Pagination";
+import Filter from "../Filter/Filter";
 
 const Cards = () => {
-    const {article} = useParams()
-    const productsBoard = useSelector((state) => state.products);
-    const filteredProducts = productsBoard.filter(el => el.category === article || el.brand.name === article)
-    const dispatch = useDispatch()
-    console.log(productsBoard, 'hssahsh')
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const [productPerPage] = useState(4);
-
-
-    const indexOfLastProduct = currentPage * productPerPage;
-    const indexOfFirstProduct = indexOfLastProduct - productPerPage;
-    const currentProduct = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
-
-    const pagination = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
-    useEffect(() => {
-        dispatch(getAllProducts())
-        dispatch(getAllProducts(article))
-
-    }, [dispatch])
-
-    // <Link to={'/shoes/' + el.id +'/buyNow'}
-    console.log("TU VIEJA", filteredProducts)
-    return (
-        <div>
-            <Pagination
-                productPerPage={productPerPage}
-                filteredProducts={filteredProducts.length}
-                pagination={pagination}
-                currentPage={currentPage}
-            />
-            <Filter pagination={pagination} />
-            {filteredProducts.length > 0 ?
-                currentProduct.map((el) =>
+  const { article } = useParams();
+  const productsBoard = useSelector((state) => state.products);
+  const filteredProducts = productsBoard.filter(
+    (el) => el.category === article || el.brand.brandName === article
+  );
+  const dispatch = useDispatch();
+  console.log(productsBoard, "hssahsh");
 
 
-                    <div key={el.name} className="container page-wrapper">
-                        <div className="page-inner">
-                            <div className="row">
-                                <div className="el-wrapper">
-                                    <Link key={el.productsID} to={`/Products/${article}/${el.productsID}/Detail`}>
-                                        <div className="box-up">
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productPerPage] = useState(4);
 
-                                            <img className="img" src={el.img} alt="" />
+  const indexOfLastProduct = currentPage * productPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+  const currentProduct = filteredProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
-                                            <div className="img-info">
-                                                <div className="info-inner">
-                                                    <span className="p-name">{el.name}</span>
-                                                    <span className="p-company">{el.brand}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="h-bg">
-                                            <div className="h-bg-inner" />
-                                        </div>
-                                        <span className="price">{el.price}</span>
-                                    </Link>
-                                </div>
-                            </div>
+  const pagination = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  useEffect(() => {
+    dispatch(getAllProducts());
+    dispatch(getAllProducts(article));
+  }, [dispatch]);
+
+  // <Link to={'/shoes/' + el.id +'/buyNow'}
+  console.log("TU VIEJA", filteredProducts);
+  return (
+    <div>
+      <Pagination
+        productPerPage={productPerPage}
+        filteredProducts={filteredProducts.length}
+        pagination={pagination}
+        currentPage={currentPage}
+      />
+      <Filter pagination={pagination} />
+      {filteredProducts.length > 0 ? (
+        currentProduct.map((el) => (
+          <div key={el.name} className="container page-wrapper">
+            <div className="page-inner">
+              <div className="row">
+                <div className="el-wrapper">
+                  <Link
+                    key={el.productsID}
+                    to={`/Products/${article}/${el.productsID}/Detail`}
+                  >
+                    <div className="box-up">
+                      <img className="img" src={el.img} alt="" />
+
+                      <div className="img-info">
+                        <div className="info-inner">
+                          <span className="p-name">{el.name}</span>
+                          <span className="p-company">
+                            {el.brand.brandName}
+                          </span>
                         </div>
+                      </div>
                     </div>
-
-
-                ) :
-                <div key={"LA CAGAMO"} className="container page-wrapper">
-                    <div className="page-inner">
-                        <div className="row">
-                            <div className="el-wrapper">
-                                <div className="box-up">
-                                    <img className="img" alt="" />
-                                    <div className="img-info">
-                                        <div className="info-inner">
-                                            <span className="p-name">{"LA CAGAMO"}</span>
-                                        </div>
-                                        <Link to='/Shop'>
-                                            <button className="button1">volver</button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="h-bg">
-                            <div className="h-bg-inner" />
-
-                        </div>
+                    <div className="h-bg">
+                      <div className="h-bg-inner" />
                     </div>
-                </div>}
-            <Pagination
-                productPerPage={productPerPage}
-                filteredProducts={filteredProducts.length}
-                pagination={pagination}
-                currentPage={currentPage}
-
-            />
+                    <span className="price">{el.price}</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      ) : (
+        <div key={"LA CAGAMO"} className="container page-wrapper">
+          <div className="page-inner">
+            <div className="row">
+              <div className="el-wrapper">
+                <div className="box-up">
+                  <img className="img" alt="" />
+                  <div className="img-info">
+                    <div className="info-inner">
+                      <span className="p-name">{"LA CAGAMO"}</span>
+                    </div>
+                    <Link to="/Shop">
+                      <button className="button1">volver</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="h-bg">
+              <div className="h-bg-inner" />
+            </div>
+          </div>
         </div>
+      )}
+      <Pagination
+        productPerPage={productPerPage}
+        filteredProducts={filteredProducts.length}
+        pagination={pagination}
+        currentPage={currentPage}
+      />
+    </div>
+  );
+};
 
-    )
-}
-
-
-export default Cards
+export default Cards;

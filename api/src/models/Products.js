@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
     },
     status: {
       type: DataTypes.BOOLEAN,
-      defaultValue: true
+      defaultValue: true,
     },
     material: {
       type: DataTypes.STRING,
@@ -57,7 +57,6 @@ module.exports = (sequelize) => {
     },
   });
 };
-
 
 // NumberSize(talle 30,32,34)
 // Size (talle S,M,L)

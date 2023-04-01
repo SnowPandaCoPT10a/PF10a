@@ -1,13 +1,13 @@
 const { Users } = require('../db');
 const { Op } = require("sequelize");
-//const { onlyLettersCheck, onlyDateCheck, onlyNumbersCheck, isEmailCheck, httpsLinkCheck, statusCheck, priviligeCheck } = require('../helpfuls/regex');
-//const cloudinary = require('cloudinary').v2;
 
 
+const cloudinary = require('cloudinary').v2;
 
 
 //! GET show all users Users --------------
-
+// tema de como debo enviar el res.status del error con el next
+// terminar de arreglar linea 15 next(err);
 async function getAllUsers(req, res, next) {
     try {
         const allUser = await Users.findAll({});
@@ -17,29 +17,105 @@ async function getAllUsers(req, res, next) {
     };
 };
 
-//! POST New User --------------
+
 async function postNewUser(req, res) {
     try {
-        //let { first_name, last_name, nationality, genre, date_birth, type_doc, identification_doc, email, mobile, image, status, privilige } = req.body;
-        
-
         let { email } = req.body;
-        if (!isEmailCheck(email)) {
-            return res.status(412).send({ message: "information required" });
-        }
-        let ceateUser = await Users.findOrCreate({  email });
+       let newUsuario = email
+        let ceateUser = await Users.findOrCreate( {where: {
+            email: newUsuario
+        }});
         return res.status(201).send({ message: "User was created" });
     } catch (err) {
         res.status(500).json({ err: err });
     };
 }
+
+
+
+//!-------------- disable    ------ enable  
+async function DisableUser(req, res) {
+    try {
+        let { email } = req.body;
+        const user = await Users.findOne({
+            where: {
+                email: email
+            }
+        });
+        if (user.status === "active") {
+            user.update({ status: "disabled" });
+        } else if (user.status === "disabled") {
+            user.update({ status: "active" });
+        }
+        res.status(201).json(user);
+        //res.send(user);
+    } catch (err) {
+        res.status(401).json({ message: err });
+    };
+};
+
+//!-------------- Modifi user -------------------------------  
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+ });
+ async function ModifyUser(req, res) {
+    try {
+       let { email } = req.params;
+       let { first_name, last_name, nationality, date_birth, mobile } = req.body;
+ 
+       const user = await Users.findOne({
+          where: {
+             email: email
+          }
+       });
+ 
+       if (!user) {
+          return res.status(404).json({msg: "user not found"});
+       }
+ 
+       let imageUrl;
+ 
+       if (req.file) {
+          // Si se proporcionó un archivo, subirlo a Cloudinary y obtener la URL de la imagen
+          const result = await cloudinary.uploader.upload(req.file.path,{
+            public_id: user.email
+          });
+          imageUrl = result.secure_url;
+       } else if (req.body.image) {
+          // Si se proporcionó una URL de imagen, subirla a Cloudinary y obtener la URL de la imagen
+          const result = await cloudinary.uploader.upload(req.body.image,{
+            public_id: user.email,
+            folder: "SnowPandaCO/usuarios"
+          });
+          imageUrl = result.secure_url;
+       }
+ 
+       // Actualizar la información del usuario y la URL de la imagen, si corresponde
+       user.update({
+          first_name: first_name,
+          last_name: last_name,
+          nationality: nationality,
+          date_birth: date_birth,
+          mobile: mobile,
+          image: imageUrl,
+       });
+ 
+       // Responder con el usuario actualizado
+       res.status(201).json(user);
+    } catch (err) {
+       res.status(401).json({ message: err });
+    };
+ }
  
 
 
 
-//!! ----------------
+
 module.exports = {
     getAllUsers,
     postNewUser,
-    
+    DisableUser,
+    ModifyUser
 };

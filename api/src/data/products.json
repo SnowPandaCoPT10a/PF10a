@@ -8,32 +8,32 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Pandew",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -46,32 +46,32 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "MaxProtect",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -84,32 +84,32 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Speedy",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -122,32 +122,32 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "LightPro",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -160,32 +160,32 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Freestyle",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -198,17 +198,17 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "GoodLok",
     "sizes": [
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -221,17 +221,17 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "SportyLok",
     "sizes": [
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -244,17 +244,17 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "RetroLok",
     "sizes": [
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -267,17 +267,17 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "SunLok",
     "sizes": [
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
@@ -290,28 +290,28 @@
     "featuredProduct": true,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "FashionLok",
     "sizes": [
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ]
   },
   {
     "name": "Burton Custom Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Burton",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/burton_aybkkh.png",
+    "brand": {
+      "brandName": "Burton",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/snowpanda_bnksha.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Custom",
     "price": 499.99,
     "description": "An all-mountain board for intermediate to advanced riders.",
@@ -321,7 +321,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -330,11 +330,11 @@
   {
     "name": "Nitro Team Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Nitro",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/nitro_wvd06t.png",
+    "brand": {
+      "brandName": "Nitro",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Nitro.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Team",
     "price": 599.99,
     "description": "A freestyle board with great response and stability.",
@@ -344,7 +344,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -353,11 +353,11 @@
   {
     "name": "K2 Raygun Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "K2",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/k2_t9zo5g.png",
+    "brand": {
+      "brandName": "K2",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/K2.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Raygun",
     "price": 399.99,
     "description": "A board for beginning riders who want to improve their skills.",
@@ -367,7 +367,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -376,11 +376,11 @@
   {
     "name": "Rossignol One Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Rossignol",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/rossignol_jr2eon.png",
+    "brand": {
+      "brandName": "Rossignol",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Rossignol.png",
       "featuredBrand": true
-    }],
+    },
     "model": "One",
     "price": 549.99,
     "description": "An all-mountain board with great versatility and responsiveness.",
@@ -390,7 +390,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -399,11 +399,11 @@
   {
     "name": "Lib Tech TRS Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Lib%20Tech.png",
       "featuredBrand": true
-    }],
+    },
     "model": "TRS",
     "price": 579.99,
     "description": "A freestyle and all-mountain board for experienced riders.",
@@ -413,7 +413,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -422,11 +422,11 @@
   {
     "name": "Arbor Element Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Arbor",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Arbor_utcwmp.png",
+    "brand": {
+      "brandName": "Arbor",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Arbor.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Element",
     "price": 499.99,
     "description": "An all-mountain board with a sustainable construction and great durability.",
@@ -436,7 +436,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": true,
@@ -445,11 +445,11 @@
   {
     "name": "Capita Defenders of Awesome Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Capita",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Capita_tj3e7q.png",
+    "brand": {
+      "brandName": "Capita",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Capita.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Defenders of Awesome",
     "price": 549.99,
     "description": "A freestyle board with great pop and responsiveness.",
@@ -459,7 +459,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -468,11 +468,11 @@
   {
     "name": "Gnu Riders Choice Snowboard",
     "category": "board",
-    "brand":[{
-      "name": "Gnu",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/gnu_vcclwn.png",
+    "brand": {
+      "brandName": "Gnu",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/GNU.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Riders Choice",
     "price": 569.99,
     "description": "A freestyle and all-mountain board with an ecological construction and great performance.",
@@ -482,7 +482,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -491,11 +491,11 @@
   {
     "name": "Jones Explorer Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Jones",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Jones_zdi6s7.png",
+    "brand": {
+      "brandName": "Jones",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Jones.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Explorer",
     "price": 599.99,
     "description": "An all-mountain board for riders looking for versatility and performance on any terrain. It features hybrid profile technology and a heavy-duty construction.",
@@ -505,7 +505,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -514,11 +514,11 @@
   {
     "name": "Rome Artifact Rocker Snowboard",
     "category": "board",
-    "brand": [{
-      "name": "Rome",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/rome_cnnw83.png",
+    "brand": {
+      "brandName": "Rome",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Rome.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Artifact Rocker",
     "price": 449.99,
     "description": "A freestyle board for riders who want great pop and maneuverability in the park. It features a rocker profile and durable construction.",
@@ -528,7 +528,7 @@
       {
         "size": "one size",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "featuredProduct": false,
@@ -537,58 +537,58 @@
   {
     "name": "ExtremePro",
     "model": "ExtremePro",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 47,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679329812/SnowPandaCO/Boots/ExtremePro.png",
@@ -600,58 +600,58 @@
   {
     "name": "GlacierFlex",
     "model": "GlacierFlex",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 39,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 47,
         "stock": 8,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330108/SnowPandaCO/Boots/GlacierFlex.png",
@@ -663,58 +663,58 @@
   {
     "name": "MountaineerX",
     "model": "MountaineerX",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 39,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 47,
         "stock": 12,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679330777/SnowPandaCO/Boots/MountaineerX.png",
@@ -726,53 +726,53 @@
   {
     "name": "SpeedAir",
     "model": "SpeedAir",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 37,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331086/SnowPandaCO/Boots/SpeedAir.png",
@@ -784,48 +784,48 @@
   {
     "name": "MountainMaster",
     "model": "MountainMaster",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331454/SnowPandaCO/Boots/MountainMaster.png",
@@ -837,68 +837,68 @@
   {
     "name": "Freestyle",
     "model": "Freestyle",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 37,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 47,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331688/SnowPandaCO/Boots/Freestyle.png",
@@ -910,58 +910,58 @@
   {
     "name": "CrossCountry",
     "model": "CrossCountry",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 35,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 37,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679331948/SnowPandaCO/Boots/CrossCountry.png",
@@ -973,58 +973,58 @@
   {
     "name": "All-Mountain",
     "model": "All-Mountain",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 35,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 37,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332598/SnowPandaCO/Boots/AllMountain.png",
@@ -1036,58 +1036,58 @@
   {
     "name": "PowderPro",
     "model": "PowderPro",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679332991/SnowPandaCO/Boots/PowderPro.png",
@@ -1099,58 +1099,58 @@
   {
     "name": "Freestyle 2",
     "model": "Freestyle 2",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 39,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 41,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 43,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 45,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679333380/SnowPandaCO/Boots/Freestyle%202.png",
@@ -1162,32 +1162,32 @@
   {
     "name": "FourSeasons",
     "model": "FourSeasons",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/FourSeasons.png",
@@ -1200,32 +1200,32 @@
   {
     "name": "MountainX",
     "model": "MountainX",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/MountainX.png",
@@ -1238,32 +1238,32 @@
   {
     "name": "UrbanLife",
     "model": "UrbanLife",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427908/SnowPandaCO/Jackets/UrbanLife.png",
@@ -1276,32 +1276,32 @@
   {
     "name": "ArticExplorer",
     "model": "ArticExplorer",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ArticExplorer.png",
@@ -1314,32 +1314,32 @@
   {
     "name": "ClassicBomber",
     "model": "ClassicBomber",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/ClassicBomber.png",
@@ -1352,32 +1352,32 @@
   {
     "name": "TrekLite",
     "model": "TrekLite",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/TrekLite.png",
@@ -1390,32 +1390,32 @@
   {
     "name": "Ranger",
     "model": "Ranger",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Ranger.png",
@@ -1428,32 +1428,32 @@
   {
     "name": "Urbana 2.0",
     "model": "Urbana 2.0",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427907/SnowPandaCO/Jackets/Urbana%202.0.png",
@@ -1466,32 +1466,32 @@
   {
     "name": "Skyline",
     "model": "Skyline",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Skyline.png",
@@ -1504,32 +1504,32 @@
   {
     "name": "Vintago",
     "model": "Vintago",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "jackets",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679427906/SnowPandaCO/Jackets/Vintago.png",
@@ -1541,33 +1541,33 @@
   },
   {
     "name": "PandaCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "PandaCo",
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421811/SnowPandaCO/TShirts/PandaCo.png",
@@ -1579,33 +1579,33 @@
   },
   {
     "name": "Vivify",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "model": "Vivify",
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421810/SnowPandaCO/TShirts/Vivify.png",
@@ -1618,32 +1618,32 @@
   {
     "name": "Grit",
     "model": "Grit",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421809/SnowPandaCO/TShirts/Grit.png",
@@ -1656,32 +1656,32 @@
   {
     "name": "Zephyr",
     "model": "Zephyr",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421806/SnowPandaCO/TShirts/Zephyr.png",
@@ -1694,32 +1694,32 @@
   {
     "name": "Nexus",
     "model": "Nexus",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421805/SnowPandaCO/TShirts/Nexus.png",
@@ -1732,32 +1732,32 @@
   {
     "name": "Flame",
     "model": "Flame",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421804/SnowPandaCO/TShirts/Flame.png",
@@ -1770,32 +1770,32 @@
   {
     "name": "PolarCo",
     "model": "PolarCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421803/SnowPandaCO/TShirts/PolarCo.png",
@@ -1808,32 +1808,32 @@
   {
     "name": "TigerCo",
     "model": "TigerCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421802/SnowPandaCO/TShirts/TigerCo.png",
@@ -1846,32 +1846,32 @@
   {
     "name": "Sample",
     "model": "Sample",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421799/SnowPandaCO/TShirts/Sample.png",
@@ -1884,32 +1884,32 @@
   {
     "name": "StudioR",
     "model": "StudioR",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "t-shirts",
     "sizes": [
       {
         "size": "small",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "medium",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "large",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": "extraLarge",
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421798/SnowPandaCO/TShirts/StudioR.png",
@@ -1922,77 +1922,77 @@
   {
     "name": "ClassicCo",
     "model": "ClassicCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/ClassicCo.png",
@@ -2005,77 +2005,77 @@
   {
     "name": "AthleticCo",
     "model": "AthleticCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679426091/SnowPandaCO/Pants/AthleticCo.png",
@@ -2088,77 +2088,77 @@
   {
     "name": "SlimCo",
     "model": "SlimCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/SlimCo.png",
@@ -2171,77 +2171,77 @@
   {
     "name": "CargoCo",
     "model": "CargoCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679425818/SnowPandaCO/Pants/CargoCo.png",
@@ -2254,77 +2254,77 @@
   {
     "name": "RuggedCo",
     "model": "RuggedCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421821/SnowPandaCO/Pants/RuggedCo.png",
@@ -2337,77 +2337,77 @@
   {
     "name": "TechCo",
     "model": "TechCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/TechCo.png",
@@ -2420,77 +2420,77 @@
   {
     "name": "RelaxedCo",
     "model": "RelaxedCo",
-    "brand":[ {
-      "name": "Lib Tech",
-      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+    "brand": {
+      "brandName": "SnowPandaCo",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png",
       "featuredBrand": true
-    }],
+    },
     "category": "pants",
     "numbersizes": [
       {
         "size": 30,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 32,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 34,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 36,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 38,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 40,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 42,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 44,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 46,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 48,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 50,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 52,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       },
       {
         "size": 54,
         "stock": 10,
-        "quantity":1
+        "quantity": 1
       }
     ],
     "img": "https://res.cloudinary.com/dberwyxyq/image/upload/v1679421820/SnowPandaCO/Pants/RelaxedCo.png",
