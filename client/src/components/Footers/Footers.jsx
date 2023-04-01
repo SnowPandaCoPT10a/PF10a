@@ -2,10 +2,16 @@ import React from 'react'
 import './Footers.css'
 import {FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
+
+
 
 const Footers = () => {
-	return (
-			<div className='footercont'>
+  const location = useLocation();
+  const isFixed = location.pathname === '/OrderConfirmation' || location.pathname === '/Checkout' || location.pathname === '/ShoppingCart' || location.pathname === '/Create' ;
+ 
+  return (
+    <div className={isFixed ? 'fixed-bottom' : ''}>      
 		<footer className="footer-distributed">
 
       <div className="footer-right">
