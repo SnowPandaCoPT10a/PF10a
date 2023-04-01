@@ -8,7 +8,11 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "Pandew",
     "sizes": [
       {
@@ -42,7 +46,11 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "MaxProtect",
     "sizes": [
       {
@@ -76,7 +84,11 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "Speedy",
     "sizes": [
       {
@@ -110,7 +122,11 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "LightPro",
     "sizes": [
       {
@@ -144,7 +160,11 @@
     "featuredProduct": false,
     "material": "KPA",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "Freestyle",
     "sizes": [
       {
@@ -178,7 +198,11 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "GoodLok",
     "sizes": [
       {
@@ -197,7 +221,11 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "SportyLok",
     "sizes": [
       {
@@ -216,7 +244,11 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "RetroLok",
     "sizes": [
       {
@@ -235,7 +267,11 @@
     "featuredProduct": false,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "SunLok",
     "sizes": [
       {
@@ -254,7 +290,11 @@
     "featuredProduct": true,
     "material": "Grilamid tr 901 Lx",
     "activity": "sports",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "FashionLok",
     "sizes": [
       {
@@ -267,7 +307,11 @@
   {
     "name": "Burton Custom Snowboard",
     "category": "board",
-    "brand": "Burton",
+    "brand": [{
+      "name": "Burton",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/burton_aybkkh.png",
+      "featuredBrand": true
+    }],
     "model": "Custom",
     "price": 499.99,
     "description": "An all-mountain board for intermediate to advanced riders.",
@@ -286,7 +330,11 @@
   {
     "name": "Nitro Team Snowboard",
     "category": "board",
-    "brand": "Nitro",
+    "brand": [{
+      "name": "Nitro",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/nitro_wvd06t.png",
+      "featuredBrand": true
+    }],
     "model": "Team",
     "price": 599.99,
     "description": "A freestyle board with great response and stability.",
@@ -305,7 +353,11 @@
   {
     "name": "K2 Raygun Snowboard",
     "category": "board",
-    "brand": "K2",
+    "brand": [{
+      "name": "K2",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/k2_t9zo5g.png",
+      "featuredBrand": true
+    }],
     "model": "Raygun",
     "price": 399.99,
     "description": "A board for beginning riders who want to improve their skills.",
@@ -324,7 +376,11 @@
   {
     "name": "Rossignol One Snowboard",
     "category": "board",
-    "brand": "Rossignol",
+    "brand": [{
+      "name": "Rossignol",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/rossignol_jr2eon.png",
+      "featuredBrand": true
+    }],
     "model": "One",
     "price": 549.99,
     "description": "An all-mountain board with great versatility and responsiveness.",
@@ -343,7 +399,11 @@
   {
     "name": "Lib Tech TRS Snowboard",
     "category": "board",
-    "brand": "Lib Tech",
+    "brand": [{
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "TRS",
     "price": 579.99,
     "description": "A freestyle and all-mountain board for experienced riders.",
@@ -362,7 +422,11 @@
   {
     "name": "Arbor Element Snowboard",
     "category": "board",
-    "brand": "Arbor",
+    "brand": [{
+      "name": "Arbor",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Arbor_utcwmp.png",
+      "featuredBrand": true
+    }],
     "model": "Element",
     "price": 499.99,
     "description": "An all-mountain board with a sustainable construction and great durability.",
@@ -381,7 +445,11 @@
   {
     "name": "Capita Defenders of Awesome Snowboard",
     "category": "board",
-    "brand": "Capita",
+    "brand": [{
+      "name": "Capita",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/Capita_tj3e7q.png",
+      "featuredBrand": true
+    }],
     "model": "Defenders of Awesome",
     "price": 549.99,
     "description": "A freestyle board with great pop and responsiveness.",
@@ -400,7 +468,11 @@
   {
     "name": "Gnu Riders Choice Snowboard",
     "category": "board",
-    "brand": "Gnu",
+    "brand":[{
+      "name": "Gnu",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/gnu_vcclwn.png",
+      "featuredBrand": true
+    }],
     "model": "Riders Choice",
     "price": 569.99,
     "description": "A freestyle and all-mountain board with an ecological construction and great performance.",
@@ -419,7 +491,11 @@
   {
     "name": "Jones Explorer Snowboard",
     "category": "board",
-    "brand": "Jones",
+    "brand": [{
+      "name": "Jones",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201747/SnowPandaCO/IMG%20MARCAS/Jones_zdi6s7.png",
+      "featuredBrand": true
+    }],
     "model": "Explorer",
     "price": 599.99,
     "description": "An all-mountain board for riders looking for versatility and performance on any terrain. It features hybrid profile technology and a heavy-duty construction.",
@@ -438,7 +514,11 @@
   {
     "name": "Rome Artifact Rocker Snowboard",
     "category": "board",
-    "brand": "Rome",
+    "brand": [{
+      "name": "Rome",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/rome_cnnw83.png",
+      "featuredBrand": true
+    }],
     "model": "Artifact Rocker",
     "price": 449.99,
     "description": "A freestyle board for riders who want great pop and maneuverability in the park. It features a rocker profile and durable construction.",
@@ -457,7 +537,11 @@
   {
     "name": "ExtremePro",
     "model": "ExtremePro",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -516,7 +600,11 @@
   {
     "name": "GlacierFlex",
     "model": "GlacierFlex",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -575,7 +663,11 @@
   {
     "name": "MountaineerX",
     "model": "MountaineerX",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -634,7 +726,11 @@
   {
     "name": "SpeedAir",
     "model": "SpeedAir",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -688,7 +784,11 @@
   {
     "name": "MountainMaster",
     "model": "MountainMaster",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -737,7 +837,11 @@
   {
     "name": "Freestyle",
     "model": "Freestyle",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -806,7 +910,11 @@
   {
     "name": "CrossCountry",
     "model": "CrossCountry",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -865,7 +973,11 @@
   {
     "name": "All-Mountain",
     "model": "All-Mountain",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -924,7 +1036,11 @@
   {
     "name": "PowderPro",
     "model": "PowderPro",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -983,7 +1099,11 @@
   {
     "name": "Freestyle 2",
     "model": "Freestyle 2",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "activity": "ski",
     "category": "boots",
     "numbersizes": [
@@ -1042,7 +1162,11 @@
   {
     "name": "FourSeasons",
     "model": "FourSeasons",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1076,7 +1200,11 @@
   {
     "name": "MountainX",
     "model": "MountainX",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1110,7 +1238,11 @@
   {
     "name": "UrbanLife",
     "model": "UrbanLife",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1144,7 +1276,11 @@
   {
     "name": "ArticExplorer",
     "model": "ArticExplorer",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1178,7 +1314,11 @@
   {
     "name": "ClassicBomber",
     "model": "ClassicBomber",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1212,7 +1352,11 @@
   {
     "name": "TrekLite",
     "model": "TrekLite",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1246,7 +1390,11 @@
   {
     "name": "Ranger",
     "model": "Ranger",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1280,7 +1428,11 @@
   {
     "name": "Urbana 2.0",
     "model": "Urbana 2.0",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1314,7 +1466,11 @@
   {
     "name": "Skyline",
     "model": "Skyline",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1348,7 +1504,11 @@
   {
     "name": "Vintago",
     "model": "Vintago",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "jackets",
     "sizes": [
       {
@@ -1381,7 +1541,11 @@
   },
   {
     "name": "PandaCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "PandaCo",
     "category": "t-shirts",
     "sizes": [
@@ -1415,7 +1579,11 @@
   },
   {
     "name": "Vivify",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "model": "Vivify",
     "category": "t-shirts",
     "sizes": [
@@ -1450,7 +1618,11 @@
   {
     "name": "Grit",
     "model": "Grit",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1484,7 +1656,11 @@
   {
     "name": "Zephyr",
     "model": "Zephyr",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1518,7 +1694,11 @@
   {
     "name": "Nexus",
     "model": "Nexus",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1552,7 +1732,11 @@
   {
     "name": "Flame",
     "model": "Flame",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1586,7 +1770,11 @@
   {
     "name": "PolarCo",
     "model": "PolarCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1620,7 +1808,11 @@
   {
     "name": "TigerCo",
     "model": "TigerCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1654,7 +1846,11 @@
   {
     "name": "Sample",
     "model": "Sample",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1688,7 +1884,11 @@
   {
     "name": "StudioR",
     "model": "StudioR",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "t-shirts",
     "sizes": [
       {
@@ -1722,7 +1922,11 @@
   {
     "name": "ClassicCo",
     "model": "ClassicCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -1801,7 +2005,11 @@
   {
     "name": "AthleticCo",
     "model": "AthleticCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -1880,7 +2088,11 @@
   {
     "name": "SlimCo",
     "model": "SlimCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -1959,7 +2171,11 @@
   {
     "name": "CargoCo",
     "model": "CargoCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -2038,7 +2254,11 @@
   {
     "name": "RuggedCo",
     "model": "RuggedCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -2117,7 +2337,11 @@
   {
     "name": "TechCo",
     "model": "TechCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {
@@ -2196,7 +2420,11 @@
   {
     "name": "RelaxedCo",
     "model": "RelaxedCo",
-    "brand": "SnowPandaCo",
+    "brand":[ {
+      "name": "Lib Tech",
+      "logo": "https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/lib_tech_pnfnr4.png",
+      "featuredBrand": true
+    }],
     "category": "pants",
     "numbersizes": [
       {

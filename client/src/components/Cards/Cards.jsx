@@ -11,7 +11,7 @@ import Filter from '../Filter/Filter';
 const Cards = () => {
     const {article} = useParams()
     const productsBoard = useSelector((state) => state.products);
-    const filteredProducts = productsBoard.filter(el => el.category === article || el.brand === article)
+    const filteredProducts = productsBoard.filter(el => el.category === article || el.brand.name === article)
     const dispatch = useDispatch()
     console.log(productsBoard, 'hssahsh')
 

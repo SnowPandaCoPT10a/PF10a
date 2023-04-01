@@ -41,7 +41,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
     },
     brand: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
     },
     model: {
       type: DataTypes.STRING,

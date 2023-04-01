@@ -29,7 +29,7 @@ router.use('/accessories', getAllAccessories);
 // router.use('/pants', getAllPants);
 // router.use('/reviews', getAllReviews);
 router.use('/tshirts', getAllTshirts);
-// router.use('/users', getAllUsers);
+router.use('/users', getAllUsers);
 router.use('/products', getAllProducts);
 router.use('/paginado', getAllPaginado)
 router.use('/search',getSearchProduct)

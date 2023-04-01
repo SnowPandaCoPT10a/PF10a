@@ -44,7 +44,9 @@ function Create() {
     const sizeNumber = numberSizes.filter(size => size.numbersizes)
     const sizeLeter = numberSizes.filter(size => size.sizes)
     const [errors, setErrors] = useState({});
+    const [newBrand, setNewBrand] = useState(false)
 
+    console.log(newBrand, "PATATA")
 //! aca traigo los numeros de los talles
     const sizes = sizeNumber.reduce((acc, curr) => {
       curr.numbersizes.forEach((item) => {
@@ -274,9 +276,19 @@ function handleChange(e) {
           {errors.name ? <p className="danger">{errors.name}</p> : null}
         </div> 
         <div className="pets-spayed-neutered">
-          <label htmlFor="pet-spayed">Brand</label>
+
+
+
+          <label htmlFor="pet-spayed">Brand     {newBrand === false ? <button onClick={()=>{setNewBrand(!newBrand); setInput({...input, brand:""})}}> New </button>:<button onClick={()=>{setNewBrand(!newBrand); setInput({...input, brand:""})}}> Cancel </button>}</label>
           <div className="radio-container">
-          <input id="pets-breed" placeholder="Insert brand" name ="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}></input>
+          {newBrand === false ? <select id="pets-breed" placeholder="Insert brand" name ="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}>
+           {numberSizes && Array.from(new Set(numberSizes.map(h => h.brand))).map(brand => (
+            <option>{brand}</option>
+             ))}    
+            </select>
+            :
+            <input id="pets-breed" placeholder="Insert New brand" name ="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}></input>}
+            
           </div>
           {errors.brand ? <p className="danger">{errors.brand}</p> : null}
         </div> 
@@ -313,7 +325,12 @@ function handleChange(e) {
         <div className="pets-spayed-neutered">
           <label htmlFor="pet-spayed">Activity</label>
           <div className="radio-container">
-          <input id="pets-birthday" placeholder="Activity" name ="activity" value={input.activity} type="text" onChange={(e) => handleChange(e)}></input>
+          <select id="pets-birthday" placeholder="Activity" name ="activity" value={input.activity} type="text" onChange={(e) => handleChange(e)}>
+           {numberSizes && Array.from(new Set(numberSizes.map(h => h.activity))).map(activity => (
+            <option>{activity}</option>
+             ))}
+            </select>
+
           </div>
           {errors.activity ? <p className="danger">{errors.activity}</p> : null}
 
@@ -336,7 +353,7 @@ function handleChange(e) {
 
         {input.category && (input.category === "boots" || input.category === "pants") ? (
   sizes.map((num) => (
-    <div className="fato">
+    <div className="fato row row-cols-2">
       <div className="sizes">
         <label htmlFor="">Insert size {num} stock</label>
         <input type="number" min={0} placeholder="stock" name={num} value={input.stock} onBlur={(e) => handleNumberStock(e)}/>
@@ -375,6 +392,8 @@ function handleChange(e) {
 
         {/* //!!!!!!! */}
         <hr/>
+
+        <div>
               <label htmlFor="pets-upload">Upload a photo</label>
         <div className="pets-photo">
           <button id="pets-upload">
@@ -389,6 +408,23 @@ function handleChange(e) {
                 name="img"
                 onChange={(e) => handleChange(e)}
               />
+        </div>
+        </div>
+        <label htmlFor="pets-upload">Upload a photo</label>
+        <div className="pets-photo">
+          <button id="pets-upload">
+            <i className="fas fa-camera-retro"></i>
+          </button>
+        <div>
+              <input
+                className="input"
+                type="text"
+                
+                value={input.img}
+                name="img"
+                onChange={(e) => handleChange(e)}
+              />
+        </div>
         </div>
         </div>
     </header>
@@ -417,321 +453,3 @@ function handleChange(e) {
     )}
 export default Create
 
-//{!errors.model &&
-  //             !errors.name &&
-  //             !errors.price &&
-  //             !errors.description &&
-  //             !errors.material &&
-  //             !errors.activity &&
-  //             !errors.brand ? (
-  //               <button className="CreateButton" type="submit" value="Crear">
-  //                 SUBMIT
-  //               </button>
-  //             ) : (
-  //               <p className="danger">YOU HAVE ERRORS IN THE FORM</p>
-  //             )}
-// import React, { useState, useEffect } from "react";
-// import "./Create.css";
-// import { useDispatch, useSelector } from "react-redux";
-// import { postProducts, getAllProducts } from "../../Redux/actions/index";
-
-// //!!
-// function Create() {
-//   const dispatch = useDispatch();
-//   const infoDB = useSelector((state) => state.allProducts);
-
-//   useEffect(() => {
-//     dispatch(getAllProducts());
-//   }, [dispatch]);
-
-//   //! aca traigo los numeros de los talles
-
-//   const infoNumberSizes = [   
-//       30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54];
-  
-
-//   //! aca traigo las palabras de los talles(s,l, x , xl)
-//   const infoSizes = ['S', 'M', 'L', 'XL', 'one-size'];
-  
-
-//   //! aca traigo las categorias de los productos
-//   const infoCategorys = [];
-//   function loadCategorys() {
-//     infoDB.map((e) => {
-//       if (e.hasOwnProperty("category")) {
-//         return infoCategorys.push(e.category);
-//       }
-//     });
-//   }
-//   loadCategorys();
-//   let resultCategory = infoCategorys.filter((item, index) => {
-//     return infoCategorys.indexOf(item) === index;
-//   });
-//   resultCategory.pop(resultCategory.length);
-
-//   const submit = (e) => {
-//     e.preventDefault();
-//     dispatch(postProducts(data));
-//     setData({
-//       name: "",
-//       img: "",
-//       description: "",
-//       category: "",
-//       price: "",
-//       material: "",
-//       activity: "",
-//       brand: "",
-//       model: "",
-//       numbersizes: [],
-//       sizes: [],
-//       boardsizes: [],
-//     });
-//   };
-//   const [data, setData] = useState({
-//     name: "",
-//     img: "",
-//     description: "",
-//     category: "",
-//     price: "",
-//     material: "",
-//     activity: "",
-//     brand: "",
-//     model: "",
-//     numbersizes: [],
-//     sizes: [],
-//     boardsizes: [],
-//   });
-
-//   const [errors, setErrors] = useState({});
-
-//   const validate = (input) => {
-//     let errors = {};
-//     if (input.name === "") {
-//       errors.name = "You must provide a name";
-//     }
-//     if (input.category === "") {
-//       errors.category = "You must provide a category";
-//     }
-//     if (input.description === "") {
-//       errors.description = "You must provide a description";
-//     }
-//     if (input.price === "") {
-//       errors.price = "You must provide a price";
-//     }
-//     if (input.material === "") {
-//       errors.material = "You must provide a material";
-//     }
-//     if (input.activity === "") {
-//       errors.activity = "You must provide a activity";
-//     }
-//     if (input.brand === "") {
-//       errors.brand = "You must provide a brand";
-//     }
-//     if (input.model === "") {
-//       errors.model = "You must provide a model";
-//     }
-
-//     return errors;
-//   };
-
-//   const handleInputChange = (e) => {
-//     setData({
-//       ...data,
-//       [e.target.name]: Number(e.target.value) <= 0 ? 0 : e.target.value,
-//     });
-//     setErrors(
-//       validate({
-//         ...data,
-//         [e.target.name]: e.target.value,
-//       })
-//     );
-//     setData({
-//       ...data,
-//       [e.target.name]: e.target.value,
-//     });
-//   };
-
-//   const checkbox = (e) => {
-//     const check = [];
-//     console.log(e.target.name)
-//     if (e.target.checked === true) {
-//       check.push(e.target);
-//       setData({
-//         ...data,
-//         status: e.target.name,
-//         category: [...data.category, e.target.name],
-//       });
-//     }
-
-//     const targetValueTypes = e.target.name;
-//     if (e.target.checked === false) {
-//       var borrarCategory = data.category.filter((e) => e !== targetValueTypes);
-//       setData({
-//         ...data,
-//         category: borrarCategory,
-//       });
-//     }
-//   };
-//   return (
-//     <div>
-//       <div className="formPage">
-//         <form action="POST" onSubmit={submit}>
-//           <div className="form-creation">
-//             <h1>Set your own Product</h1>
-//             <div className="prueba">
-//               <p>
-//                 <label>Product Name:</label>
-//                 <input
-//                   type="text"
-//                   placeholder="Type your Product name"
-//                   name="name"
-//                   value={data.name}
-//                   onChange={handleInputChange}
-//                   required
-//                 />
-//               </p>
-//               {errors.name ? <p className="danger">{errors.name}</p> : null}
-//               <p>
-//                 <label>Price: $</label>
-//                 <input
-//                   type="number"
-//                   name="price"
-//                   value={data.price}
-//                   min="1"
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.price ? <p className="danger">{errors.price}</p> : null}
-//               <p>
-//                 <label>Description:</label>
-//                 <input
-//                   type="text"
-//                   name="description"
-//                   value={data.description}
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.description ? (
-//                 <p className="danger">{errors.description}</p>
-//               ) : null}
-//               <p>
-//                 <label>Material:</label>
-//                 <input
-//                   type="text"
-//                   name="material"
-//                   value={data.material}
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.material ? (
-//                 <p className="danger">{errors.material}</p>
-//               ) : null}
-//               <p>
-//                 <label>Activity:</label>
-//                 <input
-//                   type="text"
-//                   name="activity"
-//                   value={data.activity}
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.activity ? (
-//                 <p className="danger">{errors.activity}</p>
-//               ) : null}
-//               <p>
-//                 <label>Brand:</label>
-//                 <input
-//                   type="text"
-//                   name="brand"
-//                   value={data.brand}
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.brand ? <p className="danger">{errors.brand}</p> : null}
-//               <p>
-//                 <label>Model:</label>
-//                 <input
-//                   type="text"
-//                   name="model"
-//                   value={data.model}
-//                   onChange={handleInputChange}
-//                 />
-//               </p>
-//               {errors.model ? <p className="danger">{errors.model}</p> : null}
-//             </div>
-//           </div>
-//           <div>
-//             <h1>Category:</h1>
-//             <div className="Category">
-//               {resultCategory.map((t) => (
-//                 <div className="Category" key={t.id}>
-//                   <input
-//                     type="checkbox"
-//                     name={t}
-//                     value={t}
-//                     id={t}
-//                     onChange={checkbox}
-//                   />
-//                   <label htmlFor={t}>{t}</label>
-//                   {t % 4 === 0 ? <br /> : null}
-//                 </div>
-//               ))}
-//             </div>
-//             <p>SIZES</p>
-//             {(data.category[0] === "accessories") ||
-//             (data.category[0] === "t-shirts") ||
-//             (data.category[0] === "jackets") ||
-//             (data.category[0] === "board") ? (
-//               <div>
-//                 {infoSizes.map((s) => (
-//                 <div className="Category" key={s}>
-//                   <input
-//                     type="checkbox"
-//                     name={s}
-//                     value={s}
-//                     id={s}
-//                     onChange={checkbox}
-//                   />
-//                   <label htmlFor={s}>{s}</label>
-//                   {s % 4 === 0 ? <br /> : null}
-//                 </div>
-//               ))}
-//               </div>
-//             ) : data.category[0] === "pants" || data.category[0] === "boots" ? (
-//               <div>
-//               {infoNumberSizes.map((s) => (
-//                 <div className="Category" key={s}>
-//                   <input
-//                     type="checkbox"
-//                     name={s}
-//                     value={s}
-//                     id={s}
-//                     onChange={checkbox}
-//                   />
-//                   <label htmlFor={s}>{s}</label>
-//                   {s % 4 === 0 ? <br /> : null}
-//                 </div>
-//               ))}
-//               </div>
-//             ) : null}
-//             {!errors.model &&
-//             !errors.name &&
-//             !errors.price &&
-//             !errors.description &&
-//             !errors.material &&
-//             !errors.activity &&
-//             !errors.brand ? (
-//               <button className="CreateButton" type="submit" value="Crear">
-//                 SUBMIT
-//               </button>
-//             ) : (
-//               <p className="danger">YOU HAVE ERRORS IN THE FORM</p>
-//             )}
-//             <p></p>
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
-// export default Create;
