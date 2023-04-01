@@ -1,12 +1,17 @@
 import React from 'react'
 import './ShoppingCart.css'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Checkout from '../Checkout/Checkout';
 
 const ShoppingCart = ({ allProducts, setAllProducts, priceTotal }) => {
 
-
+    const navigate = useNavigate();
     console.log(allProducts, 'mostrame la infooo')
+
+    function handleClear(){ 
+
+    }
 
 
     const renderProduct = () => {
@@ -56,7 +61,7 @@ const ShoppingCart = ({ allProducts, setAllProducts, priceTotal }) => {
             <All>
                 <BasketContainer>
                     <BasketTitle>Shopping Cart</BasketTitle>
-                    <BasketButton>Checkout</BasketButton>
+                    <BasketButton onClick={() => navigate('/Checkout')}>Checkout</BasketButton>
                     <BasketTable>
                         <BasketHeader>
                             <h4>Item</h4>
@@ -133,18 +138,8 @@ const BasketButton = styled.button`
             margin-rigth: 25px;
             border-radius: 8px;
             height: 40px;
-
             &:hover {
-                box - shadow: 0 0 0 6px #488cfb;
+    box-shadow: 0 0 0 6px #488cfb;
   }
-            `
+`
 
-const QuantityButton = styled.button`
-            margin: 7px;
-            border-radius: 3px;
-            height: auto;
-
-            &:hover {
-                box - shadow: 0 0 0 6px #488cfb;
-  }
-            `

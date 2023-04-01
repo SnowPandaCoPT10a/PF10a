@@ -14,6 +14,8 @@ import { useNavigate } from 'react-router-dom';
 import Profile from './components/Profile/Profile.jsx';
 import './App.css'
 import { useState } from 'react';
+import Checkout from "./components/Checkout/Checkout";
+import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation";
 
 
 function App() {
@@ -72,6 +74,8 @@ const [allProducts, setAllProducts] = useState([]);
           <Route path= '/User' element={<Profile />} />
          <Route path='/Products/:categoria/:id/Detail' element={<Card allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
          <Route exact path='/Create' element={<Create />} />
+         <Route path='/OrderConfirmation' element={<OrderConfirmation />} /> 
+         <Route path='/Checkout' element={<Checkout />} />
          
         </Routes>
         <Chatbot />
