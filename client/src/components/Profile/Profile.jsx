@@ -1,13 +1,23 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
 import Logo from '../../img/logoPanda.png';
+import { useDispatch } from 'react-redux'
 import './Profile.css'
+import { createNewUser } from '../../Redux/actions/index.js'
+
 
 
 const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
+	const dispatch = useDispatch();
+	const [userCreated, setUserCreated] = useState(false);
 
-	console.log(user)
+	useEffect(() => {
+		if (isAuthenticated && user && !userCreated) {
+			dispatch(createNewUser(user.email));
+			setUserCreated(true);
+		}
+	}, [isAuthenticated, user, dispatch, userCreated]);
 	if (isAuthenticated) {
 		return (
 

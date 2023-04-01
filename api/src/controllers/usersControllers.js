@@ -21,15 +21,18 @@ async function getAllUsers(req, res, next) {
 async function postNewUser(req, res) {
     try {
         let { email } = req.body;
-       let newUsuario = email
-        let ceateUser = await Users.findOrCreate( {where: {
-            email: newUsuario
-        }});
-        return res.status(201).send({ message: "User was created" });
+        let user = await Users.findOne({ where: { email: email } });
+        if (user) {
+            return res.status(200).send({ message: "User already exists" });
+        } else {
+            let newUser = await Users.create({ email: email });
+            return res.status(201).send({ message: "User was created" });
+        }
     } catch (err) {
         res.status(500).json({ err: err });
     };
 }
+
 
 
 

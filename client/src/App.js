@@ -16,6 +16,7 @@ import './App.css'
 import { useState } from 'react';
 
 
+
 function App() {
 
   const navigateToCategory = (category) => {
@@ -70,6 +71,7 @@ const [allProducts, setAllProducts] = useState([]);
           <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} /> */}
 
           <Route path= '/User' element={<Profile />} />
+          
          <Route path='/Products/:categoria/:id/Detail' element={<Card allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
          <Route exact path='/Create' element={<Create />} />
          
