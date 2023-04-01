@@ -18,6 +18,7 @@ import Checkout from "./components/Checkout/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation";
 
 
+
 function App() {
 
   const navigateToCategory = (category) => {
@@ -72,6 +73,7 @@ const [allProducts, setAllProducts] = useState([]);
           <Route exact path='/Rome' element={<Cards categoria='Rome' path='/Rome' />} /> */}
 
           <Route path= '/User' element={<Profile />} />
+          
          <Route path='/Products/:categoria/:id/Detail' element={<Card allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
          <Route exact path='/Create' element={<Create />} />
          <Route path='/OrderConfirmation' element={<OrderConfirmation />} /> 
