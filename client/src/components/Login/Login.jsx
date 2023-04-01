@@ -2,26 +2,38 @@ import { React, useEffect, useState } from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch } from 'react-redux'
 import { createNewUser } from '../../Redux/actions/index.js'
+
+
 import './Login.css'
+
 
 const Login = () => {
 
+
 	const { loginWithRedirect, isAuthenticated, user } = useAuth0();
+
 	const [loggedIn, setLoggedIn] = useState(false);
 	const dispatch = useDispatch();
 
 
-
-	useEffect(() => {
-		if (isAuthenticated && user && !loggedIn) {
-			dispatch(createNewUser(user.email));
-			setLoggedIn(true);
-		}
-	}, [isAuthenticated, user, loggedIn, dispatch]);
+	if (isAuthenticated) {
+		useEffect(() => {
+			if (isAuthenticated && user && !loggedIn) {
+				dispatch(createNewUser(user.email));
+				setLoggedIn(true);
+			}
+		}, [isAuthenticated, user, loggedIn, dispatch]);
+	}
+	/*const navigate = useNavigate()
+	const handleLogin = () => {
+		loginWithRedirect({
+			redirectUri: "http://localhost:3000/User" // especificamos la ruta a la que queremos redirigir al usuario
+		});
+	};*/
 
 	return (
 		<div>
-			<button className='buttonLog' onClick={() => loginWithRedirect()}>
+			<button className='buttonLog' onClick={loginWithRedirect}>
 				<b className='login'>Log In</b>
 				<div id="clip">
 					<div id="leftTop" class="corner"></div>

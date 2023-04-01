@@ -4,7 +4,8 @@ import {
   GET_ALL_PRODUCTS_NAME,
   POST_NEW_PRODUCTS,
   SET_FILTERED_PRODUCTS,
-  CREATE_NEW_USER
+  CREATE_NEW_USER,
+  UPDATE_USER
 } from "../actions-types/index";
 
 const initialState = {
@@ -48,6 +49,11 @@ function rootReducer(state = initialState, action) {
         ...state,
         users: action.payload
       } 
+      case UPDATE_USER:
+        return{
+          ...state,
+          users: action.payload
+        }
 
     default:
       return state;
