@@ -4,7 +4,8 @@ import {
   GET_ALL_PRODUCTS_NAME,
   POST_NEW_PRODUCTS,
   SET_FILTERED_PRODUCTS,
-  CREATE_NEW_USER
+  CREATE_NEW_USER,
+  UPDATE_USER
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -79,12 +80,25 @@ export function FilteredProducts(query) {
     });
   };
 }
-export function createNewUser(email) {
+export function createNewUser(given_name ,family_name,email,picture) {
   return async function(dispatch) {
     try {
-      const response = await axios.post("http://localhost:3001/users/create/", { email });
+      const response = await axios.post("http://localhost:3001/users/create/", {given_name, family_name, email, picture });
       dispatch({
         type: CREATE_NEW_USER,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+export function updateUser(first_name, last_name, nationality, email, date_birth, mobile) {
+  return async function(dispatch) {
+    try {
+      const response = await axios.put(`http://localhost:3001/users/modify/${email}`, {first_name, last_name, nationality, date_birth, mobile});
+      dispatch({
+        type: UPDATE_USER,
         payload: response.data,
       });
     } catch (error) {

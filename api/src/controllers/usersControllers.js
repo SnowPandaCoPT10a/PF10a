@@ -20,12 +20,13 @@ async function getAllUsers(req, res, next) {
 
 async function postNewUser(req, res) {
     try {
-        let { email } = req.body;
+        let {given_name,family_name, email, picture } = req.body;
+        
         let user = await Users.findOne({ where: { email: email } });
         if (user) {
             return res.status(200).send({ message: "User already exists" });
         } else {
-            let newUser = await Users.create({ email: email });
+            let newUser = await Users.create({ first_name: given_name, last_name: family_name ,email: email, image: picture});
             return res.status(201).send({ message: "User was created" });
         }
     } catch (err) {
