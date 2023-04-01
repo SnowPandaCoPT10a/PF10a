@@ -48,13 +48,13 @@
   }
   
   .buttonLog:hover #rightArrow {
-    background-color:#e440bb;
+    background-color:#023246;
     left: -15%;
     animation: 0.6s ease-in-out both infinite alternate rightArrow8;
   }
   
   .buttonLog:hover #leftArrow {
-    background-color: #e440bb;
+    background-color: #023246;
     left: 103%;
     animation: 0.6s ease-in-out both infinite alternate leftArrow8;
   }
