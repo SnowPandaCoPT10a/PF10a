@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #029696;
+  background-color: #7F949F;
   backdrop-filter: blur(15px);
 
 }
@@ -40,7 +40,7 @@
 }
 
 .btnUser:hover{
-  color: #e440bb;
+  color: #023246;
 }
 
 .btnCarrt {
@@ -64,7 +64,7 @@
 }
 
 .btnCarrt:hover {
-  color: #e440bb;
+  color: #023246;
 }
 
 .btnHome {
@@ -84,11 +84,11 @@
 }
 
 .active{
-  color:#e440bb;
+  color:#023246;
 }
 
 .btnHome:hover {
-  color: #e440bb;
+  color: #023246;
 }
 
 .btnHome:hover:after {
@@ -104,7 +104,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: #023246;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
