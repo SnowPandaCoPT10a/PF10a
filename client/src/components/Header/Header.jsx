@@ -60,26 +60,14 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
       </Link>
 
       {!isAuthenticated ? <Login /> : 
-      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <div class="btn-group" role="group">
-      <button
-      id="btnGroupDrop1"
-      type="button"
-      class="btn btn-primary dropdown-toggle"
-      data-mdb-toggle="dropdown"
-      aria-expanded="false">
-       X
-      </button>
-       <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">  
-       <li><a class="dropdown-item" href="/User"><FaUserAlt /></a></li>
-       <li><a class="dropdown-item" href="/User">Bills</a></li>
-       <li><a class="dropdown-item" href="/User"><Logout /></a></li>
-     </ul>
-     </div>
-     </div>
+      <Link to='/User'>  <button className='btnUser'>
+      <FaUserAlt />
+    </button>
+    </Link>
+
       }
        
-       
+    {isAuthenticated ? <Logout /> : null}
 
 {!isAuthenticated ? null : 
       
