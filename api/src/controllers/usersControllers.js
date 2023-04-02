@@ -16,7 +16,15 @@ async function getAllUsers(req, res, next) {
         next(err);
     };
 };
-
+async function searchUsuario(req,res){
+    try {
+        let {email} = req.params
+        const user = await Users.findOne({where:{email: email}})
+        res.status(200).json(user)
+    } catch (error) {
+        res.status(500).json({error: error.message})
+    }
+}
 
 async function postNewUser(req, res) {
     try {
@@ -68,7 +76,6 @@ cloudinary.config({
     try {
        let { email } = req.params;
        let { first_name, last_name, nationality, date_birth, mobile } = req.body;
- 
        const user = await Users.findOne({
           where: {
              email: email
@@ -84,13 +91,13 @@ cloudinary.config({
        if (req.file) {
           // Si se proporcionó un archivo, subirlo a Cloudinary y obtener la URL de la imagen
           const result = await cloudinary.uploader.upload(req.file.path,{
-            public_id: user.email
+            public_id: email
           });
           imageUrl = result.secure_url;
        } else if (req.body.image) {
           // Si se proporcionó una URL de imagen, subirla a Cloudinary y obtener la URL de la imagen
           const result = await cloudinary.uploader.upload(req.body.image,{
-            public_id: user.email,
+            public_id: email,
             folder: "SnowPandaCO/usuarios"
           });
           imageUrl = result.secure_url;
@@ -121,5 +128,6 @@ module.exports = {
     getAllUsers,
     postNewUser,
     DisableUser,
-    ModifyUser
+    ModifyUser,
+    searchUsuario
 };
