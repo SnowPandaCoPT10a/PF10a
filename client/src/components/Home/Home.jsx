@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import './Home.css';
 import { Link } from 'react-router-dom';
@@ -6,17 +6,31 @@ import Form from '../Form/Form';
 import { getAllProducts } from '../../Redux/actions/index'
 import Destacados from '../tiendaCategorias/destacados/Destacados';
 import Logo from '../../img/sin-fondo-2085x1251px.png';
-
+import { useAuth0 } from "@auth0/auth0-react";
+import { createNewUser } from '../../Redux/actions/index.js'
 
 const Home = () => {
 
-  const datos = useSelector(e=>e.allProducts)
+  const datos = useSelector(e => e.allProducts)
   const dispatch = useDispatch()
+  const { user, isAuthenticated } = useAuth0();
+  const [userCreated, setUserCreated] = useState(false);
 
   useEffect(() => {
     dispatch(getAllProducts())
   }, [dispatch])
 
+  useEffect(() => {
+    if (isAuthenticated && user && !userCreated) {
+      dispatch(createNewUser(
+        user.family_name,
+        user.given_name,
+        user.email,
+        user.picture
+      ));
+      setUserCreated(true);
+    }
+  }, [isAuthenticated, user, dispatch, userCreated]);
 
   return (
     <div className='container' >
@@ -45,7 +59,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <Destacados datos={datos}/>
+      <Destacados datos={datos} />
       <section className='activities'>
         <h3 className='titulo'>Activities</h3>
         <div className='fila'>

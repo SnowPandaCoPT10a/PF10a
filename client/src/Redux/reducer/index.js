@@ -5,14 +5,16 @@ import {
   POST_NEW_PRODUCTS,
   SET_FILTERED_PRODUCTS,
   CREATE_NEW_USER,
-  UPDATE_USER
+  UPDATE_USER,
+  SEARCH_USER
 } from "../actions-types/index";
 
 const initialState = {
   products: [],
   allProducts: [],
   productsID: [],
-  users:[]
+  users:[],
+  user:[]
 };
 
 function rootReducer(state = initialState, action) {
@@ -53,6 +55,12 @@ function rootReducer(state = initialState, action) {
         return{
           ...state,
           users: action.payload
+        }
+      case SEARCH_USER:
+        return{
+          ...state,
+          users: action.payload,
+          user: action.payload
         }
 
     default:

@@ -23,6 +23,7 @@ router.use("/search", getSearchProduct);
 router.use("/filtrado", getFiltradoProduct);
 router.use('/bills',getBills)
 
+
 router.get("/", (req, res, next) => {
   return res.status(200).json(getAllProducts);
 });
