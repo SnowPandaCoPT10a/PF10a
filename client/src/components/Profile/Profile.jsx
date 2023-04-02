@@ -1,20 +1,22 @@
 import { React, useEffect, useState } from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
 import Logo from '../../img/logoPanda.png';
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import './Profile.css'
-import { createNewUser, updateUser } from '../../Redux/actions/index.js'
+import { searchUser, updateUser } from '../../Redux/actions/index.js'
+
+
 
 
 
 const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
 	const dispatch = useDispatch();
-	const [userCreated, setUserCreated] = useState(false);
+	const datos = useSelector(e => e.user)
+
 	const [editFormState, setEditFormState] = useState({
 		first_name: '',
 		last_name: '',
-
 		nationality: "",
 		date_birth: "",
 		mobile: "",
@@ -22,10 +24,12 @@ const Profile = () => {
 
 
 	});
-	console.log(user)
+
 	const [isEditing, setIsEditing] = useState(false);
 
-
+	useEffect(() => {
+		dispatch(searchUser({ email: user.email }))
+	}, [dispatch])
 	const handleEditClick = () => {
 		setIsEditing(true);
 	}
@@ -38,13 +42,13 @@ const Profile = () => {
 	}
 	const handleEditSubmit = (event) => {
 		event.preventDefault();
-		dispatch(updateUser(editFormState))
+		dispatch(updateUser({ email: user.email }, editFormState))
 		alert("usuario cambiado correctamente");
 		// Agrega aquí la lógica para actualizar la información en tu base de datos
 		setEditFormState({
 			first_name: '',
 			last_name: '',
-
+			email: user.email,
 			nationality: "",
 			date_birth: "",
 			mobile: "",
@@ -55,27 +59,18 @@ const Profile = () => {
 
 
 
-	useEffect(() => {
-		if (isAuthenticated && user && !userCreated) {
-			dispatch(createNewUser(
-				user.family_name,
-				user.given_name,
-				user.email,
-				user.picture
-			));
-			setUserCreated(true);
-		}
-	}, [isAuthenticated, user, dispatch, userCreated]);
+
 	if (isAuthenticated) {
 		if (isEditing) {
 			return (
 
 				<form onSubmit={handleEditSubmit}>
+
 					<br />
-					<img className='imgProfile' src={user.picture ? user.picture : `${Logo}`} alt='no hay imagen' />
-					<h1>Name: {user.family_name}</h1>
-					<h1>Last Name: {user.given_name}</h1>
-					<h1>Email: {user.email}</h1>
+					<img className='imgProfile' src={datos.image ? datos.image : `${Logo}`} alt='no hay imagen' />
+					<h1>Name: {datos.first_name}</h1>
+					<h1>Last Name: {datos.last_name}</h1>
+					<h1>Email: {datos.email}</h1>
 					<label >
 						<input type="text" name="first_name" placeholder="...Name" value={editFormState.first_name} onChange={handleInputChange} />
 					</label>
@@ -105,10 +100,14 @@ const Profile = () => {
 		return (
 
 			<div className='profilecont'>
-				<img className='imgProfile' src={user.picture ? user.picture : `${Logo}`} alt='no hay imagen' />
+				<img className='imgProfile' src={datos.image ? datos.image : `${Logo}`} alt='no hay imagen' />
 
-				<h1>{user.name}</h1>
-				<h1>{user.email}</h1>
+				<h1>{datos.first_name}</h1>
+				<h1>{datos.last_name}</h1>
+				<h1>{datos.date_birth}</h1>
+				<h1>{datos.nationality}</h1>
+				<h1>{datos.mobile}</h1>
+				<h1>{datos.email}</h1>
 
 				<button onClick={handleEditClick}>Editar información</button>
 			</div>

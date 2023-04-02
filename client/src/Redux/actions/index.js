@@ -5,7 +5,8 @@ import {
   POST_NEW_PRODUCTS,
   SET_FILTERED_PRODUCTS,
   CREATE_NEW_USER,
-  UPDATE_USER
+  UPDATE_USER,
+  SEARCH_USER
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -93,12 +94,25 @@ export function createNewUser(given_name ,family_name,email,picture) {
     }
   };
 }
-export function updateUser(first_name, last_name, nationality, email, date_birth, mobile) {
+export function updateUser(email, first_name, last_name, nationality, date_birth, mobile) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`http://localhost:3001/users/modify/${email}`, {first_name, last_name, nationality, date_birth, mobile});
+      const response = await axios.put(`http://localhost:3001/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile);
       dispatch({
         type: UPDATE_USER,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+export function searchUser(email) {
+  return async function(dispatch) {
+    try {
+      const response = await axios.put(`http://localhost:3001/users/modify/${email.email}`);
+      dispatch({
+        type: SEARCH_USER,
         payload: response.data,
       });
     } catch (error) {
