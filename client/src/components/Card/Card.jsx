@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsId } from '../../Redux/actions/index.js'
 import { useParams } from "react-router";
 
-export default function Card({ allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
+export default function Card({oneProducts, setOneProducts, allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
 
   const { id } = useParams();
   const dispatch = useDispatch()
@@ -60,13 +60,14 @@ function handleOnAddProduct(product) {
     setPriceTotal(priceTotal + product.price);
     setCountProducts(countProducts + 1);
     setAllProducts([...products]);
+    setOneProducts([...products]);
   }  else {
     
     let newProduct = {
       ...product,
       sizes: product.sizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number( el.stock - 1 ) : null })),
       numbersizes: product.numbersizes?.map((el) => ({ ...el, stock: el.size === product.size ?  Number(el.stock - 1) : null })),
-      boardsizes: product.boardsizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number(le.stock - 1) : null })),
+      boardsizes: product.boardsizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number(el.stock - 1) : null })),
     };
     if (!newProduct.sizes && !newProduct.numbersizes && !newProduct.boardsizes) {
        
@@ -78,7 +79,9 @@ function handleOnAddProduct(product) {
     setPriceTotal(priceTotal + product.price);
     setCountProducts(countProducts + 1);
     setAllProducts([...allProducts, newProduct]);
-  }
+    }
+    setOneProducts([...allProducts, product]);
+
 }
 
 
@@ -115,8 +118,7 @@ function handleOnAddProduct(product) {
               {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
 
               {/* <p className='pIds'>*/}
-
-              {productInfoId.numbersizes ? (
+{productInfoId.numbersizes && (
                 productInfoId.numbersizes?.map((el) => (
                   <button
                     value={el.size}
@@ -127,7 +129,7 @@ function handleOnAddProduct(product) {
                   </button>
                 ))
 
-              ) : (
+              )  || (
                 productInfoId.sizes?.map((el) => (
                   <button
                     value={el.size}
@@ -137,7 +139,18 @@ function handleOnAddProduct(product) {
                     {el.size}
                   </button>
                 ))
-              )}
+              ) || (
+                productInfoId.boardsizes?.map((el) => (
+                  <button
+                    value={el.size}
+                    onClick={() => handleOnAddProduct({ ...productInfoId, size: el.size })}
+                    key={el.size}
+                  >
+                    {el.size}
+                  </button>
+                ))
+              )
+              }
 
 
               <h3 className='h3Name'>${productInfoId.price}</h3>
