@@ -8,4 +8,5 @@ export const SET_FILTERED_PRODUCTS =  'SET_FILTERED_PRODUCTS'
 export const CREATE_NEW_USER = "CREATE_NEW_USER"
 export const UPDATE_USER = "UPDATE_USER"
 export const SEARCH_USER = "SEARCH_USER"
+export const GET_ALL_USERS = "GET_ALL_USERS"
 
