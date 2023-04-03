@@ -7,7 +7,7 @@ const Marcas = ({ datos, scroll }) => {
   let dataBrand = datos.map((e) => e.brand.brandName);
   let marcas = [...new Set(dataBrand)];
 
-  console.log(marcas);
+
 
   return (
     <div className="container">
