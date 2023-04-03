@@ -1,0 +1,13 @@
+.destacado{
+    z-index: 10;
+}
+
+.destacados{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  
+}
+

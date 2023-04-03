@@ -1,0 +1,16 @@
+.marketing{
+    transition: all 0.3 ease;
+}
+
+.col-2{
+    margin: 0 5rem;
+    text-align: center;
+}
+
+.text:hover{
+    color: #BF0426 !important;
+}
+
+.fw-normal{
+    text-transform: uppercase;
+}

@@ -1,0 +1,213 @@
+.cardComponent {
+    height: 75vh;
+    padding: 0;
+    margin: 5% 0;
+    display: flex;
+    align-items: center;
+}
+
+.containerId {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 78vw;
+    height: 600px;
+    background: #fff;
+
+    box-shadow: 10px 10px 1rem #0004;
+}
+
+.imgId {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.imgBx {
+    display: flex;
+    width: 50%;
+}
+
+.containerId .imgBx:before {
+
+    position: absolute;
+    top: 38.8vw;
+    left: 5vw;
+    color: #000;
+    opacity: 0.2;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.containerId .imgBx2:before {
+    /*    content: 'Snow Panda';*/
+    content: attr(data-brand);
+    position: absolute;
+    top: 38.8vw;
+    left: 5vw;
+    color: #000;
+    opacity: 0.2;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+
+
+
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /*    left: 5%;*/
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.containerId .details .pName {
+    margin: 0;
+    padding: 0;
+    font-size: 2.4em;
+    line-height: 1em;
+    color: #444;
+}
+
+.containerId .details .pName .spanId {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.containerId .details .pIds {
+    max-width: 85%;
+    margin-left: 15%;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 36px;
+}
+
+.containerId .details .h3Name {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.containerId .details button {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    box-shadow: 0 0 0 0 #000;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.containerId .details button:hover {
+    box-shadow: 0 0 0 6px #488cfb;
+}
+
+.buttonback {
+    background: #488cfb;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 0 0 #488cfb;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.buttonback:hover {
+    box-shadow: 0 0 0 6px #000;
+}
+
+.product-colors .spanId {
+    width: 26px;
+    height: 26px;
+    top: 7px;
+    margin-right: 12px;
+    left: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.product-colors .active:after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -5px;
+    top: -5px;
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+    .cardComponent {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .containerId {
+        height: auto;
+    }
+
+    .containerId .imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .containerId .imgBx .imgId {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+
+    .details {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+
+    .containerId .details .pIds {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
