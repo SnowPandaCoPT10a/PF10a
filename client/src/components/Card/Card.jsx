@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsId } from '../../Redux/actions/index.js'
 import { useParams } from "react-router";
 
-export default function Card({ allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
+export default function Card({oneProducts, setOneProducts, allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
 
   const { id } = useParams();
   const dispatch = useDispatch()
@@ -18,51 +18,71 @@ export default function Card({ allProducts, setAllProducts, priceTotal, setPrice
     dispatch(getAllProductsId(id))
   }, [id, dispatch])
 
+function handleOnAddProduct(product) {
 
-  function handleOnAddProduct(product) {
-    console.log(product, 'productosadasd')
-    if (allProducts.find((el) => el.productsID === product.productsID)) {
-      const products = allProducts.map((el) =>
-        el.productsID === productInfoId.productsID
-          ? {
-            ...el,
-            price: Number(el.price) + Number(el.price),
-            sizes: el.sizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock  - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ), numbersizes: el.numbersizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ), boardsizes: el.boardsizes?.map((size) =>
-              size.size === 'one size'
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            )
-          }
-          : el
-      );
-      setPriceTotal(priceTotal + product.price * product.sizes?.map(el => Number(el.quantity)));
-      setCountProducts(countProducts + 1);
-      return setAllProducts([...products]);
-    }
-    setPriceTotal(priceTotal + product.price * product.sizes?.map(el => Number(el.quantity)));
+  if (allProducts.find((el) => el.productsID === product.productsID && el.size === product.size)) {
+    
+    const products = allProducts.map((el) =>
+      el.productsID === product.productsID && el.size === product.size
+        ? {
+          ...el,
+          price: Number(el.price) + Number(product.price),
+          sizes: el.sizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          numbersizes: el.numbersizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          boardsizes: el.boardsizes?.map((size) =>
+            size.size === 'one size'
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          )
+        }
+        : el
+    );
+    setPriceTotal(priceTotal + product.price);
     setCountProducts(countProducts + 1);
-    setAllProducts([...allProducts, product]);
-  }
+    setAllProducts([...products]);
+    setOneProducts([...products]);
+  }  else {
+    
+    let newProduct = {
+      ...product,
+      sizes: product.sizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number( el.stock - 1 ) : null })),
+      numbersizes: product.numbersizes?.map((el) => ({ ...el, stock: el.size === product.size ?  Number(el.stock - 1) : null })),
+      boardsizes: product.boardsizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number(el.stock - 1) : null })),
+    };
+    if (!newProduct.sizes && !newProduct.numbersizes && !newProduct.boardsizes) {
+       
+      newProduct = {
+        ...newProduct,
+        stock: Number(newProduct.stock - 1),
+      };
+    }
+    setPriceTotal(priceTotal + product.price);
+    setCountProducts(countProducts + 1);
+    setAllProducts([...allProducts, newProduct]);
+    }
+    setOneProducts([...allProducts, product]);
+
+}
 
 
   function handleChange(event) {
@@ -98,8 +118,7 @@ export default function Card({ allProducts, setAllProducts, priceTotal, setPrice
               {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
 
               {/* <p className='pIds'>*/}
-
-              {productInfoId.numbersizes ? (
+{productInfoId.numbersizes && (
                 productInfoId.numbersizes?.map((el) => (
                   <button
                     value={el.size}
@@ -110,7 +129,7 @@ export default function Card({ allProducts, setAllProducts, priceTotal, setPrice
                   </button>
                 ))
 
-              ) : (
+              )  || (
                 productInfoId.sizes?.map((el) => (
                   <button
                     value={el.size}
@@ -120,7 +139,18 @@ export default function Card({ allProducts, setAllProducts, priceTotal, setPrice
                     {el.size}
                   </button>
                 ))
-              )}
+              ) || (
+                productInfoId.boardsizes?.map((el) => (
+                  <button
+                    value={el.size}
+                    onClick={() => handleOnAddProduct({ ...productInfoId, size: el.size })}
+                    key={el.size}
+                  >
+                    {el.size}
+                  </button>
+                ))
+              )
+              }
 
 
               <h3 className='h3Name'>${productInfoId.price}</h3>
