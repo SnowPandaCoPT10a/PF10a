@@ -1,17 +1,144 @@
 import React from 'react'
 import './ShoppingCart.css'
+import { useEffect } from 'react'
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import Checkout from '../Checkout/Checkout';
 
-const ShoppingCart = ({ allProducts, setAllProducts, priceTotal }) => {
+const ShoppingCart = ({allProducts, setAllProducts, setCountProducts, countProducts, priceTotal, setPriceTotal}) => {
 
     const navigate = useNavigate();
-    console.log(allProducts, 'mostrame la infooo')
+     
 
+  
+ 
     function handleClear(){ 
 
     }
+ 
+
+  // console.log(allProducts,'facu')
+function decrementProduct(product) {
+  const productToUpdate = allProducts?.find(
+    (el) => el.productsID === product.productsID && el.size === product.size
+  );
+
+
+
+  if (productToUpdate.sizes?.map(el => el.size === product.size ? el.quantity > 1 : null) ) {
+    const updatedProduct = allProducts.map((el) =>
+      el.productsID === product.productsID && el.size === product.size
+        ? {
+            ...el,
+           
+
+            sizes: productToUpdate.sizes?.map((size) =>
+              size.size === product.size
+                ? {
+                    ...size,
+
+                    stock: Number(size.stock + 1),
+                    quantity: Number(size.quantity -1) ,
+                  }
+                : size, console.log('facu')
+            ),
+             price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
+        }
+        : {...el}
+    );
+
+//   console.log(productToUpdate.price, 'preiceee')
+// console.log(productToUpdate, 'porudoc')
+    setAllProducts(updatedProduct);
+    setCountProducts(countProducts - 1);
+  setPriceTotal(priceTotal -  Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): 209 ) );
+}
+
+}
+
+
+ // price: Number(productToUpdate.price) - Number(product.price)
+     function incrementProduct (product) {
+        const productNext = allProducts.find((el) => el.productsID === product.productsID && el.size === product.size)
+
+    if (productNext) {
+        const updateProduct = allProducts.map((el) =>
+      el.productsID === productNext.productsID && el.size === productNext.size
+        ? {
+          ...el,
+          price: Number(productNext.price) + Number(product.price),
+          sizes: productNext.sizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          numbersizes: productNext.numbersizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          boardsizes: productNext.boardsizes?.map((size) =>
+            size.size === 'one size'
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          )
+        }
+        : el
+    );
+        const updateProducts = allProducts.map((el) => el.productsID === product.productsID  && el.size === product.size ?{... el, } : el  )
+    
+        setAllProducts(updateProduct);
+        setPriceTotal( priceTotal + Number(productNext.price))
+    } else {
+      const newProduct = {
+        ...product,
+        price: Number(product.price) + Number(product.price),
+          sizes: product.sizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          numbersizes: product.numbersizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          boardsizes: product.boardsizes?.map((size) =>
+            size.size === 'one size'
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          )
+      };
+      const newProducts = [...allProducts, newProduct];
+      setAllProducts(newProducts);
+      setPriceTotal(priceTotal + Number(newProduct.price));
+    }
+    setCountProducts(countProducts + 1);
+  };
 
 
     const renderProduct = () => {
@@ -40,9 +167,12 @@ const ShoppingCart = ({ allProducts, setAllProducts, priceTotal }) => {
                             {/* } */ }
                         }))
                         }
+                        
                     </BasketQty>
                     <BasketPrice>
+                    <button  onClick={() => decrementProduct(el)}>-</button>
                         ${el.price}
+                        <button  onClick={() => incrementProduct(el)} >+</button>
                     </BasketPrice>
                 </React.Fragment>
             ))
@@ -143,3 +273,65 @@ const BasketButton = styled.button`
   }
 `
 
+
+
+
+
+
+// [{productsID: 1, name: 'Pandew', category: 'accessories', price: 160, description: 'Pandew helmet', …}
+// activity
+// : 
+// "sports"
+// boardsizes
+// : 
+// undefined
+// brand
+// : 
+// {brandName: 'SnowPandaCo', logo: 'https://res.cloudinary.com/dberwyxyq/image/upload/v1680201746/SnowPandaCO/IMG%20MARCAS/SnowPanda.png', featuredBrand: true}
+// category
+// : 
+// "accessories"
+// createdAt
+// : 
+// "2023-04-01T19:23:31.382Z"
+// description
+// : 
+// "Pandew helmet"
+// featuredProduct
+// : 
+// false
+// img
+// : 
+// "https://res.cloudinary.com/dberwyxyq/image/upload/v1679319280/SnowPandaCO/Accessories/Pandew%20helmet.png"
+// material
+// : 
+// "KPA"
+// model
+// : 
+// "Pandew"
+// name
+// : 
+// "Pandew"
+// numbersizes
+// : 
+// undefined
+// price
+// : 
+// 160
+// productsID
+// : 
+// 1
+// size
+// : 
+// "extraLarge"
+// sizes
+// : 
+
+// {size: 'small', stock: null, quantity: 1}
+ 
+// {size: 'medium', stock: null, quantity: 1}
+
+// {size: 'large', stock: null, quantity: 1}
+ 
+// {size: 'extraLarge', stock: 8, quantity: 2}
+// }]

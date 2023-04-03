@@ -18,51 +18,68 @@ export default function Card({ allProducts, setAllProducts, priceTotal, setPrice
     dispatch(getAllProductsId(id))
   }, [id, dispatch])
 
+function handleOnAddProduct(product) {
 
-  function handleOnAddProduct(product) {
-    console.log(product, 'productosadasd')
-    if (allProducts.find((el) => el.productsID === product.productsID)) {
-      const products = allProducts.map((el) =>
-        el.productsID === productInfoId.productsID
-          ? {
-            ...el,
-            price: Number(el.price) + Number(el.price),
-            sizes: el.sizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock  - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ), numbersizes: el.numbersizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ), boardsizes: el.boardsizes?.map((size) =>
-              size.size === 'one size'
-                ? {
-                  size: size.size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            )
-          }
-          : el
-      );
-      setPriceTotal(priceTotal + product.price * product.sizes?.map(el => Number(el.quantity)));
-      setCountProducts(countProducts + 1);
-      return setAllProducts([...products]);
-    }
-    setPriceTotal(priceTotal + product.price * product.sizes?.map(el => Number(el.quantity)));
+  if (allProducts.find((el) => el.productsID === product.productsID && el.size === product.size)) {
+    
+    const products = allProducts.map((el) =>
+      el.productsID === product.productsID && el.size === product.size
+        ? {
+          ...el,
+          price: Number(el.price) + Number(product.price),
+          sizes: el.sizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          numbersizes: el.numbersizes?.map((size) =>
+            size.size === product.size
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          ),
+          boardsizes: el.boardsizes?.map((size) =>
+            size.size === 'one size'
+              ? {
+                ...size,
+                stock: Number(size.stock - 1),
+                quantity: Number(size.quantity + 1),
+              }
+              : size
+          )
+        }
+        : el
+    );
+    setPriceTotal(priceTotal + product.price);
     setCountProducts(countProducts + 1);
-    setAllProducts([...allProducts, product]);
+    setAllProducts([...products]);
+  }  else {
+    
+    let newProduct = {
+      ...product,
+      sizes: product.sizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number( el.stock - 1 ) : null })),
+      numbersizes: product.numbersizes?.map((el) => ({ ...el, stock: el.size === product.size ?  Number(el.stock - 1) : null })),
+      boardsizes: product.boardsizes?.map((el) => ({ ...el, stock: el.size === product.size ? Number(le.stock - 1) : null })),
+    };
+    if (!newProduct.sizes && !newProduct.numbersizes && !newProduct.boardsizes) {
+       
+      newProduct = {
+        ...newProduct,
+        stock: Number(newProduct.stock - 1),
+      };
+    }
+    setPriceTotal(priceTotal + product.price);
+    setCountProducts(countProducts + 1);
+    setAllProducts([...allProducts, newProduct]);
   }
+}
 
 
   function handleChange(event) {
