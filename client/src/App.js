@@ -19,6 +19,7 @@ import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation"
 
 
 
+
 function App() {
 
   const navigateToCategory = (category) => {
@@ -40,6 +41,7 @@ const [oneProducts, setOneProducts] = useState([]);
   const [priceTotal, setPriceTotal] = useState(0)
   const [countProducts, setCountProducts] = useState(0)
   
+
 
   return (
     <BrowserRouter>
@@ -79,7 +81,8 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path='/Create' element={<Create />} />
          <Route path='/OrderConfirmation' element={<OrderConfirmation />} /> 
          <Route path='/Checkout' element={<Checkout />} />
-         
+         <Route exact path='/Products' element={<Cards/>} />
+
         </Routes>
         <Chatbot />
       </div>
