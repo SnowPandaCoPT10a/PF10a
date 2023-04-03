@@ -11,7 +11,7 @@ const Footers = () => {
   const isFixed = location.pathname === '/OrderConfirmation' || location.pathname === '/Checkout' || location.pathname === '/ShoppingCart' || location.pathname === '/Create' ;
  
   return (
-    <div className={isFixed ? 'fixed-bottom' : ''}>      
+    <div >      
 		<footer className="footer-distributed">
 
       <div className="footer-right">
