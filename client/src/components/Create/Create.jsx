@@ -39,13 +39,13 @@ function Create() {
   const dispatch = useDispatch();
   let navigate = useNavigate();
   const numberSizes = useSelector((state) => state.allProducts);
-  const sizeNumber = numberSizes.filter((size) => size.numbersizes);
-  const sizeLeter = numberSizes.filter((size) => size.sizes);
+  const sizeNumber = numberSizes?.filter((size) => size.numbersizes);
+  const sizeLeter = numberSizes?.filter((size) => size.sizes);
   const [errors, setErrors] = useState({});
   const [newBrand, setNewBrand] = useState(false)
 
   //! aca traigo los numeros de los talles
-  const sizes = sizeNumber.reduce((acc, curr) => {
+  const sizes = sizeNumber?.reduce((acc, curr) => {
     curr.numbersizes.forEach((item) => {
       if (!acc.includes(item.size)) {
         acc.push(item.size);
@@ -323,7 +323,7 @@ function Create() {
                 {newBrand === false ? <select id="pets-breed" placeholder="Insert brand" name ="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}>
                 <option></option>
                 {numberSizes && Array.from(new Set(numberSizes.map(h => h.brand)))
-                  .filter((brand, index, array) => array.indexOf(brand) === index)
+                  ?.filter((brand, index, array) => array.indexOf(brand) === index)
                   .map((brand, index) => <option key={index}>{brand.brandName}</option>)}    
                </select>
   :

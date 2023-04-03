@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 function Checkout() {
+
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const products = JSON.parse(searchParams.get('products'));
+  console.log(products)
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -14,7 +19,6 @@ function Checkout() {
     }
   });
   const navigate = useNavigate()
-
   const errors = {
     name: form.name.length === 0,
     email: form.name.length === 0,
@@ -118,7 +122,9 @@ function Checkout() {
           </CheckoutAddress>
         </CheckoutTable>
         <CancelButton onClick={() => navigate('/ShoppingCart')}>Back to cart</CancelButton>
-        <CheckoutButton disabled={disabled}>Confirm Order</CheckoutButton>
+        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`}>
+        <button>Confirm Order</button>
+      </Link>
       </CheckoutContainer>
     </form>
   )
