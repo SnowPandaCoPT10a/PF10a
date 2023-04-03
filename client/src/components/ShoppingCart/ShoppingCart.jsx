@@ -15,7 +15,11 @@ const ShoppingCart = ({
 }) => {
   const navigate = useNavigate();
 
-  function handleClear() {}
+  const clearCart = () => {
+    setAllProducts([])
+    setCountProducts(0)
+    setPriceTotal(0);
+  };
 
   //  console.log(allProducts,'facu')
  function decrementProduct(product) {
@@ -317,7 +321,7 @@ const ShoppingCart = ({
         <BasketContainer>
           <BasketTitle>Shopping Cart</BasketTitle>
           <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
-        <button>Go to checkout</button>
+          <BasketButton >Go to checkout</BasketButton>
       </Link>
           <BasketTable>
             <BasketHeader>
@@ -331,7 +335,7 @@ const ShoppingCart = ({
             <BasketHeader>{renderProduct()}</BasketHeader>
             <BasketHeaderLine />
           </BasketTable>
-          <BasketButton>Clear</BasketButton>
+          <BasketButton  onClick={() => clearCart() }>Clear</BasketButton>
           <BasketTotal>Total: {priceTotal}</BasketTotal>
         </BasketContainer>
       </All>
