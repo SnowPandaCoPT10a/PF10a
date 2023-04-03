@@ -17,7 +17,7 @@ const ShoppingCart = ({
 
   function handleClear() {}
 
-   // console.log(allProducts,'facu')
+  //  console.log(allProducts,'facu')
  function decrementProduct(product) {
     const productToUpdate = allProducts?.find(
       (el) => el.productsID === product.productsID && el.size === product.size
@@ -316,9 +316,9 @@ const ShoppingCart = ({
       <All>
         <BasketContainer>
           <BasketTitle>Shopping Cart</BasketTitle>
-          <BasketButton onClick={() => navigate("/Checkout")}>
-            Checkout
-          </BasketButton>
+          <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
+        <button>Go to checkout</button>
+      </Link>
           <BasketTable>
             <BasketHeader>
               <h4>Item</h4>

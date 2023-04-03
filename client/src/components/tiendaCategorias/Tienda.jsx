@@ -6,6 +6,7 @@ import Categorias from "./categorias/Categorias";
 import Destacados from "./destacados/Destacados";
 import Marcas from "./marcas/Marcas";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const tienda = () => {
   const datos = useSelector((state) => state.allProducts);
@@ -27,6 +28,12 @@ const tienda = () => {
       <Categorias scroll={scroll} />
       <Destacados datos={datos} />
       <Marcas scroll={scroll} datos={datos} />
+      <button><Link 
+              key="allProducts"
+              to={`/Products/`}
+              className="text-center mt-5 text-secondary"
+              onClick={() => scroll()}
+            >SHOW ALL PRODUCTS</Link></button>
     </div>
   );
 };
