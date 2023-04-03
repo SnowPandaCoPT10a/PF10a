@@ -83,7 +83,7 @@ const [oneProducts, setOneProducts] = useState([]);
         </Routes>
         <Chatbot />
       </div>
-      <Footers />
+      {window.location.pathname !== '/Create' && <Footers />}
     </BrowserRouter>
   );
 }

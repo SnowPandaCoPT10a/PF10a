@@ -6,7 +6,8 @@ import {
   SET_FILTERED_PRODUCTS,
   CREATE_NEW_USER,
   UPDATE_USER,
-  SEARCH_USER
+  SEARCH_USER,
+  GET_ALL_USERS,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -119,4 +120,17 @@ export function searchUser(email) {
       console.log(error);
     }
   };
+}
+export function getAllUsers(){
+  return async function(dispatch) {
+    try{
+      const response = await axios.get(`http://localhost:3001/users`)
+    dispatch({
+      type: GET_ALL_USERS,
+      payload: response.data
+    })
+    }catch(error){
+      console.log(error);
+    }
+}
 }

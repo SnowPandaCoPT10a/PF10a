@@ -4,7 +4,7 @@ import Logo from '../../img/logoPanda.png';
 import { useDispatch, useSelector } from 'react-redux'
 import './Profile.css'
 import { searchUser, updateUser } from '../../Redux/actions/index.js'
-
+import { getAllUsers } from '../../Redux/actions/index'
 
 
 
@@ -13,7 +13,7 @@ const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
 	const dispatch = useDispatch();
 	const datos = useSelector(e => e.user)
-
+	
 	const [editFormState, setEditFormState] = useState({
 		first_name: '',
 		last_name: '',
@@ -26,13 +26,22 @@ const Profile = () => {
 	});
 
 	const [isEditing, setIsEditing] = useState(false);
+	
 
 	useEffect(() => {
-		dispatch(searchUser({ email: user.email }))
-	}, [dispatch])
+	 	
+	dispatch(getAllUsers())
+	 }, [dispatch])
+
+
+
+
 	const handleEditClick = () => {
 		setIsEditing(true);
 	}
+	 
+	
+
 
 	const handleInputChange = (event) => {
 		setEditFormState({
@@ -43,6 +52,9 @@ const Profile = () => {
 	const handleEditSubmit = (event) => {
 		event.preventDefault();
 		dispatch(updateUser({ email: user.email }, editFormState))
+		//dispatch(searchUser({ email: user.email }))
+		dispatch(getAllUsers())
+		window.location.reload();
 		alert("usuario cambiado correctamente");
 		// Agrega aquí la lógica para actualizar la información en tu base de datos
 		setEditFormState({
@@ -56,11 +68,21 @@ const Profile = () => {
 		})
 		setIsEditing(false);
 	}
-
-
-
+	
+	
+		
+	
+	
+	
+	//console.log(user,"LUCHOOOOOOOOO")
+console.log(datos, "FACUUUU")
+try{
 
 	if (isAuthenticated) {
+		
+		const perfil = datos.find(obj => obj.email === user.email);
+		
+
 		if (isEditing) {
 			return (
 
@@ -100,15 +122,15 @@ const Profile = () => {
 		return (
 
 			<div className='profilecont'>
-				<img className='imgProfile' src={datos.image ? datos.image : `${Logo}`} alt='no hay imagen' />
+				<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
 
-				<h1>{datos.first_name}</h1>
-				<h1>{datos.last_name}</h1>
-				<h1>{datos.date_birth}</h1>
-				<h1>{datos.nationality}</h1>
-				<h1>{datos.mobile}</h1>
-				<h1>{datos.email}</h1>
-
+				<h1>{perfil.first_name}</h1>
+				<h1>{perfil.last_name}</h1>
+				<h1>{perfil.date_birth}</h1>
+				<h1>{perfil.nationality}</h1>
+				<h1>{perfil.mobile}</h1>
+				<h1>{perfil.email}</h1>
+				
 				<button onClick={handleEditClick}>Editar información</button>
 			</div>
 		)
@@ -116,10 +138,14 @@ const Profile = () => {
 
 	return (
 		<div>
+
 		</div>
 
 
 	)
+}catch(err){
+	console.error(err)
+}
 }
 
 

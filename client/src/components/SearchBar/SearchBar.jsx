@@ -10,8 +10,8 @@ const SearchBar = ({categories}) => {
   const [name, setName] = useState("");
   const dispatch = useDispatch();
   const productNames = useSelector((state) => state.products);
-  const category = productNames[0]
-  const location = useLocation();
+  // const category = productNames[0]
+  // const location = useLocation();
 
   function handleInputChange(e){
     setName(e.target.value);

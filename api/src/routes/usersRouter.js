@@ -1,3 +1,4 @@
+
 const { Router } = require("express");
 const {getAllUsers,postNewUser, DisableUser, ModifyUser, searchUsuario } = require('../controllers/usersControllers')
 
@@ -9,5 +10,6 @@ router.put("/disable", DisableUser)
 router.put("/modify/:email", ModifyUser)
 router.get("/:email", searchUsuario)
 
+ 
 
 module.exports = router;
