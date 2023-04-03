@@ -23,7 +23,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
     );
   }
 
-
+ 
 
 
   function handleClick() {
