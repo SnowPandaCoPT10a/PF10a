@@ -36,6 +36,7 @@ function App() {
   ];
 
 const [allProducts, setAllProducts] = useState([]);
+const [oneProducts, setOneProducts] = useState([]);
   const [priceTotal, setPriceTotal] = useState(0)
   const [countProducts, setCountProducts] = useState(0)
   
@@ -49,7 +50,7 @@ const [allProducts, setAllProducts] = useState([]);
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           <Route exact path='/Shop' element={<Tienda />} />
-          <Route exact path='/ShoppingCart' element={<ShoppingCart allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
+          <Route exact path='/ShoppingCart' element={<ShoppingCart oneProducts={oneProducts} setOneProducts={setOneProducts} allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
 
           <Route exact path='/Products/:article' element={<Cards/>}/>
 
@@ -74,7 +75,7 @@ const [allProducts, setAllProducts] = useState([]);
 
           <Route path= '/User' element={<Profile />} />
           
-         <Route path='/Products/:categoria/:id/Detail' element={<Card allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
+         <Route path='/Products/:categoria/:id/Detail' element={<Card oneProducts={oneProducts} setOneProducts={setOneProducts} allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
          <Route exact path='/Create' element={<Create />} />
          <Route path='/OrderConfirmation' element={<OrderConfirmation />} /> 
          <Route path='/Checkout' element={<Checkout />} />
@@ -82,7 +83,7 @@ const [allProducts, setAllProducts] = useState([]);
         </Routes>
         <Chatbot />
       </div>
-      <Footers />
+      {window.location.pathname !== '/Create' && <Footers />}
     </BrowserRouter>
   );
 }

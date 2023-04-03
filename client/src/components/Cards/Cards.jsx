@@ -9,6 +9,7 @@ import Pagination from "../Pagination/Pagination";
 import Filter from "../Filter/Filter";
 
 const Cards = () => {
+
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
   const filteredProducts = productsBoard.filter(
@@ -16,6 +17,7 @@ const Cards = () => {
   );
   const dispatch = useDispatch();
   console.log(productsBoard, "hssahsh");
+
 
   const [currentPage, setCurrentPage] = useState(1);
   const [productPerPage] = useState(4);

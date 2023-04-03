@@ -6,6 +6,7 @@ import {
   SET_FILTERED_PRODUCTS,
   CREATE_NEW_USER,
   UPDATE_USER,
+  GET_ALL_USERS,
   SEARCH_USER
 } from "../actions-types/index";
 
@@ -49,12 +50,14 @@ function rootReducer(state = initialState, action) {
     case CREATE_NEW_USER:
       return {
         ...state,
-        users: action.payload
+        users: action.payload,
+        user: action.payload
       } 
       case UPDATE_USER:
         return{
           ...state,
-          users: action.payload
+          users: action.payload,
+          user: action.payload
         }
       case SEARCH_USER:
         return{
@@ -62,7 +65,11 @@ function rootReducer(state = initialState, action) {
           users: action.payload,
           user: action.payload
         }
-
+      case GET_ALL_USERS:
+        return{
+          
+          user: action.payload
+        }
     default:
       return state;
   }

@@ -26,10 +26,16 @@ const responsive = {
 const Destacados = ({ datos }) => {
   let newData = datos && datos.filter((e) => e.featuredProduct === true);
 
+  
   //Cambia la primera letra en Mayuscula
-  newData.map((e) => {
-    e.category = e.category[0].toUpperCase() + e.category.substring(1);
-  });
+  try {
+    newData.map((e) => {
+      e.category = e.category[0].toUpperCase() + e.category.substring(1);
+    });
+    
+  } catch (error) {
+    console.log(error);
+  }
   const scroll = () => {
     window.scroll({
       top: 0,
