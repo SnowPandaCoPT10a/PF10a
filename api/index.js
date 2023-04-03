@@ -20,10 +20,11 @@
 const server = require('./src/app.js');
 const { conn, Products } = require('./src/db.js');
 const { loadAllModelsInDB } = require('./src/controllers/loadData.js');
+const port = process.env.PORT || 3001
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-   server.listen(3001,async () => {
-     console.log('%s listening at 3001'); // eslint-disable-line no-console
+   server.listen(port,async () => {
+     console.log(`%s listening at ${port}`); // eslint-disable-line no-console
      const products = await Products.findAll()
      products.length ? null : loadAllModelsInDB();
   });
