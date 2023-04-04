@@ -1,7 +1,9 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { setCurrentPage } from "../../../Redux/actions";
 import "./Destacados.css";
 
 const responsive = {
@@ -26,6 +28,7 @@ const responsive = {
 const Destacados = ({ datos }) => {
   let newData = datos && datos.filter((e) => e.featuredProduct === true);
 
+  const dispatch = useDispatch();
   
   //Cambia la primera letra en Mayuscula
   try {
@@ -59,7 +62,10 @@ const Destacados = ({ datos }) => {
               key={e.productsID}
               to={`/Products/${e.category}/${e.productsID}/Detail`}
               className="text-decoration-none"
-              onClick={() => scroll()}
+              onClick={() => {
+                scroll();
+                dispatch(setCurrentPage(1));
+              }}
             >
               <div className="card mx-3 text-center text-black">
                 <img src={e.img} className="card-img-top" alt="..." />
