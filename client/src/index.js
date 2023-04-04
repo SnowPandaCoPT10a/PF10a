@@ -10,8 +10,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { Navigate } from "react-router-dom";
 
 
-const domain = dev-rhanbz5vhvfradtc.us.auth0.com
-const clientId = gIqgPaWv0HvyNOk8QsD4iTgClvhDLDaI
+const domain = "dev-rhanbz5vhvfradtc.us.auth0.com"
+const clientId = "gIqgPaWv0HvyNOk8QsD4iTgClvhDLDaI"
 
 /*const onRedirectCallback = (appState) => {
   // Redirigir al usuario a la URL deseada
@@ -36,6 +36,5 @@ root.render(
         </Auth0Provider>
   </Provider>
 )
-console.log(domain, clientId)
 
 reportWebVitals();
