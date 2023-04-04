@@ -55,6 +55,10 @@ function Checkout() {
   }
   const showError = field => errors[field] ? form.touched[field] : false;
 
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -122,8 +126,8 @@ function Checkout() {
           </CheckoutAddress>
         </CheckoutTable>
         <CancelButton onClick={() => navigate('/ShoppingCart')}>Back to cart</CancelButton>
-        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`}>
-        <button>Confirm Order</button>
+        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`} onClick={() => scrollTop()}>
+        <ConfirmButton>Confirm Order</ConfirmButton>
       </Link>
       </CheckoutContainer>
     </form>
@@ -206,9 +210,22 @@ grid-column:3;
 const CancelButton = styled.button`
 margin-bottom: 25px;
 border-radius: 8px;
-border-radiues: 8px;
-height:40 px;
-grid-column:1;
+height:80%;
+grid-column: 1 / span 2;
+width: 100%
+
+&:hover {
+    box-shadow: 0 0 0 6px #488cfb;
+  }
+`
+
+const ConfirmButton = styled.button`
+margin-bottom: 25px;
+margin-left: 200px;
+border-radius: 8px;
+height:80%;
+width: 60%;
+
 
 &:hover {
     box-shadow: 0 0 0 6px #488cfb;

@@ -139,7 +139,8 @@ function handleOnAddProduct(product) {
                     {el.size}
                   </button>
                 ))
-              ) || (
+              ) 
+              /* || (
                 productInfoId.boardsizes?.map((el) => (
                   <button
                     value={el.size}
@@ -149,7 +150,7 @@ function handleOnAddProduct(product) {
                     {el.size}
                   </button>
                 ))
-              )
+              ) */
               }
 
 
