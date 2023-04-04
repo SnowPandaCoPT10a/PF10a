@@ -48,7 +48,10 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
       </Link>
       
       {/* {isProductCategoryPage && <SearchBar categories={categories} />} */}
-      <SearchBar categories={categories} />
+      <div>
+      {location.pathname !== '/' &&  <SearchBar categories={categories} />}
+      </div>
+     
      
 
       <Link to={'/Shop'} onClick={() => scrollTop()}>
