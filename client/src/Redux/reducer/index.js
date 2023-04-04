@@ -7,7 +7,8 @@ import {
   CREATE_NEW_USER,
   UPDATE_USER,
   GET_ALL_USERS,
-  SEARCH_USER
+  SEARCH_USER,
+  SET_CURRENT_PAGE
 } from "../actions-types/index";
 
 const initialState = {
@@ -15,7 +16,8 @@ const initialState = {
   allProducts: [],
   productsID: [],
   users:[],
-  user:[]
+  user:[],
+  currentPage: 1,
 };
 
 function rootReducer(state = initialState, action) {
