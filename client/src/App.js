@@ -46,12 +46,15 @@ const [oneProducts, setOneProducts] = useState([]);
   return (
     <BrowserRouter>
       <Header categories={categories} navigateToCategory={navigateToCategory} countProducts={countProducts} />
+      <Routes>
+        <Route exact path='/Shop' element={<Tienda />} />
+      </Routes>
       <div className='App container'>
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
-          <Route exact path='/Shop' element={<Tienda />} />
+          
           <Route exact path='/ShoppingCart' element={<ShoppingCart oneProducts={oneProducts} setOneProducts={setOneProducts} allProducts={allProducts} setAllProducts={setAllProducts} priceTotal={priceTotal} setPriceTotal={setPriceTotal}  countProducts={countProducts}  setCountProducts={setCountProducts} />} />
 
           <Route exact path='/Products/:article' element={<Cards/>}/>
