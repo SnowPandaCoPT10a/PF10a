@@ -41,7 +41,7 @@ function OrderConfirmation() {
             className='buttonorder' 
             onClick={()=> {
                 axios
-                .post('https://pf-10a-bhm9.vercel.app//payment', endProduct)
+                .post('https://pf10a-production.up.railway.app/payment', endProduct)
                 .then(
                     (res)=>
                     (window.location.href=res.data.response.body.init_point))
