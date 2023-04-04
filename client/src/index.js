@@ -25,9 +25,9 @@ root.render(
    <Auth0Provider
   domain={domain}
   clientId={clientId}
-  authorizationParams={{
-      redirect_uri: "https://pf-10a-bhm9.vercel.app/"
-    }}
+  // authorizationParams={{
+  //     redirect_uri: "https://pf-10a-bhm9.vercel.app/"
+  //   }}
     //onRedirectCallback={onRedirectCallback}
   >
     <React.StrictMode>
