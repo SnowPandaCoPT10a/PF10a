@@ -26,7 +26,7 @@ root.render(
   domain={domain}
   clientId={clientId}
   authorizationParams={{
-      redirect_uri: "window.location.origin"
+      redirect_uri: "www.google.com"
     }}
     //onRedirectCallback={onRedirectCallback}
   >
@@ -36,6 +36,6 @@ root.render(
         </Auth0Provider>
   </Provider>
 )
-console.log(window.location.origin)
+
 
 reportWebVitals();
