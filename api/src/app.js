@@ -45,7 +45,7 @@ server.post("/payment", (req, res) => {
       },
     ],
     back_urls: {
-      success: "http://localhost:3000",
+      success: "https://pf-10a-bhm9.vercel.app/",
       failure: "",
       pending: "",
     },
