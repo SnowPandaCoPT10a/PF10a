@@ -16,6 +16,7 @@ import './App.css'
 import { useState } from 'react';
 import Checkout from "./components/Checkout/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation";
+import Edit from "./components/Edit/Edit"
 
 
 
@@ -85,7 +86,7 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route path='/OrderConfirmation' element={<OrderConfirmation />} /> 
          <Route path='/Checkout' element={<Checkout />} />
          <Route exact path='/Products' element={<Cards/>} />
-
+         <Route exact path='/Dashboard' element={<Edit/>} />
         </Routes>
         <Chatbot />
       </div>

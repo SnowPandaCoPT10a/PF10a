@@ -62,6 +62,10 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
         <button className={(rutaUrl.includes('Create')) ? 'btnHome active' : 'btnHome'}>Create</button>
       </Link>
 
+      <Link to={'/Dashboard'} onClick={() => scrollTop()}>
+        <button className={(rutaUrl.includes('Dashboard')) ? 'btnHome active' : 'btnHome'}>Admin</button>
+      </Link>
+
       {!isAuthenticated ? <Login /> : 
       <Link to='/User'>  <button className='btnUser'>
       <FaUserAlt />

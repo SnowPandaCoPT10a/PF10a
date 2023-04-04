@@ -15,8 +15,9 @@ import axios from "axios";
 export function getAllProducts(categoria) {
   return async function(dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/products/`);
-
+      //!const response = await axios.get(`http://localhost:3001/products/`);
+      const response = await axios.get(`https://pf10a-production.up.railway.app/products/`)
+      
       return dispatch({
         type: GET_ALL_PRODUCTS,
         payload: response.data,
@@ -30,7 +31,8 @@ export function getAllProducts(categoria) {
 export function getAllProductsId(id) {
   return async function(dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/products/${id}`);
+      //!const response = await axios.get(`http://localhost:3001/products/${id}`);
+      const response = await axios.get(`https://pf10a-production.up.railway.app/products/${id}`);
       return dispatch({
         type: GET_ALL_PRODUCTS_ID,
         payload: response.data,
