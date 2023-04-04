@@ -26,7 +26,7 @@ root.render(
   domain={domain}
   clientId={clientId}
   authorizationParams={{
-      redirect_uri: "www.google.com"
+      redirect_uri: www.google.com
     }}
     //onRedirectCallback={onRedirectCallback}
   >
