@@ -9,4 +9,4 @@ export const CREATE_NEW_USER = "CREATE_NEW_USER"
 export const UPDATE_USER = "UPDATE_USER"
 export const SEARCH_USER = "SEARCH_USER"
 export const GET_ALL_USERS = "GET_ALL_USERS"
-
+export const SET_CURRENT_PAGE = "SET_CURRENT_PAGE"
