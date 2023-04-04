@@ -23,18 +23,24 @@ const tienda = () => {
     });
   };
   return (
-    <div className="tiendaCont p-0 m-0 text-center">
-      <Banner />
-      <Categorias scroll={scroll} />
-      <Destacados datos={datos} />
-      <Marcas scroll={scroll} datos={datos} />
-      <button><Link 
-              key="allProducts"
-              to={`/Products/`}
-              className="text-center mt-5 text-secondary"
-              onClick={() => scroll()}
-            >SHOW ALL PRODUCTS</Link></button>
-    </div>
+    <>
+      <div className="carousel-contain">
+        <Banner/>
+      </div>
+      <div className="tiendaCont p-0 m-0 container text-center mx-auto">
+        <Categorias scroll={scroll} />
+        <Destacados datos={datos} />
+        <Marcas scroll={scroll} datos={datos} />
+        <button className=" my-5 button">
+          <Link 
+                key="allProducts"
+                to={`/Products/`}
+                className="text-center text-white text-decoration-none"
+                onClick={() => scroll()}
+              >ALL PRODUCTS</Link>
+        </button>
+      </div>
+    </>
   );
 };
 
