@@ -8,6 +8,7 @@ import {
   UPDATE_USER,
   SEARCH_USER,
   GET_ALL_USERS,
+  SET_CURRENT_PAGE
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -133,4 +134,10 @@ export function getAllUsers(){
       console.log(error);
     }
 }
+}
+export function setCurrentPage(payload){
+  return {
+    type: SET_CURRENT_PAGE,
+    payload
+  }
 }
