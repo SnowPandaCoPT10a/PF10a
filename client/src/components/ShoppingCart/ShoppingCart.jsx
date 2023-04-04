@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import Checkout from "../Checkout/Checkout";
 
+
+
 const ShoppingCart = ({
   allProducts,
   setAllProducts,
@@ -20,6 +22,25 @@ const ShoppingCart = ({
     setCountProducts(0)
     setPriceTotal(0);
   };
+
+
+ useEffect(() => {
+  
+  const storedProduct = window.localStorage.getItem("productscart");
+  const storedPriceTotal = window.localStorage.getItem("totalprices");
+  const storedCountProducts = window.localStorage.getItem("countproducts");
+  if (storedProduct) {
+    setAllProducts(JSON.parse(storedProduct));
+  }
+  if (storedPriceTotal) {
+    setPriceTotal(Number(storedPriceTotal));
+  }
+  if (storedCountProducts) {
+    setCountProducts(Number(storedCountProducts));
+  }
+}, []);
+
+  
 
   //  console.log(allProducts,'facu')
  function decrementProduct(product) {
