@@ -26,7 +26,7 @@ root.render(
   domain={domain}
   clientId={clientId}
   authorizationParams={{
-      redirect_uri: window.location.origin
+      redirect_uri: "https://pf-10a-bhm9-c10h85jvw-snowpandacopt10a.vercel.app/"
     }}
     //onRedirectCallback={onRedirectCallback}
   >
