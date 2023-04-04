@@ -3,35 +3,75 @@ import './Values.css';
 
 const Values =()=>{
     return (
-        <section className='activities'>
-        <h3 className='text-center mt-5 text-secondary'>OUR VALUES</h3>
-        <div className='fila'>
-          <div className='proyecto'>
-            <div className='overlay'></div>
-            <img src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686355/SnowPandaCO/FrontEnd/actividad1_wplhac.jpg' alt="actividad1" />
-            <div className='info'>
-              <h4>Descripción</h4>
-              <p>Galeria 1</p>
+        <div className='wrapper'>
+            <h1 className='text-center mt-5 text-secondary'>OUR VALUES</h1>
+            <div className='cols'>
+                {/* valor 1 */}
+                <div className="col" ontouchstart="this.classList.toggle('hover');">
+					<div className="containers">
+						<div className="front">
+							<div className="inner">
+								<p>Pasión</p>
+                            	<span>por el snowboard</span>
+						    </div>
+					    </div>
+					    <div className="back">
+						    <div className="inner">
+						  		<p>Nuestra pasión por este deporte se refleja en todo lo que hacemos.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            	{/* valor 2 */}
+            	<div className="col" ontouchstart="this.classList.toggle('hover');">
+					<div className="containers">
+						<div className="front2">
+							<div className="inner">
+								<p>Excelencia</p>
+              					<span>en la calidad</span>
+							</div>
+						</div>
+						<div className="back">
+							<div className="inner">
+						  		<p>Trabajamos con los mejores fabricantes y proveedores de la industria, ofreciendo productos de alta calidad.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            	{/* valor 3 */}
+            	<div className="col" ontouchstart="this.classList.toggle('hover');">
+					<div className="containers">
+						<div className="front3">
+							<div className="inner">
+								<p>Servicio</p>
+              					<span>excepcional al cliente</span>
+							</div>
+						</div>
+						<div className="back">
+							<div className="inner">
+						 		 <p>Asesoramiento experto y personalizado para ayudar a encontrar los productos que mejor se adapten a sus necesidades.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+              	{/* valor 4 */}
+            	<div className="col" ontouchstart="this.classList.toggle('hover');">
+					<div className="containers">
+						<div className="front4">
+							<div className="inner">
+								<p>Responsabilidad</p>
+              					<span>social</span>
+							</div>
+						</div>
+						<div className="back">
+							<div className="inner">
+						  		<p>Nos preocupamos por el impacto que nuestra empresa tiene en la comunidad y el medio ambiente. </p>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-          </div>
-          <div className='proyecto'>
-            <div className='overlay'></div>
-            <img src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686358/SnowPandaCO/FrontEnd/actividad2_u7io4a.jpg' alt="actividad2" />
-            <div className='info'>
-              <h4>Descripción</h4>
-              <p>Galeria 2</p>
-            </div>
-          </div>
-          <div className='proyecto'>
-            <div className='overlay'></div>
-            <img src='https://res.cloudinary.com/dberwyxyq/image/upload/v1679686358/SnowPandaCO/FrontEnd/actividad3_pyidhw.jpg' alt="actividad3" />
-            <div className='info'>
-              <h4>Descripción</h4>
-              <p>Galeria 3</p>
-            </div>
-          </div>
         </div>
-      </section>
     )
 }
 
