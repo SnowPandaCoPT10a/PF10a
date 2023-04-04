@@ -31,7 +31,7 @@ const tienda = () => {
         <Categorias scroll={scroll} />
         <Destacados datos={datos} />
         <Marcas scroll={scroll} datos={datos} />
-        <button className=" my-5 button">
+        <button className=" mt-5 button">
           <Link 
                 key="allProducts"
                 to={`/Products/`}
