@@ -15,9 +15,13 @@ const ShoppingCart = ({
 }) => {
   const navigate = useNavigate();
 
-  function handleClear() {}
+  const clearCart = () => {
+    setAllProducts([])
+    setCountProducts(0)
+    setPriceTotal(0);
+  };
 
-   // console.log(allProducts,'facu')
+  //  console.log(allProducts,'facu')
  function decrementProduct(product) {
     const productToUpdate = allProducts?.find(
       (el) => el.productsID === product.productsID && el.size === product.size
@@ -316,9 +320,9 @@ const ShoppingCart = ({
       <All>
         <BasketContainer>
           <BasketTitle>Shopping Cart</BasketTitle>
-          <BasketButton onClick={() => navigate("/Checkout")}>
-            Checkout
-          </BasketButton>
+          <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
+          <BasketButton >Go to checkout</BasketButton>
+      </Link>
           <BasketTable>
             <BasketHeader>
               <h4>Item</h4>
@@ -331,7 +335,7 @@ const ShoppingCart = ({
             <BasketHeader>{renderProduct()}</BasketHeader>
             <BasketHeaderLine />
           </BasketTable>
-          <BasketButton>Clear</BasketButton>
+          <BasketButton  onClick={() => clearCart() }>Clear</BasketButton>
           <BasketTotal>Total: {priceTotal}</BasketTotal>
         </BasketContainer>
       </All>

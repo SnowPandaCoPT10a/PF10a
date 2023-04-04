@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 function Checkout() {
+
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const products = JSON.parse(searchParams.get('products'));
+  console.log(products)
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -14,7 +19,6 @@ function Checkout() {
     }
   });
   const navigate = useNavigate()
-
   const errors = {
     name: form.name.length === 0,
     email: form.name.length === 0,
@@ -50,6 +54,10 @@ function Checkout() {
     })
   }
   const showError = field => errors[field] ? form.touched[field] : false;
+
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
 
 
   return (
@@ -118,7 +126,9 @@ function Checkout() {
           </CheckoutAddress>
         </CheckoutTable>
         <CancelButton onClick={() => navigate('/ShoppingCart')}>Back to cart</CancelButton>
-        <CheckoutButton disabled={disabled}>Confirm Order</CheckoutButton>
+        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`} onClick={() => scrollTop()}>
+        <ConfirmButton>Confirm Order</ConfirmButton>
+      </Link>
       </CheckoutContainer>
     </form>
   )
@@ -200,9 +210,22 @@ grid-column:3;
 const CancelButton = styled.button`
 margin-bottom: 25px;
 border-radius: 8px;
-border-radiues: 8px;
-height:40 px;
-grid-column:1;
+height:80%;
+grid-column: 1 / span 2;
+width: 100%
+
+&:hover {
+    box-shadow: 0 0 0 6px #488cfb;
+  }
+`
+
+const ConfirmButton = styled.button`
+margin-bottom: 25px;
+margin-left: 200px;
+border-radius: 8px;
+height:80%;
+width: 60%;
+
 
 &:hover {
     box-shadow: 0 0 0 6px #488cfb;
