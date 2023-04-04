@@ -8,6 +8,7 @@ import {
   UPDATE_USER,
   SEARCH_USER,
   GET_ALL_USERS,
+  SET_CURRENT_PAGE
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -15,9 +16,10 @@ import axios from "axios";
 export function getAllProducts(categoria) {
   return async function(dispatch) {
     try {
-      //!const response = await axios.get(`http://localhost:3001/products/`);
-      const response = await axios.get(`https://pf10a-production.up.railway.app/products/`)
-      
+
+      const response = await axios.get(`https://pf10a-production.up.railway.app/products/`);
+
+
       return dispatch({
         type: GET_ALL_PRODUCTS,
         payload: response.data,
@@ -31,7 +33,7 @@ export function getAllProducts(categoria) {
 export function getAllProductsId(id) {
   return async function(dispatch) {
     try {
-      //!const response = await axios.get(`http://localhost:3001/products/${id}`);
+
       const response = await axios.get(`https://pf10a-production.up.railway.app/products/${id}`);
       return dispatch({
         type: GET_ALL_PRODUCTS_ID,
@@ -47,7 +49,7 @@ export function getAllProductsName(name) {
   return async function(dispatch) {
     try {
       const response = await axios.get(
-        `http://localhost:3001/search/?name=${name}`
+        `https://pf10a-production.up.railway.app/search/?name=${name}`
       );
 
       return dispatch({
@@ -63,7 +65,7 @@ export function getAllProductsName(name) {
 export function postProducts(payload) {
   return async function(dispatch) {
     const response = await axios.post(
-      "http://localhost:3001/products/create",
+      "https://pf10a-production.up.railway.app/products/create",
       payload
     );
     return dispatch({
@@ -75,7 +77,7 @@ export function postProducts(payload) {
 
 export function FilteredProducts(query) {
   return async function(dispatch) {
-    const response = await axios.get("http://localhost:3001/filtrado", {
+    const response = await axios.get("https://pf10a-production.up.railway.app/filtrado", {
       params: query,
     });
     dispatch({
@@ -87,7 +89,7 @@ export function FilteredProducts(query) {
 export function createNewUser(given_name ,family_name,email,picture) {
   return async function(dispatch) {
     try {
-      const response = await axios.post("http://localhost:3001/users/create/", {given_name, family_name, email, picture });
+      const response = await axios.post("https://pf10a-production.up.railway.app/users/create/", {given_name, family_name, email, picture });
       dispatch({
         type: CREATE_NEW_USER,
         payload: response.data,
@@ -100,7 +102,7 @@ export function createNewUser(given_name ,family_name,email,picture) {
 export function updateUser(email, first_name, last_name, nationality, date_birth, mobile) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`http://localhost:3001/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile);
+      const response = await axios.put(`https://pf10a-production.up.railway.app/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile);
       dispatch({
         type: UPDATE_USER,
         payload: response.data,
@@ -113,7 +115,7 @@ export function updateUser(email, first_name, last_name, nationality, date_birth
 export function searchUser(email) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`http://localhost:3001/users/modify/${email.email}`);
+      const response = await axios.put(`https://pf10a-production.up.railway.app/users/modify/${email.email}`);
       dispatch({
         type: SEARCH_USER,
         payload: response.data,
@@ -126,7 +128,7 @@ export function searchUser(email) {
 export function getAllUsers(){
   return async function(dispatch) {
     try{
-      const response = await axios.get(`http://localhost:3001/users`)
+      const response = await axios.get(`https://pf10a-production.up.railway.app/users`)
     dispatch({
       type: GET_ALL_USERS,
       payload: response.data
@@ -135,4 +137,11 @@ export function getAllUsers(){
       console.log(error);
     }
 }
+}
+
+export function setCurrentPage(payload){
+  return {
+    type: SET_CURRENT_PAGE,
+    payload
+  }
 }

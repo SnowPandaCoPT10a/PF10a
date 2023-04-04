@@ -3,7 +3,7 @@ import './SearchBar.css'
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProductsName, getAllProducts } from '../../Redux/actions/index.js'
+import { getAllProductsName, getAllProducts, setCurrentPage } from '../../Redux/actions/index.js'
 import { useLocation, Link, useNavigate } from 'react-router-dom'
 
 
@@ -18,14 +18,14 @@ const SearchBar = ({ categories }) => {
   function handleInputChange(e) {
     setName(e.target.value);
     navigate('Products/')
-
+    dispatch(setCurrentPage(1))
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(getAllProductsName(name));
-    setName("");  
-
+    setName("");
+    dispatch(setCurrentPage(1))
   }
 
   return (
