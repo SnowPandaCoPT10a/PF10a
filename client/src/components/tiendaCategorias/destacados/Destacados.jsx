@@ -43,7 +43,7 @@ const Destacados = ({ datos }) => {
     });
   };
   return (
-    <div className="bg-secondary px-5 py-4 rounded my-4 destacado">
+    <div className="px-5 py-4 rounded my-4 destacado">
       <h2 className="text-center destacados">PRODUCTOS DESTACADOS</h2>
       <Carousel
         responsive={responsive}
