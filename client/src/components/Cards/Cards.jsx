@@ -3,7 +3,7 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../Redux/actions/index.js";
+import { getAllProducts, setCurrentPage } from "../../Redux/actions/index.js";
 import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 import Filter from "../Filter/Filter";
@@ -17,7 +17,9 @@ const Cards = () => {
     (el) => el.category === article || el.brand.brandName === article
   ) : productsBoard;
   const dispatch = useDispatch();
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
+  const currentPage = useSelector((state) => state.currentPage);
+
   const [productPerPage] = useState(4);
 
   const indexOfLastProduct = currentPage * productPerPage;
@@ -31,7 +33,7 @@ const Cards = () => {
   );
 
   const pagination = (pageNumber) => {
-    setCurrentPage(pageNumber);
+   dispatch(setCurrentPage(pageNumber));
   };
 
   useEffect(() => {
