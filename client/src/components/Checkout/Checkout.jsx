@@ -55,6 +55,10 @@ function Checkout() {
   }
   const showError = field => errors[field] ? form.touched[field] : false;
 
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -122,7 +126,7 @@ function Checkout() {
           </CheckoutAddress>
         </CheckoutTable>
         <CancelButton onClick={() => navigate('/ShoppingCart')}>Back to cart</CancelButton>
-        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`}>
+        <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`} onClick={() => scrollTop()}>
         <ConfirmButton>Confirm Order</ConfirmButton>
       </Link>
       </CheckoutContainer>
