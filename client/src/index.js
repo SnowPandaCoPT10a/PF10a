@@ -25,9 +25,9 @@ root.render(
    <Auth0Provider
   domain={domain}
   clientId={clientId}
-  // authorizationParams={{
-  //     redirect_uri: "https://pf-10a-bhm9.vercel.app/"
-  //   }}
+  authorizationParams={{
+      redirect_uri: "window.location.origin"
+    }}
     //onRedirectCallback={onRedirectCallback}
   >
     <React.StrictMode>
@@ -36,5 +36,6 @@ root.render(
         </Auth0Provider>
   </Provider>
 )
+console.log(window.location.origin)
 
 reportWebVitals();
