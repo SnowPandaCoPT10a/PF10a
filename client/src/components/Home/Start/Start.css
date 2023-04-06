@@ -38,7 +38,7 @@
     text-decoration: none;
     display: inline-block;
     margin: 25px;
-    padding: 20px 25px;
+    padding: 20px 70px;
     border: 2px solid #fff;
     border-radius: 50px;
     color: #fff;
@@ -48,5 +48,5 @@
     transition: .5s;
 }
 .button-inicio:hover{
-    background-color: #029696;;
+    background-color: #023246;;
 }

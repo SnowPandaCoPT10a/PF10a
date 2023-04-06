@@ -12,7 +12,7 @@ return(
             <img className='logo' src={Logo} />
             <h2>Encuentra el equilibrio, mantén la velocidad, disfruta del viaje.</h2>
             <Link to='/shop'>
-              <button className='button-inicio'>Tienda</button>
+              <button className='button-inicio'>SHOP</button>
             </Link>
           </div>
         </div>
