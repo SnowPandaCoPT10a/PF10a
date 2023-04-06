@@ -11,8 +11,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Header = ({ navigateToCategory, categories, countProducts }) => {
   const location = useLocation();
   let navigate = useNavigate();
-
-
+  const [menuDesplegado, setmenuDesplegado] = useState(false);
+  const [shopDesplegado, setshopDesplegado] = useState(false);
   const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
@@ -23,9 +23,6 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
     );
   }
 
- 
-
-
   function handleClick() {
     navigate(-1)
   }
@@ -35,51 +32,97 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
   const isProductCategoryPage = categories.some(
     (category) => location.pathname === category.path
-  );  
+  );
 
   const scrollTop = () => {
     window.scroll(0, 0)
   }
+  const scrollAbout = () => {
+    window.scroll(0, 1200)
+  }
+  const scrollValues = () => {
+    window.scroll(0, 2180)
+  }
+  const scrollCategories = () => {
+    window.scroll(0, 750)
+  }
+  const scrollBrands = () => {
+    window.scroll(0, 2100)
+  }
 
   return (
     <div className='cntHeader'>
-      <Link to={'/'} onClick={() => scrollTop()}>
-        <img src={Logo} alt="" className='imgLogo' />
-      </Link>
-      
+      <div
+        className='logoContainer'
+        onMouseEnter={() => setmenuDesplegado(true)}
+        onMouseLeave={() => setmenuDesplegado(false)}
+      >
+        <Link to={'/'} onClick={() => scrollTop()}>
+          <img src={Logo} alt="" className='imgLogo' />
+        </Link>
+        {window.location.pathname === '/' &&menuDesplegado && (
+          <div className='navButtonsContainer'>
+            <button className='btnCarrt' onClick={scrollAbout}>
+              About Us
+            </button>
+            <button className='btnCarrt' onClick={scrollValues}>
+              Our Values
+            </button>
+            <Link to='/Members' onClick={() => scrollTop()}>
+              <button className='btnCarrt'>
+                Members
+              </button>
+            </Link>
+          </div>
+        )}
+      </div>
+
       {/* {isProductCategoryPage && <SearchBar categories={categories} />} */}
       <div>
-      {location.pathname !== '/' &&  <SearchBar categories={categories} />}
+        {location.pathname !== '/' && <SearchBar categories={categories} />}
       </div>
-     
-     
 
-      <Link to={'/Shop'} onClick={() => scrollTop()}>
-        <button className={(rutaUrl.includes('Shop')) ? 'btnHome active' : 'btnHome'}>Shop</button>
-      </Link>
-
+      <div
+        className='logoContainer'
+        onMouseEnter={() => setshopDesplegado(true)}
+        onMouseLeave={() => setshopDesplegado(false)}
+      >
+        <Link to={'/Shop'} onClick={() => scrollTop()}>
+          <button className={(rutaUrl.includes('Shop')) ? 'btnHome active' : 'btnHome'}>Shop</button>
+        </Link>
+        {window.location.pathname === '/Shop' && shopDesplegado && (
+          <div className='navButtonsContainer'>
+            <button className='btnCarrt' onClick={scrollCategories}>
+             Categories
+            </button>
+            <button className='btnCarrt' onClick={scrollBrands}>
+              Our Brands
+            </button>
+          </div>
+        )}
+      </div>
       <Link to={'/Create'} onClick={() => scrollTop()}>
         <button className={(rutaUrl.includes('Create')) ? 'btnHome active' : 'btnHome'}>Create</button>
       </Link>
 
-      {!isAuthenticated ? <Login /> : 
-      <Link to='/User'>  <button className='btnUser'>
-      <FaUserAlt />
-    </button>
-    </Link>
+      {!isAuthenticated ? <Login /> :
+        <Link to='/User'>  <button className='btnUser'>
+          <FaUserAlt />
+        </button>
+        </Link>
 
       }
-       
-    {isAuthenticated ? <Logout /> : null}
 
-{!isAuthenticated ? null : 
-      
-      <Link to={'/ShoppingCart'}>
-      <button className='btnCarrt'>
-        <FaShoppingCart />{countProducts}
-      </button>
-    </Link>
-      }   
+      {isAuthenticated ? <Logout /> : null}
+
+      {!isAuthenticated ? null :
+
+        <Link to={'/ShoppingCart'}>
+          <button className='btnCarrt'>
+            <FaShoppingCart />{countProducts}
+          </button>
+        </Link>
+      }
     </div>
   );
 }

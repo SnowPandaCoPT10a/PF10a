@@ -13,7 +13,7 @@ const Marcas = ({ datos, scroll }) => {
 
   return (
     <div className="container">
-      <h2 className="text-secondary text-center my-5">NUESTRAS MARCAS</h2>
+      <h2 className="text-secondary text-center my-5">Our Brands</h2>
       <div className="d-block row row-cols-4 d-flex justify-content-center lign-items-center">
         {marcas?.map((e) => (
           <Link

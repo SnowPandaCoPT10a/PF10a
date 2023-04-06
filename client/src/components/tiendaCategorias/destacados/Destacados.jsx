@@ -47,7 +47,7 @@ const Destacados = ({ datos }) => {
   };
   return (
     <div className="px-5 py-4 rounded my-4 destacado">
-      <h2 className="text-center destacados">PRODUCTOS DESTACADOS</h2>
+      <h2 className="text-center destacados">BEST PRODUCTS</h2>
       <Carousel
         responsive={responsive}
         infinite={true}

@@ -36,9 +36,13 @@ const Home = () => {
   return (
     <div className='container' >
       <Start/>
+      <section id="about-us">
       <AboutUs/>
+      </section>
       <Destacados datos={datos} />
+      <section id="our-values">
       <Values/>
+      </section>
       <Form />
     </div>
   )
