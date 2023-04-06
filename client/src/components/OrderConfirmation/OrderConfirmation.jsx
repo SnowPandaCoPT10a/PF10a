@@ -41,7 +41,7 @@ function OrderConfirmation() {
             className='buttonorder' 
             onClick={()=> {
                 axios
-                .post('http://localhost:3001/payment', endProduct)
+                .post('https://pf10a-production.up.railway.app/payment', endProduct)
                 .then(
                     (res)=>
                     (window.location.href=res.data.response.body.init_point))

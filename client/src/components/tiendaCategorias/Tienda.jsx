@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../Redux/actions/index";
+import { getAllProducts, setCurrentPage } from "../../Redux/actions/index";
 import Banner from "./banner/Banner";
 import Categorias from "./categorias/Categorias";
 import Destacados from "./destacados/Destacados";
@@ -23,18 +23,29 @@ const tienda = () => {
     });
   };
   return (
-    <div className="tiendaCont p-0 m-0 text-center">
-      <Banner />
-      <Categorias scroll={scroll} />
-      <Destacados datos={datos} />
-      <Marcas scroll={scroll} datos={datos} />
-      <button><Link 
-              key="allProducts"
-              to={`/Products/`}
-              className="text-center mt-5 text-secondary"
-              onClick={() => scroll()}
-            >SHOW ALL PRODUCTS</Link></button>
-    </div>
+    <>
+      <div className="carousel-contain">
+        <Banner />
+      </div>
+      <div className="tiendaCont p-0 m-0 container text-center mx-auto">
+        <Categorias scroll={scroll} />
+        <Destacados datos={datos} />
+        <Marcas scroll={scroll} datos={datos} />
+
+        <Link
+          key="allProducts"
+          to={`/Products/`}
+          className="text-center text-white text-decoration-none"
+          onClick={() => {
+            scroll()
+            dispatch(setCurrentPage(1))
+          }}
+        >
+          <button className=" mt-5 button">ALL PRODUCTS</button>
+        </Link>
+
+      </div>
+    </>
   );
 };
 

@@ -62,14 +62,14 @@ function FilterForm({ pagination }) {
                 <option value="desc">Descendente</option>
             </select>
 
-            <label htmlFor="size">Size</label>
+            {/* <label htmlFor="size">Size</label>
             <select id="size" value={size} onChange={(e) => setSize(e.target.value)}>
                 <option value="">Todos</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
-            </select>
+            </select> */}
             <button className='buton1' onClick={() => pagination(1)}>Filtrar</button>
         </form>)
 }

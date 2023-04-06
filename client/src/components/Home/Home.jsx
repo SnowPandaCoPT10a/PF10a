@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import './Home.css';
-import Form from './Form/Form';
 import { getAllProducts } from '../../Redux/actions/index'
-import Destacados from '../tiendaCategorias/destacados/Destacados';
 import { useAuth0 } from "@auth0/auth0-react";
 import { createNewUser } from '../../Redux/actions/index.js';
+import './Home.css';
 import Start from './Start/Start';
 import AboutUs from './AboutUs/AboutUs';
+import Destacados from '../tiendaCategorias/destacados/Destacados';
 import Values from './Values/Values'
+import Form from './Form/Form';
 
 const Home = () => {
 

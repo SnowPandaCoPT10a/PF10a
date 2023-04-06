@@ -1,5 +1,6 @@
 .destacado{
     z-index: 10;
+    background-color: #7F949F;
 }
 
 .destacados{
@@ -8,6 +9,5 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
-  
 }
 
