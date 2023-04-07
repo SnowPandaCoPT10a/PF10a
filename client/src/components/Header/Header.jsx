@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
@@ -11,7 +11,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Header = ({ navigateToCategory, categories, countProducts }) => {
   const location = useLocation();
   let navigate = useNavigate();
-
+  const [dropActive, setDropActive] = useState(false)
+  console.log(dropActive);
 
   const { isAuthenticated, isLoading } = useAuth0();
 
@@ -23,7 +24,6 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
     );
   }
 
- 
 
 
   function handleClick() {
@@ -35,7 +35,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
   const isProductCategoryPage = categories.some(
     (category) => location.pathname === category.path
-  );  
+  );
 
   const scrollTop = () => {
     window.scroll(0, 0)
@@ -46,40 +46,49 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
       <Link to={'/'} onClick={() => scrollTop()}>
         <img src={Logo} alt="" className='imgLogo' />
       </Link>
-      
+
       {/* {isProductCategoryPage && <SearchBar categories={categories} />} */}
       <div>
-      {location.pathname !== '/' &&  <SearchBar categories={categories} />}
+        {location.pathname !== '/' && <SearchBar categories={categories} />}
       </div>
-     
-     
+
+
 
       <Link to={'/Shop'} onClick={() => scrollTop()}>
-        <button className={(rutaUrl.includes('Shop')) ? 'btnHome active' : 'btnHome'}>Shop</button>
+        <button className={(rutaUrl.includes('Shop')) ? 'btnHome active' : 'btnHome'} >Shop</button>
       </Link>
+
 
       <Link to={'/Create'} onClick={() => scrollTop()}>
         <button className={(rutaUrl.includes('Create')) ? 'btnHome active' : 'btnHome'}>Create</button>
       </Link>
 
-      {!isAuthenticated ? <Login /> : 
-      <Link to='/User'>  <button className='btnUser'>
-      <FaUserAlt />
-    </button>
-    </Link>
+      {!isAuthenticated ? <Login /> :
+        <div onMouseOver={() => setDropActive(true)} onMouseOut={() => setDropActive(false)}>
+           <button className={(rutaUrl.includes('User')) ? 'btnUser active' : 'btnUser'}>
+            <FaUserAlt />
+          </button>
+          
+          <div className={dropActive ? 'drop-active' : 'drop-null'}>
+            <a>Administrador</a>
+            <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
+            <a>Mis Compras</a>
+            <a><Logout /></a>
+          </div>
+        </div>
 
       }
-       
-    {isAuthenticated ? <Logout /> : null}
 
-{!isAuthenticated ? null : 
-      
-      <Link to={'/ShoppingCart'}>
-      <button className='btnCarrt'>
-        <FaShoppingCart />{countProducts}
-      </button>
-    </Link>
-      }   
+      {/* {isAuthenticated ? <Logout /> : null} */}
+
+      {!isAuthenticated ? null :
+
+        <Link to={'/ShoppingCart'}>
+          <button className='btnCarrt'>
+            <FaShoppingCart />{countProducts}
+          </button>
+        </Link>
+      }
     </div>
   );
 }
