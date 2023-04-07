@@ -138,7 +138,6 @@ export function getAllUsers(){
     }
 }
 }
-
 export function setCurrentPage(payload){
   return {
     type: SET_CURRENT_PAGE,
