@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
@@ -7,14 +7,31 @@ import Logo from '../../img/logoPanda.png';
 import Login from '../Login/Login.jsx'
 import Logout from '../Logout/Logout.jsx'
 import { useAuth0 } from "@auth0/auth0-react";
+import { useDispatch, useSelector } from 'react-redux'
+import { getAllUsers } from '../../Redux/actions/index'
+
 
 const Header = ({ navigateToCategory, categories, countProducts }) => {
   const location = useLocation();
   let navigate = useNavigate();
+  const dispatch = useDispatch();
+  const datos = useSelector(e => e.user)
+  
+  try {
+    const perfil = datos.find(obj => obj.email === user.email);
+    
+  } catch (error) {
+    console.log(error);
+  }
 
+  //console.log(perfil, "PATO")
+  const { isAuthenticated, isLoading,user } = useAuth0();
 
-  const { isAuthenticated, isLoading } = useAuth0();
-
+  useEffect(() => {
+	 	
+    dispatch(getAllUsers())
+     }, [dispatch])
+   
   if (isLoading) {
     return (
       <div >
@@ -24,6 +41,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
   }
 
  
+console.log(user,"PATATA")
 
 
   function handleClick() {
@@ -40,6 +58,8 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
   const scrollTop = () => {
     window.scroll(0, 0)
   }
+  
+		
 
   return (
     <div className='cntHeader'>
@@ -62,9 +82,24 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
         <button className={(rutaUrl.includes('Create')) ? 'btnHome active' : 'btnHome'}>Create</button>
       </Link>
 
-      <Link to={'/Dashboard'} onClick={() => scrollTop()}>
-        <button className={(rutaUrl.includes('Dashboard')) ? 'btnHome active' : 'btnHome'}>Admin</button>
-      </Link>
+
+      {!isAuthenticated ? null : <div class="dropdown ms-3">
+      <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+      <span class="d-none d-lg-inline">Admin Console</span> 
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+      
+      
+      <li><a class="dropdown-item" href="/ManageProfiles">Manage Profiles</a></li>
+      
+      <li><a class="dropdown-item" href="/ManageProducts">Manage Products</a></li>
+      
+      <li><a class="dropdown-item" href="/ManageBills">Manage Bills</a></li>
+      
+      <li><a class="dropdown-item" href="/ManageReviews">Manage Reviews</a></li>
+      </ul>
+      </div>}
+
 
       {!isAuthenticated ? <Login /> : 
       <Link to='/User'>  <button className='btnUser'>
