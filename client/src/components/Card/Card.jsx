@@ -99,12 +99,11 @@ function handleOnAddProduct(product) {
     setOneProducts([...allProducts, product]);
 
 
+}
+
   window.localStorage.setItem("productscart", JSON.stringify(allProducts));
   window.localStorage.setItem("totalprices", JSON.stringify(priceTotal));
   window.localStorage.setItem("countproducts", JSON.stringify(countProducts));
-
-}
-
 
   function handleChange(event) {
     const selectedSize = event.target.value;

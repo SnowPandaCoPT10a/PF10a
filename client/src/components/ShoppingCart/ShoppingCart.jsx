@@ -17,11 +17,16 @@ const ShoppingCart = ({
 }) => {
   const navigate = useNavigate();
 
-  const clearCart = () => {
-    setAllProducts([])
-    setCountProducts(0)
-    setPriceTotal(0);
-  };
+
+const clearCart = () => {
+  window.localStorage.setItem("productscart", JSON.stringify([]));
+  window.localStorage.setItem("totalprices", JSON.stringify(0));
+  window.localStorage.setItem("countproducts", JSON.stringify(0));
+  setAllProducts([]);
+  setCountProducts(0);
+  setPriceTotal(0);
+};
+
 
 
  useEffect(() => {
@@ -40,7 +45,9 @@ const ShoppingCart = ({
   }
 }, []);
 
-  
+  // window.localStorage.setItem("productscart", JSON.stringify(allProducts));
+  // window.localStorage.setItem("totalprices", JSON.stringify(priceTotal));
+  // window.localStorage.setItem("countproducts", JSON.stringify(countProducts));
 
   //  console.log(allProducts,'facu')
  function decrementProduct(product) {
@@ -82,6 +89,18 @@ const ShoppingCart = ({
       setCountProducts(countProducts - 1);
       setPriceTotal( priceTotal - Number(productToUpdate.price))
       //setPriceTotal(priceTotal -  Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): 209 ) );
+    window.localStorage.setItem(
+        "productscart",
+        JSON.stringify(updatedProduct)
+      );
+      window.localStorage.setItem(
+        "totalprices",
+        JSON.stringify(priceTotal - Number(productToUpdate.price))
+      );
+      window.localStorage.setItem(
+        "countproducts",
+        JSON.stringify(countProducts - 1)
+      );
     }
     if (
       productToUpdate.boardsizes?.map((el) =>
@@ -117,6 +136,18 @@ const ShoppingCart = ({
       setCountProducts(countProducts - 1);
       setPriceTotal( priceTotal - Number(productToUpdate.price))
       //setPriceTotal(priceTotal -  Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): 209 ) );
+     window.localStorage.setItem(
+        "productscart",
+        JSON.stringify(updatedProduct)
+      );
+      window.localStorage.setItem(
+        "totalprices",
+        JSON.stringify(priceTotal -  Number(productToUpdate.price))
+      );
+      window.localStorage.setItem(
+        "countproducts",
+        JSON.stringify(countProducts - 1)
+      );
     }
     if (
       productToUpdate.numbersizes?.map((el) =>
@@ -152,7 +183,21 @@ const ShoppingCart = ({
       setCountProducts(countProducts - 1);
       setPriceTotal( priceTotal - Number(productToUpdate.price))
       //setPriceTotal(priceTotal -  Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): 209 ) );
+      window.localStorage.setItem(
+        "productscart",
+        JSON.stringify(updatedProduct)
+      );
+      window.localStorage.setItem(
+        "totalprices",
+        JSON.stringify(priceTotal -  Number(productToUpdate.price))
+      );
+      window.localStorage.setItem(
+        "countproducts",
+        JSON.stringify(countProducts - 1)
+      );
     }
+
+
   }
 
   // price: Number(productToUpdate.price) - Number(product.price)
@@ -204,45 +249,74 @@ const ShoppingCart = ({
       );
 
       setAllProducts(updateProduct);
+      setCountProducts(countProducts + 1);
       setPriceTotal(priceTotal + Number(productNext.price));
-    } else {
-      const newProduct = {
-        ...product,
-        price: Number(product.price) + Number(product.price),
-        sizes: product.sizes?.map((size) =>
-          size.size === product.size
-            ? {
-                ...size,
-                stock: Number(size.stock - 1),
-                quantity: Number(size.quantity + 1),
-              }
-            : size
-        ),
-        numbersizes: product.numbersizes?.map((size) =>
-          size.size === product.size
-            ? {
-                ...size,
-                stock: Number(size.stock - 1),
-                quantity: Number(size.quantity + 1),
-              }
-            : size
-        ),
-        boardsizes: product.boardsizes?.map((size) =>
-          size.size === "one size"
-            ? {
-                ...size,
-                stock: Number(size.stock - 1),
-                quantity: Number(size.quantity + 1),
-              }
-            : size
-        ),
-      };
-      const newProducts = [...allProducts, newProduct];
-      setAllProducts(newProducts);
-      setPriceTotal(priceTotal + Number(newProduct.price));
-    }
-    setCountProducts(countProducts + 1);
+       window.localStorage.setItem(
+        "productscart",
+        JSON.stringify(updateProduct)
+      );
+      window.localStorage.setItem(
+        "totalprices",
+        JSON.stringify(priceTotal + Number(productNext.price))
+      );
+      window.localStorage.setItem(
+        "countproducts",
+        JSON.stringify(countProducts +1)
+      );
+     } 
+     // else {
+    //   const newProduct = {
+    //     ...product,
+    //     price: Number(product.price) + Number(product.price),
+    //     sizes: product.sizes?.map((size) =>
+    //       size.size === product.size
+    //         ? {
+    //             ...size,
+    //             stock: Number(size.stock - 1),
+    //             quantity: Number(size.quantity + 1),
+    //           }
+    //         : size
+    //     ),
+    //     numbersizes: product.numbersizes?.map((size) =>
+    //       size.size === product.size
+    //         ? {
+    //             ...size,
+    //             stock: Number(size.stock - 1),
+    //             quantity: Number(size.quantity + 1),
+    //           }
+    //         : size
+    //     ),
+    //     boardsizes: product.boardsizes?.map((size) =>
+    //       size.size === "one size"
+    //         ? {
+    //             ...size,
+    //             stock: Number(size.stock - 1),
+    //             quantity: Number(size.quantity + 1),
+    //           }
+    //         : size
+    //     ),
+    //   };
+    //   const newProducts = [...allProducts, newProduct];
+    //   setAllProducts(newProducts);
+    //   setCountProducts(countProducts + 1);
+    //   setPriceTotal(priceTotal + Number(newProduct.price));
+    //    window.localStorage.setItem(
+    //     "productscart",
+    //     JSON.stringify(newProduct)
+    //   );
+    //   window.localStorage.setItem(
+    //     "totalprices",
+    //     JSON.stringify(priceTotal)
+    //   );
+    //   window.localStorage.setItem(
+    //     "countproducts",
+    //     JSON.stringify(countProducts)
+    //   );
+    // }
+    
   }
+
+
 
   const renderProduct = () => {
     if (allProducts.length > 0) {
@@ -293,7 +367,7 @@ const ShoppingCart = ({
             <button onClick={() => incrementProduct(el)}>+</button>
           </BasketPrice>
           <BasketQty>
-            {el.price *
+            {(el.price *
               (el.sizes?.reduce((acc, size) => {
                 console.log("gato");
                 if (size.size === el.size) {
@@ -320,7 +394,7 @@ const ShoppingCart = ({
                     0;
                   return acc + sizeQuantity;
                 }, 0) ||
-                0)}
+                0)).toFixed(2)}
           </BasketQty>
         </React.Fragment>
       ));
@@ -357,7 +431,7 @@ const ShoppingCart = ({
             <BasketHeaderLine />
           </BasketTable>
           <BasketButton  onClick={() => clearCart() }>Clear</BasketButton>
-          <BasketTotal>Total: {priceTotal}</BasketTotal>
+          <BasketTotal>Total: {priceTotal.toFixed(2)}</BasketTotal>
         </BasketContainer>
       </All>
     </div>
