@@ -14,9 +14,25 @@ export default function Card({oneProducts, setOneProducts, allProducts, setAllPr
   const [selectedSize, setSelectedSize] = useState('');
 
 
-  useEffect(() => {
-    dispatch(getAllProductsId(id))
-  }, [id, dispatch])
+ useEffect(() => {
+  dispatch(getAllProductsId(id));
+  const storedProduct = window.localStorage.getItem("productscart");
+  const storedPriceTotal = window.localStorage.getItem("totalprices");
+  const storedCountProducts = window.localStorage.getItem("countproducts");
+  if (storedProduct) {
+    setAllProducts(JSON.parse(storedProduct));
+  }
+  if (storedPriceTotal) {
+    setPriceTotal(Number(storedPriceTotal));
+  }
+  if (storedCountProducts) {
+    setCountProducts(Number(storedCountProducts));
+  }
+}, [id, dispatch]);
+
+
+ 
+
 
 function handleOnAddProduct(product) {
 
@@ -82,8 +98,12 @@ function handleOnAddProduct(product) {
     }
     setOneProducts([...allProducts, product]);
 
+
 }
 
+  window.localStorage.setItem("productscart", JSON.stringify(allProducts));
+  window.localStorage.setItem("totalprices", JSON.stringify(priceTotal));
+  window.localStorage.setItem("countproducts", JSON.stringify(countProducts));
 
   function handleChange(event) {
     const selectedSize = event.target.value;
@@ -140,7 +160,7 @@ function handleOnAddProduct(product) {
                   </button>
                 ))
               ) 
-              /* || (
+               || (
                 productInfoId.boardsizes?.map((el) => (
                   <button
                     value={el.size}
@@ -150,7 +170,7 @@ function handleOnAddProduct(product) {
                     {el.size}
                   </button>
                 ))
-              ) */
+              ) 
               }
 
 
