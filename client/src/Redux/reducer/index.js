@@ -8,7 +8,9 @@ import {
   UPDATE_USER,
   GET_ALL_USERS,
   SEARCH_USER,
-  SET_CURRENT_PAGE
+  SET_CURRENT_PAGE,
+  SET_BANNED_PRODUCT,
+  SET_FEATURED_PRODUCT,
 } from "../actions-types/index";
 
 const initialState = {
@@ -77,6 +79,19 @@ function rootReducer(state = initialState, action) {
           ...state,
           currentPage: action.payload
         }
+      case SET_BANNED_PRODUCT:
+          return{
+            ...state,
+            products: action.payload,
+            allProducts: action.payload,
+          }
+      case SET_FEATURED_PRODUCT:
+        return{
+          ...state,
+          products: action.payload,
+            allProducts: action.payload,
+        }
+      
     default:
       return state;
   }

@@ -39,17 +39,32 @@ a {
   height: 100%;
   user-select: none;
 }
+.mariela{
+  position: relative;
+  padding: 1rem;
+  width: 350px;
+  height: 450px;
+  box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+  border-radius: 0.9rem;
+  background-color: #0003;
+  color: var(--text);
+  cursor: pointer;
+}
 
 /*//!===== CARD =====*/
+
  .container_manager {
   height: 100%;
-  width: 850px;
+  width: 25%;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-} 
-.card {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+.card_ {
   position: relative;
   padding: 1rem;
   width: 350px;
@@ -59,11 +74,9 @@ a {
   background-color: var(--red-card);
   color: var(--text);
   cursor: pointer;
+  
 }
 
-.card-blue {
-  background: var(--blue-card);
-}
 
 .product-image {
   height: 230px;
@@ -75,7 +88,6 @@ a {
 .product-info {
   text-align: center;
 }
-
 
 .product-info h2 {
   font-size: 1.4rem;
@@ -90,7 +102,7 @@ a {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.btn {
+.btn_ {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -106,14 +118,7 @@ a {
 .buy-btn:hover {
   background-color: var(--btn-hover);
 }
-.fav {
-  box-sizing: border-box;
-  background: #fff;
-  padding: 0.5rem 0.5rem;
-  border: 1px solid#000;
-  display: grid;
-  place-items: center;
-}
+
 
 .svg {
   height: 25px;
@@ -121,9 +126,60 @@ a {
   fill: #fff;
   transition: all 500ms ease;
 }
+.svg_eyes{
+  height: 25px;
+  width: 25px;
+  fill: #0ac92a;
+  transition: all 500ms ease;
+  
+}
+
+.fav:hover .svg_eyes {
+  fill: #da0e0e;
+  transform: rotate(360deg);
+}
+
+.svg_eyes_disabled {
+  height: 25px;
+  width: 25px;
+  fill: #da0e0e;
+  transition: all 500ms ease;
+
+}
+
+.fav:hover .svg_eyes_disabled {
+  fill: #0ac92a;
+  transform: rotate(360deg);
+}
+.fav {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid#000;
+  display: grid;
+  place-items: center;
+  transition: transform 0.5s;
+}
 
 .fav:hover .svg {
-  fill: #000;
+  fill: #e7d31c;
+  transform: rotate(360deg);
+}
+.featured {
+  box-sizing: border-box;
+  background: #e7d31c;;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid#000;
+
+  display: grid;
+  place-items: center;
+  transition: transform 0.5s;
+  
+}
+
+.featured:hover .svg {
+  fill: #fff;
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 800px) {
