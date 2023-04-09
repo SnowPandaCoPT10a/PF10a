@@ -8,7 +8,9 @@ import {
   UPDATE_USER,
   SEARCH_USER,
   GET_ALL_USERS,
-  SET_CURRENT_PAGE
+  SET_CURRENT_PAGE,
+  SET_BANNED_PRODUCT,
+  SET_FEATURED_PRODUCT,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -16,7 +18,9 @@ import axios from "axios";
 export function getAllProducts(categoria) {
   return async function(dispatch) {
     try {
+
       const response = await axios.get(`https://pf10a-production.up.railway.app/products/`);
+
 
       return dispatch({
         type: GET_ALL_PRODUCTS,
@@ -31,6 +35,7 @@ export function getAllProducts(categoria) {
 export function getAllProductsId(id) {
   return async function(dispatch) {
     try {
+
       const response = await axios.get(`https://pf10a-production.up.railway.app/products/${id}`);
       return dispatch({
         type: GET_ALL_PRODUCTS_ID,
@@ -135,10 +140,41 @@ export function getAllUsers(){
     }
 }
 }
-
 export function setCurrentPage(payload){
   return {
     type: SET_CURRENT_PAGE,
     payload
+  }
+}
+
+export function setBannedProduct(id){
+
+ 
+  return async function(dispatch){
+    try {
+      const response = await axios.put(`https://pf10a-production.up.railway.app/products/disable/${id}`)
+      dispatch({
+        type: SET_BANNED_PRODUCT,
+        payload: response.data
+      })
+    } catch (err) {
+      console.log(err);
+      
+    }
+  }
+}
+
+export function setFeaturedProduct(id){
+  return async function(dispatch){
+    try {
+      const response = await axios.put(`https://pf10a-production.up.railway.app/products/featured/${id}`)
+      dispatch({
+        type: SET_FEATURED_PRODUCT,
+        payload: response.data
+      })
+    } catch (err) {
+      console.log(err);
+      
+    }
   }
 }
