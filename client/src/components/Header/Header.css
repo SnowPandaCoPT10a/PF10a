@@ -19,9 +19,33 @@
   width: 5rem;
 }
 
+.drop-null{
+  display: none;
+}
+.drop-active{
+  background-color: #eee; 
+  /* clip-path: polygon(43% 10%, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0 0, 27% 0); */
+  padding: 15px 30px;
+  border-radius: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #999;
+  transition: all 0.1s ease-in-out;
+  text-align: start;
+}
+.drop-active a{
+  cursor: pointer;
+  color: #999;
+  margin-top: 9px;
+}
+
+.drop-active a:hover{
+  color: #023246 !important;
+}
+
 .btnUser {
   cursor: pointer;
-  position: relative;
   display: flex;
   align-items: center;
   font-size: 1.4em;
@@ -30,12 +54,12 @@
   /*  padding: 0.7em 1.4em;*/
   background-color: transparent;
   text-decoration: none;
-  border: none;
-  border-radius: 0.5em;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  border-bottom: none;
 
 }
 
