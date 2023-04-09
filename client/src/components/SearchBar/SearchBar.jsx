@@ -17,14 +17,21 @@ const SearchBar = ({ categories }) => {
 
   function handleInputChange(e) {
     setName(e.target.value);
-    navigate('Products/')
-    dispatch(setCurrentPage(1))
+  
+    // Obtener la URL actual
+    const currentURL = window.location.href;
+  
+    // Verificar si la URL contiene "/Shop"
+    if (currentURL.includes("/Shop")) {
+      navigate('Products/');
+     ;
+    }
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch(getAllProducts())
-    dispatch(getAllProductsName(name));
+
+    dispatch(getAllProductsName(name))
     setName("");
     dispatch(setCurrentPage(1))
   }
