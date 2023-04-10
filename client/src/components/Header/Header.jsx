@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare, FaUserAlt, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '../SearchBar/SearchBar'
@@ -16,33 +16,33 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
   let navigate = useNavigate();
   const dispatch = useDispatch();
   const datos = useSelector(e => e.user)
-  const usuario  = useSelector(e => e.user)
+  const usuario = useSelector(e => e.user)
 
   let perfil = null;
 
 
   try {
-    
-    
-    perfil = datos.find(obj => obj.email );
-    
+
+
+    perfil = datos.find(obj => obj.email);
+
     console.log('perfil encontrado:', perfil);
   } catch (error) {
     console.log(error);
   }
   console.log(perfil, "PATO")
-  
-  const { isAuthenticated, isLoading,user } = useAuth0();
+
+  const { isAuthenticated, isLoading, user } = useAuth0();
 
   const [dropActive, setDropActive] = useState(false)
-  console.log(dropActive,"QUE ES ESTO");
+  console.log(dropActive, "QUE ES ESTO");
 
 
   useEffect(() => {
-	 	
+
     dispatch(getAllUsers())
-     }, [dispatch])
-   
+  }, [dispatch])
+
   if (isLoading) {
     return (
       <div >
@@ -51,8 +51,8 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
     );
   }
 
- 
-console.log(user,"PATATA")
+
+  console.log(user, "PATATA")
 
 
 
@@ -70,8 +70,8 @@ console.log(user,"PATATA")
   const scrollTop = () => {
     window.scroll(0, 0)
   }
-  
-		
+
+
 
   return (
     <div className='cntHeader'>
@@ -98,35 +98,39 @@ console.log(user,"PATATA")
 
 
       {!isAuthenticated ? null : <div class="dropdown">
-      <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-      <span class="d-none d-lg-inline">Admin Console</span> 
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-      
-      
-      <li><a class="dropdown-item" href="/ManageProfiles">Manage Profiles</a></li>
-      
-      <li><a class="dropdown-item" href="/ManageProducts">Manage Products</a></li>
-      
-      <li><a class="dropdown-item" href="/ManageBills">Manage Bills</a></li>
-      
-      <li><a class="dropdown-item" href="/ManageReviews">Manage Reviews</a></li>
-      </ul>
+        <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+          <span class="d-none d-lg-inline">Admin Console</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+
+
+          <li><a class="dropdown-item" href="/ManageProfiles">Manage Profiles</a></li>
+
+          <li><a class="dropdown-item" href="/ManageProducts">Manage Products</a></li>
+
+          <li><a class="dropdown-item" href="/ManageBills">Manage Bills</a></li>
+
+          <li><a class="dropdown-item" href="/ManageReviews">Manage Reviews</a></li>
+        </ul>
       </div>}
 
 
 
       {!isAuthenticated ? <Login /> :
         <div onMouseOver={() => setDropActive(true)} onMouseOut={() => setDropActive(false)}>
-           <button className={(rutaUrl.includes('User')) ? 'btnUser active' : 'btnUser'}>
+          <button className={(rutaUrl.includes('User')) ? 'btnUser active' : 'btnUser'}>
             <FaUserAlt />
           </button>
-          
+
           <div className={dropActive ? 'drop-active' : 'drop-null'}>
-            <a>Administrador</a>
-            <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
-            <a>Mis Compras</a>
-            <a><Logout /></a>
+            {dropActive ?
+            <>
+              <a>Administrador</a>
+              <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
+              <a>Mis Compras</a>
+              <a><Logout /></a>
+            </> :
+            null}
           </div>
         </div>
 

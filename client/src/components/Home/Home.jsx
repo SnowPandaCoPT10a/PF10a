@@ -10,7 +10,7 @@ import Destacados from '../tiendaCategorias/destacados/Destacados';
 import Values from './Values/Values'
 import Form from './Form/Form';
 
-const Home = () => {
+const Home = ({setAllProducts,setPriceTotal,setCountProducts}) => {
 
   const datos = useSelector(e => e.allProducts)
   const dispatch = useDispatch()
@@ -32,6 +32,22 @@ const Home = () => {
       setUserCreated(true);
     }
   }, [isAuthenticated, user, dispatch, userCreated]);
+
+  useEffect(() => {
+  
+    const storedProduct = window.localStorage.getItem("productscart");
+    const storedPriceTotal = window.localStorage.getItem("totalprices");
+    const storedCountProducts = window.localStorage.getItem("countproducts");
+    if (storedProduct) {
+      setAllProducts(JSON.parse(storedProduct));
+    }
+    if (storedPriceTotal) {
+      setPriceTotal(Number(storedPriceTotal));
+    }
+    if (storedCountProducts) {
+      setCountProducts(Number(storedCountProducts));
+    }
+  }, []);
 
   return (
     <div className='container' >
