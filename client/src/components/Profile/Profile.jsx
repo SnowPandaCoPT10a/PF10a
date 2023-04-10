@@ -74,8 +74,7 @@ const Profile = () => {
 	
 	
 	
-	//console.log(user,"LUCHOOOOOOOOO")
-console.log(datos, "FACUUUU")
+	
 try{
 
 	if (isAuthenticated) {

@@ -34,7 +34,6 @@ const SearchBar = ({ categories }) => {
   function handleSubmit(e) {
     e.preventDefault();
     // dispatch(getAllProducts())
-
     dispatch(getAllProductsName(name));
     setName("");
 
