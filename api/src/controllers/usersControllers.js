@@ -120,8 +120,49 @@ cloudinary.config({
     };
  }
  
+//!! MODIFY STATUS
+async function disableEstatus(req, res) {
+    try {
+      let { idUser } = req.params;
+  
+      const statusUsers = await Users.findOne({
+        where: {
+            idUser: idUser,
+        },
+      });
+  
+      if (statusUsers.status === true) {
+        statusUsers.update({ status: false });
+      } else if (statusUsers.status === false) {
+        statusUsers.update({ status: true });
+      }
+      res.status(201).json(statusUsers);
+    } catch (err) {
+      res.status(401).json({ error: err });
+    }
+  }
 
-
+  //!! MODIFY Privilege
+async function privilegeEstatus(req, res) {
+    try {
+      let { idUser } = req.params;
+  
+      const privilegeUser = await Users.findOne({
+        where: {
+            idUser: idUser,
+        },
+      });
+  
+      if (privilegeUser.privilige === true) {
+        privilegeUser.update({ privilige: false });
+      } else if (privilegeUser.privilige === false) {
+        privilegeUser.update({ privilige: true });
+      }
+      res.status(201).json(privilegeUser);
+    } catch (err) {
+      res.status(401).json({ error: err });
+    }
+  }
 
 
 module.exports = {
@@ -129,5 +170,8 @@ module.exports = {
     postNewUser,
     DisableUser,
     ModifyUser,
-    searchUsuario
+    searchUsuario,
+    disableEstatus,
+    privilegeEstatus,
+
 };

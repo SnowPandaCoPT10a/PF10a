@@ -22,8 +22,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
 
   try {
-    console.log('datasos:', usuario[0]);
-    console.log('user.email:', user.email);
+    
     
     perfil = datos.find(obj => obj.email );
     
@@ -98,7 +97,7 @@ console.log(user,"PATATA")
 
 
 
-      {!isAuthenticated ? null : <div class="dropdown ms-3">
+      {!isAuthenticated ? null : <div class="dropdown">
       <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
       <span class="d-none d-lg-inline">Admin Console</span> 
       </button>

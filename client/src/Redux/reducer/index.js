@@ -11,6 +11,8 @@ import {
   SET_CURRENT_PAGE,
   SET_BANNED_PRODUCT,
   SET_FEATURED_PRODUCT,
+  SET_PRIVILEGE_USER,
+  SET_STATUS_USER,
 } from "../actions-types/index";
 
 const initialState = {
@@ -71,8 +73,8 @@ function rootReducer(state = initialState, action) {
         }
       case GET_ALL_USERS:
         return{
-          
-          user: action.payload
+          users: action.payload,
+          user: action.payload,
         }
         case SET_CURRENT_PAGE:
         return{
@@ -90,6 +92,18 @@ function rootReducer(state = initialState, action) {
           ...state,
           products: action.payload,
             allProducts: action.payload,
+        }
+      case SET_PRIVILEGE_USER:
+        return{
+          ...state,
+          users: action.payload,
+          user: action.payload,
+        }
+      case SET_STATUS_USER:
+        return{
+          ...state,
+          users: action.payload,
+          user: action.payload,
         }
       
     default:
