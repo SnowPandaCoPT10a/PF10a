@@ -38,6 +38,10 @@ function rootReducer(state = initialState, action) {
         productsID: action.payload,
       };
     case GET_ALL_PRODUCTS_NAME:
+      /*if (action.payload.length === 0) {
+        alert("No se encontraron productos con ese nombre");
+      return { ...state}
+        }*/
       return {
         ...state,
         products: action.payload,
