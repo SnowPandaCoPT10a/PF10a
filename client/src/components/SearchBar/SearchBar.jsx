@@ -16,7 +16,8 @@ const SearchBar = ({ categories }) => {
   // const location = useLocation();
 
   function handleInputChange(e) {
-    setName(e.target.value);
+
+    /*  setName(e.target.value);
   
     // Obtener la URL actual
     const currentURL = window.location.href;
@@ -25,15 +26,30 @@ const SearchBar = ({ categories }) => {
     if (currentURL.includes("/Shop")) {
       navigate('Products/');
      ;
-    }
+    }*/
+      e.preventDefault();
+      console.log(e.target.value, 'facu')
+      setName(e.target.value);
+      if(!e.target.value){
+         dispatch(getAllProducts())
+         dispatch(setCurrentPage(1))
+      }else{
+
+    navigate('Products/')
+     dispatch(getAllProductsName(name));
+      } 
+    
+    
   }
+
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    dispatch(getAllProductsName(name))
+    // dispatch(getAllProducts())
+    dispatch(getAllProductsName(name));
     setName("");
-    dispatch(setCurrentPage(1))
+
+    // dispatch(setCurrentPage(1))
   }
 
   return (

@@ -83,7 +83,7 @@ const Cards = () => {
             </div>
           </div>
         ))
-      ) : (
+      )  || (
         productsBoard?.map((el) => (
           <div key={el.name} className="container page-wrapper">
             <div className="page-inner">
@@ -115,7 +115,7 @@ const Cards = () => {
             </div>
           </div>
         ))
-      )}
+      ) : <div> <h1>no hay nada</h1> <Link to='/'><button>volver</button></Link> </div>}
       <Pagination
         productPerPage={productPerPage}
         filteredProducts={filteredProducts.length}
