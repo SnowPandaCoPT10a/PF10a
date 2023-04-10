@@ -16,17 +16,29 @@ const SearchBar = ({ categories }) => {
   // const location = useLocation();
 
   function handleInputChange(e) {
-    setName(e.target.value);
+      e.preventDefault();
+      console.log(e.target.value, 'facu')
+      setName(e.target.value);
+      if(!e.target.value){
+         dispatch(getAllProducts())
+         dispatch(setCurrentPage(1))
+      }else{
+
     navigate('Products/')
-    dispatch(setCurrentPage(1))
+     dispatch(getAllProductsName(name));
+      } 
+    
+    
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch(getAllProducts())
+    // dispatch(getAllProducts())
+
     dispatch(getAllProductsName(name));
     setName("");
-    dispatch(setCurrentPage(1))
+
+    // dispatch(setCurrentPage(1))
   }
 
   return (
