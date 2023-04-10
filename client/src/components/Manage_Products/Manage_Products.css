@@ -12,6 +12,14 @@
 }
 
 /*===== RESET =====*/
+
+
+.ms-3{
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaño igual */
+  gap: 20px; /* espacio entre las cards */
+}
 *,
 ::before,
 ::after {
@@ -54,6 +62,7 @@ a {
 /*//!===== CARD =====*/
 
  .container_manager {
+  
   height: 100%;
   width: 25%;
   margin: auto;
@@ -64,6 +73,8 @@ a {
   
 
 }
+
+
 .card_ {
   position: relative;
   padding: 1rem;
