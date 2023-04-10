@@ -8,8 +8,6 @@ const Marcas = ({ datos, scroll }) => {
   let dataBrand = datos?.map((e) => e.brand.brandName);
   let marcas = [...new Set(dataBrand)];
 
-  console.log(marcas);
-  const dispatch = useDispatch();
 
   return (
     <div className="container" id='marcas'>

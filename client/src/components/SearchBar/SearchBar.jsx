@@ -16,6 +16,17 @@ const SearchBar = ({ categories }) => {
   // const location = useLocation();
 
   function handleInputChange(e) {
+
+    /*  setName(e.target.value);
+  
+    // Obtener la URL actual
+    const currentURL = window.location.href;
+  
+    // Verificar si la URL contiene "/Shop"
+    if (currentURL.includes("/Shop")) {
+      navigate('Products/');
+     ;
+    }*/
       e.preventDefault();
       console.log(e.target.value, 'facu')
       setName(e.target.value);
@@ -30,6 +41,7 @@ const SearchBar = ({ categories }) => {
     
     
   }
+
 
   function handleSubmit(e) {
     e.preventDefault();
