@@ -91,11 +91,6 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
       </Link>
 
 
-      <Link to={'/Create'} onClick={() => scrollTop()}>
-        <button className={(rutaUrl.includes('Create')) ? 'btnHome active' : 'btnHome'}>Create</button>
-      </Link>
-
-
 
       {!isAuthenticated ? null : <div class="dropdown">
         <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">

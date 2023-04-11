@@ -12,6 +12,14 @@
 }
 
 /*===== RESET =====*/
+.all_background{
+  
+  width:1900px;
+  right: 0;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr, 4fr)
+}
+
 
 
 .ms-3{
@@ -21,7 +29,10 @@
   gap: 20px; /* espacio entre las cards */
 }
 *,
-::before,
+::before{
+  margin: 0;
+}
+
 ::after {
   margin: 0;
   padding: 0;
@@ -202,5 +213,13 @@ a {
     width: 100%;
     flex-direction: column;
     gap: 3rem;
+   
   }
-} 
+}
+
+/*//!===== FILTER // CREATE  =====*/
+.create_btn{
+  color: #f8f8f8;
+  background-color: #b9bcf0;
+  height: 50px;
+}
