@@ -22,7 +22,7 @@
     letter-spacing: 1px;
 }
 
-.button{
+.button-about{
     display: inline-block;
     text-decoration: none;
     color: #010E13;
@@ -32,7 +32,7 @@
     margin: 20px 0;
     transition: .5s;
 }
-.button:hover{
+.button-about:hover{
     background-color: #287094;
     color: #fff;
     border: #287094;
