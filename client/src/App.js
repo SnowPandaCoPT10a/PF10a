@@ -53,7 +53,7 @@ const [oneProducts, setOneProducts] = useState([]);
       </Routes>
       <div className='App container'>
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/' element={<Home setCountProducts={setCountProducts} setAllProducts={setAllProducts} setPriceTotal={setPriceTotal}/>} />
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
           
