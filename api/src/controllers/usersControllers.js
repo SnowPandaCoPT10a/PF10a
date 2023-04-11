@@ -171,7 +171,7 @@ module.exports = {
     DisableUser,
     ModifyUser,
     searchUsuario,
-    disableEstatus,
+    //disableEstatus,
     privilegeEstatus,
 
 };
