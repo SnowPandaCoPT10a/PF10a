@@ -65,9 +65,9 @@
 .btn-form{
   display: block;
   text-decoration: none;
-  color: white;
+  color: #287094;
   border-radius: 30px;
-  border: 1px solid white;
+  border: 2px solid #287094;
   padding: 10px 40px;
   margin: auto;
   transition: .5s;
