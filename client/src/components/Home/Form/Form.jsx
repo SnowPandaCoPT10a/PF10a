@@ -85,27 +85,27 @@ function Form() {
       <h1 className='text-center mt-5 text-secondary'>CONTACT US</h1>
       <form onSubmit={handleSubmit} action="https://formsubmit.co/e413674aa8b810409548ae9d7c693fa6" method="POST">
       <div className="contenedor-form">
-        <div className="fila mitad">
-          <div className="input-container">
+        <div className="input-container">
+          <div className="fila-name">
             <input className="input-mitad" placeholder="NAME" name='name' value={name} onChange={handleNameChange}/>
             <div className="error">{nameError}</div>
           </div>
-          <div className="input-container">
+          <div className="fila-email">
             <input className="input-mitad" placeholder="EMAIL" name='email'value={email} onChange={handleEmailChange}/>
             <div className="error">{emailError}</div>
           </div>
         </div>        
-        <div className="fila mitad">
-          <div className="input-container">
+        <div className="input-container">
+          <div className="fila-contact">
             <input className="input-mitad" placeholder="CONTACT Nº" name='contact' value={contact} onChange={handleContactChange}/>
             <div className="error">{contactError}</div>
           </div>
-          <div className="input-container">
+          <div className="fila-topic">
           <input className="input-mitad" placeholder="TOPIC" name='tema' value={tema} onChange={handleTemaChange}/>
         <div className="error">{temaError}</div>
         </div>
         </div>
-        <div className="fila">
+        <div className="fila-message">
           <input className="input-full" placeholder="MESSAGE" name='message'/>
         </div>
         <button className="btn-form">SEND</button>      
