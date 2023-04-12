@@ -20,7 +20,15 @@
 }
 
 .drop-null{
-  display: none;
+  background-color: #eee; 
+  /* clip-path: polygon(43% 10%, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0 0, 27% 0); */
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #999;
+  transition: all 0.1s ease-in-out;
+  text-align: start;
 }
 .drop-active{
   background-color: #eee; 
@@ -54,7 +62,6 @@
   /*  padding: 0.7em 1.4em;*/
   background-color: transparent;
   text-decoration: none;
-  border: 1px solid #fff;
   padding: 10px;
   border-radius: 5px;
   color: white;

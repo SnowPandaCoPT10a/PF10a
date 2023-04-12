@@ -27,19 +27,20 @@ const SearchBar = ({ categories }) => {
       navigate('Products/');
      ;
     }*/
-      e.preventDefault();
-      console.log(e.target.value, 'facu')
-      setName(e.target.value);
-      if(!e.target.value){
-         dispatch(getAllProducts())
-         dispatch(setCurrentPage(1))
-      }else{
+    e.preventDefault();
+    console.log(e.target.value, 'facu')
+    setName(e.target.value);
+    if (!e.target.value) {
+      dispatch(getAllProducts())
+      dispatch(setCurrentPage(1))
+    } else {
 
-    navigate('Products/')
-     dispatch(getAllProductsName(name));
-      } 
-    
-    
+      navigate('Products/')
+      dispatch(getAllProductsName(e.target.value));
+      dispatch(setCurrentPage(1))
+    }
+
+
   }
 
 

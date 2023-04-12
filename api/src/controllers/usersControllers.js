@@ -48,10 +48,10 @@ async function postNewUser(req, res) {
 //!-------------- disable    ------ enable  
 async function DisableUser(req, res) {
     try {
-        let { email } = req.body;
+        let { idUser } = req.params;
         const user = await Users.findOne({
             where: {
-                email: email
+              idUser: idUser
             }
         });
         if (user.status === "active") {
@@ -120,27 +120,27 @@ cloudinary.config({
     };
  }
  
-//!! MODIFY STATUS
-async function disableEstatus(req, res) {
-    try {
-      let { idUser } = req.params;
+// //!! MODIFY STATUS
+// async function disableEstatus(req, res) {
+//     try {
+//       let { idUser } = req.params;
   
-      const statusUsers = await Users.findOne({
-        where: {
-            idUser: idUser,
-        },
-      });
+//       const statusUsers = await Users.findOne({
+//         where: {
+//             idUser: idUser,
+//         },
+//       });
   
-      if (statusUsers.status === true) {
-        statusUsers.update({ status: false });
-      } else if (statusUsers.status === false) {
-        statusUsers.update({ status: true });
-      }
-      res.status(201).json(statusUsers);
-    } catch (err) {
-      res.status(401).json({ error: err });
-    }
-  }
+//       if (statusUsers.status === true) {
+//         statusUsers.update({ status: false });
+//       } else if (statusUsers.status === false) {
+//         statusUsers.update({ status: true });
+//       }
+//       res.status(201).json(statusUsers);
+//     } catch (err) {
+//       res.status(401).json({ error: err });
+//     }
+//   }
 
   //!! MODIFY Privilege
 async function privilegeEstatus(req, res) {
@@ -171,7 +171,7 @@ module.exports = {
     DisableUser,
     ModifyUser,
     searchUsuario,
-    disableEstatus,
+    //disableEstatus,
     privilegeEstatus,
 
 };

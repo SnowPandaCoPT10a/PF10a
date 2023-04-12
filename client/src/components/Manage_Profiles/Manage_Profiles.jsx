@@ -24,7 +24,7 @@ const FormCreatePoke = () => {
     const handleBannedProduct = (e) => {
       console.log(e, "salio el Ban");
     dispatch(setStatusUser(e))
-    navigate(0)
+   navigate(0)
    
   }
 
@@ -59,19 +59,19 @@ console.log(allUsers, "all")
     <div className="btn_">
       <button className="buy-btn">Edit Now</button>
 
-      {e.status?<button className={!e.privilige ? "fav" : "featured"}  onClick={()=>handleFeaturedProduct(e.idUser)}>
+      {e.status === "active" ?<button className={!e.privilige ? "fav" : "featured"}  onClick={()=>handleFeaturedProduct(e.idUser)}>
         <svg className="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
         </svg>
       </button>: null}
 
 
-     {e.status?
-        <button className="fav"  onClick={()=>handleBannedProduct(e.idUser)} >
+     {e.status === "active" ?
+        <button className="fav"  onClick={()=>handleBannedProduct(e.email)} >
         <AiFillEye  className="svg_eyes" color="#08c46b" />
         </button>
         :
-        <button className="fav"  onClick={()=>handleBannedProduct(e.idUser)} >
+        <button className="fav"  onClick={()=>handleBannedProduct(e.email)} >
         <AiOutlineEyeInvisible  className="svg_eyes_disabled" color="#08c46b" />
         </button>
          }

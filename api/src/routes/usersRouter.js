@@ -6,10 +6,10 @@ const router = Router();
 
 router.get('/', getAllUsers);
 router.post('/create', postNewUser)
-router.put("/disable", DisableUser)
+router.put("/disable/:idUser", DisableUser)
 router.put("/modify/:email", ModifyUser)
 router.get("/:email", searchUsuario)
-router.put("/disable/:idUser'", disableEstatus)
+//router.put("/disable/:idUser'", disableEstatus)
 router.put('/privilege/:idUser', privilegeEstatus)
 
 
