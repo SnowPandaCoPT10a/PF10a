@@ -13,7 +13,7 @@ const Cards = () => {
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
   const filteredProducts =
-    article ? productsBoard.filter(
+    article ? productsBoard?.filter(
       (el) => el.category === article || el.brand.brandName === article
     ) : productsBoard;
   const dispatch = useDispatch();
@@ -74,7 +74,7 @@ const Cards = () => {
                     <div className="h-bg">
                       <div className="h-bg-inner" />
                     </div>
-                    <span className="price">{el.price}</span>
+                    <span className="price">$ {el.price}</span>
                   </Link>
                 </div>
               </div>
