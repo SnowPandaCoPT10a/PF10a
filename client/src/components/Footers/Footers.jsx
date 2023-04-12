@@ -3,12 +3,14 @@ import './Footers.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
-
-
+import { useDispatch } from 'react-redux';
+import { setCurrentPage } from '../../Redux/actions';
+// import Login from '../Login/Login';
 
 const Footers = () => {
   const location = useLocation();
   const isFixed = location.pathname === '/OrderConfirmation' || location.pathname === '/Checkout' || location.pathname === '/ShoppingCart' || location.pathname === '/Create';
+  const dispatch= useDispatch();
 
   return (
     <footer className="site-footer">
@@ -17,10 +19,10 @@ const Footers = () => {
         <div className="col-sm-12 col-md-6">
           <h6>Customer Service</h6>
           <ul className="footer-links">
-            <li><a href="">Preguntas frecuente</a></li>
-            <li><a href="">Pagos y retiros</a></li>
-            <li><a href="">Terminos y condiciones</a></li>
-            <li><a href="">Politicas de provacidad</a></li>
+            <li><Link to='/FrequentQuestions'>Frequent Questions</Link></li>
+            <li><Link to='/Payments'>Payments and Withdrawals</Link></li>
+            <li><Link to='/Terms'>Terms and Conditions</Link></li>
+            <li><Link to='/PrivacyPolicies'>Privacy Policies</Link></li>
           </ul>
         </div>
 
@@ -28,18 +30,17 @@ const Footers = () => {
           <h6>Snow Panda</h6>
           <ul className="footer-links">
             <li><Link to='/Shop'>Shop</Link></li>
-            <li><a href="/Shop#categorias">Categories</a></li>
-            <li><a href="">Brands</a></li>
-            <li><a href="">All product</a></li>
-            <li><a href="">Log In</a></li>
+            <li><a href="/Shop#categoria">Categories</a></li>
+            <li><a href="/Shop#marcas">Brands</a></li>
+            <li onClick={()=>dispatch(setCurrentPage(1))}><Link to='/Products/'>All product</Link></li>
           </ul>
         </div>
 
         <div className="col-xs-6 col-md-3">
           <h6>Contact</h6>
           <ul className="footer-links">
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="/#contacto">Contact Us</a></li>
+            <li><a href="/#aboutUs">About Us</a></li>
             <li><Link to='/Members'>Members</Link></li>
           </ul>
         </div>
