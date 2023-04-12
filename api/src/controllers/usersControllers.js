@@ -1,5 +1,6 @@
 const { Users } = require('../db');
-const { Op } = require("sequelize");
+const { Op } = require("sequelize")
+const nodemailer = require("nodemailer");;
 
 
 const cloudinary = require('cloudinary').v2;
@@ -35,7 +36,37 @@ async function postNewUser(req, res) {
             return res.status(200).send({ message: "User already exists" });
         } else {
             let newUser = await Users.create({ first_name: given_name, last_name: family_name ,email: email, image: picture});
-            return res.status(201).send({ message: "User was created" });
+
+            // configurar transporter para enviar correo electrónico
+            let transporter = nodemailer.createTransport({
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true,
+                auth: {
+                    user: "snowpandaco@gmail.com", //  correo electrónico
+                    pass: "badticzdnopplwxx" //  contraseña se terceros
+                }
+            });
+
+            //modificar que quiero enviar
+            let mailOptions = {
+                from: "snowpandaco@gmail.com",
+                to: email,
+                subject: "¡Bienvenido!",
+                text: "Hola " + given_name + ",\n\n¡Gracias por registrarte en nuestro sitio web!\n\nSaludos,\nEl equipo de nuestro sitio web"
+            };
+
+            // enviar correo electrónico
+            transporter.sendMail(mailOptions, function(error, info){
+                if (error) {
+                    console.log(error);
+                    res.status(500).json({ error: error });
+                } else {
+                    console.log("Correo electrónico enviado: " + info.response);
+                    res.status(201).send({ message: "User was created and email was sent" });
+                }
+            });
+
         }
     } catch (err) {
         res.status(500).json({ err: err });
