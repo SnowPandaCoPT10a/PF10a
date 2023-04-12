@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./style.css";
 import { setCurrentPage } from "../../../Redux/actions";
 
@@ -8,6 +8,7 @@ const Marcas = ({ datos, scroll }) => {
   let dataBrand = datos?.map((e) => e.brand.brandName);
   let marcas = [...new Set(dataBrand)];
 
+  let dispatch = useDispatch()
 
   return (
     <div className="container" id='marcas'>
