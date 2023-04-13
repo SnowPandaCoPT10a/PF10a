@@ -15,8 +15,10 @@ const Cards = () => {
   const filterBrand = productsBoard.filter(product => product.brand)
 console.log(filterBrand.map(e=>e.brandName), "CHACOMBO")
   const filteredProducts =
-    article ? filterBrand.filter(
-      (el) => el.category === article || el.brandName === article
+
+    article ? productsBoard?.filter(
+      (el) => el.category === article || el.brand.brandName === article
+
     ) : productsBoard;
   const dispatch = useDispatch();
   // const [currentPage, setCurrentPage] = useState(1);
@@ -76,7 +78,7 @@ console.log(filterBrand.map(e=>e.brandName), "CHACOMBO")
                     <div className="h-bg">
                       <div className="h-bg-inner" />
                     </div>
-                    <span className="price">{el.price}</span>
+                    <span className="price">$ {el.price}</span>
                   </Link>
                 </div>
               </div>

@@ -1,76 +1,3 @@
-/* .contain-footer {
- 
-  display: flex;
-  justify-content: center;
-  align-items: end;
-} */
-
-/* 
-.footercont {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; 
-
-} */
-
-
-/* 
-.footer-distributed {
-  background: #023246;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-}
-
-
-.footer-right {
-  position: relative;
-  left: 80%;
-  top: 20px;
-}
-
-.footer-company-about {
-  line-height: 20px;
-  width: 13vw;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: bold;
-  margin: 0;
-}
-
-
-.footer-icons {
-  display: flex;
-  position: relative;
-
-  font-size: 40px;
-  color: white;
-
-}
-
-.ctnResv {
-  color: #e1e1e1;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  position: relative;
-}
-
-
-
-.linksF {
-  color: white;
-  transition: 1s;
-}
-
-.linksF:hover {
-  color: #BF0426;
-  transition: 1s;
-} */
-
 .site-footer
 {
   background-color:#023246;
@@ -102,7 +29,7 @@
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#F6F6F6;
   text-decoration:none;
 }
 .footer-links
@@ -120,7 +47,7 @@
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:#F6F6F6;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -219,7 +146,7 @@
 }
 .social-icons a.linkedin:hover
 {
-  background-color:#007bb6
+  background-color:#287094
 }
 .social-icons a.dribbble:hover
 {
