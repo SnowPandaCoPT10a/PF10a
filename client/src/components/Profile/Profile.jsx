@@ -86,35 +86,35 @@ const Profile = () => {
 			if (isEditing) {
 				return (
 
-					<form onSubmit={handleEditSubmit}>
+					<form className='profile-form' onSubmit={handleEditSubmit}>
 
 						<br />
 						<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
-						<h1>Name: {perfil.first_name}</h1>
-						<h1>Last Name: {perfil.last_name}</h1>
-						<h1>Email: {perfil.email}</h1>
-						<label >
-							<input type="text" name="first_name" placeholder="...Name" value={editFormState.first_name} onChange={handleInputChange} />
+						<h1 className='h1profile'>Name: {perfil.first_name}</h1>
+						<h1 className='h1profile'>Last Name: {perfil.last_name}</h1>
+						<h1 className='h1profile'>Email: {perfil.email}</h1>
+						<label className='profile-label'>
+							<input className='inputprofile' type="text" name="first_name" placeholder="...Name" value={editFormState.first_name} onChange={handleInputChange} />
 						</label>
-						<label>
-							<input type="text" name="last_name" placeholder="...Last name" value={editFormState.last_name} onChange={handleInputChange} />
+						<label className='profile-label'>
+							<input className='inputprofile'  type="text" name="last_name" placeholder="...Last name" value={editFormState.last_name} onChange={handleInputChange} />
 						</label>
-						<label>
-							<label>
-								Nationality:
-								<input type="text" name="nationality" placeholder="...Nationality" value={editFormState.nationality} onChange={handleInputChange} />
+						<label className='profile-label'>			
+								
+								<input className='inputprofile' type="text" name="nationality" placeholder="...Nationality" value={editFormState.nationality} onChange={handleInputChange} />
 							</label>
-							Mobile:
-							<input type="text" name="mobile" placeholder="...Mobile" value={editFormState.mobile} onChange={handleInputChange} />
+							<label className='profile-label'>
+							
+							<input className='inputprofile' type="text" name="mobile" placeholder="...Mobile" value={editFormState.mobile} onChange={handleInputChange} />
 						</label>
 						<label>
-							Birthday:
-							<input type="date" name="date_birth" value={editFormState.date_birth} onChange={handleInputChange} />
+							
+							<input className='inputprofile' type="date" name="date_birth" value={editFormState.date_birth} onChange={handleInputChange} />
 						</label>
-						<label>
-							<input type="text" name="image" placeholder="...image" value={editFormState.image} onChange={handleInputChange} />
+						<label >						
+							<input className='inputprofile' type="text" name="image" placeholder="...Profile Picture" value={editFormState.image} onChange={handleInputChange} />
 						</label>
-						<button type="submit" onClick={(e) => handleEditSubmit(e)}>Guardar cambios</button>
+						<button className='buttoneditar' type="submit" onClick={(e) => handleEditSubmit(e)}>Guardar cambios</button>
 					</form>
 				)
 			}
@@ -124,14 +124,14 @@ const Profile = () => {
 				<div className='profilecont'>
 					<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
 
-					<h1>{perfil.first_name}</h1>
-					<h1>{perfil.last_name}</h1>
-					<h1>{perfil.date_birth}</h1>
-					<h1>{perfil.nationality}</h1>
-					<h1>{perfil.mobile}</h1>
-					<h1>{perfil.email}</h1>
+					<h1 className='h1profile'>Name:  {perfil.first_name}</h1>
+					<h1 className='h1profile'>Last Name:  {perfil.last_name}</h1>
+					<h1 className='h1profile'>Birthday:  {perfil.date_birth}</h1>
+					<h1 className='h1profile'>Nationality:  {perfil.nationality}</h1>
+					<h1 className='h1profile'>Mobile Phone:  {perfil.mobile}</h1>
+					<h1 className='h1profile'>Email:  {perfil.email}</h1>
 
-					<button onClick={handleEditClick}>Editar información</button>
+					<button  className='buttoneditar' onClick={handleEditClick}>Editar información</button>
 				</div>
 			)
 		}
