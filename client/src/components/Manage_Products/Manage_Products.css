@@ -223,3 +223,11 @@ a {
   background-color: #b9bcf0;
   height: 50px;
 }
+
+.Form_edit{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+}

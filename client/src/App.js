@@ -18,7 +18,7 @@ import Checkout from "./components/Checkout/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation";
 import Edit from "./components/Manage_Products/Manage_Products"
 import ManageProfiles from "./components/Manage_Profiles/Manage_Profiles"
-
+import FormAdminProduct from "./components/FormAdmin/FormAdmin"
 
 
 
@@ -89,7 +89,7 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path='/Products' element={<Cards/>} />
          <Route exact path='/ManageProducts' element={<Edit/>} />
          <Route exact path='/ManageProfiles' element={<ManageProfiles/>} />
-         
+         <Route exact path='/FormAdminProduct/:id' element={<FormAdminProduct/>}/>
         </Routes>
         <Chatbot />
       </div>

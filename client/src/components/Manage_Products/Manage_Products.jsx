@@ -8,13 +8,15 @@ import {
   setBannedProduct,
   setFeaturedProduct,
 } from "../../Redux/actions/index.js";
-import axios from "axios";
-import Create from "../Create/Create";
+
+import FormAdmin from "../FormAdmin/FormAdmin";
+
 
 const FormCreatePoke = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const allProducts = useSelector((e) => e.allProducts);
+  const[editForm, setEditForm] = useState(false)
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -41,6 +43,10 @@ const FormCreatePoke = () => {
     return (
       <div className="all_background">
         <div className="all_filter">
+        {editForm? <div className="Form_edit">
+                          <FormAdmin/>
+                          <button onClick={()=> setEditForm(!editForm)}>X</button>
+                      </div> : null}
           <div >
             <Link to={"/Create"} onClick={() => scrollTop()}>
               <button className="create_btn">
@@ -73,7 +79,17 @@ const FormCreatePoke = () => {
                       <div className="price">${e.price}</div>
                     </div>
                     <div className="btn_">
-                      <button className="buy-btn">Edit Now</button>
+                      
+                    
+                      {/* <button value={e.productsID} className="buy-btn" onClick={()=> setEditForm(!editForm)}> */}
+                      <button value={e.productsID} className="buy-btn" onClick={()=> setEditForm(!editForm)}>
+                      <Link to= {`/FormAdminProduct/${e.productsID}`}>
+                        Edit Now
+                      </Link>
+                        
+                        
+                        
+                        </button>
 
                       {e.status ? (
                         <button
