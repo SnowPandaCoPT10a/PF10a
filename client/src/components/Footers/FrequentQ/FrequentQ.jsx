@@ -1,20 +1,44 @@
 import React from 'react';
+import './FrequentQ.css'
 
 function FrequentQ (){
 return(
-    <div className='preguntas' id='frecuentQ'>
-        <h1 className='text-center mt-5 text-secondary'>FREQUENT QUESTIONS</h1>
-        <h2 className='aboutUsTitle'><span>1.   </span>Pregunta frecuente 1?</h2>
-        <p className='about-us'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        <h2 className='aboutUsTitle'><span>2.   </span>Pregunta frecuente 2?</h2>
-        <p className='about-us'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        <h2 className='aboutUsTitle'><span>3.   </span>Pregunta frecuente 3?</h2>
-        <p className='about-us'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        <h2 className='aboutUsTitle'><span>4.   </span>Pregunta frecuente 4?</h2>
-        <p className='about-us'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        <h2 className='aboutUsTitle'><span>5.   </span>Pregunta frecuente 5?</h2>
-        <p className='about-us'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+    <div className="preguntas-frecuentes">
+    <h2 class="freq-title">Frequent Questions</h2>
+    <div className="pregunta">
+      <h3>¿Cuáles son los plazos de entrega?</h3>
+      <p>
+        Los plazos de entrega dependen del lugar de envío y el tipo de envío
+        seleccionado. Generalmente, los pedidos tardan entre 3 y 7 días
+        hábiles en llegar después de que se haya confirmado el pago.
+      </p>
     </div>
-)
-}
+    <div className="pregunta">
+      <h3>¿Qué hago si no me gusta lo que compré?</h3>
+      <p>
+        Si no estás satisfecho con tu compra, puedes devolverla en un plazo de
+        15 días después de recibirla. Para más información sobre el proceso de
+        devolución, por favor consulta nuestra sección de devoluciones.
+      </p>
+    </div>
+    <div className="pregunta">
+      <h3>¿Qué métodos de pago aceptan?</h3>
+      <p>
+        Aceptamos pagos con tarjeta de crédito y débito, transferencias
+        bancarias y pagos en efectivo a través de plataformas de pago en línea
+        como MercadoPago.
+      </p>
+    </div>
+    <div className="pregunta">
+      <h3>¿Cómo puedo hacer seguimiento de mi pedido?</h3>
+      <p>
+        Cuando tu pedido sea enviado, te enviaremos un correo electrónico con
+        un número de seguimiento y un enlace para que puedas hacer seguimiento
+        en línea. También puedes hacer seguimiento de tu pedido iniciando
+        sesión en tu cuenta en nuestro sitio web.
+      </p>
+    </div>
+  </div>
+);
+};
 export default FrequentQ
