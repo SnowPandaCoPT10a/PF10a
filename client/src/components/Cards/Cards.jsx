@@ -12,9 +12,12 @@ const Cards = () => {
 
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
+  
   const filteredProducts =
+
     article ? productsBoard?.filter(
       (el) => el.category === article || el.brand.brandName === article
+
     ) : productsBoard;
   const dispatch = useDispatch();
   // const [currentPage, setCurrentPage] = useState(1);
