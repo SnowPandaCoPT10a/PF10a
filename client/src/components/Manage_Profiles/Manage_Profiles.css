@@ -28,7 +28,7 @@
     box-sizing: border-box;
   }
   
-  button {
+  /* button {
     font-family: "Montserrat", sans-serif;
     display: inline-block;
     border: none;
@@ -36,7 +36,7 @@
     border-radius: 0.2rem;
     color: var(--text);
     cursor: pointer;
-  }
+  } */
   
   a {
     text-decoration: none;
