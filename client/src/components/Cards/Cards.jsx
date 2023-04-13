@@ -113,7 +113,7 @@ const Cards = () => {
               </div>
             </div>
           ))
-        ) : <div> <h1>no hay nada</h1> <Link to='/'><button>volver</button></Link> </div>}
+        ) : <div> <h1 className="noproducts">No products found</h1> <Link to='/'><button className="buttonvolver">volver</button></Link> </div>}
       <Pagination
         productPerPage={productPerPage}
         filteredProducts={filteredProducts?.length}

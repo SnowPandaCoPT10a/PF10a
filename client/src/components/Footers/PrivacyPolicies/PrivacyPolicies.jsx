@@ -34,7 +34,7 @@ function PrivacyPolicies() {
             <div className="pregunta">
                 <h3 >Contacto</h3>
                 <p >Si tienes alguna pregunta o inquietud sobre nuestras políticas de privacidad, contáctanos a través del correo electrónico snowpandaco@gmail.com</p>
-                <button className='correo-button' onClick={handleClick}>Enviar correo electrónico</button>
+                <button className='correo-button' onClick={handleClick}>Enviar correo </button>
             </div>
         </div>
     )
