@@ -43,10 +43,7 @@ const FormCreatePoke = () => {
     return (
       <div className="all_background">
         <div className="all_filter">
-        {editForm? <div className="Form_edit">
-                          <FormAdmin/>
-                          <button onClick={()=> setEditForm(!editForm)}>X</button>
-                      </div> : null}
+        
           <div >
             <Link to={"/Create"} onClick={() => scrollTop()}>
               <button className="create_btn">
@@ -61,7 +58,7 @@ const FormCreatePoke = () => {
             allProducts
               ?.sort((a, b) => a.productsID - b.productsID)
               .map((e) => (
-                <main className="container_manager">
+                <div className="container_manager">
                   <section className={e.status ? "card_" : "mariela"}>
                     <div className="product-image">
                       <img
@@ -81,8 +78,8 @@ const FormCreatePoke = () => {
                     <div className="btn_">
                       
                     
-                      {/* <button value={e.productsID} className="buy-btn" onClick={()=> setEditForm(!editForm)}> */}
-                      <button value={e.productsID} className="buy-btn" onClick={()=> setEditForm(!editForm)}>
+                      
+                      <button value={e.productsID} className="buy-btn">
                       <Link to= {`/FormAdminProduct/${e.productsID}`}>
                         Edit Now
                       </Link>
@@ -131,7 +128,7 @@ const FormCreatePoke = () => {
                       )}
                     </div>
                   </section>
-                </main>
+                </div>
               ))
           ) : (
             <div>Loading ... </div>

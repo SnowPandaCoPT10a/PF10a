@@ -74,6 +74,8 @@ function Create() {
   //! aca traigo los talles de boards
   const sizesboard = ["one size"];
 
+  const categories = ["Accessories" , "Pant", "Board", "T-Shirt", "Jacket", "Boot" ]
+
   useEffect(() => {
     dispatch(getAllProductsId(id));
   }, [dispatch]);
@@ -266,7 +268,7 @@ function Create() {
         <br />
         <br />
         <br />
-        <img className="img-link" src={input.img} alt="img not found" />
+        <img className="img-link" src={productInfoId.img} alt="img not found" />
         <div className="puppy"></div>
       </div>
       <div className="right-container">
@@ -348,19 +350,20 @@ function Create() {
 
             <div className="pets-spayed-neutered">
               <label htmlFor="pet-spayed">Brand     {newBrand === false ? <button onClick={() => { setNewBrand(!newBrand); setInput({ ...input, brand: "" }) }}> New </button> : <button onClick={() => { setNewBrand(!newBrand); setInput({ ...input, brand: "" }) }}> Cancel </button>}</label>
+            
               <div className="radio-container">
-                {newBrand === false ? <select id="pets-breed" placeholder={productInfoId.brand} name="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}>
-                  <option></option>
-                  {numberSizes && Array.from(new Set(numberSizes.map(h => h.brand)))
-                    ?.filter((brand, index, array) => array.indexOf(brand) === index)
-                    .map((brand, index) => <option key={index}>{brand.brandName}</option>)}
+                {newBrand === false ? <select id="pets-breed" placeholder="Insert brand" name="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}>
+                  <option>{productInfoId.brand.brandName}</option>
+                    {numberSizes && categories.map((e)=> 
+                    <option key={e}>{e}</option>)}
                 </select>
                   :
                   <input id="pets-breed" placeholder="Insert New brand" name="brand" value={input.brand} type="text" onChange={(e) => handleChange(e)}></input>}
 
-              </div>
+              </div>      
               {errors.brand ? <p className="danger">{errors.brand}</p> : null}
-            </div>
+              </div>
+             
           </div>
           <div className="set">
             <div className="pets-spayed-neutered">
@@ -377,7 +380,6 @@ function Create() {
               </div>
               {errors.model ? <p className="danger">{errors.model}</p> : null}
             </div>
-
             <div className="pets-spayed-neutered">
               <label htmlFor="pet-spayed">Material</label>
               <div className="radio-container">
@@ -416,7 +418,7 @@ function Create() {
               <label htmlFor="pet-spayed">Activity</label>
               <div className="radio-container">
                 <select id="pets-birthday" placeholder={productInfoId.activity} name="activity" value={input.activity} type="text" onChange={(e) => handleChange(e)}>
-                  <option></option>
+                  <option>{productInfoId.activity}</option>
                   {numberSizes && Array.from(new Set(numberSizes.map(h => h.activity))).map(activity => (
                     <option>{activity}</option>
                   ))}
@@ -443,16 +445,6 @@ function Create() {
             ) : null}
           </div>
 
-          <label>
-          Featured:
-        <input
-          type="checkbox"
-          name="featuredProduct"
-          value={input.featuredProduct}
-          checked={input.featuredProduct}
-          onChange={handleFeaturedProduct}
-        />
-      </label>
           {/* //!!!!!!! */}
           <hr />
 

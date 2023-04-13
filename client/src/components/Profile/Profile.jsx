@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Logo from '../../img/logoPanda.png';
 import { useDispatch, useSelector } from 'react-redux'
 import './Profile.css'
-import { searchUser, updateUser } from '../../Redux/actions/index.js'
+import { searchUser, updateUser, } from '../../Redux/actions/index.js'
 import { getAllUsers } from '../../Redux/actions/index'
 
 

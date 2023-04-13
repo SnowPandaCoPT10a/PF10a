@@ -12,8 +12,7 @@ const Cards = () => {
 
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
-  const filterBrand = productsBoard.filter(product => product.brand)
-console.log(filterBrand.map(e=>e.brandName), "CHACOMBO")
+  
   const filteredProducts =
 
     article ? productsBoard?.filter(
