@@ -39,7 +39,7 @@
   box-sizing: border-box;
 }
 
-button {
+/* button {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
   border: none;
@@ -47,7 +47,7 @@ button {
   border-radius: 0.2rem;
   color: var(--text);
   cursor: pointer;
-}
+} */
 
 a {
   text-decoration: none;
@@ -222,4 +222,12 @@ a {
   color: #f8f8f8;
   background-color: #b9bcf0;
   height: 50px;
+}
+
+.Form_edit{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
 }
