@@ -44,10 +44,9 @@ function Checkout() {
   const handleSubmit = e => {
     if (disabled) {
       e.preventDefault()
+      dispatch(updateAddres(user.email, form.shippingAddress1))
       return;
     }
-
-    dispatch(updateAddres({ email: user.email }, form.shippingAddress1))
     navigate('/OrderConfirmation');
   }
 
