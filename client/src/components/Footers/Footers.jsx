@@ -65,7 +65,7 @@ const Footers = () => {
             <li><a className="facebook" ><FaFacebook aria-hidden="true"/></a></li>
             <li><a className="twitter" ><FaInstagram aria-hidden="true"/></a></li>
             <li><a className="dribbble" ><FaLinkedin aria-hidden="true"/></a></li>
-            <li><a className="linkedin" ><FaGithubSquare aria-hidden="true" /></a></li>  
+            <li><a className="linkedin"  href='https://github.com/SnowPandaCoPT10a'><FaGithubSquare aria-hidden="true" /></a></li>  
 
  
           </ul>
