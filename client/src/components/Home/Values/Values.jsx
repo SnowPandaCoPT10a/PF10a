@@ -11,13 +11,13 @@ const Values =()=>{
 					<div className="containers">
 						<div className="front">
 							<div className="inner">
-								<p>Pasión</p>
-                            	<span>por el snowboard</span>
+								<p>Passion</p>
+                            	<span>by snowboarding</span>
 						    </div>
 					    </div>
 					    <div className="back">
 						    <div className="inner">
-						  		<p>Nuestra pasión por este deporte se refleja en todo lo que hacemos.</p>
+						  		<p>Our passion for this sport is reflected in everything we do.</p>
 							</div>
 						</div>
 					</div>
@@ -27,13 +27,13 @@ const Values =()=>{
 					<div className="containers">
 						<div className="front2">
 							<div className="inner">
-								<p>Excelencia</p>
+								<p>Excellence</p>
               					<span>en la calidad</span>
 							</div>
 						</div>
 						<div className="back">
 							<div className="inner">
-						  		<p>Trabajamos con los mejores fabricantes y proveedores de la industria, ofreciendo productos de alta calidad.</p>
+						  		<p>We work with the best manufacturers and suppliers in the industry, offering high quality products.</p>
 							</div>
 						</div>
 					</div>
@@ -43,13 +43,13 @@ const Values =()=>{
 					<div className="containers">
 						<div className="front3">
 							<div className="inner">
-								<p>Servicio</p>
-              					<span>excepcional al cliente</span>
+								<p>Service</p>
+              					<span>outstanding customer</span>
 							</div>
 						</div>
 						<div className="back">
 							<div className="inner">
-						 		 <p>Asesoramiento experto y personalizado para ayudar a encontrar los productos que mejor se adapten a sus necesidades.</p>
+						 		 <p>Expert and personalized advice to help find the products that best suit your needs.</p>
 							</div>
 						</div>
 					</div>
@@ -59,13 +59,13 @@ const Values =()=>{
 					<div className="containers">
 						<div className="front4">
 							<div className="inner">
-								<p>Responsabilidad</p>
+								<p>Responsibility</p>
               					<span>social</span>
 							</div>
 						</div>
 						<div className="back">
 							<div className="inner">
-						  		<p>Nos preocupamos por el impacto que nuestra empresa tiene en la comunidad y el medio ambiente. </p>
+						  		<p>We care about the impact our company has on the community and the environment. </p>
 							</div>
 						</div>
 					</div>

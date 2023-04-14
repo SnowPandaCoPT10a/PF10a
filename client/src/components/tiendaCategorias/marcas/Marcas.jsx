@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./style.css";
 import { setCurrentPage } from "../../../Redux/actions";
 
@@ -8,11 +8,10 @@ const Marcas = ({ datos, scroll }) => {
   let dataBrand = datos?.map((e) => e.brand.brandName);
   let marcas = [...new Set(dataBrand)];
 
-  console.log(marcas);
-  const dispatch = useDispatch();
+  let dispatch = useDispatch()
 
   return (
-    <div className="container">
+    <div className="container" id='marcas'>
       <h2 className="text-secondary text-center my-5">NUESTRAS MARCAS</h2>
       <div className="d-block row row-cols-4 d-flex justify-content-center lign-items-center">
         {marcas?.map((e) => (
