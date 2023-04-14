@@ -21,7 +21,8 @@ router.use('/users', getAllUsers);
 router.use("/products", getAllProducts);
 router.use("/paginado", getAllPaginado);
 router.use("/search", getSearchProduct);
-router.use("/filtrado", getFiltradoProduct);
+router.use("/filtrado", getFiltradoProduct)
+router.use("/reviews", getAllReviews)
 //router.use("/bills",getBills)
 
 
