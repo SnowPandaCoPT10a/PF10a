@@ -4,38 +4,34 @@ import './FrequentQ.css'
 function FrequentQ (){
 return(
     <div className="preguntas-frecuentes">
-    <h2 class="freq-title">Frequent Questions</h2>
+    <h2 class="text-center mt-5  freq-title">FREQUENT QUESTIONS</h2>
     <div className="pregunta">
-      <h3>¿Cuáles son los plazos de entrega?</h3>
+      <h3>What are the turnaround times?</h3>
       <p>
-        Los plazos de entrega dependen del lugar de envío y el tipo de envío
-        seleccionado. Generalmente, los pedidos tardan entre 3 y 7 días
-        hábiles en llegar después de que se haya confirmado el pago.
+      Delivery times depend on the place of shipment and the type of shipment selected. Orders usually take 3-7 days business days to arrive after payment has been confirmed.
       </p>
     </div>
     <div className="pregunta">
-      <h3>¿Qué hago si no me gusta lo que compré?</h3>
+      <h3>What do I do if I don't like what I bought?</h3>
       <p>
-        Si no estás satisfecho con tu compra, puedes devolverla en un plazo de
-        15 días después de recibirla. Para más información sobre el proceso de
-        devolución, por favor consulta nuestra sección de devoluciones.
+      If you are not satisfied with your purchase, you can return it within a period of 15 days after receiving it. For more information on the process of returns, please see our returns section.
       </p>
     </div>
     <div className="pregunta">
-      <h3>¿Qué métodos de pago aceptan?</h3>
+      <h3>¿What payment methods do you accept?</h3>
       <p>
-        Aceptamos pagos con tarjeta de crédito y débito, transferencias
-        bancarias y pagos en efectivo a través de plataformas de pago en línea
-        como MercadoPago.
+      We accept payments with credit and debit cards, transfers
+         banking and cash payments through online payment platforms
+         like MercadoPago.
       </p>
     </div>
     <div className="pregunta">
-      <h3>¿Cómo puedo hacer seguimiento de mi pedido?</h3>
+      <h3>How can I track my order?</h3>
       <p>
-        Cuando tu pedido sea enviado, te enviaremos un correo electrónico con
-        un número de seguimiento y un enlace para que puedas hacer seguimiento
-        en línea. También puedes hacer seguimiento de tu pedido iniciando
-        sesión en tu cuenta en nuestro sitio web.
+      When your order is shipped, we will send you an email with
+         a tracking number and a link so you can follow up
+         online. You can also track your order by starting
+         login to your account on our website.
       </p>
     </div>
   </div>

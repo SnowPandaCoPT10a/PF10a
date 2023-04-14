@@ -124,7 +124,7 @@ export function updateUser(email, first_name, last_name, nationality, date_birth
 export function searchUser(email) {
   return async function(dispatch) {
     try {
-      const response = await axios.get(`${url}/users/${email.email}`)//await axios.put(`${url}/users/modify/${email.email}`);
+      const response = await axios.put(`${url}/users/modify/${email}`);
       dispatch({
         type: SEARCH_USER,
         payload: response.data,

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { useAuth0 } from "@auth0/auth0-react";
-import { getAllUsers} from '../../Redux/actions';
 
 const today = new Date().toISOString().slice(0,10);
 
@@ -14,17 +13,14 @@ function OrderConfirmation() {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const product = JSON.parse(searchParams.get('products'));
-    const dispatch = useDispatch()
-   const datoos = useSelector(e => e.user)
+    let datoos = useSelector(e => e.users)
     const { user, isAuthenticated } = useAuth0();
     
-   
-    console.log(product.length)
-
-  
-
     
     
+
+    
+    console.log(product)
     
    let endProduct = null;
 
@@ -37,7 +33,7 @@ function OrderConfirmation() {
         endProduct = {
            // id: product[0].id,
             //item: "Products",
-           quantity: product.length,
+           // quantity: 1,
             //date: today,
            // price: product.reduce((total, product) => total + product.price, 0),
            description: descriptions.slice(0, -separator.length),
@@ -75,8 +71,8 @@ function OrderConfirmation() {
             <p>Thanks for placing an order.-</p>
             <button 
             className='buttonorder' 
-            onClick={() => handleCreateBill()}
-           >Proceed with payment</button>
+            onClick={handleCreateBill }
+            >Proceed with payment</button>
         </div>
         
     )
