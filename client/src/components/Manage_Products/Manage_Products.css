@@ -25,7 +25,7 @@
 .ms-3{
   
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas con tamaño igual */
+  grid-template-columns: repeat(3, 1fr); /* 4 columnas con tamaño igual */
   gap: 20px; /* espacio entre las cards */
 }
 *,
