@@ -59,7 +59,7 @@ function OrderConfirmation() {
         item: endProduct.description,
         quantity: endProduct.quantity,
         price: product.reduce((total, product) => total + product.price, 0),
-        idUser: perfil.idUser
+        IdUser: perfil.idUser
         }).then(
             (res)=> 
             (window.location.href = res.data))

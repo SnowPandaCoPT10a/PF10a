@@ -40,7 +40,7 @@ function FilterForm({ pagination }) {
         <div className="sidebar">
         <form onSubmit={handleSubmit}>
         {location.pathname.includes('/Products/') && (
-          <> 
+          <div> 
           <label htmlFor="category">Category:</label>
           <select id="category" value={category} onChange={(e) => setCategory(e.target.value)}>
              <option value="">All</option>
@@ -67,7 +67,7 @@ function FilterForm({ pagination }) {
             </select>
 
             
-          </>
+          </div>
         )}
         <label htmlFor="minPrice">Precio mínimo:</label>
         <input type="number" id="minPrice" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} />
