@@ -15,10 +15,10 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-     /* date: {
+      date: {
         type: DataTypes.DATEONLY,
         allowNull: false,
-      },*/
+      },
       price: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -50,10 +50,15 @@ module.exports = (sequelize) => {
       active: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-      },
+      }, 
+      
+    
     },
     {
       timestamps: false,
-    }
+     
+     
+   
+  }
   );
 };
