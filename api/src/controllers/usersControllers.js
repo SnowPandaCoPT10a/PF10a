@@ -35,7 +35,7 @@ async function postNewUser(req, res) {
         if (user) {
             return res.status(200).send({ message: "User already exists" });
         } else {
-            let newUser = await Users.create({ first_name:family_name, last_name:given_name  ,email: email, image: picture});
+            let newUser = await Users.create({ first_name: family_name, last_name: given_name ,email: email, image: picture});
 
             // configurar transporter para enviar correo electrónico
             let transporter = nodemailer.createTransport({
@@ -199,6 +199,7 @@ async function privilegeEstatus(req, res) {
     try {
     const { address } = req.body;
     const { email } = req.params;
+    console.log(email)
     const user = await Users.findOne({ where: { email } });
     if (!user) {
         return res.status(404).json({msg: "user not found"});
