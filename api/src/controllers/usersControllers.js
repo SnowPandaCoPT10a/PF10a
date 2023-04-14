@@ -35,7 +35,7 @@ async function postNewUser(req, res) {
         if (user) {
             return res.status(200).send({ message: "User already exists" });
         } else {
-            let newUser = await Users.create({ first_name: given_name, last_name: family_name ,email: email, image: picture});
+            let newUser = await Users.create({ first_name:family_name, last_name:given_name  ,email: email, image: picture});
 
             // configurar transporter para enviar correo electrónico
             let transporter = nodemailer.createTransport({
