@@ -1,4 +1,4 @@
-const { Bills } = require("../db");
+const { Bills, Users } = require("../db");
 
 const { Op } = require("sequelize");
 require("dotenv").config();
@@ -15,17 +15,17 @@ mercadopago.configure({
 
 //!POST purchase
 const postNewBills = async (req, res) => {
-  let { item, quantity, price , IdUser} = req.body;
+  let { item, quantity, date, price , idUser} = req.body;
   console.log(req.body)
  
     try {
+     //const user = await Users.findByPk(idUser); 
       let bill = {
         item,
         quantity,
-
+        date,
         price,
-        
-        IdUser
+        userIdUser: idUser
       }
       let newbill = await Bills.create(bill);
       //res.status(200).json(createdBill);
@@ -34,7 +34,7 @@ const postNewBills = async (req, res) => {
           {
             id: newbill.id,
             title: newbill.item,
-            quantity: newbill.quantity,
+            quantity: 1,
             unit_price: newbill.price,
             description: "SnowPanda",
             currency_id: "ARS",
@@ -110,7 +110,7 @@ mercadopago.configure({
 //!GET purchase
 const getAllBills = async (req, res) => {
   try {
-    const allBills = await Bills.findAll({})
+    const allBills = await Bills.findAll({include: Users})
     res.status(200).send(allBills);
   } catch (e) {
     res.status(404).json(e);

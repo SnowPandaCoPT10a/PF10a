@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { useAuth0 } from "@auth0/auth0-react";
+import { getAllUsers } from '../../Redux/actions/index'
 
 const today = new Date().toISOString().slice(0,10);
 
@@ -13,6 +14,7 @@ function OrderConfirmation() {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const product = JSON.parse(searchParams.get('products'));
+    const dispatch = useDispatch()
     let datoos = useSelector(e => e.users)
     const { user, isAuthenticated } = useAuth0();
     
@@ -33,7 +35,7 @@ function OrderConfirmation() {
         endProduct = {
            // id: product[0].id,
             //item: "Products",
-           // quantity: 1,
+            //quantity: 1,
             //date: today,
            // price: product.reduce((total, product) => total + product.price, 0),
            description: descriptions.slice(0, -separator.length),
@@ -53,9 +55,10 @@ function OrderConfirmation() {
         
         const res = await axios.post('http://localhost:3001/bills/create', {
         item: endProduct.description,
-        quantity: endProduct.quantity,
+        quantity: product.length,
+        date: today,
         price: product.reduce((total, product) => total + product.price, 0),
-        IdUser: perfil.idUser
+        idUser: perfil.idUser
         }).then(
             (res)=> 
             (window.location.href = res.data))
