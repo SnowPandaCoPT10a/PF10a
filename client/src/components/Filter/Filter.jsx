@@ -82,7 +82,7 @@ function FilterForm({ pagination }) {
             <option value="desc">Descendente</option>
         </select>
 
-        <button className='filtro-button' onClick={() => pagination(1)}>Filtrar</button>
+        <button className='buttonback' onClick={() => pagination(1)}>Filtrar</button>
     </form>
     </div>
     )

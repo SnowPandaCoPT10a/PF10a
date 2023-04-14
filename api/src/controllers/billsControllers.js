@@ -33,11 +33,10 @@ const postNewBills = async (req, res) => {
           {
             id: newbill.id,
             title: newbill.item,
-            quantity: 1,
+            quantity: newbill.quantity,
             unit_price: newbill.price,
             description: "SnowPanda",
             currency_id: "ARS",
-            picture_url: "https://res.cloudinary.com/dberwyxyq/image/upload/v1679686192/SnowPandaCO/FrontEnd/sin_fondo_2085_x_1251_px_am8fvp.png"
           },
         ],
         back_urls: {

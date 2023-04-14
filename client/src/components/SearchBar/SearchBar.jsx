@@ -62,7 +62,7 @@ const SearchBar = () => {
         <button className='btn-close position-absolute top-0 start-0 mt-4 ms-5' onClick={() => setDropSearch(!dropSearch)}></button>
 
         <form className="input-group mt-3 w-75" onSubmit={(e)=>submitHandleInput(e)}>
-          <input value={name} type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" onChange={(e)=>handleChange(e)}/>
+          <input value={name} type="text" className="form-control" placeholder="Search product" aria-label="Username" aria-describedby="basic-addon1" onChange={(e)=>handleChange(e)}/>
           <input className="btn btn-outline-secondary" type='submit' id="inputGroupFileAddon04"/>
         </form>
 
