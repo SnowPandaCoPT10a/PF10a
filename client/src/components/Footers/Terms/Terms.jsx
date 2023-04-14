@@ -5,30 +5,30 @@ import { Link } from 'react-router-dom';
 function Terms (){
     return(
         <div className="preguntas-frecuentes">
-        <h3 class="freq-title">TERMS AND CONDITIONS</h3>
+        <h3 class="text-center mt-5  freq-title">TERMS AND CONDITIONS</h3>
         <div className="pregunta">
-            <h3>Introducción</h3>
-            <p >¡Bienvenido a SnowpandaCo! Estos Términos y Condiciones regulan el uso del sitio web de nuestra empresa y los servicios que ofrecemos. Al acceder y utilizar nuestro sitio web, aceptas cumplir con estos Términos y Condiciones y todas las leyes y regulaciones aplicables. Si no estás de acuerdo con estos Términos y Condiciones, no utilices nuestro sitio web.</p>
+            <h3>Introduction</h3>
+            <p >Welcome to SnowpandaCo! These Terms and Conditions govern the use of our company website and the services we offer. By accessing and using our website, you agree to comply with these Terms and Conditions and all applicable laws and regulations. If you do not agree to these Terms and Conditions, please do not use our website.</p>
         </div>
         <div className="pregunta">
-            <h3 >Uso del Sitio Web</h3>
-            <p >El uso de nuestro sitio web está destinado a personas mayores de 18 años. Al utilizar nuestro sitio web, garantizas que tienes al menos 18 años. Nos reservamos el derecho de restringir el acceso a nuestro sitio web a cualquier persona en cualquier momento y por cualquier motivo.</p>
+            <h3 >Use of the Website</h3>
+            <p >The use of our website is intended for persons over the age of 18. By using our website, you warrant that you are at least 18 years of age. We reserve the right to restrict access to our website to anyone at any time for any reason.</p>
         </div>
         <div className="pregunta">
-            <h3 >Propiedad Intelectual</h3>
-            <p>Todos los contenidos de nuestro sitio web, incluyendo pero no limitado a textos, gráficos, logotipos, iconos de botones, imágenes, clips de audio, descargas digitales, compilaciones de datos y software, son propiedad de nuestra empresa o de nuestros proveedores de contenidos y están protegidos por las leyes de propiedad intelectual aplicables. No puedes copiar, reproducir, modificar, distribuir, transmitir, mostrar públicamente ni utilizar de ninguna manera los contenidos de nuestro sitio web sin nuestro previo consentimiento por escrito.</p>
+            <h3 >Intellectual property</h3>
+            <p>Intellectual Property All content on our website, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of our company or our content providers. and are protected by applicable intellectual property laws. You may not copy, reproduce, modify, distribute, transmit, publicly display, or otherwise use the contents of our website without our prior written consent.</p>
         </div>  
         <div className="pregunta">
-            <h3 >Responsabilidad del Usuario</h3>
-            <p>Eres responsable de mantener la confidencialidad de tu cuenta de usuario y de cualquier información relacionada con ella, incluyendo tu contraseña. Eres responsable de todas las actividades que se lleven a cabo en tu cuenta de usuario. Si sospechas que alguien ha obtenido acceso no autorizado a tu cuenta de usuario, debes informarnos inmediatamente. No eres responsable de ninguna pérdida o daño causado por el uso no autorizado de tu cuenta de usuario, a menos que la pérdida o daño se deba a tu propia negligencia o incumplimiento de estos Términos y Condiciones.</p>
+            <h3 >User Responsibility</h3>
+            <p>You are responsible for maintaining the confidentiality of your user account and any information related to it, including your password. You are responsible for all activities that occur under your user account. If you suspect that someone has gained unauthorized access to your user account, you must inform us immediately. You are not responsible for any loss or damage caused by unauthorized use of your user account, unless the loss or damage is due to your own negligence or breach of these Terms and Conditions.</p>
         </div>  
         <div className="pregunta">
-            <h3 >Modificaciones de los Términos y Condiciones</h3>
-            <p>Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento y sin previo aviso. La versión actualizada de los Términos y Condiciones se publicará en nuestro sitio web y entrará en vigor inmediatamente después de su publicación. El uso continuado de nuestro sitio web después de la publicación de los Términos y Condiciones actualizados constituye tu aceptación de dichos cambios.</p>
+            <h3 >Changes to the Terms and Conditions</h3>
+            <p>Changes to Terms and Conditions We reserve the right to change these Terms and Conditions at any time without notice. The updated version of the Terms and Conditions will be posted on our website and will be effective immediately upon posting. Your continued use of our website following the posting of updated Terms and Conditions constitutes your acceptance of such changes.</p>
         </div>  
         <div className="pregunta">
-            <h3 >Ley Aplicable</h3>
-            <p>Estos Términos y Condiciones se regirán e interpretarán de acuerdo con la <a href="https://www.argentina.gob.ar/normativa/nacional/ley-24240-638">Ley de Defensa al Consumidor, Ley 24.240</a></p>
+            <h3 >Applicable Law</h3>
+            <p>These Terms and Conditions shall be governed by and construed in accordance with the <a href="https://www.argentina.gob.ar/normativa/nacional/ley-24240-638">Consumer Defense Law, Ley 24.240</a></p>
         </div>  
 
          

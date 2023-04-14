@@ -128,11 +128,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
             null}
           </div>
         </div>
-
       }
-
-      {/* {isAuthenticated ? <Logout /> : null} */}
-
       {!isAuthenticated ? null :
 
         <Link to={'/ShoppingCart'}>
@@ -147,24 +143,3 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
 
 export default Header
-
-// (se cambian con condicionales)
-
-// landing/home(sin logear): logo -registro( login)-tienda - iconos redes sociales - corazoncito de favoritos
-
-// landing/home(logeado): logo- mi perfil- registro(logout)- iconos redes sociales - corazon fav.- tienda
-
-// tienda(sin logear): logo- registro- buscador(serchbar)
-
-// tienda(logeado): logo, registro(logout)-carrito-favoritos- busqueda(serchbar)
-
-
-{/* <div class="btn-group" role="group">
-    <button>
-      Dropdown
-    </button>
-    <ul >
-      <li><a  href="#">Dropdown link</a></li>
-      <li><a  href="#">Dropdown link</a></li>
-    </ul>
-  </div> */}

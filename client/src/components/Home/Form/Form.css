@@ -66,7 +66,8 @@
   display: block;
   text-decoration: none;
   color: #287094;
-  border-radius: 30px;
+  border: none;
+  border-radius: 5px;
   border: 2px solid #287094;
   padding: 10px 40px;
   margin: auto;
