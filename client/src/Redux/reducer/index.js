@@ -13,6 +13,7 @@ import {
   SET_FEATURED_PRODUCT,
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
+  UPDATE_ADDRESS,
 } from "../actions-types/index";
 
 const initialState = {
@@ -109,6 +110,12 @@ function rootReducer(state = initialState, action) {
           users: action.payload,
           user: action.payload,
         }
+        case UPDATE_ADDRESS:
+          return{
+            ...state,
+            users: action.payload,
+            user: action.payload
+          }
       
     default:
       return state;

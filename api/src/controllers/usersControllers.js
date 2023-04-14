@@ -195,6 +195,26 @@ async function privilegeEstatus(req, res) {
     }
   }
 
+  async function updateAddress(req,res){ 
+    try {
+    const { address } = req.body;
+    const { email } = req.params;
+    const user = await Users.findOne({ where: { email } });
+    if (!user) {
+        return res.status(404).json({msg: "user not found"});
+     }
+     user.update({
+        address: address
+     });
+
+     // Responder con el usuario actualizado
+     res.status(201).json(user);
+    } catch (error) {
+        res.status(401).json({ message: err });
+    }
+
+   }
+
 
 module.exports = {
     getAllUsers,
@@ -204,5 +224,6 @@ module.exports = {
     searchUsuario,
     //disableEstatus,
     privilegeEstatus,
+    updateAddress
 
 };
