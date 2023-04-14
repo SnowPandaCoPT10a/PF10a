@@ -8,13 +8,15 @@ import {
   setBannedProduct,
   setFeaturedProduct,
 } from "../../Redux/actions/index.js";
-import axios from "axios";
-import Create from "../Create/Create";
+
+import FormAdmin from "../FormAdmin/FormAdmin";
+
 
 const FormCreatePoke = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const allProducts = useSelector((e) => e.allProducts);
+  const[editForm, setEditForm] = useState(false)
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -41,6 +43,7 @@ const FormCreatePoke = () => {
     return (
       <div className="all_background">
         <div className="all_filter">
+        
           <div >
             <Link to={"/Create"} onClick={() => scrollTop()}>
               <button className="create_btn">
@@ -55,7 +58,7 @@ const FormCreatePoke = () => {
             allProducts
               ?.sort((a, b) => a.productsID - b.productsID)
               .map((e) => (
-                <main className="container_manager">
+                <div className="container_manager">
                   <section className={e.status ? "card_" : "mariela"}>
                     <div className="product-image">
                       <img
@@ -73,7 +76,17 @@ const FormCreatePoke = () => {
                       <div className="price">${e.price}</div>
                     </div>
                     <div className="btn_">
-                      <button className="buy-btn">Edit Now</button>
+                      
+                    
+                      
+                      <button value={e.productsID} className="buy-btn">
+                      <Link to= {`/FormAdminProduct/${e.productsID}`}>
+                        Edit Now
+                      </Link>
+                        
+                        
+                        
+                        </button>
 
                       {e.status ? (
                         <button
@@ -115,7 +128,7 @@ const FormCreatePoke = () => {
                       )}
                     </div>
                   </section>
-                </main>
+                </div>
               ))
           ) : (
             <div>Loading ... </div>
