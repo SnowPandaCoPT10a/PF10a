@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { FilteredProducts } from '../../Redux/actions/index';
 import { useLocation } from 'react-router-dom';
+import './Filter.css'
 
 
 function FilterForm({ pagination }) {
@@ -36,8 +37,9 @@ function FilterForm({ pagination }) {
     };
 
     return (
+        <div className="sidebar">
         <form onSubmit={handleSubmit}>
-        {location.pathname === '/Products/' && (
+        {location.pathname.includes('/Products/') && (
           <> 
           <label htmlFor="category">Category:</label>
           <select id="category" value={category} onChange={(e) => setCategory(e.target.value)}>
@@ -80,8 +82,10 @@ function FilterForm({ pagination }) {
             <option value="desc">Descendente</option>
         </select>
 
-        <button className='buton1' onClick={() => pagination(1)}>Filtrar</button>
-    </form>)
+        <button className='filtro-button' onClick={() => pagination(1)}>Filtrar</button>
+    </form>
+    </div>
+    )
 }
 
 export default FilterForm

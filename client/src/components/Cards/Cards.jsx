@@ -12,9 +12,12 @@ const Cards = () => {
 
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
+  
   const filteredProducts =
+
     article ? productsBoard?.filter(
       (el) => el.category === article || el.brand.brandName === article
+
     ) : productsBoard;
   const dispatch = useDispatch();
   // const [currentPage, setCurrentPage] = useState(1);
@@ -113,7 +116,7 @@ const Cards = () => {
               </div>
             </div>
           ))
-        ) : <div> <h1>no hay nada</h1> <Link to='/'><button>volver</button></Link> </div>}
+        ) : <div> <h1 className="noproducts">No products found</h1> <Link to='/'><button className="buttonvolver">volver</button></Link> </div>}
       <Pagination
         productPerPage={productPerPage}
         filteredProducts={filteredProducts?.length}
