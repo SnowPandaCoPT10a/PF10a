@@ -13,6 +13,7 @@ import {
   SET_FEATURED_PRODUCT,
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
+  UPDATE_ADDRESS,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -212,4 +213,19 @@ export function setStatusUser(email){
       console.log(error);
     }
   }
+}
+
+export function updateAddres(email) {
+  console.log(email)
+  return async function(dispatch) {
+    try {
+      const response = await axios.put(`${url}/users/address/${email.email}`);
+      dispatch({
+        type: UPDATE_ADDRESS,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 }

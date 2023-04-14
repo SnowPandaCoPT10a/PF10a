@@ -42,8 +42,8 @@ const postNewBills = async (req, res) => {
         ],
         back_urls: {
           success: "http://localhost:3000/",
-          failure: "https://pf-10a-bhm9.vercel.app/",
-          pending: "https://pf-10a-bhm9.vercel.app/",
+          failure: "http://localhost:3000/",
+          pending: "http://localhost:3000/",
         },
         auto_return: "approved",
         binary_mode: true,
@@ -108,6 +108,7 @@ mercadopago.configure({
 //!--------------
 
 //!GET purchase
+//https://pf10a-production.up.railway.app/bills
 const getAllBills = async (req, res) => {
   try {
     const allBills = await Bills.findAll({include: Users})
@@ -172,7 +173,7 @@ const searchBills = async (req, res) => {
     const bills = await Bills.findAll({
       where,
       include: {
-        model: User,
+        model: Users,
         as: 'user',
         attributes: ['email', 'first_name', 'last_name'],
       },

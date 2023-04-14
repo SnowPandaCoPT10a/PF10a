@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { updateAddres } from '../../Redux/actions';
+import { useAuth0 } from "@auth0/auth0-react";
+import { useDispatch, useSelector } from 'react-redux'
 
 function Checkout() {
 
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const products = JSON.parse(searchParams.get('products'));
+  const { user, isAuthenticated } = useAuth0();
+  const dispatch = useDispatch();
   console.log(products)
   const [form, setForm] = useState({
     name: '',
@@ -41,6 +46,8 @@ function Checkout() {
       e.preventDefault()
       return;
     }
+    
+    dispatch(updateAddres({ email: user.email }, form.shippingAddress1 ))
     navigate('/OrderConfirmation');
   }
 
