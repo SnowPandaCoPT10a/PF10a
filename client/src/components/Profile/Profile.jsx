@@ -6,14 +6,10 @@ import './Profile.css'
 import { searchUser, updateUser, } from '../../Redux/actions/index.js'
 import { getAllUsers } from '../../Redux/actions/index'
 
-
-
-
 const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
 	const dispatch = useDispatch();
 	const datoos = useSelector(e => e.user)
-
 	const [editFormState, setEditFormState] = useState({
 		first_name: '',
 		last_name: '',
@@ -21,27 +17,18 @@ const Profile = () => {
 		date_birth: "",
 		mobile: "",
 		image: "",
-
-
 	});
 
 	const [isEditing, setIsEditing] = useState(false);
-
 
 	useEffect(() => {
 
 		dispatch(getAllUsers())
 	}, [dispatch])
 
-
-
-
 	const handleEditClick = () => {
 		setIsEditing(true);
 	}
-
-
-
 
 	const handleInputChange = (event) => {
 		setEditFormState({
@@ -68,26 +55,12 @@ const Profile = () => {
 		})
 		setIsEditing(false);
 	}
-
-
-
-
-
-
-	//console.log(user,"LUCHOOOOOOOOO")
-
 	try {
-
 		if (isAuthenticated) {
-
 			const perfil = datoos.find(obj => obj.email === user.email);
-
-
 			if (isEditing) {
 				return (
-
 					<form className='profile-form' onSubmit={handleEditSubmit}>
-
 						<br />
 						<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
 						<h1 className='h1profile'>Name: {perfil.first_name}</h1>
@@ -118,35 +91,26 @@ const Profile = () => {
 					</form>
 				)
 			}
-
 			return (
-
 				<div className='profilecont'>
 					<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
-
 					<h1 className='h1profile'>Name:  {perfil.first_name}</h1>
 					<h1 className='h1profile'>Last Name:  {perfil.last_name}</h1>
 					<h1 className='h1profile'>Birthday:  {perfil.date_birth}</h1>
 					<h1 className='h1profile'>Nationality:  {perfil.nationality}</h1>
 					<h1 className='h1profile'>Mobile Phone:  {perfil.mobile}</h1>
 					<h1 className='h1profile'>Email:  {perfil.email}</h1>
-
 					<button  className='buttoneditar' onClick={handleEditClick}>Editar información</button>
 				</div>
 			)
 		}
-
 		return (
 			<div>
-
 			</div>
-
-
 		)
 	} catch (err) {
 		console.error(err)
 	}
 }
-
 
 export default Profile

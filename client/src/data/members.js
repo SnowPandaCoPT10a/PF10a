@@ -1,11 +1,11 @@
 export const member = [
     {
-        name: "Paulina",
+        name: "Paulina San Martin",
         title: "Front Developer",
         facebook: "url",
         twitter: "url",
-        linkedin: "url",
-        github: "url",
+        linkedin: "https://www.linkedin.com/in/silpauli/",
+        github: "https://github.com/Sil-Pauli",
         image: "https://picsum.photos/130/130?image=1027", 
     },
     {
