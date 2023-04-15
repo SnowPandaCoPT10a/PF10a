@@ -23,7 +23,7 @@ import FrequentQ from "./components/Footers/FrequentQ/FrequentQ";
 import PagosRetiros from "./components/Footers/PagosRetiros/PagosRretiros";
 import Terms from "./components/Footers/Terms/Terms";
 import PrivacyPolicies from  './components/Footers/PrivacyPolicies/PrivacyPolicies'
-
+import ManageBills from "./components/Manage_Bills/Manage_Bills"
 
 
 function App() {
@@ -75,6 +75,8 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path="/Payments" element={<PagosRetiros/>}/>
          <Route exact path="/Terms" element={<Terms/>}/>
          <Route exact path="/PrivacyPolicies" element={<PrivacyPolicies/>}/>
+         <Route exact path="/ManageBills" element={<ManageBills/>}/>
+
         </Routes>
         <Chatbot />
       </div>
