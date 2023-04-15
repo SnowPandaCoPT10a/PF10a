@@ -14,13 +14,14 @@ import {
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
   UPDATE_ADDRESS,
+  GET_ALL_BILLS,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-//const url = "https://pf10a-production.up.railway.app";
+const url = "https://pf10a-production.up.railway.app";
 
-const url = 'http://localhost:3001'
+//const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -222,6 +223,23 @@ export function updateAddres(email) {
       const response = await axios.put(`${url}/users/address/${email.email}`);
       dispatch({
         type: UPDATE_ADDRESS,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+export function getAllBills() {
+  return async function(dispatch) {
+    try {
+
+      const response = await axios.get(`${url}/bills/`);
+
+
+      return dispatch({
+        type: GET_ALL_BILLS,
         payload: response.data,
       });
     } catch (error) {

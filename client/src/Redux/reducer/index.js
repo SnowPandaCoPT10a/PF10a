@@ -14,6 +14,7 @@ import {
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
   UPDATE_ADDRESS,
+  GET_ALL_BILLS,
 } from "../actions-types/index";
 
 const initialState = {
@@ -23,6 +24,7 @@ const initialState = {
   users:[],
   user:[],
   currentPage: 1,
+  allBills: [],
 };
 
 function rootReducer(state = initialState, action) {
@@ -115,6 +117,11 @@ function rootReducer(state = initialState, action) {
             ...state,
             users: action.payload,
             user: action.payload
+          }
+        case GET_ALL_BILLS:
+          return{
+            ...state,
+            allBills:action.payload,
           }
       
     default:
