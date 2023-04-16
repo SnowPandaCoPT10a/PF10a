@@ -92,12 +92,54 @@ async function paymentNotification(req, res) {
         }
       )
         .then((numRowsAffected) => {
-         //console.log(`Se actualizaron ${numRowsAffected} registros`);
+        /* if (payment.body.status === "approved") {
+          const billsUsers = Bills.findAll({
+              where: {
+              id_payment: payment.body.id
+              },include: {
+                model: Users,
+                attributes: ['first_name', 'last_name']
+                }})
+        const userNames = billsUsers.map(billUser => `${billUser.user.first_name} ${billUser.user.last_name}`); 
+        console.log(userNames)         
+       // configurar transporter para enviar correo electrónico
+       let transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        auth: {
+            user: "snowpandaco@gmail.com", //  correo electrónico
+            pass: "badticzdnopplwxx" //  contraseña se terceros
+        }
+    });
+
+    //modificar que quiero enviar
+    let mailOptions = {
+        from: "snowpandaco@gmail.com",
+        to: email,
+        subject: "Confirmación de pago aprobado e información de envío",
+        text:"Estimado/a " + first_name + "" + last_name +  ",\n\nLe escribo para informarle que su pago ha sido aprobado y está listo para ser procesado en nuestra tienda en línea de Snowpanda. Agradecemos su confianza en nosotros y esperamos que disfrute de su compra.\n\nEn los próximos días, recibirá un correo electrónico con la confirmación del envío de su producto. Estamos trabajando diligentemente para garantizar que su pedido sea enviado lo antes posible y llegue a su destino sin complicaciones.\n\nSi tiene alguna pregunta con respecto al proceso de envío, no dude en ponerse en contacto con nosotros a través de nuestra página web o por correo electrónico.\n\nDe nuevo, le agradecemos por elegir Snowpanda como su tienda en línea. Esperamos que vuelva pronto.\n\nSaludos cordiales,\n\n[Nombre del remitente]\nEquipo de atención al cliente de Snowpanda"
+    };
+
+    // enviar correo electrónico
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+            res.status(500).json({ error: error });
+        } else {
+            console.log("Correo electrónico enviado: " + info.response);
+            res.status(201).send({ message: "User was update and email was sent" });
+        }
+    });
+            } else if (payment.body.status === "rejected") {
+            sendEmail("rechazado");
+            }*/
         })
         .catch((err) => {
           //console.error("Error al actualizar registros:", err);
         });
   }
+  
   res.send();
 }
 
