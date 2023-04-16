@@ -216,11 +216,11 @@ export function setStatusUser(email){
   }
 }
 
-export function updateAddres(email) {
-  console.log(email)
+export function updateAddres(email,address) {
+  console.log(address,"MAMAHUEVO");
   return async function(dispatch) {
     try {
-      const response = await axios.put(`${url}/users/address/${email.email}`);
+      const response = await axios.put(`${url}/users/address/${email}`, address);
       dispatch({
         type: UPDATE_ADDRESS,
         payload: response.data,
