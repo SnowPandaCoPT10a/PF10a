@@ -46,10 +46,9 @@ function Checkout() {
   const handleSubmit = e => {
     if (disabled) {
       e.preventDefault()
+    
       return;
     }
-    
-    dispatch(updateAddres({ email: user.email }, form.shippingAddress1 ))
     navigate('/OrderConfirmation');
   }
 
@@ -65,6 +64,8 @@ function Checkout() {
   const showError = field => errors[field] ? form.touched[field] : false;
 
   const scrollTop = () => {
+    dispatch(updateAddres( user.email ,{ address: form.shippingAddress1}))
+    
     window.scroll(0, 0)
   }
 
@@ -102,8 +103,8 @@ function Checkout() {
           <h4>Address Details:</h4>
         </CheckoutHeader>
         <CheckoutHeaderLine />
-        
-        <CheckoutTable>         
+
+        <CheckoutTable>
           <CheckoutFormLabel>Billing Address</CheckoutFormLabel>
           <CheckoutAddress>
             <input
@@ -135,9 +136,10 @@ function Checkout() {
           </CheckoutAddress>
         </CheckoutTable>
         <CancelButton onClick={() => navigate('/ShoppingCart')}>Back to cart</CancelButton>
+        <div></div>
         <Link to={`/orderconfirmation?products=${JSON.stringify(products)}`} onClick={() => scrollTop()}>
-        <ConfirmButton>Confirm Order</ConfirmButton>
-      </Link>
+          <ConfirmButton>Confirm Order</ConfirmButton>
+        </Link>
       </CheckoutContainer>
     </form>
   )
@@ -217,29 +219,48 @@ grid-column:3;
 `
 
 const CancelButton = styled.button`
-margin-bottom: 25px;
-border-radius: 8px;
-height:80%;
-grid-column: 1 / span 2;
-width: 100%
-
-&:hover {
-    box-shadow: 0 0 0 6px #488cfb;
+ margin: 50px;
+  border-radius: 8px;
+  height: 40px;
+    width: 100%;
+  padding: 10px 20px;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  background-color: #fff;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
   }
 `
+
 
 const ConfirmButton = styled.button`
-margin-bottom: 25px;
-margin-left: 200px;
-border-radius: 8px;
-height:80%;
-width: 60%;
-
-
-&:hover {
-    box-shadow: 0 0 0 6px #488cfb;
+ margin: 50px; 
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #287094;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  background-color: #fff;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
   }
 `
-
 
 

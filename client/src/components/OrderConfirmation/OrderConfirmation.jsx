@@ -49,25 +49,28 @@ function OrderConfirmation() {
     }
     
     const handleCreateBill = async () => {
-        const users = dispatch(getAllUsers())
-        const perfil = datoos.find(obj => obj.email === user.email);
-
+        try{
+            const users = dispatch(getAllUsers())
+            const perfil = datoos.find(obj => obj.email === user.email);
+    
+            
+            const res = await axios.post(
+              //  "http://localhost:3001/bills/create"
+               'https://pf10a-production.up.railway.app/bills/create'
+            , {
+            item: endProduct.description,
+            quantity: product.length,
+            date: today,
+            price: product.reduce((total, product) => total + product.price, 0),
+            idUser: perfil.idUser
+            }).then(
+                (res)=> 
+                (window.location.href = res.data))
+           
+            }catch(err){console.log(err)}
+    
+        }
         
-        const res = await axios.post(
-           // "http://localhost:3001/bills/create"
-           'https://pf10a-production.up.railway.app/bills/create'
-        , {
-        item: endProduct.description,
-        quantity: product.length,
-        date: today,
-        price: product.reduce((total, product) => total + product.price, 0),
-        idUser: perfil.idUser
-        }).then(
-            (res)=> 
-            (window.location.href = res.data))
-       
-        };
-
 
     return (
        
