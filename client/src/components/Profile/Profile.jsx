@@ -17,8 +17,10 @@ const Profile = () => {
 		date_birth: "",
 		mobile: "",
 		image: "",
+		address: "",
 	});
-
+	console.log(user)
+	console.log(datoos)
 	const [isEditing, setIsEditing] = useState(false);
 
 	useEffect(() => {
@@ -52,12 +54,14 @@ const Profile = () => {
 			date_birth: "",
 			mobile: "",
 			image: "",
+			address: "",
 		})
 		setIsEditing(false);
 	}
 	try {
 		if (isAuthenticated) {
 			const perfil = datoos.find(obj => obj.email === user.email);
+			console.log(perfil)
 			if (isEditing) {
 				return (
 					<form className='profile-form' onSubmit={handleEditSubmit}>
@@ -80,6 +84,10 @@ const Profile = () => {
 							
 							<input className='inputprofile' type="text" name="mobile" placeholder="...Mobile" value={editFormState.mobile} onChange={handleInputChange} />
 						</label>
+						<label className='profile-label'>
+							
+							<input className='inputprofile' type="text" name="address" value={editFormState.address} placeholder="...Adress" onChange={handleInputChange} />
+						</label>
 						<label>
 							
 							<input className='inputprofile' type="date" name="date_birth" value={editFormState.date_birth} onChange={handleInputChange} />
@@ -100,6 +108,8 @@ const Profile = () => {
 					<h1 className='h1profile'>Nationality:  {perfil.nationality}</h1>
 					<h1 className='h1profile'>Mobile Phone:  {perfil.mobile}</h1>
 					<h1 className='h1profile'>Email:  {perfil.email}</h1>
+					<h1 className='h1profile'>Address:  {perfil.address}</h1>
+
 					<button  className='buttoneditar' onClick={handleEditClick}>Editar información</button>
 				</div>
 			)
