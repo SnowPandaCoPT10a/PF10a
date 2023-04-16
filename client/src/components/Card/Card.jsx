@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsId } from '../../Redux/actions/index.js'
 import { useParams } from "react-router";
+import { useAuth0 } from "@auth0/auth0-react";
+import Swal from 'sweetalert2';
 
 export default function Card({ oneProducts, setOneProducts, allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
 
@@ -12,6 +14,7 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
   const dispatch = useDispatch()
   const productInfoId = useSelector((state) => state.productsID);
   const [selectedSize, setSelectedSize] = useState('');
+  const {loginWithRedirect ,isAuthenticated, user } = useAuth0();
 
 
   useEffect(() => {
@@ -35,8 +38,21 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
 
 
   function handleOnAddProduct(product) {
-    alert('Added to cart successfully')
+    if(!isAuthenticated){
+      Swal.fire({
+        icon: 'warning',
+        title: 'You are not logged',
+        text: 'you need to log in to be able to buy'
+        });
+       loginWithRedirect()
+    }
+    
     if (allProducts.find((el) => el.productsID === product.productsID && el.size === product.size)) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Aggregate',
+        text: 'Added to cart successfully'
+        });
 
       const products = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size

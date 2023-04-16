@@ -98,9 +98,9 @@ async function paymentNotification(req, res) {
               id_payment: payment.body.id
               },include: {
                 model: Users,
-                attributes: ['first_name', 'last_name']
+                attributes: ["email",'first_name', 'last_name']
                 }})
-        const userNames = billsUsers.map(billUser => `${billUser.user.first_name} ${billUser.user.last_name}`); 
+        const userNames = billsUsers.map(billUser => `${billUser.users}`); 
         console.log(userNames)         
        // configurar transporter para enviar correo electrónico
        let transporter = nodemailer.createTransport({
@@ -128,11 +128,47 @@ async function paymentNotification(req, res) {
             res.status(500).json({ error: error });
         } else {
             console.log("Correo electrónico enviado: " + info.response);
-            res.status(201).send({ message: "User was update and email was sent" });
+            res.status(201).send({ message: "Email was sent" });
         }
     });
-            } else if (payment.body.status === "rejected") {
-            sendEmail("rechazado");
+            } else  {
+
+              const billsUsers = Bills.findAll({
+                where: {
+                id_payment: payment.body.id
+                },include: {
+                  model: Users,
+                  attributes: ["email",'first_name', 'last_name']
+                  }})
+          const userNames = billsUsers.map(billUser => `${billUser.users}`); 
+              let transporter = nodemailer.createTransport({
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true,
+                auth: {
+                    user: "snowpandaco@gmail.com", //  correo electrónico
+                    pass: "badticzdnopplwxx" //  contraseña se terceros
+                }
+            });
+        
+            //modificar que quiero enviar
+            let mailOptions = {
+                from: "snowpandaco@gmail.com",
+                to: email,
+                subject: "Confirmación de pago no aprobado ",
+                text: "Estimado/a " + first_name + " " + last_name + ",\n\nGracias por su reciente compra en Snowpanda. Lamentablemente, hemos encontrado que su pago no fue aprobado. Sabemos que esto puede ser frustrante, pero queremos asegurarnos de que reciba la mejor experiencia de compra posible.\n\nLe recomendamos que revise su información de pago o vuelva a intentar realizar el pago para completar su compra. Si necesita ayuda adicional, no dude en contactarnos en snowpandaco@gmail.com .\n\nAgradecemos mucho su interés en Snowpanda y esperamos poder satisfacer sus necesidades de equipo para la nieve en el futuro.\n\nSaludos cordiales,\n\nEl equipo de Snowpanda"
+};
+        
+            // enviar correo electrónico
+            transporter.sendMail(mailOptions, function(error, info){
+                if (error) {
+                    console.log(error);
+                    res.status(500).json({ error: error });
+                } else {
+                    console.log("Correo electrónico enviado: " + info.response);
+                    res.status(201).send({ message: "Email was sent" });
+                }
+            });
             }*/
         })
         .catch((err) => {

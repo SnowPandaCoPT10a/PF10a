@@ -228,10 +228,11 @@ async function privilegeEstatus(req, res) {
 
   async function updateAddress(req,res){ 
     try {
-    const { address } = req.body;
+    let { address } = req.body;
     const { email } = req.params;
+    console.log(address)
     console.log(email)
-    const user = await Users.findOne({ where: { email } });
+    const user = await Users.findOne({ where: { email : email } });
     if (!user) {
         return res.status(404).json({msg: "user not found"});
      }
@@ -241,8 +242,10 @@ async function privilegeEstatus(req, res) {
 
      // Responder con el usuario actualizado
      res.status(201).json(user);
+     
     } catch (error) {
-        res.status(401).json({ message: err });
+        console.log(error)
+        res.status(401).json({ message: error });
     }
 
    }
