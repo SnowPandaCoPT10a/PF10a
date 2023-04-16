@@ -20,9 +20,13 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DECIMAL(10,2),
         allowNull: false,
       },
+      shipped: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      }, 
       payment_status: {
         type: DataTypes.ENUM("approved", "failed"),
         allowNull: true,
