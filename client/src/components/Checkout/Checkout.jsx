@@ -47,8 +47,6 @@ function Checkout() {
       dispatch(updateAddres(user.email, form.shippingAddress1))
       return;
     }
-
-    dispatch(updateAddres({ email: user.email }, form.shippingAddress1))
     navigate('/OrderConfirmation');
   }
 
