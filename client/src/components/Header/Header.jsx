@@ -51,7 +51,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
   }
 
 
-  console.log(user.email, "PATATA")
+  // console.log(user.email, "PATATA")
 
 
 

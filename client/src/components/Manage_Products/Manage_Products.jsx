@@ -7,16 +7,16 @@ import {
   getAllProducts,
   setBannedProduct,
   setFeaturedProduct,
+  stockProducts,
 } from "../../Redux/actions/index.js";
 
 import FormAdmin from "../FormAdmin/FormAdmin";
-
 
 const FormCreatePoke = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const allProducts = useSelector((e) => e.allProducts);
-  const[editForm, setEditForm] = useState(false)
+  const [editForm, setEditForm] = useState(false);
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -28,30 +28,59 @@ const FormCreatePoke = () => {
     navigate(0);
   };
 
+  async function decrementStock(product, sizeSelected) {
+    const productToReStock = allProducts.find((p) => p.productsID === product.productsID);
+    const sizeToUpdate =
+      productToReStock.sizes !== null
+        ? productToReStock.sizes.find((p) => p === sizeSelected)
+        : productToReStock.numbersizes !== null
+        ? productToReStock.numbersizes.find((p) => p === sizeSelected)
+        : productToReStock.boardsizes !== null
+        ? productToReStock.boardsizes.find((p) => p === sizeSelected)
+        : null;
+    const actualStock = sizeToUpdate.stock;
+    if (sizeToUpdate) {
+      sizeToUpdate.stock = actualStock - 1;
+      await dispatch(stockProducts(product));
+      await dispatch(getAllProducts());
+    }
+  }
+  async function incrementStock(product, sizeSelected) {
+    const productToReStock = allProducts.find((p) => p.productsID === product.productsID);
+    const sizeToUpdate =
+      productToReStock?.sizes !== null
+        ? productToReStock.sizes.find((p) => p === sizeSelected)
+        : productToReStock?.numbersizes !== null
+        ? productToReStock.numbersizes.find((p) => p === sizeSelected)
+        : productToReStock?.boardsizes !== null
+        ? productToReStock.boardsizes.find((p) => p === sizeSelected)
+        : null;
+    const actualStock = sizeToUpdate.stock;
+    if (sizeToUpdate) {
+      sizeToUpdate.stock = actualStock + 1;
+      await dispatch(stockProducts(product));
+      await dispatch(getAllProducts());
+    }
+  }
+
   const handleFeaturedProduct = (e) => {
     console.log(e, "la merda");
     dispatch(setFeaturedProduct(e));
     navigate(0);
   };
   const scrollTop = () => {
-    window.scroll(0, 0)
-  }
-
-  console.log(allProducts, "all");
+    window.scroll(0, 0);
+  };
 
   try {
     return (
       <div className="all_background">
         <div className="all_filter">
-        
-          <div >
+          <div>
             <Link to={"/Create"} onClick={() => scrollTop()}>
-              <button className="create_btn">
-                Create new product
-              </button>
+              <button className="create_btn">Create new product</button>
             </Link>
           </div>
-         
         </div>
         <div className="dropdown ms-3">
           {allProducts ? (
@@ -76,17 +105,75 @@ const FormCreatePoke = () => {
                       <div className="price">${e.price}</div>
                     </div>
                     <div className="btn_">
-                      
-                    
-                      
+                      <div className="trying">
+                        <h1>Stock</h1>
+                        <h2>
+                          {e.sizes !== null
+                            ? e.sizes.map((s) => {
+                                return (
+                                  <div>
+                                    <h1>{s.size}</h1>
+                                    <button
+                                      onClick={() => decrementStock(e, s)}
+                                    >
+                                      -
+                                    </button>
+                                    <h2>{s.stock}</h2>
+                                    <button
+                                      onClick={() => incrementStock(e, s)}
+                                    >
+                                      +
+                                    </button>
+                                  </div>
+                                );
+                              })
+                            : e.boardsizes !== null
+                            ? e.boardsizes.map((b) => {
+                                return (
+                                  <div>
+                                    <h1>{b.size}</h1>
+                                    <button
+                                      onClick={() => decrementStock(e, b)}
+                                    >
+                                      -
+                                    </button>
+                                    <h2>{b.stock}</h2>
+                                    <button
+                                      onClick={() => incrementStock(e, b)}
+                                    >
+                                      +
+                                    </button>{" "}
+                                  </div>
+                                );
+                              })
+                            : e.numbersizes !== null
+                            ? e.numbersizes.map((n) => {
+                                return (
+                                  <div>
+                                    <h1>{n.size}</h1>
+                                    <button
+                                      onClick={() => decrementStock(e, n)}
+                                    >
+                                      -
+                                    </button>
+                                    <h2>{n.stock}</h2>
+                                    <button
+                                      onClick={() => incrementStock(e, n)}
+                                    >
+                                      +
+                                    </button>
+                                  </div>
+                                );
+                              })
+                            : null}
+                        </h2>
+                        <h1>Stock2</h1>
+                      </div>
                       <button value={e.productsID} className="buy-btn">
-                      <Link to= {`/FormAdminProduct/${e.productsID}`}>
-                        Edit Now
-                      </Link>
-                        
-                        
-                        
-                        </button>
+                        <Link to={`/FormAdminProduct/${e.productsID}`}>
+                          Edit Now
+                        </Link>
+                      </button>
 
                       {e.status ? (
                         <button
