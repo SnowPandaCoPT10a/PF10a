@@ -34,8 +34,8 @@ const getReviewsById = async (req, res) => {
 //! POST
 
 const postReviews = async (req, res) =>{
- const { comment, rating, firstName, commentDate} = req.body
- console.log(comment , "asdfasd")
+ const { comment, rating, firstName} = req.body
+//  console.log(comment , "asdfasd")
  try {
     // const approvedBills = await Bills.findAll(
     //     {
@@ -48,11 +48,10 @@ const postReviews = async (req, res) =>{
     //         res.status(401).send('error')     
     //     }
 
-        const newReview = await Reviews.create({
-            commentDate,
-            comment,
-            firstName,
-            rating
+const newReview = await Reviews.create({
+  comment: comment,
+  firstName:       firstName,
+            rating:    rating
         },
         // {
         //     include: [

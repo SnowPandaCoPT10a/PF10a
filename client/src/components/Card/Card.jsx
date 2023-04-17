@@ -3,22 +3,25 @@ import { Link } from "react-router-dom";
 import "./Card.css";
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProductsId } from '../../Redux/actions/index.js'
+import { getAllProductsId, getAllReviews } from '../../Redux/actions/index.js'
 import { useParams } from "react-router";
 import { useAuth0 } from "@auth0/auth0-react";
 import Swal from 'sweetalert2';
+import Reviews from '../Reviews/Reviews'
 
 export default function Card({ oneProducts, setOneProducts, allProducts, setAllProducts, priceTotal, setPriceTotal, countProducts, setCountProducts }) {
 
   const { id } = useParams();
   const dispatch = useDispatch()
   const productInfoId = useSelector((state) => state.productsID);
+  const review = useSelector((state) => state.allReviews);
   const [selectedSize, setSelectedSize] = useState('');
   const {loginWithRedirect ,isAuthenticated, user } = useAuth0();
 
-
+// console.log(review, 'iiiiiiiiiii')
   useEffect(() => {
     dispatch(getAllProductsId(id));
+    dispatch(getAllReviews())
     const storedProduct = window.localStorage.getItem("productscart");
     const storedPriceTotal = window.localStorage.getItem("totalprices");
     const storedCountProducts = window.localStorage.getItem("countproducts");
@@ -133,6 +136,7 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
   // console.log(productInfoId, 'ididid')
   // console.log(productInfoId.sizes?.map(el => el.size));
   return (
+    <div>
     <div className="cardComponent">
       {productInfoId ? (
         <div className="containerId">
@@ -205,7 +209,22 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
       ) : (
         <p>Loading...</p>
       )}
+         
     </div>
-
+    <div>
+      {
+        review?.map((el) =>{
+          return(
+            <div>
+            <h1>{el.rating} </h1>
+            <h2>{el.comment} </h2>
+            <h3>{el.firstName} </h3>
+            </div>
+          )
+        })
+      }
+    </div>
+ <div><Reviews /></div>
+ </div>
   );
 }
