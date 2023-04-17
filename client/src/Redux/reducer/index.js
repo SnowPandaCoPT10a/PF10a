@@ -16,6 +16,7 @@ import {
   UPDATE_ADDRESS,
   GET_ALL_BILLS,
   GET_ALL_REVIEWS,
+  UPDATE_STOCK,
 } from "../actions-types/index";
 
 const initialState = {
@@ -131,7 +132,11 @@ function rootReducer(state = initialState, action) {
           ...state,
           allReviews: action.payload
         }
-      
+        case UPDATE_STOCK:
+          return {
+            ...state,
+            products: action.payload
+          }
     default:
       return state;
   }

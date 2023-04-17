@@ -17,13 +17,14 @@ import {
   GET_ALL_BILLS,
   CREATE_NEW_REVIEWS,
   GET_ALL_REVIEWS,
+  UPDATE_STOCK
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-const url = "https://pf10a-production.up.railway.app";
+//const url = "https://pf10a-production.up.railway.app";
 
-//const url = 'http://localhost:3001'
+const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -278,6 +279,21 @@ export function postReviews (payload) {
       });
       
     } catch (error) {
+      console.log(error)
+    }
+  }
+}
+
+export function stockProducts (payload) {
+  return async function (dispatch){
+    try {
+      const response = await axios.put(`${url}/products/modify/${payload.productsID}`, payload);
+      return dispatch({
+        type: UPDATE_STOCK,
+        payload: response.data,
+      });
+    }
+    catch (error) {
       console.log(error)
     }
   }
