@@ -167,6 +167,7 @@ async function featuredProducts(req, res) {
 async function modifyProducts(req, res) {
   try {
     let { productsID } = req.params;
+    console.log(productsID);
     let {
       name,
       category,
@@ -207,9 +208,11 @@ async function modifyProducts(req, res) {
 
       res.status(201).json(modifyProduct);
     } else {
+      
       res.status(404).json({ msg: "Product not found" });
     }
   } catch (err) {
+    console.log(err);
     res.status(401).json({ error: err });
   }
 }
