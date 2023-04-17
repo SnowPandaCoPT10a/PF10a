@@ -15,11 +15,13 @@ import {
   SET_STATUS_USER,
   UPDATE_ADDRESS,
   GET_ALL_BILLS,
+  CREATE_NEW_REVIEWS,
+  GET_ALL_REVIEWS,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-const url = "https://pf10a-production.up.railway.app";
+ const url = "https://pf10a-production.up.railway.app";
 
 //const url = 'http://localhost:3001'
 
@@ -246,4 +248,37 @@ export function getAllBills() {
       console.log(error);
     }
   };
+}
+
+
+export function getAllReviews () {
+  return async function (dispatch){
+    try {
+      const response = await  axios.get(`${url}/reviews`);
+      return dispatch({
+        type: GET_ALL_REVIEWS,
+        payload: response.data,
+      });
+      
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+
+export function postReviews (payload) {
+  return async function (dispatch){
+    console.log("payload: ", payload);
+
+    try {
+      const response = await  axios.post(`${url}/reviews/create`, payload);
+      return dispatch({
+        type: CREATE_NEW_REVIEWS,
+        payload: response.data,
+      });
+      
+    } catch (error) {
+      console.log(error)
+    }
+  }
 }

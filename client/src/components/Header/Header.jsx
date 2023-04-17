@@ -51,7 +51,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
   }
 
 
-  console.log(user, "PATATA")
+  console.log(user.email, "PATATA")
 
 
 
@@ -121,7 +121,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
             <>
               <a>Administrador</a>
               <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
-              <a>Mis Compras</a>
+              <a class="dropdown-item" href="/ProfileBills">Mis Compras</a>
               <a><Logout /></a>
             </> :
             null}
