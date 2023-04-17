@@ -47,6 +47,7 @@ function rootReducer(state = initialState, action) {
         }*/
       return {
         ...state,
+        allProducts: action.payload,
         products: action.payload,
       };
     case POST_NEW_PRODUCTS:
