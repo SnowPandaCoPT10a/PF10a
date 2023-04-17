@@ -363,8 +363,8 @@ const clearCart = () => {
               })}
           </BasketQty>
           <BasketPrice>
-            <button onClick={() => decrementProduct(el)}>-</button>${el.price}
-            <button onClick={() => incrementProduct(el)}>+</button>
+            <button  onClick={() => decrementProduct(el)}>-</button>${el.price}
+            <button  onClick={() => incrementProduct(el)}>+</button>
           </BasketPrice>
           <BasketQty>
             {(el.price *
@@ -414,7 +414,7 @@ const clearCart = () => {
     <div>
       <All>
         <BasketContainer>
-          <BasketTitle>Shopping Cart</BasketTitle>
+          <BasketTitle>SHOPPING CART</BasketTitle>
           <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
           <BasketButton >Go to checkout</BasketButton>
       </Link>
@@ -430,7 +430,7 @@ const clearCart = () => {
             <BasketHeader>{renderProduct()}</BasketHeader>
             <BasketHeaderLine />
           </BasketTable>
-          <BasketButton  onClick={() => clearCart() }>Clear</BasketButton>
+          <button className="buttonvolver" onClick={() => clearCart() }>Clear</button>
           <BasketTotal>Total: {priceTotal.toFixed(2)}</BasketTotal>
         </BasketContainer>
       </All>
@@ -490,10 +490,23 @@ const BasketTotal = styled.h2`
   justify-self: end;
 `;
 const BasketButton = styled.button`
-  margin-rigth: 25px;
+ margin: 50px;
   border-radius: 8px;
   height: 40px;
+  padding: 10px 20px;
+  background-color: #287094;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    box-shadow: 0 0 0 6px #488cfb;
+    cursor: pointer;
+  background-color: #fff;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
   }
 `
+

@@ -10,31 +10,31 @@ function PrivacyPolicies() {
     };
     return (
         <div className="preguntas-frecuentes">
-            <h3 class="freq-title">POLÍTICAS DE PRIVACIDAD</h3>
+            <h3 class="text-center mt-5  freq-title">PRIVACY POLICIES</h3>
             <div className="pregunta">
-                <h3>Información que recopilamos</h3>
-                <p >Recopilamos información que nos proporcionas directamente, como tu nombre, dirección de correo electrónico, información de pago, información de envío y cualquier otra información que proporciones al realizar una compra o registrarte en nuestro sitio web.</p>
+                <h3>Information we collect</h3>
+                <p >We collect information that you provide directly to us, such as your name, email address, payment information, shipping information, and any other information you provide when making a purchase or registering on our website.</p>
             </div>
             <div className="pregunta">
-                <h3 >Cómo utilizamos tu información</h3>
-                <p >Utilizamos la información que recopilamos para procesar tus compras, comunicarnos contigo sobre tus pedidos y proporcionarte información sobre nuestros productos y promociones.</p>
+                <h3 >How we use your information</h3>
+                <p >We use the information we collect to process your purchases, communicate with you about your orders, and provide you with information about our products and promotions.</p>
             </div>
             <div className="pregunta">
-                <h3 >Cómo compartimos tu información</h3>
-                <p>No vendemos ni alquilamos tu información a terceros. Compartimos tu información solo con proveedores de servicios que necesitan acceder a ella para brindarte servicios en nuestro nombre, como procesar pagos y enviar paquetes.</p>
+                <h3 >How we share your information</h3>
+                <p>We do not sell or rent your information to third parties. We share your information only with service providers who need access to it to provide services to you on our behalf, such as processing payments and shipping packages.</p>
             </div>
             <div className="pregunta">
-                <h3 >Cómo protegemos tu información</h3>
-                <p >Tomamos medidas de seguridad razonables para proteger tu información contra el acceso no autorizado o la divulgación. Utilizamos tecnología de cifrado SSL para proteger la información de pago.</p>
+                <h3 >How we protect your information</h3>
+                <p >We take reasonable security measures to protect your information from unauthorized access or disclosure. We use SSL encryption technology to protect payment information.</p>
             </div>
             <div className="pregunta">
-                <h3 >Cambios en nuestras políticas de privacidad</h3>
-                <p >Podemos actualizar nuestras políticas de privacidad de vez en cuando. Te notificaremos cualquier cambio importante en nuestras políticas de privacidad enviándote un correo electrónico a la dirección que nos proporcionaste o publicando un aviso en nuestro sitio web.</p>
+                <h3 >Changes to our privacy policies</h3>
+                <p >We may update our privacy policies from time to time. We will notify you of any material changes to our privacy policies by sending you an email at the address you provided us or by posting a notice on our website.</p>
             </div>
             <div className="pregunta">
-                <h3 >Contacto</h3>
-                <p >Si tienes alguna pregunta o inquietud sobre nuestras políticas de privacidad, contáctanos a través del correo electrónico snowpandaco@gmail.com</p>
-                <button className='correo-button' onClick={handleClick}>Enviar correo </button>
+                <h3 >Contact</h3>
+                <p >If you have any questions or concerns about our privacy policies, please contact us via email snowpandaco@gmail.com</p>
+                <button className='correo-button' onClick={handleClick}>Send mail </button>
             </div>
         </div>
     )

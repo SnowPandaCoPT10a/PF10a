@@ -15,14 +15,18 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-     /* date: {
+      date: {
         type: DataTypes.DATEONLY,
         allowNull: false,
-      },*/
+      },
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,//DECIMAL(10,2),
         allowNull: false,
       },
+      shipped: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      }, 
       payment_status: {
         type: DataTypes.ENUM("approved", "failed"),
         allowNull: true,
@@ -50,10 +54,15 @@ module.exports = (sequelize) => {
       active: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-      },
+      }, 
+      
+    
     },
     {
       timestamps: false,
-    }
+     
+     
+   
+  }
   );
 };

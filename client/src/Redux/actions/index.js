@@ -13,13 +13,17 @@ import {
   SET_FEATURED_PRODUCT,
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
+  UPDATE_ADDRESS,
+  GET_ALL_BILLS,
+  CREATE_NEW_REVIEWS,
+  GET_ALL_REVIEWS,
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-//const url = "https://pf10a-production.up.railway.app";
+ const url = "https://pf10a-production.up.railway.app";
 
-const url = 'http://localhost:3001'
+//const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -210,6 +214,71 @@ export function setStatusUser(email){
       }) 
     } catch (error) {
       console.log(error);
+    }
+  }
+}
+
+export function updateAddres(email,address) {
+  console.log(address,"MAMAHUEVO");
+  return async function(dispatch) {
+    try {
+      const response = await axios.put(`${url}/users/address/${email}`, address);
+      dispatch({
+        type: UPDATE_ADDRESS,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+export function getAllBills() {
+  return async function(dispatch) {
+    try {
+
+      const response = await axios.get(`${url}/bills/`);
+
+
+      return dispatch({
+        type: GET_ALL_BILLS,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+
+export function getAllReviews () {
+  return async function (dispatch){
+    try {
+      const response = await  axios.get(`${url}/reviews`);
+      return dispatch({
+        type: GET_ALL_REVIEWS,
+        payload: response.data,
+      });
+      
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+
+export function postReviews (payload) {
+  return async function (dispatch){
+    console.log("payload: ", payload);
+
+    try {
+      const response = await  axios.post(`${url}/reviews/create`, payload);
+      return dispatch({
+        type: CREATE_NEW_REVIEWS,
+        payload: response.data,
+      });
+      
+    } catch (error) {
+      console.log(error)
     }
   }
 }
