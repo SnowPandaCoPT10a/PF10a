@@ -15,6 +15,7 @@ import {
   SET_STATUS_USER,
   UPDATE_ADDRESS,
   GET_ALL_BILLS,
+  GET_ALL_REVIEWS,
 } from "../actions-types/index";
 
 const initialState = {
@@ -25,6 +26,7 @@ const initialState = {
   user:[],
   currentPage: 1,
   allBills: [],
+  allReviews: [],
 };
 
 function rootReducer(state = initialState, action) {
@@ -124,6 +126,11 @@ function rootReducer(state = initialState, action) {
             ...state,
             allBills:action.payload,
           }
+        case GET_ALL_REVIEWS: 
+        return{
+          ...state,
+          allReviews: action.payload
+        }
       
     default:
       return state;
