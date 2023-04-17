@@ -25,8 +25,19 @@ import Terms from "./components/Footers/Terms/Terms";
 import PrivacyPolicies from  './components/Footers/PrivacyPolicies/PrivacyPolicies'
 import ManageBills from "./components/Manage_Bills/Manage_Bills"
 
+//modo oscuro
+import { createContext } from 'react';
+import ReactSwitch from 'react-switch';
+
+export const ThemeContext = createContext(null);
 
 function App() {
+
+  // modo oscuro
+  const [theme, setTheme] = useState('dark')
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
 
   const navigateToCategory = (category) => {
   navigate(`/${category}`);
@@ -51,12 +62,15 @@ const [oneProducts, setOneProducts] = useState([]);
 
   return (
     <BrowserRouter>
+     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <Header categories={categories} navigateToCategory={navigateToCategory} countProducts={countProducts} />
-      <Routes>
-        <Route exact path='/Shop' element={<Tienda />} />
-      </Routes>
-      <div className='App container'>
+      <div className='App' id={theme}>
+      <div className="switch">
+          <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+        </div>
         <Routes>
+          <Route exact path='/Shop' element={<Tienda />} />
           <Route exact path='/' element={<Home setCountProducts={setCountProducts} setAllProducts={setAllProducts} setPriceTotal={setPriceTotal}/>} />
           <Route exact path='/Home' element={<Home />} />
           <Route exact path="/Members" element={<Members />} />
@@ -81,6 +95,7 @@ const [oneProducts, setOneProducts] = useState([]);
         <Chatbot />
       </div>
       {window.location.pathname !== '/Create' && <Footers />}
+      </ThemeContext.Provider>
     </BrowserRouter>
   );
 }
