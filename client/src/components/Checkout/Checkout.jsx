@@ -44,10 +44,9 @@ function Checkout() {
   const handleSubmit = e => {
     if (disabled) {
       e.preventDefault()
+    
       return;
     }
-
-    dispatch(updateAddres({ email: user.email }, form.shippingAddress1))
     navigate('/OrderConfirmation');
   }
 
@@ -63,6 +62,8 @@ function Checkout() {
   const showError = field => errors[field] ? form.touched[field] : false;
 
   const scrollTop = () => {
+    dispatch(updateAddres( user.email ,{ address: form.shippingAddress1}))
+    
     window.scroll(0, 0)
   }
 

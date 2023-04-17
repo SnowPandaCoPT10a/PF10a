@@ -55,7 +55,7 @@ function OrderConfirmation() {
     
             
             const res = await axios.post(
-               // "http://localhost:3001/bills/create"
+              //  "http://localhost:3001/bills/create"
                'https://pf10a-production.up.railway.app/bills/create'
             , {
             item: endProduct.description,
