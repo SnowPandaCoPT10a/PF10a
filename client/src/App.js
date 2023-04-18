@@ -94,10 +94,12 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path="/ProfileBills" element={<ProfileBills/>}/>
 
         </Routes>
-        <Chatbot />
+         
       </div>
+      <Chatbot/>
       {window.location.pathname !== '/Create' && <Footers />}
       </ThemeContext.Provider>
+      
     </BrowserRouter>
   );
 }
