@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 
 
-const Chatbot = () => {
+const Chat = () => {
 
 	    const theme = {
         background: '#f5f8fb',
@@ -43,4 +43,4 @@ const Chatbot = () => {
 
 
 
-export default Chatbot
+export default Chat

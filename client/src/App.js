@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import Footers from './components/Footers/Footers';
 import Members from "./components/Members/Members";
 import Tienda from './components/tiendaCategorias/Tienda'
-import Chatbot from './components/Chatbot/Chatbot.jsx'
+import Chat from './components/Chatbot/Chatbot.jsx'
 import Cards from "./components/Cards/Cards";
 import Card from "./components/Card/Card";
 import Create from "./components/Create/Create";
@@ -94,8 +94,9 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path="/ProfileBills" element={<ProfileBills/>}/>
 
         </Routes>
-        <Chatbot />
+        
       </div>
+      <Chat/>
       {window.location.pathname !== '/Create' && <Footers />}
       </ThemeContext.Provider>
     </BrowserRouter>
