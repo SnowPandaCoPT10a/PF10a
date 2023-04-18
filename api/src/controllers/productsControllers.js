@@ -167,7 +167,6 @@ async function featuredProducts(req, res) {
 async function modifyProducts(req, res) {
   try {
     let { productsID } = req.params;
-    console.log(productsID);
     let {
       name,
       category,

@@ -7,14 +7,8 @@ try {
   let {name}  = req.query;
   
   const productsName = await Products.findAll({});
-
-  // productsCategory = productsName.filter(product => product.category === categoria)
-  // console.log(productsCategory.length, "PIKACHU");
-
-  console.log(name, "KAKAROTO")
   if (name){
     let products = await productsName.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
-console.log(products, "CACA VAV")
     // products.length ? 
     res.status(200).json(products) 
     // :

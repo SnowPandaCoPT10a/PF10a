@@ -17,13 +17,7 @@ function OrderConfirmation() {
     const dispatch = useDispatch()
     let datoos = useSelector(e => e.users)
     const { user, isAuthenticated } = useAuth0();
-    
-    
-    
-
-    
-    console.log(product)
-    
+        
    let endProduct = null;
 
     if (product.length >= 1) {

@@ -22,9 +22,9 @@ import {
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-//const url = "https://pf10a-production.up.railway.app";
+const url = "https://pf10a-production.up.railway.app";
 
-const url = 'http://localhost:3001'
+// const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -71,7 +71,7 @@ export function getAllProductsName(name) {
         payload: response.data,
       });
     } catch (error) {
-      console.log("CAMOTE", error);
+      console.log(error);
     }
   };
 }
@@ -192,7 +192,6 @@ export function setFeaturedProduct(id){
 }
 export function setPrivilegeUser(id){
   return async function(dispatch){
-    console.log(id, "CTMareeee")
     try{
       const response = await axios.put(`${url}/users/privilege/${id}`)
       dispatch({
@@ -206,7 +205,6 @@ export function setPrivilegeUser(id){
 }
 export function setStatusUser(email){
   return async function(dispatch){
-    console.log(email,"MAMAHUEVO");
     try {
       const response = await axios.put(`${url}/users/disable/${email}`)
       dispatch({
@@ -220,7 +218,6 @@ export function setStatusUser(email){
 }
 
 export function updateAddres(email,address) {
-  console.log(address,"MAMAHUEVO");
   return async function(dispatch) {
     try {
       const response = await axios.put(`${url}/users/address/${email}`, address);

@@ -25,7 +25,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
     perfil = datos.find(obj => obj.email);
 
-    console.log('perfil encontrado:', perfil);
+    console.log('Perfil encontrado:', perfil);
   } catch (error) {
     console.log(error);
   }
@@ -49,10 +49,6 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
       </div>
     );
   }
-
-
-  // console.log(user.email, "PATATA")
-
 
 
   function handleClick() {

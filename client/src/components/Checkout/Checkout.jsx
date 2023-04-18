@@ -13,8 +13,6 @@ function Checkout() {
   const { user, isAuthenticated } = useAuth0();
   const usuarios = useState(user)
   const dispatch = useDispatch();
-  console.log(usuarios)
-  console.log(products)
   const [form, setForm] = useState({
     name: '',
     email: '',
