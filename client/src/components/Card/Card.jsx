@@ -159,10 +159,6 @@ try {
     }));
   }
 
-  // console.log(allProducts, 'holi')
-  // console.log(productInfoId, 'ididid')
-  // console.log(productInfoId.sizes?.map(el => el.size));
-
   //! Reviews
 
   //let reviewName =  review.filter(r => r.name ===   )
