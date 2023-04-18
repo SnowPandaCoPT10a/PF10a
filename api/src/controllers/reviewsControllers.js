@@ -31,7 +31,7 @@ const getReviewsById = async (req, res) => {
 //! POST
 
 const postReviews = async (req, res) => {
-  const { comment, rating, firstName, productName } = req.body;
+  const { comment, rating, firstName, productName, idUser } = req.body;
   //  console.log(comment , "asdfasd")
   try {
     // const approvedBills = await Bills.findAll(
@@ -51,6 +51,7 @@ const postReviews = async (req, res) => {
         firstName: firstName,
         rating: rating,
         productName: productName,
+        userIdUser: idUser
       }
       // {
       //     include: [

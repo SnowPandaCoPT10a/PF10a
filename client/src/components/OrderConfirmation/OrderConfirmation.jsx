@@ -23,7 +23,7 @@ function OrderConfirmation() {
     if (product.length >= 1) {
        // const separator = " | ";
     const descriptions = product.map(e=> e.name)
-    console.log(descriptions)
+    const images = product.map(e=> e.img)
         
         endProduct = {
            // id: product[0].id,
@@ -31,7 +31,8 @@ function OrderConfirmation() {
             //quantity: 1,
             //date: today,
            // price: product.reduce((total, product) => total + product.price, 0),
-           description: descriptions
+           description: descriptions,
+           image: images
            // category_id: product.reduce((acc, cur) => {
             //    return acc + (acc !== '' ? ', ' : '') + cur.category;
             //  }, ''),
@@ -55,6 +56,7 @@ function OrderConfirmation() {
             quantity: product.length,
             date: today,
             price: product.reduce((total, product) => total + product.price, 0),
+            image: endProduct.image,
             idUser: perfil.idUser
             }).then(
                 (res)=> 
