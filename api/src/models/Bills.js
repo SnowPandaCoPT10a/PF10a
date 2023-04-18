@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
     {
       // ID : viene del sistema
       item: {
-        type: DataTypes.STRING,
+        type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
       quantity: {

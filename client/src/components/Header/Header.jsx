@@ -119,9 +119,9 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
           <div className={dropActive ? 'drop-active' : 'drop-null'}>
             {dropActive ?
             <>
-              <a>Administrador</a>
               <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
               <a class="dropdown-item" href="/ProfileBills">Mis Compras</a>
+              <a>¿Mis Reviews?</a>
               <a><Logout /></a>
             </> :
             null}
