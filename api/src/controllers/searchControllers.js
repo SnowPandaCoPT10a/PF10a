@@ -11,8 +11,8 @@ try {
   // productsCategory = productsName.filter(product => product.category === categoria)
   // console.log(productsCategory.length, "PIKACHU");
 
+  console.log(name, "KAKAROTO")
   if (name){
-    console.log(name, "KAKAROTO")
     let products = await productsName.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
 console.log(products, "CACA VAV")
     // products.length ? 
