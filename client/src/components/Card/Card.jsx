@@ -233,7 +233,6 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
     //! REVIEW
     </div>
       
-        
       ) : (
         <p>Loading...</p>
       )}
