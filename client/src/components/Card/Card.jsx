@@ -18,7 +18,7 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
   const [selectedSize, setSelectedSize] = useState('');
   const {loginWithRedirect ,isAuthenticated, user } = useAuth0();
 
-// console.log(review, 'iiiiiiiiiii')
+
   useEffect(() => {
     dispatch(getAllProductsId(id));
     dispatch(getAllReviews())
@@ -135,6 +135,18 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
   // console.log(allProducts, 'holi')
   // console.log(productInfoId, 'ididid')
   // console.log(productInfoId.sizes?.map(el => el.size));
+
+
+//! Reviews
+
+//let reviewName =  review.filter(r => r.name ===   )
+
+
+
+
+
+
+
   return (
     <div>
     <div className="cardComponent">
@@ -205,26 +217,30 @@ export default function Card({ oneProducts, setOneProducts, allProducts, setAllP
           <Link to='/Shop'>
             <button className="buttonback">Back to shop</button>
           </Link>
-        </div>
+        //! REVIEW
+      {
+        review?.map((el) =>{
+          return(
+            <div>
+            <h2>{el.firstName} </h2>
+            <h1>{el.rating} </h1>
+            <h2>{el.comment} </h2>
+            </div>
+          )
+        })
+      }
+
+    //! REVIEW
+    </div>
+      
+        
       ) : (
         <p>Loading...</p>
       )}
          
     </div>
-    <div>
-      {
-        review?.map((el) =>{
-          return(
-            <div>
-            <h1>{el.rating} </h1>
-            <h2>{el.comment} </h2>
-            <h3>{el.firstName} </h3>
-            </div>
-          )
-        })
-      }
-    </div>
- <div><Reviews /></div>
+    
+ 
  </div>
   );
 }
