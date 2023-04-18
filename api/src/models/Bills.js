@@ -54,7 +54,11 @@ module.exports = (sequelize) => {
       active: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-      }, 
+      },
+      image:{
+        type: DataTypes.ARRAY,
+        allowNull: true,
+      }
       
     
     },

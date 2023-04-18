@@ -15,7 +15,7 @@ mercadopago.configure({
 
 //!POST purchase
 const postNewBills = async (req, res) => {
-  let { item, quantity, date, price , idUser} = req.body;
+  let { item, quantity, date, price , image, idUser} = req.body;
   console.log(req.body)
  
     try {
@@ -25,6 +25,7 @@ const postNewBills = async (req, res) => {
         quantity,
         date,
         price,
+        image,
         userIdUser: idUser
       }
       let newbill = await Bills.create(bill);
