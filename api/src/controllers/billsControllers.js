@@ -93,7 +93,7 @@ async function paymentNotification(req, res) {
         }
       )
         .then((numRowsAffected) => {
-        /* if (payment.body.status === "approved") {
+        /*+ if (payment.body.status === "approved") {
           const billsUsers = Bills.findAll({
               where: {
               id_payment: payment.body.id
