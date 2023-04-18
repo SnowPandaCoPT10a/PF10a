@@ -148,7 +148,8 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 			image: "",
 			address: "",
 		})
-		setIsEditing(false);
+		setIsEditing(false); 
+		location.reload();
 	}
 	try {
 		if (isAuthenticated) {
