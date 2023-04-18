@@ -67,7 +67,7 @@ const [oneProducts, setOneProducts] = useState([]);
       <div className='App' id={theme}>
       <div className="switch">
           <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+          <ReactSwitch onChange={toggleTheme} checked={theme === "light"} />
         </div>
         <Routes>
           <Route exact path='/Shop' element={<Tienda />} />
