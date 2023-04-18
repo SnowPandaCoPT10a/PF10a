@@ -33,7 +33,7 @@ const postNewBills = async (req, res) => {
         items: [
           {
             id: newbill.id,
-            title: newbill.item,
+            title: newbill.item.join(", "),
             quantity: 1,
             unit_price: newbill.price,
             description: "SnowPanda",
