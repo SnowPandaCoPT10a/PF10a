@@ -15,7 +15,7 @@ mercadopago.configure({
 
 //!POST purchase
 const postNewBills = async (req, res) => {
-  let { item, quantity, date, price , idUser} = req.body;
+  let { item, quantity, date, price , image, idUser} = req.body;
   console.log(req.body)
  
     try {
@@ -25,6 +25,7 @@ const postNewBills = async (req, res) => {
         quantity,
         date,
         price,
+        image,
         userIdUser: idUser
       }
       let newbill = await Bills.create(bill);
@@ -33,7 +34,7 @@ const postNewBills = async (req, res) => {
         items: [
           {
             id: newbill.id,
-            title: newbill.item,
+            title: newbill.item.join(", "),
             quantity: 1,
             unit_price: newbill.price,
             description: "SnowPanda",
@@ -92,7 +93,7 @@ async function paymentNotification(req, res) {
         }
       )
         .then((numRowsAffected) => {
-        /* if (payment.body.status === "approved") {
+        /*+ if (payment.body.status === "approved") {
           const billsUsers = Bills.findAll({
               where: {
               id_payment: payment.body.id

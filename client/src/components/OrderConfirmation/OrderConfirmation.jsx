@@ -17,28 +17,22 @@ function OrderConfirmation() {
     const dispatch = useDispatch()
     let datoos = useSelector(e => e.users)
     const { user, isAuthenticated } = useAuth0();
-    
-    
-    
-
-    
-    console.log(product)
-    
+        
    let endProduct = null;
 
     if (product.length >= 1) {
-        const separator = " | ";
-    const descriptions = product.reduce((accumulator, currentProduct) => {
-  return accumulator + currentProduct.description + separator;
-}, "");
-
+       // const separator = " | ";
+    const descriptions = product.map(e=> e.name)
+    const images = product.map(e=> e.img)
+        
         endProduct = {
            // id: product[0].id,
             //item: "Products",
             //quantity: 1,
             //date: today,
            // price: product.reduce((total, product) => total + product.price, 0),
-           description: descriptions.slice(0, -separator.length),
+           description: descriptions,
+           image: images
            // category_id: product.reduce((acc, cur) => {
             //    return acc + (acc !== '' ? ', ' : '') + cur.category;
             //  }, ''),
@@ -55,13 +49,14 @@ function OrderConfirmation() {
     
             
             const res = await axios.post(
-              //  "http://localhost:3001/bills/create"
+               // "http://localhost:3001/bills/create"
                'https://pf10a-production.up.railway.app/bills/create'
             , {
             item: endProduct.description,
             quantity: product.length,
             date: today,
             price: product.reduce((total, product) => total + product.price, 0),
+            image: endProduct.image,
             idUser: perfil.idUser
             }).then(
                 (res)=> 

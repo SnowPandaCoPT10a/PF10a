@@ -11,8 +11,8 @@ function Checkout() {
   const searchParams = new URLSearchParams(location.search);
   const products = JSON.parse(searchParams.get('products'));
   const { user, isAuthenticated } = useAuth0();
+  const usuarios = useState(user)
   const dispatch = useDispatch();
-  console.log(products)
   const [form, setForm] = useState({
     name: '',
     email: '',

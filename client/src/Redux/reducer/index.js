@@ -16,6 +16,8 @@ import {
   UPDATE_ADDRESS,
   GET_ALL_BILLS,
   GET_ALL_REVIEWS,
+  UPDATE_STOCK,
+  SET_ACTIVE_BILLS,
 } from "../actions-types/index";
 
 const initialState = {
@@ -27,6 +29,7 @@ const initialState = {
   currentPage: 1,
   allBills: [],
   allReviews: [],
+  reviewButton: 0,
 };
 
 function rootReducer(state = initialState, action) {
@@ -58,6 +61,11 @@ function rootReducer(state = initialState, action) {
         products: [...state.products, action.payload],
         allProducts: [...state.allProducts, action.payload],
       };
+    case SET_ACTIVE_BILLS:
+      return{
+        ...state,
+        reviewButton: action.payload
+      }
     case SET_FILTERED_PRODUCTS:
       return {
         ...state,
@@ -131,7 +139,11 @@ function rootReducer(state = initialState, action) {
           ...state,
           allReviews: action.payload
         }
-      
+        case UPDATE_STOCK:
+          return {
+            ...state,
+            products: action.payload
+          }
     default:
       return state;
   }

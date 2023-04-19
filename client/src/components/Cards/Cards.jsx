@@ -38,14 +38,14 @@ const Cards = () => {
   };
 
   useEffect(() => {
-    dispatch(getAllProducts());
+    //dispatch(getAllProducts());
     dispatch(getAllProducts(article));
   }, [dispatch]);
 
   // <Link to={'/shoes/' + el.id +'/buyNow'}
   return (
     <div>
-      <Pagination
+        <Pagination       
         productPerPage={productPerPage}
         filteredProducts={filteredProducts?.length}
         pagination={pagination}
