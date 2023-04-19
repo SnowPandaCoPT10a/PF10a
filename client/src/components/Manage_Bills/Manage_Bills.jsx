@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate, Link } from 'react-router-dom'
+
 
 import { getAllBills } from "../../Redux/actions/index.js";
 
@@ -14,75 +15,66 @@ const ManageBills = () => {
     dispatch(getAllBills());
   }, [dispatch]);
 
+  console.log(allBills, "LASBILLS")
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
+
   return (
     <div>
       <div>
         <h1>ACA VAN LAS BILL's PERRRRRRRRRRROo</h1>
       </div>
 
-      {allBills ? (
-        allBills.map((e) => (
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action flex-column align-items-start active"
+      {
+        allBills ? allBills.map((e) => <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"  >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{e.user.email}</h5>
+              <h5 class="mb-1">{e.user.first_name} {e.user.last_name}</h5>
+              {Math.floor((new Date() - new Date(e.date)) / 86400000) === 0 ? <small>Today</small> : <small>{Math.floor((new Date() - new Date(e.date)) / 86400000)} days ago</small>}
+            </div>
+            <button className='float-end btn btn-light btn-sm' onClick={() => setDropNewData(e.id)}>VER MAS</button>
+            <div>
+              {e.payment_status ? <small className='btn btn-success btn-sm'> {e.payment_status} </small> : <small className='btn btn-warning btn-sm'>Pending payment</small>}
+              {e.payment_status && e.Shipped === false ? <button onClick={(e) => handleSubmit(e)}>Shipped</button> : null}
+            </div>
+          </a>
+          {dropNewData === e.id ?
+            <div className='bg-secondary text-white p-3'>
+              <button className='float-end btn btn-danger' onClick={() => setDropNewData(0)}>X</button>
+              <h3>Lista de compra</h3>
+              <p id="" class="mb-1">
+                  {e.item && e.image
+    ? e.item.map((element, index) => {
+        return (
+          <div>
+            <Link
+              onClick={() => scrollTop()}
+              to={`/Products/${e.category_name[index]}/${e.product_ID[index]}/Detail`}
+              style={{ color: "red" }}
             >
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{e.user.email}</h5>
-                <h5 class="mb-1">
-                  {e.user.first_name} {e.user.last_name}
-                </h5>
-                {Math.floor((new Date() - new Date(e.date)) / 86400000) ===
-                0 ? (
-                  <small>Today</small>
-                ) : (
-                  <small>
-                    {Math.floor((new Date() - new Date(e.date)) / 86400000)}{" "}
-                    days ago
-                  </small>
-                )}
-              </div>
-              <button
-                className="float-end btn btn-light btn-sm"
-                onClick={() => setDropNewData(e.id)}
-              >
-                VER MAS
-              </button>
-              <div>
-                {e.payment_status ? (
-                  <small className="btn btn-success btn-sm">
-                    {" "}
-                    {e.payment_status}{" "}
-                  </small>
-                ) : (
-                  <small className="btn btn-warning btn-sm">
-                    Pending payment
-                  </small>
-                )}
-                {e.payment_status && e.Shipped === false ? (
-                  <button onClick={(e) => handleSubmit(e)}>Shipped</button>
-                ) : null}
-              </div>
-            </a>
-            {dropNewData === e.id ? (
-              <div className="bg-secondary text-white p-3">
-                <button
-                  className="float-end btn btn-danger"
-                  onClick={() => setDropNewData(0)}
-                >
-                  X
-                </button>
-                <h3>Lista de compra</h3>
-                <p>{e.item}</p>
-              </div>
-            ) : null}
-            <hr />
-            {/* //!Borraar esto y meterle un padding  */}
+             {element}
+             <img src={e.image[index]} style={{ width: "5%" }} />
+            </Link>
           </div>
-        ))
-      ) : (
-        <h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>
-      )}
+        );
+      })
+    : null}
+              </p>
+              
+
+
+            </div>
+            :
+            null
+          }
+          <hr />{/* //!Borraar esto y meterle un padding  */}
+        </div>)
+
+
+          : (<h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>)
+      }
     </div>
   );
 };

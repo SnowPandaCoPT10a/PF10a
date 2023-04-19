@@ -5,10 +5,13 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { postReviews } from "../../Redux/actions/index";
 
 const Reviews = ({ item }) => {
+  console.log(item)
   const [input, setInput] = useState({
     rating: "",
     firstName: "",
     comment: "",
+    productName:  item ,
+
   });
   const dispatch = useDispatch();
 
@@ -24,13 +27,13 @@ const Reviews = ({ item }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(postReviews({ input }));
+    dispatch(postReviews( input ));
     alert("Producto creado correctamente");
     setInput({
       rating: "",
       firstName: "",
       comment: "",
-      productName: { item },
+      productName:  item ,
     });
   };
 

@@ -17,8 +17,9 @@ import {
   GET_ALL_BILLS,
   CREATE_NEW_REVIEWS,
   GET_ALL_REVIEWS,
-  SET_ACTIVE_BILLS,
   UPDATE_STOCK,
+  SET_ACTIVE_BILLS
+
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -152,6 +153,34 @@ export function searchUser(email) {
 }
 export function getAllUsers() {
   return async function(dispatch) {
+    try{
+      const response = await axios.get(`${url}/users`)
+    dispatch({
+      type: GET_ALL_USERS,
+      payload: response.data
+    })
+    }catch(error){
+      console.log(error);
+    }
+}
+}
+export function setCurrentPage(payload){
+  return {
+    type: SET_CURRENT_PAGE,
+    payload
+  }
+}
+
+export function setReviewButton(payload){
+  return {
+    type: SET_ACTIVE_BILLS,
+    payload
+  }
+}
+export function setBannedProduct(id){
+
+ 
+  return async function(dispatch){
     try {
       const response = await axios.get(`${url}/users`);
       dispatch({
@@ -160,33 +189,6 @@ export function getAllUsers() {
       });
     } catch (error) {
       console.log(error);
-    }
-  };
-}
-export function setCurrentPage(payload) {
-  return {
-    type: SET_CURRENT_PAGE,
-    payload,
-  };
-}
-
-export function setReviewButton(payload) {
-  return {
-    type: SET_ACTIVE_BILLS,
-    payload,
-  };
-}
-
-export function setBannedProduct(id) {
-  return async function(dispatch) {
-    try {
-      const response = await axios.put(`${url}/products/disable/${id}`);
-      dispatch({
-        type: SET_BANNED_PRODUCT,
-        payload: response.data,
-      });
-    } catch (err) {
-      console.log(err);
     }
   };
 }
@@ -277,10 +279,12 @@ export function getAllReviews() {
   };
 }
 
-export function postReviews(payload) {
-  return async function(dispatch) {
+export function postReviews (comment, rating, firstName, productName) {
+  console.log(comment, rating, firstName, productName)
+  return async function (dispatch){
+
     try {
-      const response = await axios.post(`${url}/reviews/create`, payload);
+      const response = await  axios.post(`${url}/reviews/create`, comment, rating, firstName, productName);
       return dispatch({
         type: CREATE_NEW_REVIEWS,
         payload: response.data,
