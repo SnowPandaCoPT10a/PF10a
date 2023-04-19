@@ -132,77 +132,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 		setEditFormErrors(errors);
 		return;
 		}*/
-		dispatch(updateUser({ email: user.email }, editFormState))
-		//dispatch(searchUser({ email: user.email }))
-		dispatch(getAllUsers())
-		
-		// Agrega aquí la lógica para actualizar la información en tu base de datos
-		setEditFormState({
-			first_name: '',
-			last_name: '',
-			email: user.email,
-			nationality: "",
-			date_birth: "",
-			mobile: "",
-			image: "",
-			
-		})
-		setIsEditing(false);
-		Swal.fire({
-			title: "¡Updated user!",
-			icon: "success",
-			}); 
-		
-	}
-	try {
-		if (isAuthenticated) {
-				const userPerfil = datoUsuario?.find((e) => e.email === user.email);
-			
-			if (isEditing) {
-				return (
-					<form className='profile-form' onSubmit={handleEditSubmit}>
-						<br />
-						<img className='imgProfile' src={userPerfil.image ? userPerfil.image : `${Logo}`} alt='no hay imagen' />
-						<h1 className='h1profile'>Name: {userPerfil.first_name}</h1>
-						<h1 className='h1profile'>Last Name: {userPerfil.last_name}</h1>
-						<h1 className='h1profile'>Email: {userPerfil.email}</h1>
-						<label className='profile-label'>
-							<input className='inputprofile' type="text" name="first_name" placeholder="...Name" value={editFormState.first_name} onChange={handleInputChange} />
-						</label>
-						<label className='profile-label'>
-							<input className='inputprofile'  type="text" name="last_name" placeholder="...Last name" value={editFormState.last_name} onChange={handleInputChange} />
-						</label>
-						<label className='profile-label'>			
-								
-								<input className='inputprofile' type="text" name="nationality" placeholder="...Nationality" value={editFormState.nationality} onChange={handleInputChange} />
-							</label>
-						
-							<label className='profile-label'>
-							
-							<input className='inputprofile' type="text" name="mobile" placeholder="...Mobile" value={editFormState.mobile} onChange={handleInputChange} />
-						</label>
-						
-						<label>
-							
-							<input className='inputprofile' type="date" name="date_birth" value={editFormState.date_birth} onChange={handleInputChange} />
-						</label>
-						<label >						
-							<input className='inputprofile' type="text" name="image" placeholder="...Profile Picture" value={editFormState.image} onChange={handleInputChange} />
-						</label>
-						<button className='buttoneditar' type="submit" onClick={(e) => handleEditSubmit(e)}>Guardar cambios</button>
-					</form>
-				)
-			}
-			return (
-				<div className='profilecont'>
-					<img className='imgProfile' src={userPerfil.image ? userPerfil.image : `${Logo}`} alt='no hay imagen' />
-					<h1 className='h1profile'>Name:  {userPerfil.first_name}</h1>
-					<h1 className='h1profile'>Last Name:  {userPerfil.last_name}</h1>
-					<h1 className='h1profile'>Birthday:  {userPerfil.date_birth}</h1>
-					<h1 className='h1profile'>Nationality:  {userPerfil.nationality}</h1>
-					<h1 className='h1profile'>Mobile Phone:  {userPerfil.mobile}</h1>
-					<h1 className='h1profile'>Email:  {userPerfil.email}</h1>
-					
+    dispatch(updateUser({ email: user.email }, editFormState));
+    //dispatch(searchUser({ email: user.email }))
+    dispatch(getAllUsers());
 
     // Agrega aquí la lógica para actualizar la información en tu base de datos
     setEditFormState({
@@ -223,7 +155,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
   };
   try {
     if (isAuthenticated) {
-      const perfil = datoos.find((obj) => obj.email === user.email);
+      const perfil = datoUsuario.find((obj) => obj.email === user.email);
       if (isEditing) {
         return (
           <form className="profile-form" onSubmit={handleEditSubmit}>

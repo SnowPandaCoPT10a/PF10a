@@ -192,33 +192,6 @@ export function setBannedProduct(id){
     }
   };
 }
-export function setCurrentPage(payload) {
-  return {
-    type: SET_CURRENT_PAGE,
-    payload,
-  };
-}
-
-export function setReviewButton(payload) {
-  return {
-    type: SET_ACTIVE_BILLS,
-    payload,
-  };
-}
-
-export function setBannedProduct(id) {
-  return async function(dispatch) {
-    try {
-      const response = await axios.put(`${url}/products/disable/${id}`);
-      dispatch({
-        type: SET_BANNED_PRODUCT,
-        payload: response.data,
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
-}
 
 export function setFeaturedProduct(id) {
   return async function(dispatch) {
