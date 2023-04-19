@@ -43,7 +43,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: black;
+    
   } 
 
   .hamburger {
@@ -57,13 +57,17 @@
     border: none;
     cursor: pointer;
   }
+
+  .hamburger:hover .hamburger-line {
+    background-color: #21ad1c;
+  }
   
   .hamburger-line {
     display: block;
     width: 30px;
     height: 2px;
     margin: 5px;
-    background-color: black;
+    background-color: #287094;
     transition: all 0.3s ease-in-out;
   }
   
@@ -90,6 +94,10 @@
     }
     .paginat{
       margin-top: 10px;
+    }
+
+    nav {     
+      padding: 35px;
     }
   }
 
