@@ -8,11 +8,7 @@
 		-ms-flex-pack: center;
 			justify-content: center;
 }
-  
-  .col{
-	cursor: pointer;
-  }
-  
+ 
   .containers{
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;

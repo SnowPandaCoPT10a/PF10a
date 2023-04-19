@@ -5,13 +5,11 @@ import { useNavigate, Link } from 'react-router-dom'
 
 import { getAllBills } from "../../Redux/actions/index.js";
 
-
 const ManageBills = () => {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const allBills = useSelector((e) => e.allBills);
-  const [dropNewData, setDropNewData] = useState(0)
-
+  const [dropNewData, setDropNewData] = useState(0);
 
   useEffect(() => {
     dispatch(getAllBills());
@@ -23,7 +21,6 @@ const ManageBills = () => {
   }
 
   return (
-
     <div>
       <div>
         <h1>ACA VAN LAS BILL's PERRRRRRRRRRROo</h1>
@@ -79,11 +76,7 @@ const ManageBills = () => {
           : (<h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>)
       }
     </div>
-  )
-}
-
+  );
+};
 
 export default ManageBills;
-
-
-

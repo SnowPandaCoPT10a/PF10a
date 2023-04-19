@@ -14,7 +14,6 @@ const ManageBills = () => {
 
   // const [reviewButton, setReviewButton] = useState(0);
   const reviewButton = useSelector((e) => e.reviewButton);
-  console.log(allBills, " dameeee la info");
 
   try {
     if (isAuthenticated) {
@@ -24,10 +23,8 @@ const ManageBills = () => {
       );
 
       var userBills = profileBills?.map((e) => e.item);
-      console.log(userBills, "ITEEEMMS");
     }
     let userEmail = user.email;
-    console.log(userEmail, "useeeeeeeeeeeeeeeeeerr");
   } catch (error) {
     console.log(error);
   }

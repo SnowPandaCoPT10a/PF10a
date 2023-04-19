@@ -16,18 +16,7 @@ const Reviews = ({ item }) => {
   const dispatch = useDispatch();
 
   const { user, isAuthenticated } = useAuth0();
-  // console.log(user, 'ajjajsajasjasj')
-  // const handleRatingChange = (e) => {
-  //     setInput({ ...input, rating: e.target.value });
-  // };
 
-  // const handleCommentChange = (e) => {
-  //     setInput({ ...input, comment: e.target.value });
-  // };
-  // const handleFirstNameChange = (e) => {
-  //     setInput({ ...input, firstName: e.target.value });
-  // };
-  
   function handleChange(e) {
     console.log("input", input);
     setInput({
