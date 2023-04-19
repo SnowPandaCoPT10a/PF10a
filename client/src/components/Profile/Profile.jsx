@@ -8,26 +8,29 @@ import { getAllUsers } from "../../Redux/actions/index";
 import Swal from "sweetalert2";
 
 const Profile = () => {
-  const { user, isAuthenticated } = useAuth0();
-  const dispatch = useDispatch();
-  const datoos = useSelector((e) => e.user);
-  const [editFormState, setEditFormState] = useState({
-    first_name: "",
-    last_name: "",
-    nationality: "",
-    date_birth: "",
-    mobile: "",
-    image: "",
-    address: "",
-  });
-  const [editFormErrors, setEditFormErrors] = useState({
-    first_name: "",
-    last_name: "",
-    nationality: "",
-    date_birth: "",
-    mobile: "",
-    image: "",
-  });
+	const { user, isAuthenticated } = useAuth0();
+	const dispatch = useDispatch();
+	var datoUsuario = useSelector(e => e.user)
+	const [editFormState, setEditFormState] = useState({
+		first_name: '',
+		last_name: '',
+		nationality: "",
+		date_birth: "",
+		mobile: "",
+		image: "",
+		address: "",
+		
+	});
+	const [editFormErrors,setEditFormErrors ] = useState({
+		first_name: '',
+		last_name: '',
+		nationality: "",
+		date_birth: "",
+		mobile: "",
+		image: "",
+		address: "",
+		
+	});
 
   const [isEditing, setIsEditing] = useState(false);
 
@@ -152,7 +155,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
   };
   try {
     if (isAuthenticated) {
-      const perfil = datoos.find((obj) => obj.email === user.email);
+      const perfil = datoUsuario.find((obj) => obj.email === user.email);
       if (isEditing) {
         return (
           <form className="profile-form" onSubmit={handleEditSubmit}>

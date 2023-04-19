@@ -19,51 +19,58 @@ function OrderConfirmation() {
 
   let endProduct = null;
 
-  if (product.length >= 1) {
-    // const separator = " | ";
-    const descriptions = product.map((e) => e.name);
-    const images = product.map((e) => e.img);
-
-    endProduct = {
-      // id: product[0].id,
-      //item: "Products",
-      //quantity: 1,
-      //date: today,
-      // price: product.reduce((total, product) => total + product.price, 0),
-      description: descriptions,
-      image: images,
-      // category_id: product.reduce((acc, cur) => {
-      //    return acc + (acc !== '' ? ', ' : '') + cur.category;
-      //  }, ''),
-      // quantity: 1,
-      //picture_url: "https://res.cloudinary.com/dberwyxyq/image/upload/v1679686192/SnowPandaCO/FrontEnd/sin_fondo_2085_x_1251_px_am8fvp.png",
-      // idUser:1
-    };
-  }
-
-  const handleCreateBill = async () => {
-    try {
-      const users = dispatch(getAllUsers());
-      const perfil = datoos.find((obj) => obj.email === user.email);
-
-      const res = await axios
-        .post(
-          // "http://localhost:3001/bills/create"
-          "https://pf10a-production.up.railway.app/bills/create",
-          {
+    if (product.length >= 1) {
+       // const separator = " | ";
+    const descriptions = product.map(e=> e.name)
+    const images = product.map(e=> e.img)
+    const productId = product.map(e=> e.productsID)
+    const categoryName = product.map(e=> e.category)
+        
+        endProduct = {
+           // id: product[0].id,
+            //item: "Products",
+            //quantity: 1,
+            //date: today,
+           // price: product.reduce((total, product) => total + product.price, 0),
+           description: descriptions,
+           image: images,
+           productID : productId,
+           category_Name: categoryName
+           // category_id: product.reduce((acc, cur) => {
+            //    return acc + (acc !== '' ? ', ' : '') + cur.category;
+            //  }, ''),
+           // quantity: 1,
+            //picture_url: "https://res.cloudinary.com/dberwyxyq/image/upload/v1679686192/SnowPandaCO/FrontEnd/sin_fondo_2085_x_1251_px_am8fvp.png",
+           // idUser:1
+        }
+    }
+    
+    const handleCreateBill = async () => {
+        try{
+            const users = dispatch(getAllUsers())
+            const perfil = datoos.find(obj => obj.email === user.email);
+    
+            
+            const res = await axios.post(
+                //"http://localhost:3001/bills/create"
+               'https://pf10a-production.up.railway.app/bills/create'
+            , {
             item: endProduct.description,
             quantity: product.length,
             date: today,
             price: product.reduce((total, product) => total + product.price, 0),
             image: endProduct.image,
-            idUser: perfil.idUser,
-          }
-        )
-        .then((res) => (window.location.href = res.data));
-    } catch (err) {
-      console.log(err);
-    }
-  };
+            product_ID: endProduct.productID,
+            category_name: endProduct.category_Name,
+            idUser: perfil.idUser
+            }).then(
+                (res)=> 
+                (window.location.href = res.data))
+           
+            }catch(err){console.log(err)}
+    
+        }
+        
 
   return (
     <div className="orderConfir">
