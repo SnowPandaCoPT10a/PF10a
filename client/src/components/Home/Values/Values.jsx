@@ -3,7 +3,7 @@ import './Values.css';
 
 const Values =()=>{
     return (
-        <div className='wrapper'>
+        <div id="OurValues" className='wrapper'>
             <h1 className='text-center mt-5 titulos-color'>OUR VALUES</h1>
             <div className='cols'>
                 {/* valor 1 */}
