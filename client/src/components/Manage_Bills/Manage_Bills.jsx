@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 
 import { getAllBills } from "../../Redux/actions/index.js";
@@ -18,6 +18,9 @@ const ManageBills = () => {
   }, [dispatch]);
 
   console.log(allBills, "LASBILLS")
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
 
   return (
 
@@ -44,7 +47,26 @@ const ManageBills = () => {
             <div className='bg-secondary text-white p-3'>
               <button className='float-end btn btn-danger' onClick={() => setDropNewData(0)}>X</button>
               <h3>Lista de compra</h3>
-              <p>{e.item}</p>
+              <p id="" class="mb-1">
+                  {e.item && e.image
+    ? e.item.map((element, index) => {
+        return (
+          <div>
+            <Link
+              onClick={() => scrollTop()}
+              to={`/Products/${e.category_name[index]}/${e.product_ID[index]}/Detail`}
+              style={{ color: "red" }}
+            >
+             {element}
+             <img src={e.image[index]} style={{ width: "5%" }} />
+            </Link>
+          </div>
+        );
+      })
+    : null}
+              </p>
+              
+
 
             </div>
             :

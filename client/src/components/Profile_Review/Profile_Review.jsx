@@ -64,7 +64,7 @@ const profileReview = () => {
                   {reviewButton === index ? (
                     <div>
                       <div>
-                        <Reviews item={e.item} />
+                        <Reviews item={e} />
                       </div>
                       <button
                         className="float-end btn btn-danger"

@@ -24,9 +24,9 @@ import {
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-//const url = "https://pf10a-production.up.railway.app";
+const url = "https://pf10a-production.up.railway.app";
 
- const url = 'http://localhost:3001'
+ //const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -272,12 +272,12 @@ export function getAllReviews () {
   }
 }
 
-export function postReviews (payload) {
+export function postReviews (comment, rating, firstName, productName) {
+  console.log(comment, rating, firstName, productName)
   return async function (dispatch){
-    console.log("payload: ", payload);
 
     try {
-      const response = await  axios.post(`${url}/reviews/create`, payload);
+      const response = await  axios.post(`${url}/reviews/create`, comment, rating, firstName, productName);
       return dispatch({
         type: CREATE_NEW_REVIEWS,
         payload: response.data,

@@ -69,7 +69,7 @@ const ManageBills = () => {
                   {e?.payment_status ? (
                     <div>
                       <Link to={'/ProfileReview'} onClick={() => scrollTop()}>
-        <button>Crear Reviews</button>
+        <button>Create Reviews</button>
       </Link>
                     </div>
                   ) : null}
@@ -78,8 +78,14 @@ const ManageBills = () => {
     ? e.item.map((element, index) => {
         return (
           <div>
-            {element}
-            <img src={e.image[index]} style={{ width: "5%" }} />
+            <Link
+              onClick={() => scrollTop()}
+              to={`/Products/${e.category_name[index]}/${e.product_ID[index]}/Detail`}
+              style={{ color: "red" }}
+            >
+             {element}
+             <img src={e.image[index]} style={{ width: "5%" }} />
+            </Link>
           </div>
         );
       })
@@ -96,6 +102,12 @@ const ManageBills = () => {
                   )}
                   {e?.payment_status && e?.Shipped === false ? (
                     <button onClick={(e) => handleSubmit(e)}>Shipped</button>
+                  ) : null}
+                </div>
+                <div>
+                  {/* //!ESTO HAY QUE EDIITARLO PARA QUE DESPUES SE TENGA QUE CAMBIAR A CANCELADO */}
+                  {e?.price ? (
+                    <small> Total Price $ {e?.price} </small>
                   ) : null}
                 </div>
               </a>
