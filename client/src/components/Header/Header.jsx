@@ -114,10 +114,12 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
           <div className={dropActive ? 'drop-active' : 'drop-null'}>
             {dropActive ?
+
+
               <>
                 <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
                 <a class="dropdown-item" href="/ProfileBills">Mis Compras</a>
-                <a>¿Mis Reviews?</a>
+                <a class="dropdown-item" href="/ProfileReview">Mis Reviews</a>
                 <a><Logout /></a>
                 <div class="">
                   <button class="button-AdminManage dropdown-toggle ps-0" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
@@ -132,6 +134,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
                 </div>
               </> :
               null}
+ 
           </div>
         </div>
       }
