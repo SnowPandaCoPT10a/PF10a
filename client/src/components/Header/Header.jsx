@@ -134,7 +134,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
                 </div>
               </> :
               null}
-
+ 
           </div>
         </div>
       }
