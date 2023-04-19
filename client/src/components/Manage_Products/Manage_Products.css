@@ -207,6 +207,7 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
+  color: #fff !important;
 }
 
 .-btnbuy { 
@@ -271,5 +272,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  }
+
+  @media (max-width: 550px) {
+
+    .cart_manager {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    ._cardCont {
+      display: flex;
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    } 
+    
   }
 
