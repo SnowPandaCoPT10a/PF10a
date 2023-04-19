@@ -9,8 +9,10 @@ const Categorias = ({ scroll }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="marketing" id="categoria">
-      <h2 className="text-center mt-5 titulos-color">CATEGORIES</h2>
+
+    <div className="marketing pt-5" id='categoria'>
+      <h2 className='text-center mt-5 titulos-color'>CATEGORIES</h2>
+
       <div className=" row text-center d-flex justify-content-center lign-items-center contianer">
         {data.map((e) => (
           <Link

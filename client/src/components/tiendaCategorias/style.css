@@ -10,12 +10,15 @@
   padding: 0;
 }
 
-.button {
+
+
+.botonProducto{
+
   text-decoration: none;
   display: inline-block;
   margin: 25px;
   padding: 20px 70px;
-  border: 2px solid #fff;
+  border: 2px solid #287094;
   border-radius: 5px;
   color: #fff;
   font-weight: bold;
@@ -24,7 +27,8 @@
   transition: 0.5s;
 }
 
-.button:hover {
+.botonProducto:hover{
+
   background-color: #023246;
   border: 2px solid #023246;
 }
