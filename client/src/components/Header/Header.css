@@ -19,8 +19,21 @@
   width: 5rem;
 }
 
+.button-AdminManage{
+  outline: hidden;
+  border: none;
+  background-color: transparent;
+  padding-top: 9px;
+  color: white;
+}
+
+.button-AdminManage:hover{
+  color: #023246 !important;
+}
+
+
 .drop-null{
-  background-color: #eee; 
+  background-color: #7d949f; 
   /* clip-path: polygon(43% 10%, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0 0, 27% 0); */
   height: 0;
   display: flex;
@@ -31,20 +44,20 @@
   text-align: start;
 }
 .drop-active{
-  background-color: #eee; 
+  background-color: #7d949f; 
   /* clip-path: polygon(43% 10%, 100% 10%, 100% 60%, 100% 100%, 0 100%, 0 0, 27% 0); */
   padding: 15px 30px;
   border-radius: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  color: #999;
+  color: #fff;
   transition: all 0.1s ease-in-out;
   text-align: start;
 }
 .drop-active a{
   cursor: pointer;
-  color: #999;
+  color: #fff;
   margin-top: 9px;
 }
 
@@ -62,6 +75,7 @@
   background-color: transparent;
   text-decoration: none;
   padding: 10px;
+  border: none;
   border-radius: 5px;
   color: white;
   text-decoration: none;
