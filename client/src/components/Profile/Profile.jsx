@@ -132,7 +132,6 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
     dispatch(updateUser({ email: user.email }, editFormState));
     //dispatch(searchUser({ email: user.email }))
     dispatch(getAllUsers());
-
     // Agrega aquí la lógica para actualizar la información en tu base de datos
     setEditFormState({
       first_name: "",
@@ -149,10 +148,13 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
       icon: "success",
     });
     setIsEditing(false);
+    location.reload();
   };
   try {
     if (isAuthenticated) {
       const perfil = datoos.find((obj) => obj.email === user.email);
+      console.log(perfil)
+      console.log(datoos)
       if (isEditing) {
         return (
           <form className="profile-form" onSubmit={handleEditSubmit}>
