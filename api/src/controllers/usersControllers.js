@@ -38,7 +38,7 @@ async function postNewUser(req, res) {
             let newUser = await Users.create({ first_name: family_name, last_name: given_name ,email: email, image: picture});
 
             // configurar transporter para enviar correo electrónico
-            let transporter = nodemailer.createTransport({
+          /*  let transporter = nodemailer.createTransport({
                 host: "smtp.gmail.com",
                 port: 465,
                 secure: true,
@@ -65,7 +65,7 @@ async function postNewUser(req, res) {
                     console.log("Correo electrónico enviado: " + info.response);
                     res.status(201).send({ message: "User was created and email was sent" });
                 }
-            });
+            });*/
 
         }
     } catch (err) {
@@ -106,7 +106,7 @@ cloudinary.config({
  async function ModifyUser(req, res) {
     try {
        let { email } = req.params;
-       let { first_name, last_name, nationality, date_birth, mobile } = req.body;
+       let { first_name, last_name, nationality, date_birth, mobile, address} = req.body;
        const user = await Users.findOne({
           where: {
              email: email
@@ -142,10 +142,11 @@ cloudinary.config({
           date_birth: date_birth,
           mobile: mobile,
           image: imageUrl,
+          address: address
        });
 
        // configurar transporter para enviar correo electrónico
-       let transporter = nodemailer.createTransport({
+      /* let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
         secure: true,
@@ -172,7 +173,7 @@ cloudinary.config({
             console.log("Correo electrónico enviado: " + info.response);
             res.status(201).send({ message: "User was update and email was sent" });
         }
-    });
+    });*/
 
  
        // Responder con el usuario actualizado

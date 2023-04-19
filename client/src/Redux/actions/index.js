@@ -22,9 +22,9 @@ import {
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-const url = "https://pf10a-production.up.railway.app";
+//const url = "https://pf10a-production.up.railway.app";
 
- //const url = 'http://localhost:3001'
+ const url = 'http://localhost:3001'
 
 
 export function getAllProducts(categoria) {
@@ -113,10 +113,10 @@ export function createNewUser(given_name ,family_name,email,picture) {
     }
   };
 }
-export function updateUser(email, first_name, last_name, nationality, date_birth, mobile) {
+export function updateUser(email, first_name, last_name, nationality, date_birth, mobile, address) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile);
+      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile, address);
       dispatch({
         type: UPDATE_USER,
         payload: response.data,
