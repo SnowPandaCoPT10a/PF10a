@@ -1,17 +1,19 @@
-.tiendaCont{
-    top: 0;      
-    margin: 0;
-    padding: 0;
+.tiendaCont {
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.carousel-contain{
+.carousel-contain {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 
+
 .botonProducto{
+
   text-decoration: none;
   display: inline-block;
   margin: 25px;
@@ -22,10 +24,11 @@
   font-weight: bold;
   text-transform: uppercase;
   background-color: #287094;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .botonProducto:hover{
+
   background-color: #023246;
   border: 2px solid #023246;
 }
