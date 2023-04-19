@@ -15,14 +15,14 @@ const Marcas = ({ scroll }) => {
   return (
     <div className="container" id='marcas'>
       <h2 className="text-center mt-5 titulos-color">NUESTRAS MARCAS</h2>
-      <div className="d-block row row-cols-4 d-flex justify-content-center lign-items-center">
+      <div className=" row row-cols-1 row-cols-sm-2 row-cols-mb-4">
         {marcas?.map(e => 
           <Link
             onClick={() => {
               scroll()
               dispatch(setCurrentPage(1))
             }}
-            to={`/Products/${e.name}`} key={e.name} className="card">
+            to={`/Products/${e.name}`} key={e.name} className="col cardBrand">
             <img className="card_image" src={e.img} alt="" />
              {/* <h2 className="mt-4 fw-normal text titulos-color">{e.name}</h2> */}
           </Link>
