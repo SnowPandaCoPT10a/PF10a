@@ -26,16 +26,11 @@ export default function Card({
   const [selectedSize, setSelectedSize] = useState("");
   const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
-console.log( review, 'oooooooooooooooooooo')
-try {
-  var productReview = review.map((e) => e);
-
-} catch (error) {
-  console.log(error)
-}
-
-
-
+  try {
+    var productReview = review.map((e) => e);
+  } catch (error) {
+    console.log(error);
+  }
 
   useEffect(() => {
     dispatch(getAllProductsId(id));
@@ -69,8 +64,6 @@ try {
         (el) => el.productsID === product.productsID && el.size === product.size
       )
     ) {
-      
-
       const products = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
@@ -125,8 +118,6 @@ try {
           ...el,
           stock: el.size === product.size ? Number(el.stock - 1) : null,
         })),
-        
-
       };
       if (
         !newProduct.sizes &&
@@ -168,106 +159,109 @@ try {
 
   return (
     <div>
-      
       <div className="cardComponent">
         {productInfoId ? (
           <div>
-          <div className="containerId">
-            <div className="imgBx">
-              <img
-                className="imgId"
-                src={productInfoId.img}
-                alt="Img not found"
-              />
-            </div>
-            <div className="details">
-              <div className="contentId">
-                <h2 className="pName">
-                  {productInfoId.name}
-                  <br />
-                </h2>
-                <br></br>
-                <p className="pIds">Brand: {productInfoId.brand?.brandName}</p>
-                <p className="pIds">Best for: {productInfoId.activity}</p>
-                <p className="pIds">
-                  Description: {productInfoId?.description}
-                </p>
-                <p className="pIds">Made of: {productInfoId.material}</p>
-                <p className="pIds">Select size: </p>
-
-                {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
-
-                {/* <p className='pIds'>*/}
-                <div className="size-container">
-                  {(productInfoId.numbersizes &&
-                    productInfoId.numbersizes?.map((el) => (
-                      <button
-                        className="buttonsize"
-                        value={el.size}
-                        onClick={() =>
-                          handleOnAddProduct({
-                            ...productInfoId,
-                            size: el.size,
-                          })
-                        }
-                        key={el.size}
-                      >
-                        {el.size}
-                      </button>
-                    ))) ||
-                    productInfoId.sizes?.map((el) => (
-                      <button
-                        className="buttonsize"
-                        value={el.size}
-                        onClick={() =>
-                          handleOnAddProduct({
-                            ...productInfoId,
-                            size: el.size,
-                          })
-                        }
-                        key={el.size}
-                      >
-                        {el.size}
-                      </button>
-                    )) ||
-                    productInfoId.boardsizes?.map((el) => (
-                      <button
-                        className="buttonsize"
-                        value={el.size}
-                        onClick={() =>
-                          handleOnAddProduct({
-                            ...productInfoId,
-                            size: el.size,
-                          })
-                        }
-                        key={el.size}
-                      >
-                        {el.size}
-                      </button>
-                    ))}
-                </div>
-                <div className="cardprice">
-                  <h3 className="h3Name">${productInfoId.price}</h3>
-                </div>
-                {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
+            <div className="containerId">
+              <div className="imgBx">
+                <img
+                  className="imgId"
+                  src={productInfoId.img}
+                  alt="Img not found"
+                />
               </div>
-            </div>
-            <Link to="/Shop">
-              <button className="buttonback">Back to shop</button>
-            </Link>
+              <div className="details">
+                <div className="contentId">
+                  <h2 className="pName">
+                    {productInfoId.name}
+                    <br />
+                  </h2>
+                  <br></br>
+                  <p className="pIds">
+                    Brand: {productInfoId.brand?.brandName}
+                  </p>
+                  <p className="pIds">Best for: {productInfoId.activity}</p>
+                  <p className="pIds">
+                    Description: {productInfoId?.description}
+                  </p>
+                  <p className="pIds">Made of: {productInfoId.material}</p>
+                  <p className="pIds">Select size: </p>
+
+                  {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
+
+                  {/* <p className='pIds'>*/}
+                  <div className="size-container">
+                    {(productInfoId.numbersizes &&
+                      productInfoId.numbersizes?.map((el) => (
+                        <button
+                          className="buttonsize"
+                          value={el.size}
+                          onClick={() =>
+                            handleOnAddProduct({
+                              ...productInfoId,
+                              size: el.size,
+                            })
+                          }
+                          key={el.size}
+                        >
+                          {el.size}
+                        </button>
+                      ))) ||
+                      productInfoId.sizes?.map((el) => (
+                        <button
+                          className="buttonsize"
+                          value={el.size}
+                          onClick={() =>
+                            handleOnAddProduct({
+                              ...productInfoId,
+                              size: el.size,
+                            })
+                          }
+                          key={el.size}
+                        >
+                          {el.size}
+                        </button>
+                      )) ||
+                      productInfoId.boardsizes?.map((el) => (
+                        <button
+                          className="buttonsize"
+                          value={el.size}
+                          onClick={() =>
+                            handleOnAddProduct({
+                              ...productInfoId,
+                              size: el.size,
+                            })
+                          }
+                          key={el.size}
+                        >
+                          {el.size}
+                        </button>
+                      ))}
+                  </div>
+                  <div className="cardprice">
+                    <h3 className="h3Name">${productInfoId.price}</h3>
+                  </div>
+                  {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
+                </div>
+              </div>
+              <Link to="/Shop">
+                <button className="buttonback">Back to shop</button>
+              </Link>
             </div>
             {/* //! REVIEW */}
             <div>
-            {productReview?.map((el) => el.productName === productInfoId.name && el.idReviews ? 
-            ( <div class="card border-dark mb-3">
-             <div class="card-header">{el.firstName}</div>
-             <div class="card-body text-dark">
-               <h5 class="card-title">{el.rating}</h5>
-               <p class="card-text">{el.comment}</p>
-             </div>
-             </div>
-             ): null)}
-            {/* //! REVIEW */}
+              {productReview?.map((el) =>
+                el.productName === productInfoId.name && el.idReviews ? (
+                  <div class="card border-dark mb-3">
+                    <div class="card-header">{el.firstName}</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">{el.rating}</h5>
+                      <p class="card-text">{el.comment}</p>
+                    </div>
+                  </div>
+                ) : null
+              )}
+              {/* //! REVIEW */}
             </div>
           </div>
         ) : (
@@ -278,12 +272,12 @@ try {
   );
 }
 
-
-
-{/* <div class="card border-dark mb-3">
+{
+  /* <div class="card border-dark mb-3">
 <div class="card-header">{el.firstName}</div>
 <div class="card-body text-dark">
   <h5 class="card-title">{el.rating}</h5>
   <p class="card-text">{el.comment}</p>
 </div>
-</div> */}
+</div> */
+}
