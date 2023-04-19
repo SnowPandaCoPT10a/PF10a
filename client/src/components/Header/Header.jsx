@@ -9,8 +9,11 @@ import Logout from '../Logout/Logout.jsx'
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllUsers } from '../../Redux/actions/index'
+import { createContext } from 'react';
+import { BsFillCircleFill, BsFillMoonFill } from "react-icons/bs";
+import ReactSwitch from 'react-switch';
 
-const Header = ({ navigateToCategory, categories, countProducts }) => {
+const Header = ({ navigateToCategory, categories, countProducts, theme, setTheme, toggleTheme }) => {
   const location = useLocation();
   let navigate = useNavigate();
   const dispatch = useDispatch();
@@ -85,6 +88,21 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
         <button className={(rutaUrl.includes('Shop')) ? 'btnHome active' : 'btnHome'} >Shop</button>
       </Link>
 
+      {
+        !(rutaUrl.includes('Shop')) && !(rutaUrl.includes('Products'))?
+          <>
+            <a href="/#AboutUs" className='btnRedirectHome'>About Us</a>
+            <a href="/#OurValues" className='btnRedirectHome'>Our Values</a>
+            <a href="/#contacto" className='btnRedirectHome'>Contact Us</a>
+          </>
+          :
+          <>
+            <a href="/Shop#categoria" className='btnRedirectHome'>Categorias</a>
+            <a href="/Shop#marcas" className='btnRedirectHome'>Marcas</a>
+          </>
+      }
+
+
 
 
       {/* {!isAuthenticated ? null : <div class="dropdown">
@@ -134,7 +152,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
                 </div>
               </> :
               null}
- 
+
           </div>
         </div>
       }
@@ -142,10 +160,54 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
 
         <Link to={'/ShoppingCart'}>
           <button className='btnCarrt'>
-            <FaShoppingCart />{countProducts}
+            <FaShoppingCart />
+            <span className="notificacionCantidad badge rounded-pill bg-danger ">
+              {countProducts}
+            </span>
           </button>
         </Link>
       }
+      <div className="switch">
+        {/* <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label> */}
+        <ReactSwitch
+          onChange={toggleTheme}
+          checked={theme === "light"}
+          offColor="#333"
+          onColor="#ccc"
+          onHandleColor="#000"
+          uncheckedIcon={
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+                paddingRight: 2,
+                color: "white",
+
+              }}
+            >
+              <BsFillMoonFill />
+            </div>}
+          checkedIcon={
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+                paddingRight: 2,
+                color: "yellow",
+
+              }}
+            >
+              <BsFillCircleFill />
+            </div>}
+
+        />
+      </div>
+
+
     </div>
   );
 }
