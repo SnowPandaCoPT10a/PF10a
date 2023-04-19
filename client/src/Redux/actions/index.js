@@ -114,10 +114,10 @@ export function createNewUser(given_name ,family_name,email,picture) {
     }
   };
 }
-export function updateUser(email, first_name, last_name, nationality, date_birth, mobile, address) {
+export function updateUser(email, first_name, last_name, nationality, date_birth, address, mobile) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile, address);
+      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, address, mobile);
       dispatch({
         type: UPDATE_USER,
         payload: response.data,

@@ -106,7 +106,7 @@ cloudinary.config({
  async function ModifyUser(req, res) {
     try {
        let { email } = req.params;
-       let { first_name, last_name, nationality, date_birth, mobile, address} = req.body;
+       let { first_name, last_name, nationality, date_birth, address, mobile} = req.body;
        const user = await Users.findOne({
           where: {
              email: email
@@ -140,9 +140,10 @@ cloudinary.config({
           last_name: last_name,
           nationality: nationality,
           date_birth: date_birth,
+          address: address,
           mobile: mobile,
           image: imageUrl,
-          address: address
+          
        });
 
        // configurar transporter para enviar correo electrónico

@@ -18,6 +18,7 @@ const Profile = () => {
 		date_birth: "",
 		mobile: "",
 		image: "",
+		address: "",
 		
 	});
 	const [editFormErrors,setEditFormErrors ] = useState({
@@ -27,6 +28,7 @@ const Profile = () => {
 		date_birth: "",
 		mobile: "",
 		image: "",
+		address: "",
 		
 	});
 
@@ -156,16 +158,16 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 	try {
 		if (isAuthenticated) {
 			console.log(datoos)
-				const perfil = datoos && datoos?.find(obj => obj.email === user.email);
+				var userPerfil = datoos && datoos?.find(obj => obj.email === user.email);
 			
 			if (isEditing) {
 				return (
 					<form className='profile-form' onSubmit={handleEditSubmit}>
 						<br />
-						<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
-						<h1 className='h1profile'>Name: {perfil.first_name}</h1>
-						<h1 className='h1profile'>Last Name: {perfil.last_name}</h1>
-						<h1 className='h1profile'>Email: {perfil.email}</h1>
+						<img className='imgProfile' src={userPerfil.image ? userPerfil.image : `${Logo}`} alt='no hay imagen' />
+						<h1 className='h1profile'>Name: {userPerfil.first_name}</h1>
+						<h1 className='h1profile'>Last Name: {userPerfil.last_name}</h1>
+						<h1 className='h1profile'>Email: {userPerfil.email}</h1>
 						<label className='profile-label'>
 							<input className='inputprofile' type="text" name="first_name" placeholder="...Name" value={editFormState.first_name} onChange={handleInputChange} />
 						</label>
@@ -176,6 +178,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 								
 								<input className='inputprofile' type="text" name="nationality" placeholder="...Nationality" value={editFormState.nationality} onChange={handleInputChange} />
 							</label>
+						
 							<label className='profile-label'>
 							
 							<input className='inputprofile' type="text" name="mobile" placeholder="...Mobile" value={editFormState.mobile} onChange={handleInputChange} />
@@ -194,13 +197,13 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 			}
 			return (
 				<div className='profilecont'>
-					<img className='imgProfile' src={perfil.image ? perfil.image : `${Logo}`} alt='no hay imagen' />
-					<h1 className='h1profile'>Name:  {perfil.first_name}</h1>
-					<h1 className='h1profile'>Last Name:  {perfil.last_name}</h1>
-					<h1 className='h1profile'>Birthday:  {perfil.date_birth}</h1>
-					<h1 className='h1profile'>Nationality:  {perfil.nationality}</h1>
-					<h1 className='h1profile'>Mobile Phone:  {perfil.mobile}</h1>
-					<h1 className='h1profile'>Email:  {perfil.email}</h1>
+					<img className='imgProfile' src={userPerfil.image ? userPerfil.image : `${Logo}`} alt='no hay imagen' />
+					<h1 className='h1profile'>Name:  {userPerfil.first_name}</h1>
+					<h1 className='h1profile'>Last Name:  {userPerfil.last_name}</h1>
+					<h1 className='h1profile'>Birthday:  {userPerfil.date_birth}</h1>
+					<h1 className='h1profile'>Nationality:  {userPerfil.nationality}</h1>
+					<h1 className='h1profile'>Mobile Phone:  {userPerfil.mobile}</h1>
+					<h1 className='h1profile'>Email:  {userPerfil.email}</h1>
 					
 
 					<button  className='buttoneditar' onClick={handleEditClick}>Editar información</button>
