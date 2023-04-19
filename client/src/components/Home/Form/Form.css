@@ -93,3 +93,24 @@
   color: #fff;
   border: #287094;
 }
+
+@media (max-width: 591px) {
+  .contenedor-form {
+    display: block;
+  }
+  
+  .input-mitad {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .fila-name, .fila-email, .fila-topic, .fila-contact {
+    grid-column: initial;
+    grid-row: initial;
+  margin-bottom: 10px;
+  }
+  
+  .fila-message {
+    grid-row: 6 / span 6;
+  }
+}
