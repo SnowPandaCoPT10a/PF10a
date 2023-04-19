@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
 	const dispatch = useDispatch();
-	const datoos = useSelector(e => e.user)
+	var datoUsuario = useSelector(e => e.user)
 	const [editFormState, setEditFormState] = useState({
 		first_name: '',
 		last_name: '',
@@ -157,8 +157,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 	}
 	try {
 		if (isAuthenticated) {
-			console.log(datoos)
-				var userPerfil = datoos && datoos?.find(obj => obj.email === user.email);
+				const userPerfil = datoUsuario?.find((e) => e.email === user.email);
 			
 			if (isEditing) {
 				return (

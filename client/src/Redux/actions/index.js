@@ -17,8 +17,9 @@ import {
   GET_ALL_BILLS,
   CREATE_NEW_REVIEWS,
   GET_ALL_REVIEWS,
-  SET_ACTIVE_BILLS,
-  UPDATE_STOCK
+  UPDATE_STOCK,
+  SET_ACTIVE_BILLS
+
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
@@ -114,10 +115,10 @@ export function createNewUser(given_name ,family_name,email,picture) {
     }
   };
 }
-export function updateUser(email, first_name, last_name, nationality, date_birth, address, mobile) {
+export function updateUser(email, first_name, last_name, nationality, date_birth, mobile) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, address, mobile);
+      const response = await axios.put(`${url}/users/modify/${email.email}`, first_name, last_name, nationality, date_birth, mobile);
       dispatch({
         type: UPDATE_USER,
         payload: response.data,
@@ -166,7 +167,6 @@ export function setReviewButton(payload){
     payload
   }
 }
-
 export function setBannedProduct(id){
 
  

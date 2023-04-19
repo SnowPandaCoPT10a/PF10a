@@ -24,6 +24,8 @@ function OrderConfirmation() {
        // const separator = " | ";
     const descriptions = product.map(e=> e.name)
     const images = product.map(e=> e.img)
+    const productId = product.map(e=> e.productsID)
+    const categoryName = product.map(e=> e.category)
         
         endProduct = {
            // id: product[0].id,
@@ -32,7 +34,9 @@ function OrderConfirmation() {
             //date: today,
            // price: product.reduce((total, product) => total + product.price, 0),
            description: descriptions,
-           image: images
+           image: images,
+           productID : productId,
+           category_Name: categoryName
            // category_id: product.reduce((acc, cur) => {
             //    return acc + (acc !== '' ? ', ' : '') + cur.category;
             //  }, ''),
@@ -49,14 +53,16 @@ function OrderConfirmation() {
     
             
             const res = await axios.post(
-               // "http://localhost:3001/bills/create"
-               'https://pf10a-production.up.railway.app/bills/create'
+                "http://localhost:3001/bills/create"
+              // 'https://pf10a-production.up.railway.app/bills/create'
             , {
             item: endProduct.description,
             quantity: product.length,
             date: today,
             price: product.reduce((total, product) => total + product.price, 0),
             image: endProduct.image,
+            product_ID: endProduct.productID,
+            category_name: endProduct.category_Name,
             idUser: perfil.idUser
             }).then(
                 (res)=> 
