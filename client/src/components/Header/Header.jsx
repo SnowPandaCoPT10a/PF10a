@@ -117,7 +117,7 @@ const Header = ({ navigateToCategory, categories, countProducts }) => {
             <>
               <Link to='/User' className="text-decoration-none"><a>Ver Perfil</a></Link>
               <a class="dropdown-item" href="/ProfileBills">Mis Compras</a>
-              <a>¿Mis Reviews?</a>
+              <a class="dropdown-item" href="/ProfileReview" >Mis Reviews</a>
               <a><Logout /></a>
             </> :
             null}
