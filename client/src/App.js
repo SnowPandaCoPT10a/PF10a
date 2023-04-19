@@ -25,6 +25,8 @@ import Terms from "./components/Footers/Terms/Terms";
 import PrivacyPolicies from  './components/Footers/PrivacyPolicies/PrivacyPolicies'
 import ManageBills from "./components/Manage_Bills/Manage_Bills"
 import ProfileBills from "./components/Profile_Bills/Profile_Bills"
+import ProfileReview from "./components/Profile_Review/Profile_Review"
+
 
 //modo oscuro
 import { createContext } from 'react';
@@ -92,6 +94,8 @@ const [oneProducts, setOneProducts] = useState([]);
          <Route exact path="/PrivacyPolicies" element={<PrivacyPolicies/>}/>
          <Route exact path="/ManageBills" element={<ManageBills/>}/>
          <Route exact path="/ProfileBills" element={<ProfileBills/>}/>
+         <Route exact path="/ProfileReview" element={<ProfileReview/>}/>
+         
 
         </Routes>
          
