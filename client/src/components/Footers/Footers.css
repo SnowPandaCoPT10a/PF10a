@@ -1,10 +1,10 @@
 .site-footer
 {
-  background-color:#287094;
+  background-color:#7F949F;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#7F949F;
+  color:#F6F6F6;
 }
 .site-footer hr
 {
@@ -43,11 +43,11 @@
 }
 .footer-links a
 {
-  color:#7F949F
+  color:#F6F6F6
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#F6F6F6;
+  color:#287094;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -66,7 +66,7 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#7F949F
+  background-color:#F6F6F6
 }
 .copyright-text
 {
@@ -111,7 +111,7 @@
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#023246;
+  color:#7F949F;
   font-size:16px;
   display:inline-block;
   line-height:44px;

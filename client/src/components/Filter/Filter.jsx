@@ -100,12 +100,12 @@ function FilterForm({ pagination }) {
     }
 
     return (
-        <nav>
+        <nav className='burger'>
             <button className="hamburger" onClick={handleMenuClick}>
             <div className={menuOpen? 'open' : ''}>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
                 </div>
             </button>           
             {menuOpen && <Menu />}           

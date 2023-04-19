@@ -167,12 +167,12 @@ try {
   //let reviewName =  review.filter(r => r.name ===   )
 
   return (
-    <div>
+    <div className="cardComponent">
       
-      <div className="cardComponent">
+      <div className="container ">
         {productInfoId ? (
           <div>
-          <div className="containerId">
+          <div className="id">
             <div className="imgBx">
               <img
                 className="imgId"

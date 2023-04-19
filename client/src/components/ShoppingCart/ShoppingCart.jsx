@@ -401,7 +401,7 @@ const clearCart = () => {
     <div>
       <All>
         <BasketContainer>
-          <BasketTitle>SHOPPING CART</BasketTitle>
+        <h1 className='text-center mt-5 titulos-color'>SHOPPING CART</h1>
           <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
           <BasketButton >Go to checkout</BasketButton>
       </Link>

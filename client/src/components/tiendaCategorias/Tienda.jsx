@@ -41,7 +41,7 @@ const tienda = () => {
             dispatch(setCurrentPage(1))
           }}
         >
-          <button className=" mt-5 button">ALL PRODUCTS</button>
+          <button className=" mt-5 botonProducto">ALL PRODUCTS</button>
         </Link>
 
       </div>
