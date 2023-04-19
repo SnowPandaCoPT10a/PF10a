@@ -69,11 +69,7 @@ try {
         (el) => el.productsID === product.productsID && el.size === product.size
       )
     ) {
-      Swal.fire({
-        icon: "success",
-        title: "Aggregate",
-        text: "Added to cart successfully",
-      });
+      
 
       const products = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
@@ -129,6 +125,8 @@ try {
           ...el,
           stock: el.size === product.size ? Number(el.stock - 1) : null,
         })),
+        
+
       };
       if (
         !newProduct.sizes &&
@@ -145,6 +143,11 @@ try {
       setAllProducts([...allProducts, newProduct]);
     }
     setOneProducts([...allProducts, product]);
+    Swal.fire({
+      icon: "success",
+      title: "Done",
+      text: "Added to shopping cart successfully",
+    });
   }
 
   window.localStorage.setItem("productscart", JSON.stringify(allProducts));
