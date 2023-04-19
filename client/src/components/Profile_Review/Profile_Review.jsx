@@ -38,7 +38,7 @@ const profileReview = () => {
   try {
     return (
       <div>
-        <h1>ACA VAN LAS BILL's PERRRRRRRRRRROo</h1>
+        <h1>ACA VAN LAS REVIEW PERRRRRRRRRRROo</h1>
         {filterBills ? (
           filterBills.map((e, index = 1) => (
             <a class="list-group">

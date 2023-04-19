@@ -37,13 +37,12 @@ const tienda = () => {
           to={`/Products/`}
           className="text-center text-white text-decoration-none"
           onClick={() => {
-            scroll()
-            dispatch(setCurrentPage(1))
+            scroll();
+            dispatch(setCurrentPage(1));
           }}
         >
           <button className=" mt-5 button">ALL PRODUCTS</button>
         </Link>
-
       </div>
     </>
   );
