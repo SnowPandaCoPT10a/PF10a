@@ -140,3 +140,26 @@
     background-color: #005b8e;
     cursor: default;
   }
+
+  @media (max-width: 550px) {
+
+    .cardComponent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .containerId {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }  
+    .buttonback{
+      position: relative;
+      left: 0;
+      bottom: 0;
+    } 
+  }

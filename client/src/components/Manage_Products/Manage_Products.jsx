@@ -180,7 +180,7 @@ const FormCreatePoke = () => {
                     </div>
                     <div className="botonera">
                       <button value={e.productsID} className="-btnbuy">
-                        <Link to={`/FormAdminProduct/${e.productsID}`}>
+                        <Link className="text-white" to={`/FormAdminProduct/${e.productsID}`}>
                           Edit Now
                         </Link>
                       </button>
