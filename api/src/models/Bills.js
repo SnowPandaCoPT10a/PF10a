@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
     {
       // ID : viene del sistema
       item: {
-        type: DataTypes.STRING,
+        type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
       quantity: {
@@ -20,9 +20,13 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,//DECIMAL(10,2),
         allowNull: false,
       },
+      shipped: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      }, 
       payment_status: {
         type: DataTypes.ENUM("approved", "failed"),
         allowNull: true,
@@ -50,7 +54,19 @@ module.exports = (sequelize) => {
       active: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-      }, 
+      },
+      image:{
+        type: DataTypes.ARRAY(DataTypes.STRING),
+        allowNull: true,
+      },
+      product_ID:{
+        type: DataTypes.ARRAY(DataTypes.INTEGER),
+        allowNull: true,
+      },
+      category_name:{
+        type: DataTypes.ARRAY(DataTypes.STRING),
+        allowNull: true,
+      },
       
     
     },

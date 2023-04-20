@@ -14,6 +14,10 @@ import {
   SET_PRIVILEGE_USER,
   SET_STATUS_USER,
   UPDATE_ADDRESS,
+  GET_ALL_BILLS,
+  GET_ALL_REVIEWS,
+  UPDATE_STOCK,
+  SET_ACTIVE_BILLS,
 } from "../actions-types/index";
 
 const initialState = {
@@ -23,6 +27,9 @@ const initialState = {
   users:[],
   user:[],
   currentPage: 1,
+  allBills: [],
+  allReviews: [],
+  reviewButton: 0,
 };
 
 function rootReducer(state = initialState, action) {
@@ -45,6 +52,7 @@ function rootReducer(state = initialState, action) {
         }*/
       return {
         ...state,
+        allProducts: action.payload,
         products: action.payload,
       };
     case POST_NEW_PRODUCTS:
@@ -53,6 +61,11 @@ function rootReducer(state = initialState, action) {
         products: [...state.products, action.payload],
         allProducts: [...state.allProducts, action.payload],
       };
+    case SET_ACTIVE_BILLS:
+      return{
+        ...state,
+        reviewButton: action.payload
+      }
     case SET_FILTERED_PRODUCTS:
       return {
         ...state,
@@ -78,6 +91,7 @@ function rootReducer(state = initialState, action) {
         }
       case GET_ALL_USERS:
         return{
+          ...state,
           users: action.payload,
           user: action.payload,
         }
@@ -116,7 +130,21 @@ function rootReducer(state = initialState, action) {
             users: action.payload,
             user: action.payload
           }
-      
+        case GET_ALL_BILLS:
+          return{
+            ...state,
+            allBills:action.payload,
+          }
+        case GET_ALL_REVIEWS: 
+        return{
+          ...state,
+          allReviews: action.payload
+        }
+        case UPDATE_STOCK:
+          return {
+            ...state,
+            products: action.payload
+          }
     default:
       return state;
   }

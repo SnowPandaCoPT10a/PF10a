@@ -12,6 +12,7 @@ import Form from './Form/Form';
 
 const Home = ({setAllProducts,setPriceTotal,setCountProducts}) => {
 
+
   const datos = useSelector(e => e.allProducts)
   const dispatch = useDispatch()
   const { user, isAuthenticated } = useAuth0();
@@ -50,14 +51,15 @@ const Home = ({setAllProducts,setPriceTotal,setCountProducts}) => {
   }, []);
 
   return (
-    <div className='container' >
+    <div className='home containter' >
       <Start/>
       <AboutUs/>
       <Destacados datos={datos} />
       <Values/>
       <Form />
     </div>
-  )
+    
+  );
 }
 
 export default Home
