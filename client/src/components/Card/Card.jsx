@@ -251,13 +251,14 @@ export default function Card({
             </div>
             {/* //! REVIEW */}
             <div>
+            <p className="text-center mt-5 titulos-color">Product reviews:</p>
               {productReview?.map((el) =>
                 el.productName === productInfoId.name && el.idReviews ? (
-                  <div class="card border-dark mb-3">
-                    <div class="card-header">{el.firstName}</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">{el.rating}</h5>
-                      <p class="card-text">{el.comment}</p>
+                  <div className="card border-dark mb-3">
+                    <div className="card-header">{el.firstName}</div>
+                    <div className="card-body text-dark">
+                      <h5 className="card-title">Rating: {el.rating}</h5>
+                      <p className="card-text">Comment: {el.comment}</p>
                     </div>
                   </div>
                 ) : null
