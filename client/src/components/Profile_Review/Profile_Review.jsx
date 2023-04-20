@@ -38,7 +38,7 @@ const profileReview = () => {
   try {
     return (
       <div>
-        <h1>ACA VAN LAS REVIEW PERRRRRRRRRRROo</h1>
+        <h1 className="text-center mt-5 titulos-color">My Reviews: </h1>
         {filterBills ? (
           filterBills.map((e, index = 1) => (
             <a class="list-group">
@@ -73,9 +73,8 @@ const profileReview = () => {
               <hr /> {/* //!Borraar esto y meterle un padding  */}
             </a>
           ))
-        ) : (
-          <h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>
-        )}
+        ) : (<h1>No reviews to display</h1>)
+        }
       </div>
     );
   } catch (error) {
