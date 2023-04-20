@@ -123,7 +123,7 @@ export function updateUser(
   return async function(dispatch) {
     try {
       const response = await axios.put(
-        `${url}/users/modify/${email.email}`,
+        `${url}/users/modify/${email}`,
         first_name,
         last_name,
         nationality,
