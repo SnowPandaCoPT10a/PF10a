@@ -243,10 +243,11 @@ export default function Card({
                   </div>
                   {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
                 </div>
-              </div>
+              </div>              
               <Link to="/Shop">
                 <button className="buttonback">Back to shop</button>
               </Link>
+             
             </div>
             {/* //! REVIEW */}
             <div>
