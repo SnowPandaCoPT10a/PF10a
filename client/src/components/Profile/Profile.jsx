@@ -132,7 +132,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 		setEditFormErrors(errors);
 		return;
 		}*/
-    dispatch(updateUser({ email: user.email }, editFormState));
+    dispatch(updateUser(user.email, {...editFormState }));
     //dispatch(searchUser({ email: user.email }))
     dispatch(getAllUsers());
     // Agrega aquí la lógica para actualizar la información en tu base de datos
@@ -150,12 +150,16 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
       title: "¡Updated user!",
       icon: "success",
     });
+    
     setIsEditing(false);
     location.reload();
+
+    
   };
   try {
     if (isAuthenticated) {
       const perfiles = Object.values(datoUsuario)
+      console.log(perfiles)
       const perfil = perfiles?.find((obj) => obj.email === user.email);
       
       if (isEditing) {
@@ -210,16 +214,6 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 onChange={handleInputChange}
               />
             </label>
-            <label className="profile-label">
-              <input
-                className="inputprofile"
-                type="text"
-                name="address"
-                value={editFormState.address}
-                placeholder="...Adress"
-                onChange={handleInputChange}
-              />
-            </label>
             <label>
               <input
                 className="inputprofile"
@@ -236,6 +230,16 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 name="image"
                 placeholder="...Profile Picture"
                 value={editFormState.image}
+                onChange={handleInputChange}
+              />
+            </label>
+            <label className="profile-label">
+              <input
+                className="inputprofile"
+                type="text"
+                name="address"
+                value={editFormState.address}
+                placeholder="...Adress"
                 onChange={handleInputChange}
               />
             </label>
@@ -270,7 +274,6 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
         </div>
       );
     }
-    return <div></div>;
   } catch (err) {
     console.error(err);
   }
