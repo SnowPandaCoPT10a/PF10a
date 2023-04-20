@@ -134,7 +134,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 		}*/
     dispatch(updateUser(user.email, {...editFormState }));
     //dispatch(searchUser({ email: user.email }))
-    dispatch(getAllUsers());
+    
     // Agrega aquí la lógica para actualizar la información en tu base de datos
     setEditFormState({
       first_name: "",
