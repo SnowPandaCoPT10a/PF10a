@@ -117,7 +117,8 @@ export function updateUser(
   last_name,
   nationality,
   date_birth,
-  mobile
+  mobile,
+  address
 ) {
   return async function(dispatch) {
     try {
@@ -127,7 +128,8 @@ export function updateUser(
         last_name,
         nationality,
         date_birth,
-        mobile
+        mobile,
+        address,
       );
       dispatch({
         type: UPDATE_USER,
