@@ -32,17 +32,28 @@ const Header = ({
   let navigate = useNavigate();
   const dispatch = useDispatch();
   const datos = useSelector((e) => e.user);
-  const usuario = useSelector((e) => e.user);
+  const { isAuthenticated, isLoading, user } = useAuth0();
+  
 
   let perfil = null;
 
   try {
-    perfil = datos.find((obj) => obj.email);
+    perfil = datos.filter((obj) =>obj.email === user.email); // estoy matcheadn que el email de aut0 este en  la base de datos 
+    
   } catch (error) {
-    console.log(error);
+    console.log('Esperando datos');
   }
+  let isAdmin = null;
+  
+  try {
+    isAdmin =datos.filter((obj)=>obj.email === user.email && obj.privilige === true);
+    
+     }
+    catch (error) {
+      console.log('Esperando datos');
+    }
 
-  const { isAuthenticated, isLoading, user } = useAuth0();
+  
 
   const [dropActive, setDropActive] = useState(false);
 
@@ -114,23 +125,6 @@ const Header = ({
         </>
       )}
 
-      {/* {!isAuthenticated ? null : <div class="dropdown">
-        <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-          <span class="d-none d-lg-inline">Admin Console</span>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-
-
-          <li><a class="dropdown-item" href="/ManageProfiles">Manage Profiles</a></li>
-
-          <li><a class="dropdown-item" href="/ManageProducts">Manage Products</a></li>
-
-          <li><a class="dropdown-item" href="/ManageBills">Manage Bills</a></li>
-
-          <li><a class="dropdown-item" href="/ManageReviews">Manage Reviews</a></li>
-        </ul>
-      </div>} */}
-
       {!isAuthenticated ? (
         <Login />
       ) : (
@@ -163,7 +157,7 @@ const Header = ({
                 <a>
                   <Logout />
                 </a>
-                <div class="">
+                {isAdmin?.length ? <div class="">
                   <button
                     class="button-AdminManage dropdown-toggle ps-0"
                     id="bd-versions"
@@ -204,7 +198,7 @@ const Header = ({
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div>: null}
               </>
             ) : null}
           </div>

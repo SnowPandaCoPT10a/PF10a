@@ -155,7 +155,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
   };
   try {
     if (isAuthenticated) {
-      const perfil = datoos.find((obj) => obj.email === user.email);
+      const perfiles = Object.values(datoUsuario)
+      const perfil = perfiles?.find((obj) => obj.email === user.email);
+      
       if (isEditing) {
         return (
           <form className="profile-form" onSubmit={handleEditSubmit}>
