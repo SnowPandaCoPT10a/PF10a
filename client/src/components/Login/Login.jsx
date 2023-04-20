@@ -41,13 +41,13 @@ const Login = () => {
 			<button className='buttonLog' onClick={loginWithRedirect}>
 				<b className='login'>Log In</b>
 				<div id="clip">
-					<div id="leftTop" class="corner"></div>
-					<div id="rightBottom" class="corner"></div>
-					<div id="rightTop" class="corner"></div>
-					<div id="leftBottom" class="corner"></div>
+					<div id="leftTop" className="corner"></div>
+					<div id="rightBottom" className="corner"></div>
+					<div id="rightTop" className="corner"></div>
+					<div id="leftBottom" className="corner"></div>
 				</div>
-				<span id="rightArrow" class="arrow"></span>
-				<span id="leftArrow" class="arrow"></span>
+				<span id="rightArrow" className="arrow"></span>
+				<span id="leftArrow" className="arrow"></span>
 			</button>
 		</div>
 	)
