@@ -1,4 +1,4 @@
-.filtro-button{
+ .filtro-button{
     border-radius: 8px;
     height: 40px;
     padding: 0.4em;
@@ -37,15 +37,26 @@
     border: 1px solid #ccc;
   }
 
-
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     
-  } 
+  }
 
+  .burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  } 
+  #light .burger{
+    background-color: #F6F6F6;
+  }
+  #dark .burger{
+    background-color: #1E1E1E;
+  }
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -96,8 +107,13 @@
       margin-top: 10px;
     }
 
+   .paginas{
+    margin-left: 0;
+   } 
     nav {     
-      padding: 35px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 5px;
     }
   }
 

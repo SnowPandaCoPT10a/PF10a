@@ -158,34 +158,34 @@ export default function Card({
   //let reviewName =  review.filter(r => r.name ===   )
 
   return (
-    <div>
-      <div className="cardComponent">
+    <div className="cardComponent">
+      
+      <div className="container ">
         {productInfoId ? (
           <div>
-            <div className="containerId">
-              <div className="imgBx">
-                <img
-                  className="imgId"
-                  src={productInfoId.img}
-                  alt="Img not found"
-                />
-              </div>
-              <div className="details">
-                <div className="contentId">
-                  <h2 className="pName">
-                    {productInfoId.name}
-                    <br />
-                  </h2>
-                  <br></br>
-                  <p className="pIds">
-                    Brand: {productInfoId.brand?.brandName}
-                  </p>
-                  <p className="pIds">Best for: {productInfoId.activity}</p>
-                  <p className="pIds">
-                    Description: {productInfoId?.description}
-                  </p>
-                  <p className="pIds">Made of: {productInfoId.material}</p>
-                  <p className="pIds">Select size: </p>
+          <div className="id">
+            <div className="imgBx">
+              <img
+                className="imgId"
+                src={productInfoId.img}
+                alt="Img not found"
+              />
+            </div>
+            <div className="details">
+              <div className="contentId">
+                <h2 className="pName">
+                  {productInfoId.name}
+                  <br />
+                </h2>
+                <br></br>
+                <p className="pIds">Brand: {productInfoId.brand?.brandName}</p>
+                <p className="pIds">Best for: {productInfoId.activity}</p>
+                <p className="pIds">
+                  Description: {productInfoId?.description}
+                </p>
+                <p className="pIds">Made of: {productInfoId.material}</p>
+                <p className="pIds">Select size: </p>
+
 
                   {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
 
@@ -243,10 +243,11 @@ export default function Card({
                   </div>
                   {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
                 </div>
-              </div>
+              </div>              
               <Link to="/Shop">
                 <button className="buttonback">Back to shop</button>
               </Link>
+             
             </div>
             {/* //! REVIEW */}
             <div>
