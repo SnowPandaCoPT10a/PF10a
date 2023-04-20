@@ -252,7 +252,8 @@ export default function Card({
             {/* //! REVIEW */}
             <div>
             <p className="text-center mt-5 titulos-color">Product reviews:</p>
-              {productReview?.map((el) =>
+              {productReview?.map((el) => {
+                <div key={el.idReviews}></div>
                 el.productName === productInfoId.name && el.idReviews ? (
                   <div className="card border-dark mb-3">
                     <div className="card-header">{el.firstName}</div>
@@ -262,6 +263,7 @@ export default function Card({
                     </div>
                   </div>
                 ) : null
+              }
               )}
               {/* //! REVIEW */}
             </div>
