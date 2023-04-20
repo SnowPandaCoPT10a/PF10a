@@ -31,7 +31,8 @@ const FormCreatePoke = () => {
 
   try {
     return (
-      <div className="cart_manager_">
+      <div className="all_">
+      <div className="cart_manager">
         {allUsers ? (
           allUsers
             ?.sort((a, b) => a.idUser - b.idUser)
@@ -46,7 +47,7 @@ const FormCreatePoke = () => {
                       draggable="false"
                     />
                   </div>
-                  <div className="product-info">
+                  <div className="-infoproduct">
                     <h2>
                       {e.first_name}
                       {e.last_name}
@@ -102,7 +103,8 @@ const FormCreatePoke = () => {
           <div>Loading ... </div>
         )}
       </div>
-    );
+      </div>
+    );  
   } catch (err) {
     console.log(err);
   }
