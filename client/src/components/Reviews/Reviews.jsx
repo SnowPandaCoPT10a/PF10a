@@ -3,6 +3,7 @@ import "./Reviews.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
 import { postReviews } from "../../Redux/actions/index";
+import Swal from "sweetalert2";
 
 const Reviews = ({ item }) => {
   console.log(item)
@@ -28,12 +29,15 @@ const Reviews = ({ item }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(postReviews( input ));
-    alert("Producto creado correctamente");
     setInput({
       rating: "",
       firstName: "",
       comment: "",
       productName:  item ,
+    });
+    Swal.fire({
+      title: "¡Review Created!",
+      icon: "success",
     });
   };
 
