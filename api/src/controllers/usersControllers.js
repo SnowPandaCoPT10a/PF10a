@@ -1,6 +1,6 @@
 const { Users } = require('../db');
 const { Op } = require("sequelize")
-const nodemailer = require("nodemailer");;
+const nodemailer = require("nodemailer");
 
 
 const cloudinary = require('cloudinary').v2;

@@ -6,6 +6,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
 import { getAllUsers } from "../../Redux/actions/index";
+import Swal from "sweetalert2";
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -16,6 +17,7 @@ function OrderConfirmation() {
   const dispatch = useDispatch();
   let datoos = useSelector((e) => e.users);
   const { user, isAuthenticated } = useAuth0();
+ 
 
   let endProduct = null;
 
@@ -66,7 +68,7 @@ function OrderConfirmation() {
             }).then(
                 (res)=> 
                 (window.location.href = res.data))
-           
+                 
             }catch(err){console.log(err)}
     
         }

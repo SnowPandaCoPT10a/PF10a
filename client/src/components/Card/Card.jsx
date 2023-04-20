@@ -27,6 +27,7 @@ export default function Card({
   const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
   try {
+    
     var productReview = review.map((e) => e);
   } catch (error) {
     console.log(error);
@@ -57,6 +58,7 @@ export default function Card({
         text: "you need to log in to be able to buy",
       });
       loginWithRedirect();
+      return;
     }
 
     if (
@@ -134,6 +136,7 @@ export default function Card({
       setAllProducts([...allProducts, newProduct]);
     }
     setOneProducts([...allProducts, product]);
+    
     Swal.fire({
       icon: "success",
       title: "Done",

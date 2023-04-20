@@ -103,6 +103,7 @@ async function paymentNotification(req, res) {
                 model: Users,
                 attributes: ["email",'first_name', 'last_name']
                 }})
+        console.log(billsUsers)
         const userNames = billsUsers.map(billUser => `${billUser.users}`); 
         console.log(userNames)         
        // configurar transporter para enviar correo electrónico
