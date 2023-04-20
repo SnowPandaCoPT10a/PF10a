@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { FilteredProducts } from '../../Redux/actions/index';
 import { useLocation } from 'react-router-dom';
@@ -15,6 +15,21 @@ function FilterForm({ pagination }) {
     const [numberSize, setNumberSize] = useState('');
     const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
 
     function handleMenuClick() {
         setMenuOpen(!menuOpen);  
@@ -100,15 +115,20 @@ function FilterForm({ pagination }) {
     }
 
     return (
-        <nav className='burger'>
-            <button className="hamburger" onClick={handleMenuClick}>
-            <div className={menuOpen? 'open' : ''}>
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
-                </div>
-            </button>           
-            {menuOpen && <Menu />}           
+        <nav>
+            {isMobile && (
+                <button className="hamburger" onClick={handleMenuClick}>
+                    <div className={menuOpen? 'open' : ''}>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            )}
+            {!isMobile && <Menu />}
+            {menuOpen && isMobile && (
+                <Menu />
+            )}
         </nav>
     )
 }

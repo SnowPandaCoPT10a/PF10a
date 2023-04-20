@@ -134,7 +134,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative;    
+  }
+  #dark .el-wrapper.el-wrapper{
+    width: 90%;
+  }
+
+  #light .el-wrapper{
+    width: 90%;
   }
 }
 
