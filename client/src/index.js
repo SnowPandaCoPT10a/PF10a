@@ -27,8 +27,8 @@ root.render(
   clientId={clientId}
   authorizationParams={{
 
-      //redirect_uri: "https://pf-10a-bhm9.vercel.app/"
-       redirect_uri: "http://localhost:3000/" //Usar en localHost
+      redirect_uri: "https://pf-10a-bhm9.vercel.app/"
+      //  redirect_uri: "http://localhost:3000/" //Usar en localHost
 
 
     }}
