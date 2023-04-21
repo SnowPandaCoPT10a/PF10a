@@ -46,7 +46,7 @@ const Reviews = ({ item }) => {
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <select
+          <select className="edicion"
             id="rating"
             name="rating"
             value={input.rating}
