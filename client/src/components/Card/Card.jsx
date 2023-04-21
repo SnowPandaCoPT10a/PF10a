@@ -176,7 +176,7 @@ export default function Card({
                   <br />
                 </h2>
                 <br></br>
-                <p className="pIds">Brand: {productInfoId.brand?.brandName}</p>
+                <p className="pIds">Brand: {(productInfoId.brand?.brandName)?productInfoId.brand?.brandName:productInfoId.brand}</p>
                 <p className="pIds">Best for: {productInfoId.activity}</p>
                 <p className="pIds">
                   Description: {productInfoId?.description}

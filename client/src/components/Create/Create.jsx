@@ -85,7 +85,7 @@ function Create() {
     numbersizes: [],
     sizes: [],
     boardsizes: [],
-    featuredProduct: false,
+    //featuredProduct: false,
   });
 
   const handleFeaturedProduct = (e) => {
@@ -112,7 +112,7 @@ function Create() {
       numbersizes: [],
       sizes: [],
       boardsizes: [],
-      featuredProduct: "",
+      //featuredProduct: "",
     });
     dispatch(getAllProducts());
 
@@ -137,7 +137,7 @@ function Create() {
       numbersizes: [],
       sizes: [],
       boardsizes: [],
-      featuredProduct: "",
+      //featuredProduct: "",
     });
     document.querySelectorAll("input[type=checkbox]").forEach((checkbox) => {
       checkbox.checked = false;
@@ -334,31 +334,11 @@ function Create() {
 
             <div className="pets-spayed-neutered">
               <label htmlFor="pet-spayed">
-                Brand{" "}
-                {newBrand === false ? (
-                  <button
-                    onClick={() => {
-                      setNewBrand(!newBrand);
-                      setInput({ ...input, brand: "" });
-                    }}
-                  >
-                    {" "}
-                    New{" "}
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => {
-                      setNewBrand(!newBrand);
-                      setInput({ ...input, brand: "" });
-                    }}
-                  >
-                    {" "}
-                    Cancel{" "}
-                  </button>
-                )}
+                Brand
+               
               </label>
               <div className="radio-container">
-                {newBrand === false ? (
+                { (
                   <select
                     id="pets-breed"
                     placeholder="Insert brand"
@@ -372,16 +352,7 @@ function Create() {
                           (<option key={index}>{brand}</option>)
                         )}
                   </select>
-                ) : (
-                  <input
-                    id="pets-breed"
-                    placeholder="Insert New brand"
-                    name="brand"
-                    value={input.brand}
-                    type="text"
-                    onChange={(e) => handleChange(e)}
-                  ></input>
-                )}
+                ) }
               </div>
               {errors.brand ? <p className="danger">{errors.brand}</p> : null}
             </div>
@@ -476,7 +447,7 @@ function Create() {
             ) : null}
           </div>
 
-          <label>
+          {/* <label>
             Featured:
             <input
               type="checkbox"
@@ -485,7 +456,7 @@ function Create() {
               checked={input.featuredProduct}
               onChange={handleFeaturedProduct}
             />
-          </label>
+          </label> */}
           {/* //!!!!!!! */}
           <hr />
 
@@ -568,7 +539,7 @@ function Create() {
         </header>
         <footer>
           <div className="set">
-            <Link to="/home">
+            <Link to="/ManageProducts">
               <button id="back">Back</button>
             </Link>
 
