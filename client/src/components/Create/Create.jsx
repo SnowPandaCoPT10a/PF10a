@@ -66,6 +66,8 @@ function Create() {
   //! aca traigo los talles de boards
   const sizesboard = ["one size"];
 
+  const Brands = ['SnowPandaCo','Burton', 'Nitro', 'K2', 'Rossignol', 'Arbor', 'Capita', 'Lib Tech']
+
   useEffect(() => {
     dispatch(getAllProducts());
   }, [dispatch]);
@@ -364,15 +366,9 @@ function Create() {
                     onChange={(e) => handleChange(e)}
                   >
                     <option></option>
-                    {numberSizes &&
-                      Array.from(new Set(numberSizes.map((h) => h.brand)))
-                        ?.filter(
-                          (brand, index, array) =>
-                            array.indexOf(brand) === index
-                        )
-                        .map((brand, index) => (
-                          <option key={index}>{brand.brandName}</option>
-                        ))}
+                    {Brands && Brands.map((brand, index) => 
+                          (<option key={index}>{brand}</option>)
+                        )}
                   </select>
                 ) : (
                   <input

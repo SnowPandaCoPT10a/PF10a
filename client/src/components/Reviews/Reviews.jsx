@@ -6,6 +6,7 @@ import { postReviews } from "../../Redux/actions/index";
 import Swal from "sweetalert2";
 
 const Reviews = ({ item }) => {
+
   console.log(item)
   const [input, setInput] = useState({
     rating: "",

@@ -103,7 +103,7 @@ const FormCreatePoke = () => {
                     <div className="-infoproduct">
                       <h2>{e.name}</h2>
                       <p>Category: {e.category}</p>
-                      <p>Brand: {e.brand.brandName}</p>
+                      {/* <p>Brand: {e.brand.brandName}</p> */}
 
                       <div className="price_">${e.price}</div>
                       <div></div>
