@@ -11,6 +11,7 @@ const Profile = () => {
 	const { user, isAuthenticated } = useAuth0();
 	const dispatch = useDispatch();
 	var datoUsuario = useSelector(e => e.user)
+  
 	const [editFormState, setEditFormState] = useState({
 		first_name: '',
 		last_name: '',
@@ -21,16 +22,7 @@ const Profile = () => {
 		address: "",
 		
 	});
-	const [editFormErrors,setEditFormErrors ] = useState({
-		first_name: '',
-		last_name: '',
-		nationality: "",
-		date_birth: "",
-		mobile: "",
-		image: "",
-		address: "",
-		
-	});
+	const [editFormErrors,setEditFormErrors ] = useState({});
 
   const [isEditing, setIsEditing] = useState(false);
 
@@ -44,68 +36,68 @@ const Profile = () => {
 
   const handleInputChange = (event) => {
     /*const { name, value } = event.target;
-  		let errors = { ...editFormErrors };
+  		
 		  switch (name) {
 			case "first_name":
 			  if (!/^[a-zA-Z\s]{2,}$/.test(value)) {
-				errors.first_name = "Nombre inválido";
-			  } else {
-				errors.first_name = "";
-			  }
+          editFormErrors.first_name = "Nombre inválido";
+			  } 
 			  break;
 			case "last_name":
 			  if (!/^[a-zA-Z\s]{2,}$/.test(value)) {
-				errors.last_name = "Apellido inválido";
-			  } else {
-				errors.last_name = "";
-			  }
+          editFormErrors.last_name = "Apellido inválido";
+			  } 
 			  break;
 			case "email":
 			  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-				errors.email = "Email inválido";
-			  } else {
-				errors.email = "";
+          editFormErrors.email = "Email inválido";
 			  }
 			  break;
 			  case "nationality":
 				if (!/^[a-zA-Z\s]+$/.test(value)) {
-				  errors.nationality = "Nacionalidad inválida";
-				} else {
-				  errors.nationality = "";
+				  editFormErrors.nationality = "Nacionalidad inválida";
 				}
 				break;
 				case "date_birth":
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
-    errors.date_birth = "Fecha inválida";
-  } else {
-    errors.date_birth = "";
-  }
+    editFormErrors.date_birth = "Fecha inválida";
+  } 
   break;case "mobile":
   if (!/^\d{0,10}$/.test(value)) {
-    errors.mobile = "Número de teléfono inválido";
-  } else {
-    errors.mobile = "";
-  }
+    editFormErrors.mobile = "Número de teléfono inválido";
+  } 
   break;
   case "image":
   if (!/^(ftp|http|https):\/\/[^ "]+$/.test(value)) {
-    errors.image = "URL de imagen inválida";
-  } else {
-    errors.image = "";
-  }
+    editFormErrors.image = "URL de imagen inválida";
+  } 
   break;
 
 			// Agregar más casos según los campos que tenga el formulario
-		  }
-		  setEditFormState({ ...editFormState, [name]: value });
-		  setEditFormErrors({ ...errors });*/
-    setEditFormState({
-      ...editFormState,
-      [event.target.name]: event.target.value,
-    });
+		  }*/
+      setEditFormState({
+        ...editFormState,
+        [event.target.name]: event.target.value,
+      });
+      /*setEditFormErrors({
+        ...editFormState,
+        [event.target.name]: event.target.name
+    })*/
+    
   };
   const handleEditSubmit = (event) => {
     event.preventDefault();
+   /* if (
+      !editFormState.first_name &&
+      !editFormState.last_name &&
+      !editFormState.nationality &&
+      !editFormState.date_birth &&
+      !editFormState.mobile &&
+      !editFormState.image &&
+      !editFormState.address  ) {
+      alert("No se ha modificado ninguna información");
+      setIsEditing(false);
+    }
     /*		let errors = {};
 if (!/^[a-zA-Z\s]+$/.test(editFormState.nationality)) {
 errors.nationality = "Nacionalidad inválida";
@@ -127,11 +119,8 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
 	}
 	if (!/^[^\s@]+@[^\s@]+.[^\s@]+$/.test(editFormState.email)) {
 	errors.email = "Email inválido";
-	}
-	if (Object.keys(errors).length > 0) {
-		setEditFormErrors(errors);
-		return;
-		}*/
+	}*/
+	
     dispatch(updateUser(user.email, {...editFormState }));
     //dispatch(searchUser({ email: user.email }))
 
@@ -183,7 +172,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 placeholder="...Name"
                 value={editFormState.first_name}
                 onChange={handleInputChange}
-              />
+              />{editFormErrors.first_name && (
+                <p className="error">{editFormErrors.first_name}</p>
+            )}
             </label>
             <label className="profile-label">
               <input
@@ -194,6 +185,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 value={editFormState.last_name}
                 onChange={handleInputChange}
               />
+              {editFormErrors.last_name && (
+                <p className="error">{editFormErrors.last_name}</p>
+            )}
             </label>
             <label className="profile-label">
               <input
@@ -204,6 +198,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 value={editFormState.nationality}
                 onChange={handleInputChange}
               />
+              {editFormErrors.nationality && (
+                <p className="error">{editFormErrors.nationality}</p>
+            )}
             </label>
             <label className="profile-label">
               <input
@@ -214,6 +211,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 value={editFormState.mobile}
                 onChange={handleInputChange}
               />
+              {editFormErrors.mobile && (
+                <p className="error">{editFormErrors.mobile}</p>
+            )}
             </label>
             <label>
               <input
@@ -223,6 +223,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 value={editFormState.date_birth}
                 onChange={handleInputChange}
               />
+               {editFormErrors.date_birth && (
+                <p className="error">{editFormErrors.date_birth}</p>
+            )}
             </label>
             <label>
               <input
@@ -243,6 +246,9 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 placeholder="...Adress"
                 onChange={handleInputChange}
               />
+                {editFormErrors.address && (
+                <p className="error">{editFormErrors.address}</p>
+            )}
             </label>
             <button
               className="buttoneditar"
@@ -251,6 +257,8 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
             >
               Guardar cambios
             </button>
+
+            
           </form>
         );
       }
