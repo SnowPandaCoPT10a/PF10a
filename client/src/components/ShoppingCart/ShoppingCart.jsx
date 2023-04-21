@@ -41,8 +41,6 @@ const dispatch = useDispatch();
     }
   }, []);
 
-  console.log(allProducts)
-
   // window.localStorage.setItem("productscart", JSON.stringify(allProducts));
   // window.localStorage.setItem("totalprices", JSON.stringify(priceTotal));
   // window.localStorage.setItem("countproducts", JSON.stringify(countProducts));
@@ -233,8 +231,6 @@ const dispatch = useDispatch();
           ? { ...el }
           : el
       );
-
-
       setAllProducts(updateProduct);
       setCountProducts(countProducts + 1);
       setPriceTotal(priceTotal + Number(productNext.price));
@@ -271,7 +267,6 @@ const dispatch = useDispatch();
           <h3 className="BasketQty">
             {" "}
             <button className="butoninc" onClick={() => decrementProduct(el)}>-</button>
-          {console.log(el, 'ACÁ ESTOY')}
             {el.sizes?.map((size) => {
               if (size.size === el.size) {
                 return el.sizes.map((e) => {
@@ -369,8 +364,9 @@ const dispatch = useDispatch();
       </div>
     </div>
   );
-};
-
-export default ShoppingCart;
 
 
+
+
+  }
+  export default ShoppingCart;

@@ -26,12 +26,12 @@ export default function Card({
   const [selectedSize, setSelectedSize] = useState("");
   const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
-  // try {
-
-  //   var productReview = review.map((e) => <Reviews key={i} e={e} />);
-  // } catch (error) {
-  //   console.log(error);
-  // }
+  try {
+    
+    var productReview = review.filter((e) => e.hidden === false);
+  } catch (error) {
+    console.log(error);
+  }
 
   useEffect(() => {
     dispatch(getAllProductsId(id));
@@ -70,6 +70,7 @@ export default function Card({
         el.productsID === product.productsID && el.size === product.size
           ? {
               ...el,
+              // price: Number(el.price) + Number(product.price),
               sizes: el.sizes?.map((size) =>
                 size.size === product.size
                   ? {
@@ -154,6 +155,10 @@ export default function Card({
       size: selectedSize,
     }));
   }
+
+  //! Reviews
+
+  //let reviewName =  review.filter(r => r.name ===   )
 
   return (
     <div className="cardComponent">
@@ -262,13 +267,14 @@ export default function Card({
                   <div className="cardprice">
                     <h3 className="h3Name">${productInfoId.price}</h3>
                   </div>
+                  {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
                 </div>
               </div>
               <Link to="/Shop">
                 <button className="buttonback">Back to shop</button>
               </Link>
             </div>
-
+            {/* //! REVIEW */}
             <div>
               {/* <p className="text-center mt-5 titulos-color">Product reviews:</p>
               {productReview?.map((el) => {
@@ -283,7 +289,8 @@ export default function Card({
                   </div>
                 ) : null
               }
-              )} */}
+              )}
+              {/* //! REVIEW */}
             </div>
           </div>
         ) : (
@@ -292,4 +299,14 @@ export default function Card({
       </div>
     </div>
   );
+}
+
+{
+  /* <div class="card border-dark mb-3">
+<div class="card-header">{el.firstName}</div>
+<div class="card-body text-dark">
+  <h5 class="card-title">{el.rating}</h5>
+  <p class="card-text">{el.comment}</p>
+</div>
+</div> */
 }

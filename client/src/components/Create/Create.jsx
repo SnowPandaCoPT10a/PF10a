@@ -3,6 +3,7 @@ import "./Create.css";
 import { useDispatch, useSelector } from "react-redux";
 import { postProducts, getAllProducts } from "../../Redux/actions/index";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const validate = (input) => {
   let errors = {};
@@ -98,7 +99,11 @@ function Create() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(postProducts(input));
-    alert("Producto creado correctamente");
+    Swal.fire({
+      icon: "success",
+      title: "Done",
+      text: "Product created succesfully",
+    });
     setInput({
       name: "",
       img: "",
@@ -156,6 +161,7 @@ function Create() {
             quantity: 1,
             size: e.target.name,
             stock: e.target.value,
+            quantity: 1,
           },
         ],
       });
@@ -164,6 +170,7 @@ function Create() {
       newSizes[index] = {
         size: e.target.name,
         stock: nuevoNumero,
+        quantity: 1,
       };
       setInput({
         ...input,
@@ -191,12 +198,14 @@ function Create() {
     } else {
       const newSizes = [...input.numbersizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };
       setInput({
         ...input,
         numbersizes: newSizes,
+        
       });
     }
   }
@@ -211,6 +220,7 @@ function Create() {
         ...input,
         sizes: [
           ...input.sizes,
+          
           {
             quantity: 1,
             size: e.target.name,
@@ -221,6 +231,7 @@ function Create() {
     } else {
       const newSizes = [...input.sizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };
@@ -524,7 +535,7 @@ function Create() {
 
           {/* //!!!!!!! */}
           <hr />
-          <label htmlFor="pets-upload">Upload a photo</label>
+          <label htmlFor="pets-upload">Upload photo</label>
           <div className="pets-photo">
             <button id="pets-upload">
               <i className="fas fa-camera-retro"></i>
@@ -559,7 +570,7 @@ function Create() {
                 </button>
               )
             ) : (
-              <p className="danger">YOU HAVE ERRORS IN THE FORM</p>
+              <p className="danger">FIX ERRORS IN THE FORM</p>
             )}
           </div>
         </footer>
