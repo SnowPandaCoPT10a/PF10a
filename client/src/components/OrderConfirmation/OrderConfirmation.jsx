@@ -76,9 +76,9 @@ function OrderConfirmation() {
 
   return (
     <div className="orderConfir">
-      <div>Order Confirmation</div>
+      <div className="texto-order">Order Confirmation</div>
       <br></br>
-      <p>Thanks for placing an order.-</p>
+      <p className="texto-order">Thanks for placing an order.-</p>
       <button className="buttonorder" onClick={handleCreateBill}>
         Proceed with payment
       </button>

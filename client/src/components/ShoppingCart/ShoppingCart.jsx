@@ -1,7 +1,6 @@
 import React from "react";
 import "./ShoppingCart.css";
 import { useEffect } from "react";
-import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import Checkout from "../Checkout/Checkout";
 
@@ -51,26 +50,26 @@ const ShoppingCart = ({
     if (
       productToUpdate.sizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
-      )
+      ) && productToUpdate.sizes.find((el) => el.size === product.size).quantity > 0
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
-              ...el,
+            ...el,
 
-              sizes: productToUpdate.sizes?.map((size) =>
-                size.size === product.size
-                  ? {
-                      ...size,
+            sizes: productToUpdate.sizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
 
-                      stock: Number(size.stock + 1),
-                      quantity: Number(size.quantity - 1),
-                    }
-                  : size
-              ),
+                  stock: Number(size.stock + 1),
+                  quantity: Number(size.quantity - 1),
+                }
+                : size
+            ),
 
-              // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
-            }
+            // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
+          }
           : { ...el }
       );
 
@@ -94,26 +93,26 @@ const ShoppingCart = ({
     if (
       productToUpdate.boardsizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
-      )
+      ) && productToUpdate.boardsizes.find((el) => el.size === product.size).quantity > 0
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
-              ...el,
+            ...el,
 
-              boardsizes: productToUpdate.boardsizes?.map((size) =>
-                size.size === product.size
-                  ? {
-                      ...size,
+            boardsizes: productToUpdate.boardsizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
 
-                      stock: Number(size.stock + 1),
-                      quantity: Number(size.quantity - 1),
-                    }
-                  : size
-              ),
+                  stock: Number(size.stock + 1),
+                  quantity: Number(size.quantity - 1),
+                }
+                : size
+            ),
 
-              // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
-            }
+            // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
+          }
           : { ...el }
       );
 
@@ -137,26 +136,26 @@ const ShoppingCart = ({
     if (
       productToUpdate.numbersizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
-      )
+      ) && productToUpdate.numbersizes.find((el) => el.size === product.size).quantity > 0
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
-              ...el,
+            ...el,
 
-              numbersizes: productToUpdate.numbersizes?.map((size) =>
-                size.size === product.size
-                  ? {
-                      ...size,
+            numbersizes: productToUpdate.numbersizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
 
-                      stock: Number(size.stock + 1),
-                      quantity: Number(size.quantity - 1),
-                    }
-                  : size
-              ),
+                  stock: Number(size.stock + 1),
+                  quantity: Number(size.quantity - 1),
+                }
+                : size
+            ),
 
-              // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
-            }
+            // price: Number(productToUpdate.price) * productToUpdate?.sizes.map(el => el.size === product.size ? Number(el.quantity): null )
+          }
           : { ...el }
       );
 
@@ -188,36 +187,36 @@ const ShoppingCart = ({
       const updateProduct = allProducts.map((el) =>
         el.productsID === productNext.productsID && el.size === productNext.size
           ? {
-              ...el,
-              //price: Number(productNext.price) + Number(product.price),
-              sizes: productNext.sizes?.map((size) =>
-                size.size === product.size
-                  ? {
-                      ...size,
-                      stock: Number(size.stock - 1),
-                      quantity: Number(size.quantity + 1),
-                    }
-                  : size
-              ),
-              numbersizes: productNext.numbersizes?.map((size) =>
-                size.size === product.size
-                  ? {
-                      ...size,
-                      stock: Number(size.stock - 1),
-                      quantity: Number(size.quantity + 1),
-                    }
-                  : size
-              ),
-              boardsizes: productNext.boardsizes?.map((size) =>
-                size.size === "one size"
-                  ? {
-                      ...size,
-                      stock: Number(size.stock - 1),
-                      quantity: Number(size.quantity + 1),
-                    }
-                  : size
-              ),
-            }
+            ...el,
+            //price: Number(productNext.price) + Number(product.price),
+            sizes: productNext.sizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+            numbersizes: productNext.numbersizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+            boardsizes: productNext.boardsizes?.map((size) =>
+              size.size === "one size"
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+          }
           : el
       );
       const updateProducts = allProducts.map((el) =>
@@ -242,55 +241,71 @@ const ShoppingCart = ({
         JSON.stringify(countProducts + 1)
       );
     }
-    // else {
-    //   const newProduct = {
-    //     ...product,
-    //     price: Number(product.price) + Number(product.price),
-    //     sizes: product.sizes?.map((size) =>
-    //       size.size === product.size
-    //         ? {
-    //             ...size,
-    //             stock: Number(size.stock - 1),
-    //             quantity: Number(size.quantity + 1),
-    //           }
-    //         : size
-    //     ),
-    //     numbersizes: product.numbersizes?.map((size) =>
-    //       size.size === product.size
-    //         ? {
-    //             ...size,
-    //             stock: Number(size.stock - 1),
-    //             quantity: Number(size.quantity + 1),
-    //           }
-    //         : size
-    //     ),
-    //     boardsizes: product.boardsizes?.map((size) =>
-    //       size.size === "one size"
-    //         ? {
-    //             ...size,
-    //             stock: Number(size.stock - 1),
-    //             quantity: Number(size.quantity + 1),
-    //           }
-    //         : size
-    //     ),
-    //   };
-    //   const newProducts = [...allProducts, newProduct];
-    //   setAllProducts(newProducts);
-    //   setCountProducts(countProducts + 1);
-    //   setPriceTotal(priceTotal + Number(newProduct.price));
-    //    window.localStorage.setItem(
-    //     "productscart",
-    //     JSON.stringify(newProduct)
-    //   );
-    //   window.localStorage.setItem(
-    //     "totalprices",
-    //     JSON.stringify(priceTotal)
-    //   );
-    //   window.localStorage.setItem(
-    //     "countproducts",
-    //     JSON.stringify(countProducts)
-    //   );
-    // }
+  }
+
+  // price: Number(productToUpdate.price) - Number(product.price)
+  function incrementProduct(product) {
+    const productNext = allProducts.find(
+      (el) => el.productsID === product.productsID && el.size === product.size
+    );
+    if (productNext) {
+      const updateProduct = allProducts.map((el) =>
+        el.productsID === productNext.productsID && el.size === productNext.size
+          ? {
+            ...el,
+            //price: Number(productNext.price) + Number(product.price),
+            sizes: productNext.sizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+            numbersizes: productNext.numbersizes?.map((size) =>
+              size.size === product.size
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+            boardsizes: productNext.boardsizes?.map((size) =>
+              size.size === "one size"
+                ? {
+                  ...size,
+                  stock: Number(size.stock - 1),
+                  quantity: Number(size.quantity + 1),
+                }
+                : size
+            ),
+          }
+          : el
+      );
+      const updateProducts = allProducts.map((el) =>
+        el.productsID === product.productsID && el.size === product.size
+          ? { ...el }
+          : el
+      );
+
+      setAllProducts(updateProduct);
+      setCountProducts(countProducts + 1);
+      setPriceTotal(priceTotal + Number(productNext.price));
+      window.localStorage.setItem(
+        "productscart",
+        JSON.stringify(updateProduct)
+      );
+      window.localStorage.setItem(
+        "totalprices",
+        JSON.stringify(priceTotal + Number(productNext.price))
+      );
+      window.localStorage.setItem(
+        "countproducts",
+        JSON.stringify(countProducts + 1)
+      );
+    }
   }
 
   const renderProduct = () => {
@@ -306,12 +321,12 @@ const ShoppingCart = ({
             </Link>
             <img className="imgcart" src={el.img} alt="Img not found" />
           </div>
-          <BasketSize>
+          <p className="BasketSize">
             {el.size || el.boardsizes?.map((el) => el.size)}
-          </BasketSize>
-          <BasketQty>
+          </p>
+          <h3 className="BasketQty">
             {" "}
-            Quantity :
+            <button className="butoninc" onClick={() => decrementProduct(el)}>-</button>
             {el.sizes?.map((size) => {
               if (size.size === el.size) {
                 return el.sizes.map((e) => {
@@ -336,13 +351,13 @@ const ShoppingCart = ({
                   /* } */
                 }
               })}
-          </BasketQty>
-          <BasketPrice>
-            <button onClick={() => decrementProduct(el)}>-</button>${el.price}
-            <button onClick={() => incrementProduct(el)}>+</button>
-          </BasketPrice>
-          <BasketQty>
-            {(
+            <button className="butoninc" onClick={() => incrementProduct(el)}>+</button>
+          </h3>
+          <h3 className="BasketQty">
+            ${el.price}
+          </h3>
+          <h3 className="BasketPrice">
+            ${(
               el.price *
               (el.sizes?.reduce((acc, size) => {
                 if (size.size === el.size) {
@@ -369,7 +384,7 @@ const ShoppingCart = ({
                 }, 0) ||
                 0)
             ).toFixed(2)}
-          </BasketQty>
+          </h3>
         </React.Fragment>
       ));
     } else {
@@ -377,112 +392,40 @@ const ShoppingCart = ({
     }
   };
 
-  const renderTotal = () => {
-    const total = allProducts.reduce(
-      (total, product) => total + product.price,
-      0
-    );
-    return total;
+  const handleCheckout = () => {
+    navigate(`/checkout?products=${JSON.stringify(allProducts)}`);
   };
   return (
     <div>
-      <All>
-        <BasketContainer>
-        <h1 className='text-center mt-5 titulos-color'>SHOPPING CART</h1>
-          <Link to={`/checkout?products=${JSON.stringify(allProducts)}`}>
-            {priceTotal === 0 ? null :<BasketButton>Go to checkout</BasketButton>}
-            
-          </Link>
-          <BasketTable>
-            <BasketHeader>
+      <div className="All">
+        <div className="BasketContainer">
+          <h1 className='text-center mt-5 titulos-color'>SHOPPING CART</h1>
+          
+            {priceTotal === 0 ? '' :             
+            <button  onClick={() => handleCheckout ()} className="BasketButton">Go to checkout</button>}        
+             
+          <div className="BasketTable">
+            <div className="BasketHeader">
               <h4>Item</h4>
               <h4>Size</h4>
               <h4>Quantity</h4>
               <h4>Price</h4>
               <h4>Total</h4>
-            </BasketHeader>
-            <BasketHeaderLine />
-            <BasketHeader>{renderProduct()}</BasketHeader>
-            <BasketHeaderLine />
-          </BasketTable>
+            </div>
+            <hr className="BasketHeaderLine"></hr>
+            <div className="BasketHeader">{renderProduct()} </div>
+            <hr className="BasketHeaderLine"></hr>
+          </div>
           <button className="buttonvolver" onClick={() => clearCart()}>
             Clear
           </button>
-          <BasketTotal>Total: {priceTotal.toFixed(2)}</BasketTotal>
-        </BasketContainer>
-      </All>
+          <div className="BasketTotal">Total: ${priceTotal.toFixed(2)}</div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default ShoppingCart;
 
-const All = styled.div`
-  height: 100vh;
-  margin-top: 70px;
-  padding: 0;
-`;
 
-const BasketContainer = styled.div`
-  display: grid;
-  padding: 20px;
-  grid-template-rows: 0.25fr 1fr 0.25fr;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-`;
-const BasketTable = styled.div`
-  grid-column: 1 / span 6;
-  grid-template-rows: 0.25fr, 1fr 0.25fr 0.25fr;
-  column-gap: 20px;
-  padding-left: 10px;
-`;
-const BasketHeader = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 0.4fr 0.4fr 0.4fr;
-`;
-const BasketHeaderLine = styled.hr`
-  margin-bottom: 20px;
-  border: 1px solid gray;
-`;
-const BasketTitle = styled.h2`
-  grid-column: 1 / span 3;
-  padding-bottom: 20px;
-`;
-const BasketQty = styled.h3`
-  font-size: 18px;
-  font-weigth: bold;
-  grid-template-columns: 0.1fr 0.05fr 0.1fr 0.1fr;
-`;
-const BasketSize = styled.p`
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weigth: bold;
-  grid-template-columns: 0.1fr 0.05fr 0.1fr 0.1fr;
-`;
-
-const BasketPrice = styled.h3`
-  font-size: 20px;
-  font-weigth: bold;
-`;
-const BasketTotal = styled.h2`
-  justify-self: end;
-`;
-const BasketButton = styled.button`
-  margin: 50px;
-  border-radius: 8px;
-  height: 40px;
-  padding: 10px 20px;
-  background-color: #287094;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #3d3d3d;
-    border: 2px solid #3d3d3d;
-  }
-`;
