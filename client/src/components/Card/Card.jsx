@@ -26,12 +26,12 @@ export default function Card({
   const [selectedSize, setSelectedSize] = useState("");
   const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
-  try {
-    
-    var productReview = review.map((e) => <Reviews key={i} e={e} />);
-  } catch (error) {
-    console.log(error);
-  }
+  // try {
+
+  //   var productReview = review.map((e) => <Reviews key={i} e={e} />);
+  // } catch (error) {
+  //   console.log(error);
+  // }
 
   useEffect(() => {
     dispatch(getAllProductsId(id));
@@ -135,7 +135,7 @@ export default function Card({
       setAllProducts([...allProducts, newProduct]);
     }
     setOneProducts([...allProducts, product]);
-    
+
     Swal.fire({
       icon: "success",
       title: "Done",
@@ -157,93 +157,120 @@ export default function Card({
 
   return (
     <div className="cardComponent">
-      
       <div className="container ">
         {productInfoId ? (
           <div>
-          <div className="id">
-            <div className="imgBx">
-              <img
-                className="imgId"
-                src={productInfoId.img}
-                alt="Img not found"
-              />
-            </div>
-            <div className="details">
-              <div className="contentId">
-                <h2 className="pName">
-                  {productInfoId.name}
-                  <br />
-                </h2>
-                <br></br>
-                <p className="pIds">Brand: {(productInfoId.brand?.brandName)?productInfoId.brand?.brandName:productInfoId.brand}</p>
-                <p className="pIds">Best for: {productInfoId.activity}</p>
-                <p className="pIds">
-                  Description: {productInfoId?.description}
-                </p>
-                <p className="pIds">Made of: {productInfoId.material}</p>
-                <p className="pIds">Select size: </p>
+            <div className="id">
+              <div className="imgBx">
+                <img
+                  className="imgId"
+                  src={productInfoId.img}
+                  alt="Img not found"
+                />
+              </div>
+              <div className="details">
+                <div className="contentId">
+                  <h2 className="pName">
+                    {productInfoId.name}
+                    <br />
+                  </h2>
+                  <br></br>
+                  <p className="pIds">
+                    Brand:{" "}
+                    {productInfoId.brand?.brandName
+                      ? productInfoId.brand?.brandName
+                      : productInfoId.brand}
+                  </p>
+                  <p className="pIds">Best for: {productInfoId.activity}</p>
+                  <p className="pIds">
+                    Description: {productInfoId?.description}
+                  </p>
+                  <p className="pIds">Made of: {productInfoId.material}</p>
+                  <p className="pIds">Select size: </p>
+                  {console.log(productInfoId.sizes, "selector")}
+                  {console.log(productInfoId)}
+
                   <div className="size-container">
-                    {(productInfoId.numbersizes &&
-                      productInfoId.numbersizes?.map((el) => (
-                        <button
-                          className="buttonsize"
-                          value={el.size}
-                          onClick={() =>
-                            handleOnAddProduct({
-                              ...productInfoId,
-                              size: el.size,
-                            })
-                          }
-                          key={el.size}
-                        >
-                          {el.size}
-                        </button>
-                      ))) ||
-                      productInfoId.sizes?.map((el) => (
-                        <button
-                          className="buttonsize"
-                          value={el.size}
-                          onClick={() =>
-                            handleOnAddProduct({
-                              ...productInfoId,
-                              size: el.size,
-                            })
-                          }
-                          key={el.size}
-                        >
-                          {el.size}
-                        </button>
-                      )) ||
-                      productInfoId.boardsizes?.map((el) => (
-                        <button
-                          className="buttonsize"
-                          value={el.size}
-                          onClick={() =>
-                            handleOnAddProduct({
-                              ...productInfoId,
-                              size: el.size,
-                            })
-                          }
-                          key={el.size}
-                        >
-                          {el.size}
-                        </button>
-                      ))}
+                    {productInfoId.sizes ? (
+                      productInfoId.sizes.map((el) => (
+                        <div>
+                          {console.log(productInfoId.sizes, "size de size")}
+                          <button
+                            className="buttonsize"
+                            value={el.size}
+                            onClick={() =>
+                              handleOnAddProduct({
+                                ...productInfoId,
+                                size: el.size,
+                              })
+                            }
+                            key={el.size}
+                          >
+                            {el.size}
+                          </button>
+                        </div>
+                      ))
+                    ): null}
+                    {productInfoId.numbersizes ? (
+                      productInfoId.numbersizes.map((el) => (
+                        <div>
+                          {console.log(
+                            productInfoId.numbersizes,
+                            "size de number"
+                          )}
+                          <button
+                            className="buttonsize"
+                            value={el.size}
+                            onClick={() =>
+                              handleOnAddProduct({
+                                ...productInfoId,
+                                size: el.size,
+                              })
+                            }
+                            key={el.size}
+                          >
+                            {el.size}
+                          </button>
+                        </div>
+                      ))
+                    ): null}
+                    {productInfoId.boardsizes ? (
+                      productInfoId.boardsizes.map((el) => (
+                        <div>
+                          {console.log(
+                            productInfoId.boardsizes,
+                            "size de board"
+                          )}
+                          <button
+                            className="buttonsize"
+                            value={el.size}
+                            onClick={() =>
+                              handleOnAddProduct({
+                                ...productInfoId,
+                                size: el.size,
+                              })
+                            }
+                            key={el.size}
+                          >
+                            {el.size}
+                          </button>
+                        </div>
+                      ))
+                    )
+                  : null} 
                   </div>
                   <div className="cardprice">
                     <h3 className="h3Name">${productInfoId.price}</h3>
                   </div>
                 </div>
-              </div>              
+              </div>
               <Link to="/Shop">
                 <button className="buttonback">Back to shop</button>
               </Link>
-             
             </div>
-           
+
             <div>
-            <p className="text-center mt-5 titulos-color">Product reviews:</p>
+              {/* <p className="text-center mt-5 titulos-color">Product reviews:</p>
               {productReview?.map((el) => {
                 <div key={el.idReviews}></div>
             return    el.productName === productInfoId.name && el.idReviews ? (
@@ -256,8 +283,7 @@ export default function Card({
                   </div>
                 ) : null
               }
-              )}
-           
+              )} */}
             </div>
           </div>
         ) : (
@@ -267,5 +293,3 @@ export default function Card({
     </div>
   );
 }
-
-
