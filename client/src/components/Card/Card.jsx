@@ -28,7 +28,7 @@ export default function Card({
 
   try {
     
-    var productReview = review.map((e) => e);
+    var productReview = review.map((e) => <Reviews key={i} e={e} />);
   } catch (error) {
     console.log(error);
   }
@@ -70,7 +70,6 @@ export default function Card({
         el.productsID === product.productsID && el.size === product.size
           ? {
               ...el,
-              // price: Number(el.price) + Number(product.price),
               sizes: el.sizes?.map((size) =>
                 size.size === product.size
                   ? {
@@ -156,10 +155,6 @@ export default function Card({
     }));
   }
 
-  //! Reviews
-
-  //let reviewName =  review.filter(r => r.name ===   )
-
   return (
     <div className="cardComponent">
       
@@ -188,11 +183,6 @@ export default function Card({
                 </p>
                 <p className="pIds">Made of: {productInfoId.material}</p>
                 <p className="pIds">Select size: </p>
-
-
-                  {/*<h4  className="imgBx2" data-brand={productInfoId.model}></h4>*/}
-
-                  {/* <p className='pIds'>*/}
                   <div className="size-container">
                     {(productInfoId.numbersizes &&
                       productInfoId.numbersizes?.map((el) => (
@@ -244,7 +234,6 @@ export default function Card({
                   <div className="cardprice">
                     <h3 className="h3Name">${productInfoId.price}</h3>
                   </div>
-                  {/* <button onClick={((e) => handleOnAddProduct(productInfoId))} >Buy Now</button> */}
                 </div>
               </div>              
               <Link to="/Shop">
@@ -252,12 +241,12 @@ export default function Card({
               </Link>
              
             </div>
-            {/* //! REVIEW */}
+           
             <div>
             <p className="text-center mt-5 titulos-color">Product reviews:</p>
               {productReview?.map((el) => {
                 <div key={el.idReviews}></div>
-                el.productName === productInfoId.name && el.idReviews ? (
+            return    el.productName === productInfoId.name && el.idReviews ? (
                   <div className="card border-dark mb-3">
                     <div className="card-header">{el.firstName}</div>
                     <div className="card-body text-dark">
@@ -268,7 +257,7 @@ export default function Card({
                 ) : null
               }
               )}
-              {/* //! REVIEW */}
+           
             </div>
           </div>
         ) : (
@@ -279,12 +268,4 @@ export default function Card({
   );
 }
 
-{
-  /* <div class="card border-dark mb-3">
-<div class="card-header">{el.firstName}</div>
-<div class="card-body text-dark">
-  <h5 class="card-title">{el.rating}</h5>
-  <p class="card-text">{el.comment}</p>
-</div>
-</div> */
-}
+

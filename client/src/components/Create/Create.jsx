@@ -115,7 +115,9 @@ function Create() {
       featuredProduct: "",
     });
     dispatch(getAllProducts());
-    navigate("/Shop");
+
+    navigate("/");
+
   }
   function handleClickCategory(e) {
     setInput({

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { updateAddres } from "../../Redux/actions";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector } from "react-redux";
+import './Checkout.css'
 
 function Checkout() {
   const location = useLocation();
@@ -68,16 +68,16 @@ function Checkout() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <CheckoutContainer>
-        <CheckoutTitle>Checkout</CheckoutTitle>
+      <div className="CheckoutContainer">
+        <h2 className="CheckoutTitle">Checkout</h2>
 
-        <CheckoutHeader>
+        <div className="CheckoutHeader">
           <h4>Your details:</h4>
-        </CheckoutHeader>
-        <CheckoutHeaderLine />
-        <CheckoutTable>
-          <CheckoutFormLabel>Name *</CheckoutFormLabel>
-          <CheckoutFormInput
+        </div>
+        <hr className="CheckoutHeaderLine" />
+        <div className="CheckoutTable">
+          <label className="CheckoutFormLabel">Name *</label>
+          <input className={`checkout-form-input ${showError("name") ? "invalid" : ""}`}
             type="text"
             name="name"
             onChange={handleChange}
@@ -85,8 +85,8 @@ function Checkout() {
             invalid={showError("name")}
             onBlur={handleBlur}
           />
-          <CheckoutFormLabel>Email *</CheckoutFormLabel>
-          <CheckoutFormInput
+          <label className="CheckoutFormLabel">Email *</label>
+          <input className={`checkout-form-input ${showError("email") ? "invalid" : ""}`}
             type="text"
             name="email"
             onChange={handleChange}
@@ -94,22 +94,22 @@ function Checkout() {
             invalid={showError("email")}
             onBlur={handleBlur}
           />
-        </CheckoutTable>
-        <CheckoutHeader>
+        </div>
+        <div className="CheckoutHeader">
           <h4>Address Details:</h4>
-        </CheckoutHeader>
-        <CheckoutHeaderLine />
+        </div>
+        <hr className="CheckoutHeaderLine" />
 
-        <CheckoutTable>
-          <CheckoutFormLabel>Billing Address</CheckoutFormLabel>
-          <CheckoutAddress>
+        <div className="CheckoutTable">
+          <label className="CheckoutFormLabel">Billing Address</label>
+          <div className='CheckoutAddress'>
             <input type="text" name="billingAddress1" />
             <input type="text" name="billingAddress2" />
             <input type="text" name="billingCity" />
-          </CheckoutAddress>
-          <CheckoutFormLabel>Shipping Address *</CheckoutFormLabel>
-          <CheckoutAddress>
-            <CheckoutFormInput
+          </div>
+          <label className="CheckoutFormLabel">Shipping Address *</label>
+          <div className='CheckoutAddress'>
+            <input className={`checkout-form-input ${showError("shippingAddress1") ? "invalid" : ""}`}
               type="text"
               name="shippingAddress1"
               onChange={handleChange}
@@ -119,140 +119,28 @@ function Checkout() {
             />
             <input type="text" name="shippingAddress2" />
             <input type="text" name="shippingCity" />
-          </CheckoutAddress>
-        </CheckoutTable>
-        <CancelButton onClick={() => navigate("/ShoppingCart")}>
+          </div>
+        </div>
+        <button className="CancelButton" onClick={() => navigate("/ShoppingCart")}>
           Back to cart
-        </CancelButton>
+        </button>
         <div></div>
-        <Link
-          to={`/orderconfirmation?products=${JSON.stringify(products)}`}
-          onClick={() => scrollTop()}
-        >
-          {form.name && form.shippingAddress1 && form.email ? (
-            <ConfirmButton>Confirm Order</ConfirmButton>
-          ) : (
-            <p>Please complete the form with your information</p>
-          )}
-        </Link>
-      </CheckoutContainer>
+        {form.name && form.shippingAddress1 && form.email ? (
+          <Link
+            to={`/orderconfirmation?products=${JSON.stringify(products)}`}
+            onClick={() => scrollTop()}
+          >
+            <button className="ConfirmButton">Confirm Order</button>
+          </Link>
+        ) : (
+          <p className="please">Please complete the form with your information</p>
+        )}
+
+      </div>
     </form>
   );
 }
 
 export default Checkout;
 
-const CheckoutContainer = styled.div`
-  margin-top: 30px;
-  display: grid;
-  padding-top: 20px;
-  grid-template-rows: 0.25fr 1fr 0.25fr 0.25fr 0.25fr 0.5fr;
-  grid-template-columns: 0.1fr 0.1fr 0.1fr;
-`;
-const CheckoutTable = styled.div`
-  grid-column: 1 / span 3;
-  display: grid;
-  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
-  grid-template-columns: 0.1fr 0.4fr 0.1fr 0.4fr;
-  column-gap: 20px;
-  padding-left: 10px;
-`;
 
-const CheckoutHeader = styled.div`
-  grid-column: 1 / span 3;
-  padding-top: 20px;
-`;
-
-const CheckoutHeaderLine = styled.hr`
-  grid-column: 1 / span 3;
-  margin-bottom: 20px;
-  border: 1px solid gray;
-`;
-
-const CheckoutTitle = styled.h2`
-  grid-column: 1 / span 2;
-  padding-bottom: 20px;
-`;
-
-const CheckoutAddress = styled.div`
-  display: grid;
-  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
-  grid-template-columns: 1fr;
-  grid-row-gap: 10px;
-`;
-
-const CheckoutFormLabel = styled.label`
-  justift-self: end;
-`;
-
-const CheckoutFormInput = styled.input`
-  ${(props) =>
-    props.invalid &&
-    `
-    border-width:3px;
-    border-color: red;
-`};
-  border-style: solid;
-`;
-
-const CheckoutFormCheckbox = styled.input`
-  grid-column: 2 / span 3;
-  justift-self: start;
-  margin-bottom: 20px;
-`;
-
-const CheckoutButton = styled.button`
-  margin-bottom: 25px;
-  border-radius: 8px;
-  border-radiues: 8px;
-  height: 40 px;
-  grid-column: 3;
-
-  &:hover {
-    box-shadow: 0 0 0 6px #488cfb;
-  }
-`;
-
-const CancelButton = styled.button`
-  margin: 50px;
-  border-radius: 8px;
-  height: 40px;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: #3d3d3d;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #3d3d3d;
-    border: 2px solid #3d3d3d;
-  }
-`;
-
-const ConfirmButton = styled.button`
-  margin: 50px;
-  border-radius: 8px;
-  height: 40px;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: #287094;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #3d3d3d;
-    border: 2px solid #3d3d3d;
-  }
-`;
