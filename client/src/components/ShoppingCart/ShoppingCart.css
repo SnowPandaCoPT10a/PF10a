@@ -1,5 +1,157 @@
-.imgcart{
+.imgcart {
     display: flex;
     width: 15%;
 }
 
+.All {
+    height: 100vh;
+    margin-left: 20px;  
+    margin-right: 20px;  
+    padding: 0;
+}
+
+.BasketContainer {
+    display: grid;    
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+
+/* #light .BasketContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#dark .BasketContainer {
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.2);
+} */
+
+.BasketTable {
+    grid-column: 1 / span 6;
+    grid-template-rows: 0.25fr, 1fr 0.25fr 0.25fr;
+    column-gap: 20px;
+    padding-left: 10px;
+}
+
+.BasketHeader {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.4fr 0.4fr 0.4fr;
+}
+
+#dark .BasketHeader {
+    color: #F6F6F6;
+}
+
+.BasketHeaderLine {
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+.BasketQty {
+   
+    font-size: 18px;
+    font-weight: bold;
+    grid-template-columns: 0.1fr 0.05fr 0.1fr 0.1fr;
+}
+
+.butoninc {
+    width: 20%;
+    height: 35%;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.butoninc:hover{
+    cursor: pointer;
+    background-color: #287094;
+    color: #fff;
+    border: 2px solid #287094;
+}
+
+.BasketSize {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    grid-template-columns: 0.1fr 0.05fr 0.1fr 0.1fr;
+}
+
+.BasketPrice {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.BasketTotal {
+    justify-self: end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dark .BasketTotal {
+    color: #F6F6F6;
+}
+
+.BasketButton {
+    position: absolute;
+    right: 10px;
+    margin: 50px;
+    border-radius: 8px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #287094;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.BasketButton:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #3d3d3d;
+    border: 2px solid #3d3d3d;
+}
+
+@media screen and (max-width: 767px) {
+    .BasketContainer {
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+    }
+
+    .BasketHeader {
+        grid-template-columns: 1fr 0.5fr 0.4fr 0.4fr 0.4fr;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    .BasketHeader h4 {
+        font-size: 12px;
+    }
+
+    .imgcart {
+        width: 30%;
+    }
+
+    .BasketSize {
+        font-size: 10px;
+    }
+
+    .BasketQty {
+        font-size: 10px;
+    }
+
+    .BasketPrice {
+        font-size: 10px;
+    }
+
+    .BasketButton {
+        font-size: 10px;
+    }
+
+    .buttonvolver {
+        font-size: 10px;
+    }
+
+    .BasketTotal {
+        font-size: 10px;
+    }
+}
