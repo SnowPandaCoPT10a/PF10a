@@ -26,6 +26,7 @@ import PrivacyPolicies from './components/Footers/PrivacyPolicies/PrivacyPolicie
 import ManageBills from "./components/Manage_Bills/Manage_Bills"
 import ProfileBills from "./components/Profile_Bills/Profile_Bills"
 import ProfileReview from "./components/Profile_Review/Profile_Review"
+import ManageReviews from "./components/Manage_Reviews/Manage_Reviews"
 
 
 //modo oscuro
@@ -92,6 +93,10 @@ function App() {
             <Route exact path="/ManageBills" element={<ManageBills />} />
             <Route exact path="/ProfileBills" element={<ProfileBills />} />
             <Route exact path="/ProfileReview" element={<ProfileReview />} />
+            <Route exact path="/ManageReviews" element={<ManageReviews />} />
+
+            
+
           </Routes>
         </div>
         <Chatbot />

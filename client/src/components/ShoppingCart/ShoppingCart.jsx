@@ -3,6 +3,8 @@ import "./ShoppingCart.css";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Checkout from "../Checkout/Checkout";
+import { useDispatch } from "react-redux";
+import { getAllProducts } from "../../Redux/actions";
 
 const ShoppingCart = ({
   allProducts,
@@ -13,7 +15,7 @@ const ShoppingCart = ({
   setPriceTotal,
 }) => {
   const navigate = useNavigate();
-
+const dispatch = useDispatch();
   const clearCart = () => {
     window.localStorage.setItem("productscart", JSON.stringify([]));
     window.localStorage.setItem("totalprices", JSON.stringify(0));
@@ -24,6 +26,7 @@ const ShoppingCart = ({
   };
 
   useEffect(() => {
+    dispatch(getAllProducts())
     const storedProduct = window.localStorage.getItem("productscart");
     const storedPriceTotal = window.localStorage.getItem("totalprices");
     const storedCountProducts = window.localStorage.getItem("countproducts");
