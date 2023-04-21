@@ -152,13 +152,15 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
     });
     
     setIsEditing(false);
-
+    setTimeout(function() {
+      location.reload();
+    }, 2000);
     
   };
   try {
     if (isAuthenticated) {
       const perfiles = Object.values(datoUsuario)
-      console.log(perfiles)
+      
       const perfil = perfiles?.find((obj) => obj.email === user.email);
       
       if (isEditing) {
