@@ -42,7 +42,7 @@ const Header = ({
     perfil = datos.filter((obj) => obj.email === user.email); // estoy matcheadn que el email de aut0 este en  la base de datos 
 
   } catch (error) {
-    console.log('Esperando datos');
+    console.log();
   }
   let isAdmin = null;
 
@@ -51,7 +51,7 @@ const Header = ({
 
   }
   catch (error) {
-    console.log('Esperando datos');
+    console.log();
   }
 
 
