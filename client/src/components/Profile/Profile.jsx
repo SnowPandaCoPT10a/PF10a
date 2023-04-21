@@ -43,21 +43,21 @@ const Profile = () => {
 		  switch (name) {
         case 'first_name':
           if (!/^[a-zA-ZÀ-ÿ]+$/.test(value)) {
-            errors.first_name = 'Nombre inválido';
+            errors.first_name = 'Invalid name';
           } else {
             delete errors.first_name;
           }
           break;
           case 'last_name':
             if (!/^[a-zA-ZÀ-ÿ]+$/.test(value)) {
-              errors.last_name = 'Apellido inválido';
+              errors.last_name = 'Invaled Lastname';
             } else {
               delete errors.last_name;
             }
             break;
             case 'nationality':
               if (!/^[a-zA-Z\s]+$/.test(value)) {
-                errors.nationality = 'Nacionalidad inválido';
+                errors.nationality = 'Invalid nacionality';
               } else {
                 delete errors.nationality;
               }
@@ -68,15 +68,15 @@ const Profile = () => {
                   const parsedDate = value;
                   
                   if (parsedDate > currentDate) 
-                    {errors.date_birth = 'Date cannot be greater than today'};
+                    {errors.date_birth = 'Date cannot be further than today'};
                     delete errors.date_birth;
                 } else {
-                  errors.date_birth = 'Date cannot be greater than today'
+                  errors.date_birth = 'Date cannot be further than today'
                 }
                 break;
                 case 'mobile':
                   if (!/^\d{0,10}$/.test(value)) {
-                    errors.mobile = 'Número de teléfono inválido';
+                    errors.mobile = 'Invalid Phone Number';
                   } else {
                     delete errors.mobile;
                   }
@@ -84,14 +84,14 @@ const Profile = () => {
 	
                   case "image":
                   if (!/^https:\/\/[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+(\/[a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=%]*)?$/.test(value)) {
-                    errors.image = "URL de imagen inválida";
+                    errors.image = "Invalid image URL";
                   } else {
                     delete errors.image;
                   }
                   break;
                   case 'address':
                     if (!/^[a-zA-Z0-9\s]+$/.test(value)) {
-                      errors.address = 'Direccion inválida';
+                      errors.address = 'Invalid address';
                     } else {
                       delete errors.address;
                     }
