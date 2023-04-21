@@ -41,25 +41,28 @@ const dispatch = useDispatch();
     }
   }, []);
 
+  console.log(allProducts)
+
   // window.localStorage.setItem("productscart", JSON.stringify(allProducts));
   // window.localStorage.setItem("totalprices", JSON.stringify(priceTotal));
   // window.localStorage.setItem("countproducts", JSON.stringify(countProducts));
 
   function decrementProduct(product) {
+    console.log(product, 'productos')
     const productToUpdate = allProducts?.find(
       (el) => el.productsID === product.productsID && el.size === product.size
     );
-
+      console.log(productToUpdate);
+      if (productToUpdate.sizes) {
     if (
-      productToUpdate.sizes?.map((el) =>
+      productToUpdate?.sizes?.map(el =>
         el.size === product.size ? el.quantity > 1 : null
-      ) && productToUpdate.sizes.find((el) => el.size === product.size).quantity > 0
+      ) && productToUpdate.sizes.find((el) => el.size === product.size && el.quantity > 0)
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
             ...el,
-
             sizes: productToUpdate.sizes?.map((size) =>
               size.size === product.size
                 ? {
@@ -93,21 +96,21 @@ const dispatch = useDispatch();
         JSON.stringify(countProducts - 1)
       );
     }
+  }
+  if (productToUpdate.boardsizes) {
     if (
-      productToUpdate.boardsizes?.map((el) =>
+      productToUpdate?.boardsizes?.map(el =>
         el.size === product.size ? el.quantity > 1 : null
-      ) && productToUpdate.boardsizes.find((el) => el.size === product.size).quantity > 0
+      ) && productToUpdate.boardsizes.find((el) => el.size === product.size && el.quantity > 0)
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
           ? {
             ...el,
-
             boardsizes: productToUpdate.boardsizes?.map((size) =>
               size.size === product.size
                 ? {
                   ...size,
-
                   stock: Number(size.stock + 1),
                   quantity: Number(size.quantity - 1),
                 }
@@ -136,10 +139,12 @@ const dispatch = useDispatch();
         JSON.stringify(countProducts - 1)
       );
     }
+  }
+  if (productToUpdate?.numbersizes) {
     if (
-      productToUpdate.numbersizes?.map((el) =>
+      productToUpdate?.numbersizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
-      ) && productToUpdate.numbersizes.find((el) => el.size === product.size).quantity > 0
+      ) && productToUpdate.numbersizes.find((el) => el.size === product.size && el.quantity > 0)
     ) {
       const updatedProduct = allProducts.map((el) =>
         el.productsID === product.productsID && el.size === product.size
@@ -180,70 +185,6 @@ const dispatch = useDispatch();
       );
     }
   }
-
-  // price: Number(productToUpdate.price) - Number(product.price)
-  function incrementProduct(product) {
-    const productNext = allProducts.find(
-      (el) => el.productsID === product.productsID && el.size === product.size
-    );
-    if (productNext) {
-      const updateProduct = allProducts.map((el) =>
-        el.productsID === productNext.productsID && el.size === productNext.size
-          ? {
-            ...el,
-            //price: Number(productNext.price) + Number(product.price),
-            sizes: productNext.sizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  ...size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ),
-            numbersizes: productNext.numbersizes?.map((size) =>
-              size.size === product.size
-                ? {
-                  ...size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ),
-            boardsizes: productNext.boardsizes?.map((size) =>
-              size.size === "one size"
-                ? {
-                  ...size,
-                  stock: Number(size.stock - 1),
-                  quantity: Number(size.quantity + 1),
-                }
-                : size
-            ),
-          }
-          : el
-      );
-      const updateProducts = allProducts.map((el) =>
-        el.productsID === product.productsID && el.size === product.size
-          ? { ...el }
-          : el
-      );
-
-      setAllProducts(updateProduct);
-      setCountProducts(countProducts + 1);
-      setPriceTotal(priceTotal + Number(productNext.price));
-      window.localStorage.setItem(
-        "productscart",
-        JSON.stringify(updateProduct)
-      );
-      window.localStorage.setItem(
-        "totalprices",
-        JSON.stringify(priceTotal + Number(productNext.price))
-      );
-      window.localStorage.setItem(
-        "countproducts",
-        JSON.stringify(countProducts + 1)
-      );
-    }
   }
 
   // price: Number(productToUpdate.price) - Number(product.price)
@@ -293,6 +234,7 @@ const dispatch = useDispatch();
           : el
       );
 
+
       setAllProducts(updateProduct);
       setCountProducts(countProducts + 1);
       setPriceTotal(priceTotal + Number(productNext.price));
@@ -310,7 +252,6 @@ const dispatch = useDispatch();
       );
     }
   }
-
   const renderProduct = () => {
     if (allProducts.length > 0) {
       return allProducts.map((el) => (
@@ -330,6 +271,7 @@ const dispatch = useDispatch();
           <h3 className="BasketQty">
             {" "}
             <button className="butoninc" onClick={() => decrementProduct(el)}>-</button>
+          {console.log(el, 'ACÁ ESTOY')}
             {el.sizes?.map((size) => {
               if (size.size === el.size) {
                 return el.sizes.map((e) => {
@@ -339,12 +281,12 @@ const dispatch = useDispatch();
                   }
                 });
               }
-            }) ||
+            })}{
               el.numbersizes?.map((size) => {
                 if (size.size === el.size) {
                   return size.quantity;
                 }
-              }) ||
+              })}{
               el.boardsizes?.map((size) => {
                 {
                   /* if (size.size === el.size) { */

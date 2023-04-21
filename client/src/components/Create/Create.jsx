@@ -153,6 +153,7 @@ function Create() {
         boardsizes: [
           ...input.boardsizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: e.target.value,
           },
@@ -181,6 +182,7 @@ function Create() {
         numbersizes: [
           ...input.numbersizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: e.target.value,
           },
@@ -210,6 +212,7 @@ function Create() {
         sizes: [
           ...input.sizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: nuevoNumero,
           },
