@@ -23,7 +23,7 @@ const Profile = () => {
 		
 	});
 	const [editFormErrors,setEditFormErrors ] = useState({});
-
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
@@ -35,54 +35,83 @@ const Profile = () => {
   };
 
   const handleInputChange = (event) => {
-    /*const { name, value } = event.target;
-  		
+    const { name, value } = event.target;
+    let errors = { ...editFormErrors };
+    console.log(editFormState)
+
+    
 		  switch (name) {
-			case "first_name":
-			  if (!/^[a-zA-Z\s]{2,}$/.test(value)) {
-          editFormErrors.first_name = "Nombre inválido";
-			  } 
-			  break;
-			case "last_name":
-			  if (!/^[a-zA-Z\s]{2,}$/.test(value)) {
-          editFormErrors.last_name = "Apellido inválido";
-			  } 
-			  break;
-			case "email":
-			  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-          editFormErrors.email = "Email inválido";
-			  }
-			  break;
-			  case "nationality":
-				if (!/^[a-zA-Z\s]+$/.test(value)) {
-				  editFormErrors.nationality = "Nacionalidad inválida";
-				}
-				break;
-				case "date_birth":
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
-    editFormErrors.date_birth = "Fecha inválida";
-  } 
-  break;case "mobile":
-  if (!/^\d{0,10}$/.test(value)) {
-    editFormErrors.mobile = "Número de teléfono inválido";
-  } 
-  break;
-  case "image":
-  if (!/^(ftp|http|https):\/\/[^ "]+$/.test(value)) {
-    editFormErrors.image = "URL de imagen inválida";
-  } 
-  break;
+        case 'first_name':
+          if (!/^[a-zA-ZÀ-ÿ]+$/.test(value)) {
+            errors.first_name = 'Nombre inválido';
+          } else {
+            delete errors.first_name;
+          }
+          break;
+          case 'last_name':
+            if (!/^[a-zA-ZÀ-ÿ]+$/.test(value)) {
+              errors.last_name = 'Apellido inválido';
+            } else {
+              delete errors.last_name;
+            }
+            break;
+            case 'nationality':
+              if (!/^[a-zA-Z\s]+$/.test(value)) {
+                errors.nationality = 'Nacionalidad inválido';
+              } else {
+                delete errors.nationality;
+              }
+              break;
+              case 'date_birth':
+                if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+                  const currentDate = new Date();
+                  const parsedDate = value;
+                  
+                  if (parsedDate > currentDate) 
+                    {errors.date_birth = 'Date cannot be greater than today'};
+                    delete errors.date_birth;
+                } else {
+                  errors.date_birth = 'Date cannot be greater than today'
+                }
+                break;
+                case 'mobile':
+                  if (!/^\d{0,10}$/.test(value)) {
+                    errors.mobile = 'Número de teléfono inválido';
+                  } else {
+                    delete errors.mobile;
+                  }
+                  break;
+	
+                  case "image":
+                  if (!/^https:\/\/[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+(\/[a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=%]*)?$/.test(value)) {
+                    errors.image = "URL de imagen inválida";
+                  } else {
+                    delete errors.image;
+                  }
+                  break;
+                  case 'address':
+                    if (!/^[a-zA-Z0-9\s]+$/.test(value)) {
+                      errors.address = 'Direccion inválida';
+                    } else {
+                      delete errors.address;
+                    }
+                    break;
 
 			// Agregar más casos según los campos que tenga el formulario
-		  }*/
+		  }
+      setEditFormErrors(errors);
+      setIsSubmitDisabled(Object.keys(errors).length > 0);
+      
       setEditFormState({
         ...editFormState,
-        [event.target.name]: event.target.value,
+        [name]: value,
       });
-      /*setEditFormErrors({
-        ...editFormState,
-        [event.target.name]: event.target.name
-    })*/
+    ;
+    
+
+
+
+
     
   };
   const handleEditSubmit = (event) => {
@@ -143,7 +172,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
     setIsEditing(false);
     setTimeout(function() {
       location.reload();
-    }, 2000);
+    }, 500);
     
   };
   try {
@@ -164,8 +193,12 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
             <h1 className="h1profile">Name: {perfil.first_name}</h1>
             <h1 className="h1profile">Last Name: {perfil.last_name}</h1>
             <h1 className="h1profile">Email: {perfil.email}</h1>
+            
+            
+            
             <label className="profile-label">
               <input
+                required
                 className="inputprofile"
                 type="text"
                 name="first_name"
@@ -227,16 +260,6 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 <p className="error">{editFormErrors.date_birth}</p>
             )}
             </label>
-            <label>
-              <input
-                className="inputprofile"
-                type="text"
-                name="image"
-                placeholder="...Profile Picture"
-                value={editFormState.image}
-                onChange={handleInputChange}
-              />
-            </label>
             <label className="profile-label">
               <input
                 className="inputprofile"
@@ -250,13 +273,39 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
                 <p className="error">{editFormErrors.address}</p>
             )}
             </label>
-            <button
+            <label>
+              <input
+                className="inputprofile"
+                type="text"
+                name="image"
+                placeholder="...Profile Picture"
+                value={editFormState.image}
+                onChange={handleInputChange}
+              />
+            </label>
+
+            {
+              !editFormState.image &&
+              !editFormState.address && 
+              !editFormState.date_birth &&
+              !editFormState.mobile &&
+              !editFormState.nationality &&
+              !editFormState.last_name &&
+              !editFormState.first_name 
+            
+            ? null :
+            
+           ( <button
+
               className="buttoneditar"
               type="submit"
+              disabled={isSubmitDisabled}
               onClick={(e) => handleEditSubmit(e)}
             >
               Guardar cambios
-            </button>
+            </button>)
+            
+            }
 
             
           </form>
@@ -277,7 +326,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
           <h1 className="h1profile">Email: {perfil.email}</h1>
           <h1 className="h1profile">Address: {perfil.address}</h1>
 
-          <button className="buttoneditar" onClick={handleEditClick}>
+          <button className="buttoneditar"   onClick={handleEditClick} >
             Editar información
           </button>
         </div>
