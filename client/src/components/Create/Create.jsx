@@ -3,6 +3,7 @@ import "./Create.css";
 import { useDispatch, useSelector } from "react-redux";
 import { postProducts, getAllProducts } from "../../Redux/actions/index";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const validate = (input) => {
   let errors = {};
@@ -98,7 +99,11 @@ function Create() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(postProducts(input));
-    alert("Producto creado correctamente");
+    Swal.fire({
+      icon: "success",
+      title: "Done",
+      text: "Product created succesfully",
+    });
     setInput({
       name: "",
       img: "",
@@ -529,7 +534,7 @@ function Create() {
 
           {/* //!!!!!!! */}
           <hr />
-          <label htmlFor="pets-upload">Upload a photo</label>
+          <label htmlFor="pets-upload">Upload photo</label>
           <div className="pets-photo">
             <button id="pets-upload">
               <i className="fas fa-camera-retro"></i>
@@ -564,7 +569,7 @@ function Create() {
                 </button>
               )
             ) : (
-              <p className="danger">YOU HAVE ERRORS IN THE FORM</p>
+              <p className="danger">FIX ERRORS IN THE FORM</p>
             )}
           </div>
         </footer>

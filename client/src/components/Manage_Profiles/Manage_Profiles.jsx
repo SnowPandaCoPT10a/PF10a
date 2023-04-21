@@ -8,7 +8,6 @@ import {
   setPrivilegeUser,
   setStatusUser,
 } from "../../Redux/actions/index.js";
-import axios from "axios";
 
 const FormCreatePoke = () => {
   const dispatch = useDispatch();
@@ -55,7 +54,7 @@ const FormCreatePoke = () => {
                     <p>Email: {e.email}</p>
                   </div>
                   <div className="btn_">
-                    <button className="-btnbuy">Edit Now</button>
+                    
 
                     {e.status === "active" ? (
                       <button
@@ -80,18 +79,18 @@ const FormCreatePoke = () => {
                     {e.status === "active" ? (
                       <button
                         className="fav"
-                        onClick={() => handleBannedProduct(e.email)}
+                        onClick={() => handleBannedProduct(e.idUser)}
                       >
                         <AiFillEye className="svg_eyes" color="#08c46b" />
                       </button>
                     ) : (
                       <button
                         className="fav"
-                        onClick={() => handleBannedProduct(e.email)}
+                        onClick={() => handleBannedProduct(e.idUser)}
                       >
                         <AiOutlineEyeInvisible
                           className="svg_eyes_disabled"
-                          color="#08c46b"
+                          color="#f00"
                         />
                       </button>
                     )}
