@@ -221,10 +221,10 @@ export function setPrivilegeUser(id) {
     }
   };
 }
-export function setStatusUser(email) {
+export function setStatusUser(id) {
   return async function(dispatch) {
     try {
-      const response = await axios.put(`${url}/users/disable/${email}`);
+      const response = await axios.put(`${url}/users/disable/${id}`);
       dispatch({
         type: SET_STATUS_USER,
         payload: response.data,
