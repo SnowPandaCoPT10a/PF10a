@@ -68,10 +68,15 @@ function OrderConfirmation() {
             }).then(
                 (res)=> 
                 (window.location.href = res.data))
-                 
+                Swal.fire({
+                  icon: "success",
+                  title: "Await",
+                  text: "Redirecting to mercado pago",
+                });
             }catch(err){console.log(err)}
     
         }
+    
         
 
   return (
