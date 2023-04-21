@@ -160,6 +160,7 @@ function Create() {
           {
             size: e.target.name,
             stock: e.target.value,
+            quantity: 1,
           },
         ],
       });
@@ -168,6 +169,7 @@ function Create() {
       newSizes[index] = {
         size: e.target.name,
         stock: nuevoNumero,
+        quantity: 1,
       };
       setInput({
         ...input,
@@ -186,6 +188,7 @@ function Create() {
         numbersizes: [
           ...input.numbersizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: e.target.value,
           },
@@ -194,12 +197,14 @@ function Create() {
     } else {
       const newSizes = [...input.numbersizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };
       setInput({
         ...input,
         numbersizes: newSizes,
+        
       });
     }
   }
@@ -214,7 +219,9 @@ function Create() {
         ...input,
         sizes: [
           ...input.sizes,
+          
           {
+            quantity: 1,
             size: e.target.name,
             stock: nuevoNumero,
           },
@@ -223,6 +230,7 @@ function Create() {
     } else {
       const newSizes = [...input.sizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };

@@ -18,7 +18,8 @@ import {
   CREATE_NEW_REVIEWS,
   GET_ALL_REVIEWS,
   UPDATE_STOCK,
-  SET_ACTIVE_BILLS
+  SET_ACTIVE_BILLS,
+  PUT_HIDDEN_REVIEWS
 
 } from "../actions-types/index.js";
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
@@ -306,6 +307,22 @@ export function stockProducts(payload) {
       );
       return dispatch({
         type: UPDATE_STOCK,
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+
+export function putDisableReviews(id) {
+  console.log(id, "ESTO ES ID");
+  return async function(dispatch) {
+    try {
+      const response = await axios.put(`${url}/reviews/disable/${id}`);
+      return dispatch({
+        type: PUT_HIDDEN_REVIEWS,
         payload: response.data,
       });
     } catch (error) {
