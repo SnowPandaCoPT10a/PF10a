@@ -70,7 +70,6 @@ function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Header toggleTheme={toggleTheme} theme={theme} setTheme={setTheme} categories={categories} navigateToCategory={navigateToCategory} countProducts={countProducts} />
         <div className='App' id={theme}>
-          
           <Routes>
             <Route exact path='/Shop' element={<Tienda />} />
             <Route exact path='/' element={<Home setCountProducts={setCountProducts} setAllProducts={setAllProducts} setPriceTotal={setPriceTotal} />} />
@@ -97,9 +96,8 @@ function App() {
             <Route exact path="/ManageReviews" element={<ManageReviews />} />
 
             
-          </Routes>
-          
 
+          </Routes>
         </div>
         <Chatbot />
         {window.location.pathname !== '/Create' && <Footers />}
