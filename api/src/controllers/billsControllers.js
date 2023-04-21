@@ -71,134 +71,72 @@ const postNewBills = async (req, res) => {
     }
   }
 
-async function paymentNotification(req, res) {
-  const { query } = req;
-  const topic = query.topic || query.type;
-  //var merchantOrder;
-  //var payment;
-  switch (topic) {
-    case "payment":
-      const paymentId = query.id || query["data.id"];
-      const payment = await mercadopago.payment.findById(paymentId);
-      const idS = payment.body.additional_info.items.map((e) => e.id);
-      Bills.update(
-        {
-          payment_status: payment.body.status,
-          date_approved: payment.body.date_approved,
-          id_payment: payment.body.id,
-          authorization_code: payment.body.authorization_code,
-          mp_id_order: payment.body.order.id,
-          fee_mp: payment.body.fee_details[0].amount,
-          active: true,
-        },
-        {
-          where: { id: idS },
-        }
-      )
-        
-          .then((numRowsAffected) => {
-           /* if (payment.body.status === "approved") {
-             Bills.findAll({
-               where: {
-                 id_payment: payment.body.id
-               },
-               include: {
-                 model: Users,
-                 attributes: ["email",'first_name', 'last_name']
-               }
-             })
-               .then((billsUsers) => {
-                const email = billsUsers[0].user.email
-                const firstName = billsUsers[0].user.first_name
-                const lastName = billsUsers[0].user.last_name
-   
-                    // configurar transporter para enviar correo electrónico
-          let transporter = nodemailer.createTransport({
-           host: "smtp.gmail.com",
-           port: 465,
-           secure: true,
-           auth: {
-               user: "snowpandaco@gmail.com", //  correo electrónico
-               pass: "badticzdnopplwxx" //  contraseña se terceros
-           }
-       });
-   
-       //modificar que quiero enviar
-       let mailOptions = {
-           from: "snowpandaco@gmail.com",
-           to: email,
-           subject: "Confirmación de pago aprobado e información de envío",
-           text:"Estimado/a " + firstName + "" + lastName +  ",\n\nLe escribo para informarle que su pago ha sido aprobado y está listo para ser procesado en nuestra tienda en línea de Snowpanda. Agradecemos su confianza en nosotros y esperamos que disfrute de su compra.\n\nEn los próximos días, recibirá un correo electrónico con la confirmación del envío de su producto. Estamos trabajando diligentemente para garantizar que su pedido sea enviado lo antes posible y llegue a su destino sin complicaciones.\n\nSi tiene alguna pregunta con respecto al proceso de envío, no dude en ponerse en contacto con nosotros a través de nuestra página web o por correo electrónico.\n\nDe nuevo, le agradecemos por elegir Snowpanda como su tienda en línea. Esperamos que vuelva pronto.\n\nSaludos cordiales,\nEquipo de atención al cliente de Snowpanda"
-       };
-   
-       // enviar correo electrónico
-       transporter.sendMail(mailOptions, function(error, info){
-           if (error) {
-               console.log(error);
-               res.status(500).json({ error: error });
-           } else {
-               console.log("Correo electrónico enviado: " + info.response);
-               res.status(201).send({ message: "Email was sent" });
-           }
-       });
-                 
-               })
-               .catch((error) => {
-                 console.log(error);
-               });
-               } else  {
-   
-                Bills.findAll({
-                   where: {
-                   id_payment: payment.body.id
-                   },include: {
-                     model: Users,
-                     attributes: ["email",'first_name', 'last_name']
-                     }})
-   
-             .then((billsUsers) => {
-               const email = billsUsers[0].user.email
-               const firstName = billsUsers[0].user.first_name
-               const lastName = billsUsers[0].user.last_name
-   
-                   // configurar transporter para enviar correo electrónico
-         let transporter = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 465,
-          secure: true,
-          auth: {
-              user: "snowpandaco@gmail.com", //  correo electrónico
-              pass: "badticzdnopplwxx" //  contraseña se terceros
-          }
-      });
-   
-             //modificar que quiero enviar
-             let mailOptions = {
-               from: "snowpandaco@gmail.com",
-               to: email,
-               subject: "Confirmación de pago no aprobado ",
-               text: "Estimado/a " + firstName + " " + lastName + ",\n\nGracias por su reciente compra en Snowpanda. Lamentablemente, hemos encontrado que su pago no fue aprobado. Sabemos que esto puede ser frustrante, pero queremos asegurarnos de que reciba la mejor experiencia de compra posible.\n\nLe recomendamos que revise su información de pago o vuelva a intentar realizar el pago para completar su compra. Si necesita ayuda adicional, no dude en contactarnos en snowpandaco@gmail.com .\n\nAgradecemos mucho su interés en Snowpanda y esperamos poder satisfacer sus necesidades de equipo para la nieve en el futuro.\n\nSaludos cordiales,\n\nEl equipo de Snowpanda"
-   };
-   
-      // enviar correo electrónico
-      transporter.sendMail(mailOptions, function(error, info){
-          if (error) {
-              console.log(error);
-              res.status(500).json({ error: error });
-          } else {
-              console.log("Correo electrónico enviado: " + info.response);
-              res.status(201).send({ message: "Email was sent" });
-          }
-      });
-               })
-              } */})
-           .catch((err) => {
-             //console.error("Error al actualizar registros:", err);
-           });
-     }
+  async function paymentNotification(req, res) {
+    const { query } = req;
+    const { email } = req.body;
+    const topic = query.topic || query.type;
   
-  res.send();
-}
+    switch (topic) {
+      case "payment":
+        const paymentId = query.id || query["data.id"];
+        const payment = await mercadopago.payment.findById(paymentId);
+        const idS = payment.body.additional_info.items.map((e) => e.id);
+  
+        Bills.update(
+          {
+            payment_status: payment.body.status,
+            date_approved: payment.body.date_approved,
+            id_payment: payment.body.id,
+            authorization_code: payment.body.authorization_code,
+            mp_id_order: payment.body.order.id,
+            fee_mp: payment.body.fee_details[0].amount,
+            active: true,
+          },
+          {
+            where: { id: idS },
+          }
+        )
+          .then((numRowsAffected) => {
+            console.log("Registros actualizados:", numRowsAffected);
+  
+            // Configura el transporter de nodemailer
+            const transporter = nodemailer.createTransport({
+              host: "smtp.gmail.com",
+              port: 587,
+              secure: false,
+              auth: {
+                user: "snowpanda2023@gmail.com",
+                pass: "uauhznxdznkfcadl",
+              },
+            });
+  
+            // Configura el mensaje de correo electrónico
+            const message = {
+              from: "snowpanda2023@gmail.com",
+              to: email,
+              subject: "Detalle de la compra",
+              text: "Aquí está el detalle de la compra: " + JSON.stringify(payment.body.additional_info.items),
+            };
+  
+            // Envía el correo electrónico
+            transporter.sendMail(message, (error, info) => {
+              if (error) {
+                console.log("Error al enviar el correo electrónico:", error);
+              } else {
+                console.log("Correo electrónico enviado exitosamente:", info.response);
+              }
+            });
+          })
+          .catch((err) => {
+            console.error("Error al actualizar registros:", err);
+          });
+        break;
+      default:
+        console.log("Tipo de notificación no reconocido:", topic);
+    }
+  
+    res.send();
+  }
 
 //  Agrega credenciales
 mercadopago.configure({
