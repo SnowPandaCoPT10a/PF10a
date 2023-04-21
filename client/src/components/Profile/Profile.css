@@ -102,4 +102,19 @@
 #dark .profilecont{
 	background-color: #1E1E1E;
 }
+.error {
+    color: rgb(255, 0, 0);
+    background-color: rgb(245, 214, 214);
+    display: flex;
+    border-radius: 10px;
+
+    padding: 10px 15px 10px 15px;
+}
+
+.error1 {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
   
