@@ -80,3 +80,16 @@
   background-color:transparent;
   pointer-events: painted;  
 }
+
+@media (max-width: 900px) {
+  .bgConten{
+    height: 100vh;
+  }
+  .listSearch{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .listSearch a{
+    margin-left: -290px !important;
+  }
+}

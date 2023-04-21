@@ -1,7 +1,7 @@
 import React from 'react'
 import './SearchBar.css'
 import { FaSearch } from 'react-icons/fa';
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsName, getAllProducts, setCurrentPage } from '../../Redux/actions/index.js'
 import { Link, useNavigate } from 'react-router-dom'
@@ -16,7 +16,7 @@ const SearchBar = () => {
   const [productsSearch,setproductsSearch] = useState([])
   // const category = productNames[0]
   // const location = useLocation();
-
+  let screenWidth = window.screen
   function submitHandleInput(e) {
     e.preventDefault();
     if (name.length>0) {
@@ -37,11 +37,21 @@ const SearchBar = () => {
     setName(e.target.value);
     if (e.target.value.length > 0) {
       let datos = productNames?.filter(i=>i.name.toLowerCase().includes(e.target.value.toLowerCase()))
-      setproductsSearch(datos?.slice(0,5))
+      if (screenWidth< '900') {
+        setproductsSearch(datos?.slice(0,1))
+      }else if(screenWidth >= '900'){
+        setproductsSearch(datos?.slice(0,3))
+      }else if(screenWidth >= '1400'){
+        setproductsSearch(datos?.slice(0,5))
+      }
     }else{
       setproductsSearch([])
     }
   }
+
+  useEffect(()=>{
+    dispatch(getAllProducts())
+  },[])
 
   return (
     <>
@@ -57,7 +67,7 @@ const SearchBar = () => {
 
       <div className={dropSearch ? 'contSearch' : 'contSearchDisable'}>
 
-        <button className='btn-close position-absolute top-0 start-0 mt-4 ms-5' onClick={() => setDropSearch(!dropSearch)}></button>
+        <button className='btn-close btnDisableSearchDrop position-absolute top-0 start-0 mt-4 ms-5' onClick={() => setDropSearch(!dropSearch)}></button>
 
         <form className="input-group mt-3 w-75" onSubmit={(e)=>submitHandleInput(e)}>
           <input value={name} type="text" className="form-control" placeholder="Search product" aria-label="Username" aria-describedby="basic-addon1" onChange={(e)=>handleChange(e)}/>
