@@ -51,8 +51,6 @@ function OrderConfirmation() {
         try{
             const users = dispatch(getAllUsers())
             const perfil = datoos.find(obj => obj.email === user.email);
-    
-            
             const res = await axios.post(
                 //"http://localhost:3001/bills/create"
                'https://pf10a-production.up.railway.app/bills/create'
@@ -68,17 +66,22 @@ function OrderConfirmation() {
             }).then(
                 (res)=> 
                 (window.location.href = res.data))
-                 
+                Swal.fire({
+                  icon: "success",
+                  title: "Await",
+                  text: "Redirecting to mercado pago",
+                });
             }catch(err){console.log(err)}
     
         }
+    
         
 
   return (
     <div className="orderConfir">
-      <div>Order Confirmation</div>
+      <div className="texto-order">Order Confirmation</div>
       <br></br>
-      <p>Thanks for placing an order.-</p>
+      <p className="texto-order">Thanks for placing an order.-</p>
       <button className="buttonorder" onClick={handleCreateBill}>
         Proceed with payment
       </button>

@@ -3,6 +3,7 @@ import "./Create.css";
 import { useDispatch, useSelector } from "react-redux";
 import { postProducts, getAllProducts } from "../../Redux/actions/index";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const validate = (input) => {
   let errors = {};
@@ -66,6 +67,8 @@ function Create() {
   //! aca traigo los talles de boards
   const sizesboard = ["one size"];
 
+  const Brands = ['SnowPandaCo','Burton', 'Nitro', 'K2', 'Rossignol', 'Arbor', 'Capita', 'Lib Tech']
+
   useEffect(() => {
     dispatch(getAllProducts());
   }, [dispatch]);
@@ -83,7 +86,7 @@ function Create() {
     numbersizes: [],
     sizes: [],
     boardsizes: [],
-    featuredProduct: false,
+    //featuredProduct: false,
   });
 
   const handleFeaturedProduct = (e) => {
@@ -96,7 +99,11 @@ function Create() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(postProducts(input));
-    alert("Producto creado correctamente");
+    Swal.fire({
+      icon: "success",
+      title: "Done",
+      text: "Product created succesfully",
+    });
     setInput({
       name: "",
       img: "",
@@ -110,10 +117,12 @@ function Create() {
       numbersizes: [],
       sizes: [],
       boardsizes: [],
-      featuredProduct: "",
+      //featuredProduct: "",
     });
     dispatch(getAllProducts());
-    navigate("/home");
+
+    navigate("/");
+
   }
   function handleClickCategory(e) {
     setInput({
@@ -133,7 +142,7 @@ function Create() {
       numbersizes: [],
       sizes: [],
       boardsizes: [],
-      featuredProduct: "",
+      //featuredProduct: "",
     });
     document.querySelectorAll("input[type=checkbox]").forEach((checkbox) => {
       checkbox.checked = false;
@@ -149,8 +158,10 @@ function Create() {
         boardsizes: [
           ...input.boardsizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: e.target.value,
+            quantity: 1,
           },
         ],
       });
@@ -159,6 +170,7 @@ function Create() {
       newSizes[index] = {
         size: e.target.name,
         stock: nuevoNumero,
+        quantity: 1,
       };
       setInput({
         ...input,
@@ -177,6 +189,7 @@ function Create() {
         numbersizes: [
           ...input.numbersizes,
           {
+            quantity: 1,
             size: e.target.name,
             stock: e.target.value,
           },
@@ -185,12 +198,14 @@ function Create() {
     } else {
       const newSizes = [...input.numbersizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };
       setInput({
         ...input,
         numbersizes: newSizes,
+        
       });
     }
   }
@@ -205,7 +220,9 @@ function Create() {
         ...input,
         sizes: [
           ...input.sizes,
+          
           {
+            quantity: 1,
             size: e.target.name,
             stock: nuevoNumero,
           },
@@ -214,6 +231,7 @@ function Create() {
     } else {
       const newSizes = [...input.sizes];
       newSizes[index] = {
+        quantity: 1,
         size: e.target.name,
         stock: nuevoNumero,
       };
@@ -330,31 +348,11 @@ function Create() {
 
             <div className="pets-spayed-neutered">
               <label htmlFor="pet-spayed">
-                Brand{" "}
-                {newBrand === false ? (
-                  <button
-                    onClick={() => {
-                      setNewBrand(!newBrand);
-                      setInput({ ...input, brand: "" });
-                    }}
-                  >
-                    {" "}
-                    New{" "}
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => {
-                      setNewBrand(!newBrand);
-                      setInput({ ...input, brand: "" });
-                    }}
-                  >
-                    {" "}
-                    Cancel{" "}
-                  </button>
-                )}
+                Brand
+               
               </label>
               <div className="radio-container">
-                {newBrand === false ? (
+                { (
                   <select
                     id="pets-breed"
                     placeholder="Insert brand"
@@ -364,26 +362,11 @@ function Create() {
                     onChange={(e) => handleChange(e)}
                   >
                     <option></option>
-                    {numberSizes &&
-                      Array.from(new Set(numberSizes.map((h) => h.brand)))
-                        ?.filter(
-                          (brand, index, array) =>
-                            array.indexOf(brand) === index
-                        )
-                        .map((brand, index) => (
-                          <option key={index}>{brand.brandName}</option>
-                        ))}
+                    {Brands && Brands.map((brand, index) => 
+                          (<option key={index}>{brand}</option>)
+                        )}
                   </select>
-                ) : (
-                  <input
-                    id="pets-breed"
-                    placeholder="Insert New brand"
-                    name="brand"
-                    value={input.brand}
-                    type="text"
-                    onChange={(e) => handleChange(e)}
-                  ></input>
-                )}
+                ) }
               </div>
               {errors.brand ? <p className="danger">{errors.brand}</p> : null}
             </div>
@@ -478,7 +461,7 @@ function Create() {
             ) : null}
           </div>
 
-          <label>
+          {/* <label>
             Featured:
             <input
               type="checkbox"
@@ -487,7 +470,7 @@ function Create() {
               checked={input.featuredProduct}
               onChange={handleFeaturedProduct}
             />
-          </label>
+          </label> */}
           {/* //!!!!!!! */}
           <hr />
 
@@ -552,7 +535,7 @@ function Create() {
 
           {/* //!!!!!!! */}
           <hr />
-          <label htmlFor="pets-upload">Upload a photo</label>
+          <label htmlFor="pets-upload">Upload photo</label>
           <div className="pets-photo">
             <button id="pets-upload">
               <i className="fas fa-camera-retro"></i>
@@ -570,7 +553,7 @@ function Create() {
         </header>
         <footer>
           <div className="set">
-            <Link to="/home">
+            <Link to="/ManageProducts">
               <button id="back">Back</button>
             </Link>
 
@@ -587,7 +570,7 @@ function Create() {
                 </button>
               )
             ) : (
-              <p className="danger">YOU HAVE ERRORS IN THE FORM</p>
+              <p className="danger">FIX ERRORS IN THE FORM</p>
             )}
           </div>
         </footer>

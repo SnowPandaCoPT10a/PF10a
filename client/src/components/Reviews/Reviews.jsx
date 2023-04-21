@@ -6,6 +6,7 @@ import { postReviews } from "../../Redux/actions/index";
 import Swal from "sweetalert2";
 
 const Reviews = ({ item }) => {
+
   console.log(item)
   const [input, setInput] = useState({
     rating: "",
@@ -45,7 +46,7 @@ const Reviews = ({ item }) => {
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <select
+          <select className="edicion"
             id="rating"
             name="rating"
             value={input.rating}

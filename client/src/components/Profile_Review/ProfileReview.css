@@ -1,0 +1,54 @@
+#light .hr{
+    color: #287094 !important;
+}
+#dark .hr{
+    color: #F6F6F6 !important;
+}
+
+#light .review{
+    margin: 30px auto;
+    width: 900px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#dark .review {
+    margin: 30px auto;
+    width: 900px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(107, 107, 107, 0.25), -5px -5px 30px 7px rgba(107, 107, 107, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#light .review{
+    background-color: #F6F6F6;
+}
+#dark .review{
+    background-color:#9DA5AB ;
+}
+
+#dark .p-name{
+    padding-left: 30px;
+    font-size: 18px;
+    color: #F6F6F6;
+    font-weight: bold;
+}
+#light .p-name{
+    padding-left: 30px;
+    font-size: 18px;
+    color: #252525;
+    font-weight: bold;
+}
+.editar{
+    padding-right: 30px;
+}

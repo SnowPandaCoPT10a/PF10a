@@ -26,6 +26,7 @@ import PrivacyPolicies from './components/Footers/PrivacyPolicies/PrivacyPolicie
 import ManageBills from "./components/Manage_Bills/Manage_Bills"
 import ProfileBills from "./components/Profile_Bills/Profile_Bills"
 import ProfileReview from "./components/Profile_Review/Profile_Review"
+import ManageReviews from "./components/Manage_Reviews/Manage_Reviews"
 
 
 //modo oscuro
@@ -69,7 +70,6 @@ function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Header toggleTheme={toggleTheme} theme={theme} setTheme={setTheme} categories={categories} navigateToCategory={navigateToCategory} countProducts={countProducts} />
         <div className='App' id={theme}>
-          
           <Routes>
             <Route exact path='/Shop' element={<Tienda />} />
             <Route exact path='/' element={<Home setCountProducts={setCountProducts} setAllProducts={setAllProducts} setPriceTotal={setPriceTotal} />} />
@@ -93,11 +93,11 @@ function App() {
             <Route exact path="/ManageBills" element={<ManageBills />} />
             <Route exact path="/ProfileBills" element={<ProfileBills />} />
             <Route exact path="/ProfileReview" element={<ProfileReview />} />
+            <Route exact path="/ManageReviews" element={<ManageReviews />} />
 
+            
 
           </Routes>
-          
-
         </div>
         <Chatbot />
         {window.location.pathname !== '/Create' && <Footers />}

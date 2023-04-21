@@ -149,3 +149,11 @@ background-size: cover;
 #dark .textoTitulo{
   color: #6096BA;
 }
+
+@media screen and (max-width: 480px) {
+  .member{
+    width: 100%;
+    padding: 1%;
+  } 
+ 
+}

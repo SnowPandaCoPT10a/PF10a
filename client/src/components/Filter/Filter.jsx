@@ -60,7 +60,7 @@ function FilterForm({ pagination }) {
         return (
             <div className="sidebar">
                 <form onSubmit={handleSubmit}>
-                    {location.pathname.includes('/Products/') && (
+                    {location.pathname == '/Products/' && (
                         <div>
                             <label htmlFor="category">Category:</label>
                             <select id="category" value={category} onChange={(e) => setCategory(e.target.value)}>

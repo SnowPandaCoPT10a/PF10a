@@ -51,13 +51,15 @@ const Home = ({setAllProducts,setPriceTotal,setCountProducts}) => {
   }, []);
 
   return (
-    <div className='home containter' >
-      <Start/>
-      <AboutUs/>
-      <Destacados datos={datos} />
-      <Values/>
-      <Form />
-    </div>
+    <>
+      <Start />
+      <div className='home container' >
+        <AboutUs />
+        <Destacados datos={datos} />
+        <Values />
+        <Form />
+      </div>
+    </>
     
   );
 }

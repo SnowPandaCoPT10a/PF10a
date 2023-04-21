@@ -18,6 +18,7 @@ import {
   GET_ALL_REVIEWS,
   UPDATE_STOCK,
   SET_ACTIVE_BILLS,
+  PUT_HIDDEN_REVIEWS
 } from "../actions-types/index";
 
 const initialState = {
@@ -145,6 +146,12 @@ function rootReducer(state = initialState, action) {
             ...state,
             products: action.payload
           }
+
+          case PUT_HIDDEN_REVIEWS:
+            return{
+              ...state,
+              allReviews: action.payload
+            }
     default:
       return state;
   }

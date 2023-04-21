@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
+    "@emailjs/browser": "^3.11.0",
     "axios": "^1.3.4",
     "nodemon": "^2.0.21",
     "react": "^18.2.0",

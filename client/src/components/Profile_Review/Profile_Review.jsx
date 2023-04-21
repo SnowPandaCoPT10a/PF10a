@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import Reviews from "../Reviews/Reviews";
-
+import './ProfileReview.css'
 import { getAllBills } from "../../Redux/actions/index.js";
 
 const profileReview = () => {
@@ -37,18 +37,18 @@ const profileReview = () => {
 
   try {
     return (
-      <div>
-        <h1>ACA VAN LAS REVIEW PERRRRRRRRRRROo</h1>
+      <div  className="profilecont">
+        <h1 className="text-center mt-5 titulos-color">My Reviews: </h1>
         {filterBills ? (
           filterBills.map((e, index = 1) => (
-            <a class="list-group">
+            <a className="review">
               <div
                 href="#"
-                class="list-group-item list-group-item-action flex-column align-items-start active"
+                className="list-group-item list-group-item-action flex-column align-items-start active"
               >
-                <div>{e}</div>
+                <div className="p-name">{e}</div>
                 <button
-                  className="float-end btn btn-light btn-sm"
+                  className="float-end btn btn-light btn-sm editar"
                   onClick={() => setReviewButton(index)}
                 >
                   Editar Review
@@ -65,17 +65,14 @@ const profileReview = () => {
                       >
                         X
                       </button>
-                      <hr />
                     </div>
                   ) : null}
                 </div>
               </div>
-              <hr /> {/* //!Borraar esto y meterle un padding  */}
             </a>
           ))
-        ) : (
-          <h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>
-        )}
+        ) : (<h1 className="text-center mt-5 titulos-color">No reviews to display</h1>)
+        }
       </div>
     );
   } catch (error) {
