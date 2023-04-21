@@ -28,7 +28,7 @@ export default function Card({
 
   try {
     
-    var productReview = review.map((e) => e);
+    var productReview = review.filter((e) => e.hidden === false);
   } catch (error) {
     console.log(error);
   }
