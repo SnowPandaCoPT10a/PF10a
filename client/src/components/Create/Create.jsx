@@ -113,7 +113,7 @@ function Create() {
       featuredProduct: "",
     });
     dispatch(getAllProducts());
-    navigate("/home");
+    navigate("/");
   }
   function handleClickCategory(e) {
     setInput({
