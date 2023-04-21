@@ -12,7 +12,7 @@ const Cards = () => {
 
   const { article } = useParams();
   const productsBoard = useSelector((state) => state.products);
-  
+
   const filteredProducts =
 
     article ? productsBoard?.filter(
@@ -28,10 +28,10 @@ const Cards = () => {
   const indexOfLastProduct = currentPage * productPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productPerPage;
 
-  const currentProduct = filteredProducts?.length > 0 ? 
-  filteredProducts?.slice( indexOfFirstProduct, indexOfLastProduct) 
-    : 
-  productsBoard?.slice( indexOfFirstProduct, indexOfLastProduct);
+  const currentProduct = filteredProducts?.length > 0 ?
+    filteredProducts?.slice(indexOfFirstProduct, indexOfLastProduct)
+    :
+    productsBoard?.slice(indexOfFirstProduct, indexOfLastProduct);
 
   const pagination = (pageNumber) => {
     dispatch(setCurrentPage(pageNumber));
@@ -45,12 +45,13 @@ const Cards = () => {
   // <Link to={'/shoes/' + el.id +'/buyNow'}
   return (
     <div>
-        <Pagination       
-        productPerPage={productPerPage}
-        filteredProducts={filteredProducts?.length}
-        pagination={pagination}
-        currentPage={currentPage}
-      />
+      {filteredProducts?.length > 4 ? (
+        <Pagination
+          productPerPage={productPerPage}
+          filteredProducts={filteredProducts?.length}
+          pagination={pagination}
+          currentPage={currentPage}
+        />) : ''}
       <Filter pagination={pagination} />
       {filteredProducts?.length > 0 ? (
         currentProduct?.map((el) => (
@@ -79,6 +80,7 @@ const Cards = () => {
                     </div>
                     <span className="price">$ {el.price}</span>
                   </Link>
+                  {console.log(filteredProducts)}
                 </div>
               </div>
             </div>
@@ -116,13 +118,14 @@ const Cards = () => {
               </div>
             </div>
           ))
-        ) : <div> <h1 className="noproducts">No products found</h1> <Link to='/'><button className="buttonvolver">volver</button></Link> </div>}
-      <Pagination
-        productPerPage={productPerPage}
-        filteredProducts={filteredProducts?.length}
-        pagination={pagination}
-        currentPage={currentPage}
-      />
+        ) : <div> <h1 className="text-center mt-5 titulos-color">No products found</h1> <Link to='/'><button className="buttonvolver">volver</button></Link> </div>}
+      {filteredProducts?.length > 4 ? (
+        <Pagination
+          productPerPage={productPerPage}
+          filteredProducts={filteredProducts?.length}
+          pagination={pagination}
+          currentPage={currentPage}
+        />) : ''}
     </div>
   );
 };
