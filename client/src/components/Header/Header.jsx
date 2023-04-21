@@ -128,7 +128,7 @@ const Header = ({
               Marcas
             </a>
           </>}
-        
+
         {!isAuthenticated ? (
           <Login />
         ) : (
@@ -161,48 +161,37 @@ const Header = ({
                   <a>
                     <Logout />
                   </a>
-                  {isAdmin?.length ? <div className="">
-                    <button
-                      className="button-AdminManage dropdown-toggle ps-0"
-                      id="bd-versions"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      data-bs-display="static"
-                    >
-                      <span className="d-none d-lg-inline">Admin Console</span>
-                    </button>
-                    <ul
-                      className="dropdown-menu dropdown-menu-end mt-0 pt-0"
-                      aria-labelledby="bd-versions"
-                    >
-                      <li>
-                        <a
-                          className="dropdown-item text-black"
-                          href="/ManageProfiles"
-                        >
-                          Manage Profiles
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item text-black"
-                          href="/ManageProducts"
-                        >
-                          Manage Products
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item text-black" href="/ManageBills">
-                          Manage Bills
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item text-black" href="/ManageReviews">
-                          Manage Reviews
-                        </a>
-                      </li>
-                    </ul>
-                  </div> : null}
+                  {isAdmin?.length ?
+
+                    <div classname>
+                      <button classname="button-AdminManage dropdown-toggle ps-0" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                        <span classname="d-none d-lg-inline">Admin Console</span>
+                      </button>
+                      <ul classname="dropdown-menu dropdown-menu-end mt-0 pt-0" aria-labelledby="bd-versions">
+                        <li>
+                          <a classname="dropdown-item text-black" href="/ManageProfiles">
+                            Manage Profiles
+                          </a>
+                        </li>
+                        <li>
+                          <a classname="dropdown-item text-black" href="/ManageProducts">
+                            Manage Products
+                          </a>
+                        </li>
+                        <li>
+                          <a classname="dropdown-item text-black" href="/ManageBills">
+                            Manage Bills
+                          </a>
+                        </li>
+                        <li>
+                          <a classname="dropdown-item text-black" href="/ManageReviews">
+                            Manage Reviews
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    : null}
                 </>
               ) : null}
             </div>
