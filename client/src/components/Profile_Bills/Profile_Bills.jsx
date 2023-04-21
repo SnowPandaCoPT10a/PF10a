@@ -43,7 +43,7 @@ const ManageBills = () => {
   try {
     return (
       <div>
-        <h1>ACA VAN LAS BILL's PERRRRRRRRRRROo</h1>
+        <h1 className="text-center mt-5 titulos-color">My bills:</h1>
         {superBills ? (
           superBills.map((e, index) => (
             <div class="list-group">
@@ -111,9 +111,8 @@ const ManageBills = () => {
               <hr /> {/* //!Borraar esto y meterle un padding  */}
             </div>
           ))
-        ) : (
-          <h1>No Vendimo una mierda hasta ahora --Carita Triste-- </h1>
-        )}
+        ) : (<h1>No bills to display</h1>)
+        }
       </div>
     );
   } catch (error) {

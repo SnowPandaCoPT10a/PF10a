@@ -1,17 +1,17 @@
-#light .el-wrapper{
+#light .el-wrapper {
   width: 40vw;
   padding: 15px;
-  margin: 15px auto;  
+  margin: 15px auto;
   box-shadow: 10px 10px 1rem #0004;
   border: 2px solid #ccc;
   border-radius: 20px;
   background: linear-gradient(45deg, #fefefe, #f8f8f8);
 }
 
-#dark .el-wrapper{
+#dark .el-wrapper {
   width: 40vw;
   padding: 15px;
-  margin: 15px auto;  
+  margin: 15px auto;
   box-shadow: 10px 10px 1rem rgba(154, 154, 154, 0.267);
   /* border: 2px solid #ccc; */
   border-radius: 20px;
@@ -28,12 +28,13 @@
 .box-up .img {
   border-radius: 20px;
   max-width: 80%;
-  margin: 0 auto; 
-  display: block; 
-  margin-top: 20px; 
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
   margin-bottom: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .el-wrapper:hover .img {
   transform: scale(0.9);
   transition: all 0.5s ease-in-out;
@@ -42,7 +43,7 @@
 .info-inner .p-name,
 .info-inner .p-company {
   display: block;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 #light .info-inner .p-name {
@@ -50,6 +51,7 @@
   color: #252525;
   font-weight: bold;
 }
+
 #dark .info-inner .p-name {
   font-size: 18px;
   color: #F6F6F6;
@@ -63,6 +65,7 @@
   color: #8c8c8c;
   font-weight: bold;
 }
+
 #dark .info-inner .p-company {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
@@ -71,7 +74,7 @@
   font-weight: bold;
 }
 
- #light .price {
+#light .price {
   display: flex;
   font-weight: bold;
   justify-content: center;
@@ -83,6 +86,7 @@
   font-family: 'Montserrat', sans-serif;
   transition: all 0.3s ease-in-out;
 }
+
 #dark .price {
   display: flex;
   font-weight: bold;
@@ -123,9 +127,13 @@
   border: 2px solid #3d3d3d;
 }
 
-.noproducts{
+.noproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 50px;
 }
+
 
 @media (max-width: 1050px) {
 
@@ -134,16 +142,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;    
+    position: relative;
   }
-  #dark .el-wrapper.el-wrapper{
+
+  #dark .el-wrapper.el-wrapper {
     width: 90%;
   }
 
-  #light .el-wrapper{
+  #light .el-wrapper {
     width: 90%;
   }
 }
-
-
-
