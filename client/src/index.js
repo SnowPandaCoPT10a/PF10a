@@ -26,8 +26,13 @@ root.render(
   domain={domain}
   clientId={clientId}
   authorizationParams={{
+<<<<<<< HEAD
       //redirect_uri: "https://pf-10a-bhm9.vercel.app/"
        redirect_uri: "http://localhost:3000/" //Usar en localHost
+=======
+      // redirect_uri: "https://pf-10a-bhm9.vercel.app/"
+      redirect_uri: "http://localhost:3000/" //Usar en localHost
+>>>>>>> 5acf04379cda35baf82562d0d318843db042ba0a
     }}
     //onRedirectCallback={onRedirectCallback}
   >
