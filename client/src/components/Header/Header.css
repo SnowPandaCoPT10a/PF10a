@@ -15,12 +15,14 @@
 
 }
 
+
+
 .imgLogo {
   width: 5rem;
 }
 
 
-.button-AdminManage{
+.button-AdminManage {
   outline: hidden;
   border: none;
   background-color: transparent;
@@ -28,7 +30,7 @@
   color: white;
 }
 
-.button-AdminManage:hover{
+.button-AdminManage:hover {
   color: #023246 !important;
 }
 
@@ -89,7 +91,7 @@
   color: #023246;
 }
 
-.btnRedirectHome{
+.btnRedirectHome {
   text-decoration: none;
   color: white;
   margin: 0 -40px;
@@ -111,13 +113,15 @@
   border-bottom: none;
   margin-right: -50px;
 }
-.notificacionCantidad{
+
+.notificacionCantidad {
   position: absolute;
   text-align: center;
   font-size: 0.8rem;
   top: -10px;
   right: -15px;
 }
+
 .btnCarrt:hover {
   color: #023246;
 }
@@ -302,13 +306,16 @@
 .custom-option.selection {
   background: #f9f9f9;
 }
-.buttonHamburgerNav{
+
+.buttonHamburgerNav {
   display: none;
 }
-@media only screen and (max-width: 412px) {
-  body{
+
+@media only screen and (max-width: 500px) {
+  body {
     overflow-x: hidden;
   }
+
   .cntHeader {
     display: flex;
     align-items: center;
@@ -325,22 +332,48 @@
 
   .btnUser {
     display: none;
-    
+
 
   }
-  .buttonHamburgerNav{
+
+  .dropNavDisable{
+    transform: translateY(-500px);
+  }
+
+  .buttonHamburgerNav {
     display: block;
   }
+
   .btnCarrt {
     font-size: 1.7em;
     margin-right: 10px !important;
   }
-  .btnRedirectHome{
+
+  .btnRedirectHome {
     display: none;
-    
+
   }
-  .switch{
+
+  .switch {
     display: none !important;
 
- }
+  }
+  .btnNavDisable{
+    right: 40px;
+    top:40px
+  }
+  .navResposiveDrop {
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    background-color: #7F949F;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+  }
+  
+  .buttonMiPerfilDropNav {
+    outline: hidden;
+    border: none;
+    background-color: transparent;
+  }
 }

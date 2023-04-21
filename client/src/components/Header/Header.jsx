@@ -58,7 +58,7 @@ const Header = ({
 
   const [dropActive, setDropActive] = useState(false);
   const [dropNavResponsive, setDropNavResponsive] = useState(false);
-  console.log(dropNavResponsive);
+
   useEffect(() => {
     dispatch(getAllUsers());
   }, [dispatch]);
@@ -147,53 +147,51 @@ const Header = ({
             </button>
 
             <div className={dropActive ? "drop-active" : "drop-null"}>
-              {dropActive ? (
+              {dropActive ?
                 <>
                   <Link to="/User" className="text-decoration-none">
-                    <a>Ver Perfil</a>
+                    <a>My Profile</a>
                   </Link>
                   <a className="dropdown-item" href="/ProfileBills">
-                    Mis Compras
+                    My Purchases
                   </a>
                   <a className="dropdown-item" href="/ProfileReview">
-                    Mis Reviews
+                    My Reviews
                   </a>
                   <a>
                     <Logout />
                   </a>
                   {isAdmin?.length ?
 
-                    <div classname>
-                      <button classname="button-AdminManage dropdown-toggle ps-0" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-                        <span classname="d-none d-lg-inline">Admin Console</span>
+                    <div>
+                      <button className="button-AdminManage dropdown-toggle ps-0" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                        <span className="d-none d-lg-inline">Admin Console</span>
                       </button>
-                      <ul classname="dropdown-menu dropdown-menu-end mt-0 pt-0" aria-labelledby="bd-versions">
+                      <ul className="dropdown-menu dropdown-menu-end mt-0 pt-0" aria-labelledby="bd-versions">
                         <li>
-                          <a classname="dropdown-item text-black" href="/ManageProfiles">
+                          <a className="dropdown-item text-black" href="/ManageProfiles">
                             Manage Profiles
                           </a>
                         </li>
                         <li>
-                          <a classname="dropdown-item text-black" href="/ManageProducts">
+                          <a className="dropdown-item text-black" href="/ManageProducts">
                             Manage Products
                           </a>
                         </li>
                         <li>
-                          <a classname="dropdown-item text-black" href="/ManageBills">
+                          <a className="dropdown-item text-black" href="/ManageBills">
                             Manage Bills
                           </a>
                         </li>
                         <li>
-                          <a classname="dropdown-item text-black" href="/ManageReviews">
+                          <a className="dropdown-item text-black" href="/ManageReviews">
                             Manage Reviews
                           </a>
                         </li>
                       </ul>
-                    </div>
-
-                    : null}
+                    </div> : null}
                 </>
-              ) : null}
+                : null}
             </div>
           </div>
         )}
@@ -208,7 +206,7 @@ const Header = ({
                 </span>
               </button>
             </Link>
-            <div className="ms-4 px-4 fs-1 buttonHamburgerNav" onClick={() => setDropNavResponsive(!dropNavResponsive)}>
+            <div className="ms-4 ps-4 fs-1 buttonHamburgerNav" onClick={() => setDropNavResponsive(!dropNavResponsive)}>
               <BsThreeDotsVertical className="text-white" />
             </div>
           </div>
@@ -216,6 +214,136 @@ const Header = ({
 
 
 
+
+        {/* nav Resposive Drop */}
+        <div className={`navResposiveDrop container-fluid py-4 ${dropNavResponsive?null:'dropNavDisable'}`}>
+
+          <button onClick={() => setDropNavResponsive(false)} type="button" class="btn-close position-absolute btnNavDisable" aria-label="Close"></button>
+
+          <Link to={"/Shop"} onClick={() =>{ scrollTop();setDropNavResponsive(false)}} className="text-decoration-none text-white fs-2 p-4 fw-bold">
+            Shop
+          </Link>
+          
+          {
+            !rutaUrl.includes("Shop") && !rutaUrl.includes("Products") ?
+              <div className="d-flex flex-column ps-4">
+                <a onClick={() => setDropNavResponsive(false)} href="/#AboutUs" className="text-white mt-3">
+                  About Us
+                </a>
+                <a onClick={() => setDropNavResponsive(false)} href="/#OurValues" className="text-white mt-3">
+                  Our Values
+                </a>
+                <a onClick={() => setDropNavResponsive(false)} href="/#contacto" className="text-white mt-3">
+                  Contact Us
+                </a>
+              </div>
+              :
+              <div className="d-flex flex-column ps-4">
+                <a onClick={() => setDropNavResponsive(false)} href="/Shop#categoria" className="text-white mt-3">
+                  Categorias
+                </a>
+                <a onClick={() => setDropNavResponsive(false)} href="/Shop#marcas" className="text-white mt-3">
+                  Marcas
+                </a>
+              </div>
+          }
+
+          {!isAuthenticated ?
+            <Login />
+            :
+            <div className="btn-group dropend ps-4 pt-3">
+              <button type="button" className="buttonMiPerfilDropNav dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                My Profile
+              </button>
+              <ul className="dropdown-menu">
+                <Link onClick={() => setDropNavResponsive(false)} to="/User" className="dropdown-item text-decoration-none">
+                  <a>Data</a>
+                </Link>
+                <Link onClick={() => setDropNavResponsive(false)} className="dropdown-item" to="/ProfileBills">
+                  My Purchases
+                </Link>
+                <Link onClick={() => setDropNavResponsive(false)} className="dropdown-item" to="/ProfileReview">
+                  My Reviews
+                </Link>
+                <a className="dropdown-item" >
+                  <Logout />
+                </a>
+              </ul>
+            </div>
+          }
+          {isAdmin?.length ?
+            <div className="d-block btn-group dropend ps-4 mt-3">
+              <button type="button" className="buttonMiPerfilDropNav text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Admin Console
+              </button>
+              <ul className="dropdown-menu">
+                <li>
+                  <a onClick={() => setDropNavResponsive(false)} className="dropdown-item text-black" href="/ManageProfiles">
+                    Manage Profiles
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => setDropNavResponsive(false)} className="dropdown-item text-black" href="/ManageProducts">
+                    Manage Products
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => setDropNavResponsive(false)} className="dropdown-item text-black" href="/ManageBills">
+                    Manage Bills
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => setDropNavResponsive(false)} className="dropdown-item text-black" href="/ManageReviews">
+                    Manage Reviews
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            : null}
+
+
+          <div className="ps-4 mt-3">
+            {/* <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label> */}
+            <ReactSwitch
+              onChange={toggleTheme}
+              checked={theme === "light"}
+              offColor="#333"
+              onColor="#ccc"
+              onHandleColor="#000"
+              uncheckedIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    paddingRight: 2,
+                    color: "white",
+                  }}
+                >
+                  <BsFillMoonFill />
+                </div>
+              }
+              checkedIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    paddingRight: 2,
+                    color: "yellow",
+                  }}
+                >
+                  <BsFillCircleFill />
+                </div>
+              }
+            />
+          </div>
+
+          
+        </div>
 
 
         <div className="switch">
