@@ -257,7 +257,7 @@ export default function Card({
             <p className="text-center mt-5 titulos-color">Product reviews:</p>
               {productReview?.map((el) => {
                 <div key={el.idReviews}></div>
-                el.productName === productInfoId.name && el.idReviews ? (
+            return    el.productName === productInfoId.name && el.idReviews ? (
                   <div className="card border-dark mb-3">
                     <div className="card-header">{el.firstName}</div>
                     <div className="card-body text-dark">
