@@ -218,7 +218,7 @@ const Header = ({
         {/* nav Resposive Drop */}
         <div className={`navResposiveDrop container-fluid py-4 ${dropNavResponsive?null:'dropNavDisable'}`}>
 
-          <button onClick={() => setDropNavResponsive(false)} type="button" class="btn-close position-absolute btnNavDisable" aria-label="Close"></button>
+          <button onClick={() => setDropNavResponsive(false)} type="button" className="btn-close position-absolute btnNavDisable" aria-label="Close"></button>
 
           <Link to={"/Shop"} onClick={() =>{ scrollTop();setDropNavResponsive(false)}} className="text-decoration-none text-white fs-2 p-4 fw-bold">
             Shop
