@@ -164,15 +164,19 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
       image: "",
       address: "",
     });
-    Swal.fire({
+    /*Swal.fire({
       title: "¡Updated user!",
       icon: "success",
-    });
+    });*/
     
     setIsEditing(false);
     setTimeout(function() {
       location.reload();
-    }, 500);
+    }, 3000);
+    Swal.fire({
+      title: "¡Updated user!",
+      icon: "success",
+    });
     
   };
   try {
@@ -313,6 +317,8 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
       }
       return (
         <div className="profilecont">
+       
+      
           <img
             className="imgProfile"
             src={perfil.image ? perfil.image : `${Logo}`}
@@ -329,6 +335,7 @@ if (!/^[a-zA-Z\s]{2,}$/.test(editFormState.first_name)) {
           <button className="buttoneditar"   onClick={handleEditClick} >
             Editar información
           </button>
+         
         </div>
       );
     }

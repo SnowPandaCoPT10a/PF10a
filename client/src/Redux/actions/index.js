@@ -24,7 +24,7 @@ import {
 const { REACT_APP_GET_ALL_PRODUCTS } = process.env;
 import axios from "axios";
 
-//const url = "https://pf10a-production.up.railway.app";
+const bills = "https://pf10a-production.up.railway.app";
 
 const url = 'http://localhost:3001'
 
@@ -255,7 +255,7 @@ export function updateAddres(email, address) {
 export function getAllBills() {
   return async function(dispatch) {
     try {
-      const response = await axios.get(`${url}/bills/`);
+      const response = await axios.get(`${bills}/bills/`);
 
       return dispatch({
         type: GET_ALL_BILLS,
@@ -270,7 +270,7 @@ export function getAllBills() {
 export function getAllReviews() {
   return async function(dispatch) {
     try {
-      const response = await axios.get(`${url}/reviews`);
+      const response = await axios.get(`${bills}/reviews`);
       return dispatch({
         type: GET_ALL_REVIEWS,
         payload: response.data,

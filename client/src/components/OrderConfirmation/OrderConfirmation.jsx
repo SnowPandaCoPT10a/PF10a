@@ -27,13 +27,18 @@ function OrderConfirmation() {
     const images = product.map(e=> e.img)
     const productId = product.map(e=> e.productsID)
     const categoryName = product.map(e=> e.category)
+    
+    
+    
+  
+    console.log( product.reduce((total, product) => total + product.price, 0))
         
         endProduct = {
            // id: product[0].id,
             //item: "Products",
             //quantity: 1,
             //date: today,
-           // price: product.reduce((total, product) => total + product.price, 0),
+           
            description: descriptions,
            image: images,
            productID : productId,
