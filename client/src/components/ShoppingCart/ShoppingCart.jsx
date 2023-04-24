@@ -49,10 +49,10 @@ const dispatch = useDispatch();
     const productToUpdate = allProducts?.find(
       (el) => el.productsID === product.productsID && el.size === product.size
     );
-
+console.log(productToUpdate, "PRODUCTO")
     if (
-      productToUpdate.sizes?.map((el) =>
-        el.size === product.size ? el.quantity > 1 : null
+      productToUpdate.sizes.map((el) =>
+        el.size == product.size ? el.quantity > 1 : null
       ) && productToUpdate.sizes.find((el) => el.size === product.size).quantity > 0
     ) {
       const updatedProduct = allProducts.map((el) =>
@@ -93,7 +93,7 @@ const dispatch = useDispatch();
         JSON.stringify(countProducts - 1)
       );
     }
-    if (
+    else if (
       productToUpdate.boardsizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
       ) && productToUpdate.boardsizes.find((el) => el.size === product.size).quantity > 0
@@ -136,7 +136,7 @@ const dispatch = useDispatch();
         JSON.stringify(countProducts - 1)
       );
     }
-    if (
+    else if (
       productToUpdate.numbersizes?.map((el) =>
         el.size === product.size ? el.quantity > 1 : null
       ) && productToUpdate.numbersizes.find((el) => el.size === product.size).quantity > 0

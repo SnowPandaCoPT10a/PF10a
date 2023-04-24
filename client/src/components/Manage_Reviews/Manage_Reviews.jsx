@@ -1,52 +1,63 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, Link } from 'react-router-dom'
-
-
-
-import { getAllReviews } from "../../Redux/actions/index.js";
+import Swal from 'sweetalert2';
+import { getAllReviews ,putDisableReviews} from "../../Redux/actions/index.js";
 
 const ManageReviews = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const allReview = useSelector((e) => e.allReviews);
   const [dropNewData, setDropNewData] = useState(0);
-
-  useEffect(() => {
-    dispatch(getAllReviews());
-  }, [dispatch]);
 
   console.log(allReview, "LASBILLS")
   const scrollTop = () => {
-    window.scroll(0, 0)
+    window.scroll(0, 0) }
+
+  let allReviews;
+  try {
+    allReviews = useSelector((e) => e.allReviews);
+  } catch (error) {
+    console.log("Error fetching reviews from the store: ", error);
+
   }
 
+
+
+  const handleBannedProduct = (e) => {
+    dispatch(putDisableReviews(e));
+    Swal.fire({
+      title: "¡Review Deleted!",
+      icon: "success",
+    });
+  };
+try{
   return (
+    
     <div className="container">
-    <div className="row">
-      <div className="col">
-        <h1 className="text-center mt-5 titulos-color">RECENT REVIEWS</h1>
+      <div className="row">
+        <div className="col">
+          <h1 className="text-center mt-5 titulos-color">RECENT REVIEWS</h1>
+        </div>
       </div>
-    </div>
   
-    {allReview ? allReview.map((e) => (
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"  >
-          <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{e.productName}</h5>
-          <h5 class="mb-1">{e.rating}</h5>
-          <h5 class="mb-1">{e.comment}</h5>
-          <h5 class="mb-1">{e.firstName}</h5>
-     
+      {allReviews ? allReviews.map((el) => (
+        <div className="card border-dark mb-3">
+          <div className="card-header">{el.firstName}</div>
+          <div className="card-body text-dark">
+          
+          <h5 className="card-title">Product: {el.productName}</h5>
+
+            <h5 className="card-title">Rating: {el.rating}</h5>
+            <p className="card-text">Comment: {el.comment}</p>
           </div>
-        </a>
-        
-        <hr class="my-2" />
-      </div>
-    )) : (<h1>No orders to display</h1>)
-      }
+          <button className="fav" onClick={() => handleBannedProduct(el.idReviews)}>
+            Delete Review
+          </button>
+        </div>
+      )) : (<h1>No orders to display</h1>)}
     </div>
   );
+      }catch(err){console.log(err)};
 };
 
 export default ManageReviews;
